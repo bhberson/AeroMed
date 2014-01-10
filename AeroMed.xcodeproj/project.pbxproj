@@ -365,6 +365,7 @@
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
 				INFOPLIST_FILE = "AeroMed/AeroMed-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -378,6 +379,7 @@
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
 				INFOPLIST_FILE = "AeroMed/AeroMed-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -443,6 +445,7 @@
 				7787CF2D18806ECE004F495E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7787CF2E18806ECE004F495E /* Build configuration list for PBXNativeTarget "AeroMedTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +454,7 @@
 				7787CF3018806ECE004F495E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
