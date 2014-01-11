@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27CDBCB71880948A000960F3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Storyboard.storyboard */; };
 		7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0218806ECE004F495E /* Foundation.framework */; };
 		7787CF0518806ECE004F495E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0418806ECE004F495E /* CoreGraphics.framework */; };
 		7787CF0718806ECE004F495E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0618806ECE004F495E /* UIKit.framework */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27CDBCB61880948A000960F3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		7787CEFF18806ECE004F495E /* AeroMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7787CF0218806ECE004F495E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7787CF0418806ECE004F495E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +76,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27CDBCB8188095D6000960F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		27CDBCB9188095EE000960F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		27CDBCBA188095FC000960F3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		27CDBCBB18809633000960F3 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				27CDBCB61880948A000960F3 /* Storyboard.storyboard */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
 		7787CEF618806ECE004F495E = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +138,10 @@
 		7787CF0818806ECE004F495E /* AeroMed */ = {
 			isa = PBXGroup;
 			children = (
+				27CDBCBB18809633000960F3 /* User Interface */,
+				27CDBCBA188095FC000960F3 /* View Controllers */,
+				27CDBCB9188095EE000960F3 /* Models */,
+				27CDBCB8188095D6000960F3 /* Views */,
 				7787CF1118806ECE004F495E /* AppDelegate.h */,
 				7787CF1218806ECE004F495E /* AppDelegate.m */,
 				7787CF1418806ECE004F495E /* Images.xcassets */,
@@ -221,6 +256,7 @@
 			files = (
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
+				27CDBCB71880948A000960F3 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
