@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270DB5351887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
+		270DB5361887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
 		27CDBCB71880948A000960F3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Storyboard.storyboard */; };
 		7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0218806ECE004F495E /* Foundation.framework */; };
 		7787CF0518806ECE004F495E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0418806ECE004F495E /* CoreGraphics.framework */; };
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270DB5341887201600573F3F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		27CDBCB61880948A000960F3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		7787CEFF18806ECE004F495E /* AeroMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7787CF0218806ECE004F495E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,8 +145,6 @@
 				27CDBCBA188095FC000960F3 /* View Controllers */,
 				27CDBCB9188095EE000960F3 /* Models */,
 				27CDBCB8188095D6000960F3 /* Views */,
-				7787CF1118806ECE004F495E /* AppDelegate.h */,
-				7787CF1218806ECE004F495E /* AppDelegate.m */,
 				7787CF1418806ECE004F495E /* Images.xcassets */,
 				7787CF0918806ECE004F495E /* Supporting Files */,
 			);
@@ -153,10 +154,13 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7787CF1218806ECE004F495E /* AppDelegate.m */,
+				7787CF1118806ECE004F495E /* AppDelegate.h */,
 				7787CF0A18806ECE004F495E /* AeroMed-Info.plist */,
 				7787CF0B18806ECE004F495E /* InfoPlist.strings */,
 				7787CF0E18806ECE004F495E /* main.m */,
 				7787CF1018806ECE004F495E /* AeroMed-Prefix.pch */,
+				270DB5341887201600573F3F /* Common.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270DB5351887201600573F3F /* Common.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
 			);
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270DB5361887201600573F3F /* Common.m in Sources */,
 				7787CF2818806ECE004F495E /* AeroMedTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +478,7 @@
 				7787CF2A18806ECE004F495E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7787CF2B18806ECE004F495E /* Build configuration list for PBXNativeTarget "AeroMed" */ = {
 			isa = XCConfigurationList;
@@ -481,7 +487,7 @@
 				7787CF2D18806ECE004F495E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7787CF2E18806ECE004F495E /* Build configuration list for PBXNativeTarget "AeroMedTests" */ = {
 			isa = XCConfigurationList;
@@ -490,7 +496,7 @@
 				7787CF3018806ECE004F495E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
