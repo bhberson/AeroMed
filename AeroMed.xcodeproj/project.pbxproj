@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270B4AAE18A4358C008578B9 /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AAD18A4358C008578B9 /* Pixate.framework */; };
+		270B4AB018A43606008578B9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AAF18A43606008578B9 /* CoreText.framework */; };
+		270B4AB218A4360E008578B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AB118A4360E008578B9 /* QuartzCore.framework */; };
 		270DB5351887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
 		270DB5361887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
 		2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2720372A18A2F897000BC38A /* Main_iPhone.storyboard */; };
 		2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373018A30699000BC38A /* AMiPadBaseViewController.m */; };
 		2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */; };
+		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
 		27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Main_iPad.storyboard */; };
 		7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0218806ECE004F495E /* Foundation.framework */; };
 		7787CF0518806ECE004F495E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0418806ECE004F495E /* CoreGraphics.framework */; };
@@ -38,12 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270B4AAD18A4358C008578B9 /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
+		270B4AAF18A43606008578B9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		270B4AB118A4360E008578B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		270DB5341887201600573F3F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		2720372A18A2F897000BC38A /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPhone.storyboard; path = ../Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2720372F18A30699000BC38A /* AMiPadBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadBaseViewController.h; sourceTree = "<group>"; };
 		2720373018A30699000BC38A /* AMiPadBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadBaseViewController.m; sourceTree = "<group>"; };
 		2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneBaseViewController.h; sourceTree = "<group>"; };
 		2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneBaseViewController.m; sourceTree = "<group>"; };
+		27C8060118A443CF00243EB1 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		27CDBCB61880948A000960F3 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		7787CEFF18806ECE004F495E /* AeroMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7787CF0218806ECE004F495E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -68,9 +76,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270B4AB218A4360E008578B9 /* QuartzCore.framework in Frameworks */,
+				270B4AB018A43606008578B9 /* CoreText.framework in Frameworks */,
 				7787CF0518806ECE004F495E /* CoreGraphics.framework in Frameworks */,
 				7787CF0718806ECE004F495E /* UIKit.framework in Frameworks */,
 				7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */,
+				270B4AAE18A4358C008578B9 /* Pixate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +105,15 @@
 				2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */,
 			);
 			name = "iPhone View Controllers";
+			sourceTree = "<group>";
+		};
+		27C8060018A443CF00243EB1 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				27C8060118A443CF00243EB1 /* default.css */,
+			);
+			name = css;
+			path = ../css;
 			sourceTree = "<group>";
 		};
 		27CDBCB8188095D6000960F3 /* Views */ = {
@@ -150,6 +170,8 @@
 		7787CF0118806ECE004F495E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				270B4AB118A4360E008578B9 /* QuartzCore.framework */,
+				270B4AAF18A43606008578B9 /* CoreText.framework */,
 				7787CF0218806ECE004F495E /* Foundation.framework */,
 				7787CF0418806ECE004F495E /* CoreGraphics.framework */,
 				7787CF0618806ECE004F495E /* UIKit.framework */,
@@ -165,6 +187,7 @@
 				2720373218A306AF000BC38A /* iPhone View Controllers */,
 				27CDBCBA188095FC000960F3 /* iPad View Controllers */,
 				27CDBCB9188095EE000960F3 /* Models */,
+				27C8060018A443CF00243EB1 /* css */,
 				27CDBCB8188095D6000960F3 /* Views */,
 				7787CF1418806ECE004F495E /* Images.xcassets */,
 				7787CF0918806ECE004F495E /* Supporting Files */,
@@ -190,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				7787CF2718806ECE004F495E /* AeroMedTests.m */,
+				270B4AAD18A4358C008578B9 /* Pixate.framework */,
 				7787CF2218806ECE004F495E /* Supporting Files */,
 			);
 			path = AeroMedTests;
@@ -284,6 +308,7 @@
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
+				27C8060218A443CF00243EB1 /* default.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,9 +453,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
 				INFOPLIST_FILE = "AeroMed/AeroMed-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -442,9 +472,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
 				INFOPLIST_FILE = "AeroMed/AeroMed-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
