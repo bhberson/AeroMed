@@ -1,0 +1,13 @@
+//
+//  AMiPadBaseViewController.h
+//  AeroMed
+//
+//  Created by Michael Torres on 2/5/14.
+//  Copyright (c) 2014 GVSU. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface AMiPadBaseViewController : UIViewController
+
+@end

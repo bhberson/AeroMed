@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		270DB5351887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
 		270DB5361887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
-		27CDBCB71880948A000960F3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Storyboard.storyboard */; };
+		2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2720372A18A2F897000BC38A /* Main_iPhone.storyboard */; };
+		2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373018A30699000BC38A /* AMiPadBaseViewController.m */; };
+		2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */; };
+		27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Main_iPad.storyboard */; };
 		7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0218806ECE004F495E /* Foundation.framework */; };
 		7787CF0518806ECE004F495E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0418806ECE004F495E /* CoreGraphics.framework */; };
 		7787CF0718806ECE004F495E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0618806ECE004F495E /* UIKit.framework */; };
@@ -36,7 +39,12 @@
 
 /* Begin PBXFileReference section */
 		270DB5341887201600573F3F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
-		27CDBCB61880948A000960F3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		2720372A18A2F897000BC38A /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPhone.storyboard; path = ../Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2720372F18A30699000BC38A /* AMiPadBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadBaseViewController.h; sourceTree = "<group>"; };
+		2720373018A30699000BC38A /* AMiPadBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadBaseViewController.m; sourceTree = "<group>"; };
+		2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneBaseViewController.h; sourceTree = "<group>"; };
+		2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneBaseViewController.m; sourceTree = "<group>"; };
+		27CDBCB61880948A000960F3 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		7787CEFF18806ECE004F495E /* AeroMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7787CF0218806ECE004F495E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7787CF0418806ECE004F495E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2720373218A306AF000BC38A /* iPhone View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */,
+				2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */,
+			);
+			name = "iPhone View Controllers";
+			sourceTree = "<group>";
+		};
 		27CDBCB8188095D6000960F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,17 +110,20 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		27CDBCBA188095FC000960F3 /* View Controllers */ = {
+		27CDBCBA188095FC000960F3 /* iPad View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2720372F18A30699000BC38A /* AMiPadBaseViewController.h */,
+				2720373018A30699000BC38A /* AMiPadBaseViewController.m */,
 			);
-			name = "View Controllers";
+			name = "iPad View Controllers";
 			sourceTree = "<group>";
 		};
 		27CDBCBB18809633000960F3 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				27CDBCB61880948A000960F3 /* Storyboard.storyboard */,
+				2720372A18A2F897000BC38A /* Main_iPhone.storyboard */,
+				27CDBCB61880948A000960F3 /* Main_iPad.storyboard */,
 			);
 			name = "User Interface";
 			sourceTree = "<group>";
@@ -142,7 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				27CDBCBB18809633000960F3 /* User Interface */,
-				27CDBCBA188095FC000960F3 /* View Controllers */,
+				2720373218A306AF000BC38A /* iPhone View Controllers */,
+				27CDBCBA188095FC000960F3 /* iPad View Controllers */,
 				27CDBCB9188095EE000960F3 /* Models */,
 				27CDBCB8188095D6000960F3 /* Views */,
 				7787CF1418806ECE004F495E /* Images.xcassets */,
@@ -227,6 +248,7 @@
 		7787CEF718806ECE004F495E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AM;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = GVSU;
 				TargetAttributes = {
@@ -258,9 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
-				27CDBCB71880948A000960F3 /* Storyboard.storyboard in Resources */,
+				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
+				2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +432,7 @@
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
 				INFOPLIST_FILE = "AeroMed/AeroMed-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -421,7 +446,7 @@
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
 				INFOPLIST_FILE = "AeroMed/AeroMed-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

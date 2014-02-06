@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Mi Pad Base View Controller-->
         <scene sceneID="sMB-T4-lsF">
             <objects>
-                <viewController id="7bh-6T-hlN" sceneMemberID="viewController">
+                <viewController id="7bh-6T-hlN" customClass="AMiPadBaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H4k-PT-ppg"/>
                         <viewControllerLayoutGuide type="bottom" id="lwc-hh-oHe"/>
@@ -15,7 +15,7 @@
                     <view key="view" contentMode="scaleToFill" id="4nm-qN-8NO">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzh-PP-Ve6" userLabel="First Responder" sceneMemberID="firstResponder"/>
