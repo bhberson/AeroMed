@@ -7,12 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-   
+    // Setup Parse Integration
+    [Parse setApplicationId:@"uzcJ9e2B7vMZcpAa1eBuub7fijMZGK8RcIFkemio" clientKey:@"VKmoX4aBbPTpqF4cV60HllI7shGH6nXEYmnwjELO"];
+    
+    // Track statistics
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions]; 
     NSLog(@"Testing modified log format"); 
     return YES;
 }

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2704735818B05D7F003AAB09 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735718B05D7F003AAB09 /* Parse.framework */; };
+		2704735A18B05DCE003AAB09 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735918B05DCE003AAB09 /* AudioToolbox.framework */; };
+		2704735C18B05DD8003AAB09 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735B18B05DD8003AAB09 /* CFNetwork.framework */; };
+		2704735E18B05DE4003AAB09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735D18B05DE4003AAB09 /* CoreLocation.framework */; };
+		2704736018B05DEF003AAB09 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735F18B05DEF003AAB09 /* libz.dylib */; };
+		2704736218B05DF8003AAB09 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736118B05DF8003AAB09 /* MobileCoreServices.framework */; };
+		2704736418B05E09003AAB09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736318B05E09003AAB09 /* Security.framework */; };
+		2704736618B05E11003AAB09 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736518B05E11003AAB09 /* StoreKit.framework */; };
+		2704736818B05E20003AAB09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736718B05E20003AAB09 /* SystemConfiguration.framework */; };
+		2704736E18B0625B003AAB09 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736D18B0625B003AAB09 /* FacebookSDK.framework */; };
 		270B4AAE18A4358C008578B9 /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AAD18A4358C008578B9 /* Pixate.framework */; };
 		270B4AB018A43606008578B9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AAF18A43606008578B9 /* CoreText.framework */; };
 		270B4AB218A4360E008578B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AB118A4360E008578B9 /* QuartzCore.framework */; };
@@ -42,7 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		270B4AAD18A4358C008578B9 /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
+		2704735718B05D7F003AAB09 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2704735918B05DCE003AAB09 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2704735B18B05DD8003AAB09 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2704735D18B05DE4003AAB09 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2704735F18B05DEF003AAB09 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2704736118B05DF8003AAB09 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2704736318B05E09003AAB09 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2704736518B05E11003AAB09 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2704736718B05E20003AAB09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2704736D18B0625B003AAB09 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		270B4AAD18A4358C008578B9 /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pixate.framework; path = AeroMedTests/Pixate.framework; sourceTree = "<group>"; };
 		270B4AAF18A43606008578B9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		270B4AB118A4360E008578B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		270DB5341887201600573F3F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
@@ -76,10 +96,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2704736818B05E20003AAB09 /* SystemConfiguration.framework in Frameworks */,
+				2704736618B05E11003AAB09 /* StoreKit.framework in Frameworks */,
+				2704736418B05E09003AAB09 /* Security.framework in Frameworks */,
 				270B4AB218A4360E008578B9 /* QuartzCore.framework in Frameworks */,
+				2704736218B05DF8003AAB09 /* MobileCoreServices.framework in Frameworks */,
+				2704736018B05DEF003AAB09 /* libz.dylib in Frameworks */,
+				2704735E18B05DE4003AAB09 /* CoreLocation.framework in Frameworks */,
+				2704735C18B05DD8003AAB09 /* CFNetwork.framework in Frameworks */,
+				2704735A18B05DCE003AAB09 /* AudioToolbox.framework in Frameworks */,
 				270B4AB018A43606008578B9 /* CoreText.framework in Frameworks */,
 				7787CF0518806ECE004F495E /* CoreGraphics.framework in Frameworks */,
+				2704735818B05D7F003AAB09 /* Parse.framework in Frameworks */,
 				7787CF0718806ECE004F495E /* UIKit.framework in Frameworks */,
+				2704736E18B0625B003AAB09 /* FacebookSDK.framework in Frameworks */,
 				7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */,
 				270B4AAE18A4358C008578B9 /* Pixate.framework in Frameworks */,
 			);
@@ -170,6 +200,17 @@
 		7787CF0118806ECE004F495E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2704736D18B0625B003AAB09 /* FacebookSDK.framework */,
+				270B4AAD18A4358C008578B9 /* Pixate.framework */,
+				2704736718B05E20003AAB09 /* SystemConfiguration.framework */,
+				2704736518B05E11003AAB09 /* StoreKit.framework */,
+				2704736318B05E09003AAB09 /* Security.framework */,
+				2704736118B05DF8003AAB09 /* MobileCoreServices.framework */,
+				2704735F18B05DEF003AAB09 /* libz.dylib */,
+				2704735D18B05DE4003AAB09 /* CoreLocation.framework */,
+				2704735B18B05DD8003AAB09 /* CFNetwork.framework */,
+				2704735918B05DCE003AAB09 /* AudioToolbox.framework */,
+				2704735718B05D7F003AAB09 /* Parse.framework */,
 				270B4AB118A4360E008578B9 /* QuartzCore.framework */,
 				270B4AAF18A43606008578B9 /* CoreText.framework */,
 				7787CF0218806ECE004F495E /* Foundation.framework */,
@@ -213,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				7787CF2718806ECE004F495E /* AeroMedTests.m */,
-				270B4AAD18A4358C008578B9 /* Pixate.framework */,
 				7787CF2218806ECE004F495E /* Supporting Files */,
 			);
 			path = AeroMedTests;
@@ -456,6 +496,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
+					/Users/mike/Documents/iOS/Aeromed/AeroMed,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
@@ -475,6 +516,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
+					/Users/mike/Documents/iOS/Aeromed/AeroMed,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
