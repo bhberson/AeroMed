@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2704735818B05D7F003AAB09 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735718B05D7F003AAB09 /* Parse.framework */; };
+		2704735818B05D7F003AAB09 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735718B05D7F003AAB09 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2704735A18B05DCE003AAB09 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735918B05DCE003AAB09 /* AudioToolbox.framework */; };
 		2704735C18B05DD8003AAB09 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735B18B05DD8003AAB09 /* CFNetwork.framework */; };
 		2704735E18B05DE4003AAB09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735D18B05DE4003AAB09 /* CoreLocation.framework */; };
@@ -513,8 +513,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
-					/Users/mike/Documents/iOS/Aeromed/AeroMed,
+					/Users/brodyberson/Copy/seniorProject/AeroMed/AeroMedTests,
+					/Users/brodyberson/Copy/seniorProject/AeroMed,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
@@ -533,8 +533,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
-					/Users/mike/Documents/iOS/Aeromed/AeroMed,
+					/Users/brodyberson/Copy/seniorProject/AeroMed/AeroMedTests,
+					/Users/brodyberson/Copy/seniorProject/AeroMed,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
