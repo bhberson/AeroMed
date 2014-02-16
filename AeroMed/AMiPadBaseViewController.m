@@ -7,6 +7,7 @@
 //
 
 #import "AMiPadBaseViewController.h"
+#import "SWRevealViewController.h"
 
 @interface AMiPadBaseViewController ()
 
@@ -26,6 +27,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // Change the menu button color
+    //_sidebarButton.tintColor = [UIColor colorWithRed:0.118 green:0.302 blue:0.580 alpha:1.000];
+    
+    // Set the side bar button action to show slide out menu
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(revealToggle:);
+    NSLog(@"here"); 
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
   
 }
 

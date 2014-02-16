@@ -7,11 +7,11 @@
 //
 
 #import "AMiPhoneBaseViewController.h"
+#import "SWRevealViewController.h"
 
 @interface AMiPhoneBaseViewController ()
-@property (nonatomic, strong) UIView *leftEye;
-@property (nonatomic, strong) UIView *rightEye;
-@property (nonatomic, strong) UIView *mouth; @end
+
+@end
 
 @implementation AMiPhoneBaseViewController
 
@@ -28,34 +28,18 @@
 {
     [super viewDidLoad];
     
+    // Change the menu button color
+    //_sidebarButton.tintColor = [UIColor colorWithRed:0.118 green:0.302 blue:0.580 alpha:1.000];
     
-    UILabel *helloGuys = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 170, 70)];
-    helloGuys.text = @"Hello Group!";
-    [self.view addSubview:helloGuys];
+    // Set the side bar button action to show slide out menu
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(revealToggle:);
     
-	// Do any additional setup after loading the view.
-    self.leftEye = [[UIView alloc] initWithFrame:CGRectMake(66,160,70,70)];
-    self.leftEye.layer.cornerRadius = 50;
-    self.leftEye.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:self.leftEye];
-    
-    self.rightEye = [[UIView alloc] initWithFrame:CGRectMake(200,160,70,70)];
-    self.rightEye.layer.cornerRadius = 50;
-    self.rightEye.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:self.rightEye];
-    
-    self.mouth = [[UIView alloc] initWithFrame:CGRectMake(98,247,136,50)];
-    self.mouth.layer.cornerRadius = 10;
-    self.mouth.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:self.mouth];
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     
-    
-    [UIView animateWithDuration:6 animations:^ {
-        self.leftEye.frame = CGRectMake(66, 1000, 70, 70);
-        self.rightEye.frame = CGRectMake(200, 1000, 70, 70);
-        self.mouth.frame = CGRectMake(98, 1000, 136, 50);
-    }];
+  
 }
 
 - (void)didReceiveMemoryWarning

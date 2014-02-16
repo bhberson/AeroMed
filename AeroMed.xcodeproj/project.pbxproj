@@ -25,6 +25,9 @@
 		2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2720372A18A2F897000BC38A /* Main_iPhone.storyboard */; };
 		2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373018A30699000BC38A /* AMiPadBaseViewController.m */; };
 		2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */; };
+		27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */; };
+		27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */; };
+		27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A9690F18B06D010010A721 /* SWRevealViewController.m */; };
 		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
 		27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Main_iPad.storyboard */; };
 		7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0218806ECE004F495E /* Foundation.framework */; };
@@ -71,6 +74,12 @@
 		2720373018A30699000BC38A /* AMiPadBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadBaseViewController.m; sourceTree = "<group>"; };
 		2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneBaseViewController.h; sourceTree = "<group>"; };
 		2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneBaseViewController.m; sourceTree = "<group>"; };
+		27A6619A18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneSliderMenuViewController.h; sourceTree = "<group>"; };
+		27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneSliderMenuViewController.m; sourceTree = "<group>"; };
+		27A8EC2318B08D420056EA2A /* AMiPadSliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSliderMenuViewController.h; sourceTree = "<group>"; };
+		27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadSliderMenuViewController.m; sourceTree = "<group>"; };
+		27A9690E18B06D010010A721 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		27A9690F18B06D010010A721 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		27C8060118A443CF00243EB1 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		27CDBCB61880948A000960F3 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		7787CEFF18806ECE004F495E /* AeroMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,8 +140,12 @@
 		2720373218A306AF000BC38A /* iPhone View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				27A9690E18B06D010010A721 /* SWRevealViewController.h */,
+				27A9690F18B06D010010A721 /* SWRevealViewController.m */,
 				2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */,
 				2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */,
+				27A6619A18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.h */,
+				27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */,
 			);
 			name = "iPhone View Controllers";
 			sourceTree = "<group>";
@@ -165,6 +178,8 @@
 			children = (
 				2720372F18A30699000BC38A /* AMiPadBaseViewController.h */,
 				2720373018A30699000BC38A /* AMiPadBaseViewController.m */,
+				27A8EC2318B08D420056EA2A /* AMiPadSliderMenuViewController.h */,
+				27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */,
 			);
 			name = "iPad View Controllers";
 			sourceTree = "<group>";
@@ -368,10 +383,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */,
+				27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
+				27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
 				2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */,
+				27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
