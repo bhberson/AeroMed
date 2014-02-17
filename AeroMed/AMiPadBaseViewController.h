@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMiPadBaseViewController : UIViewController
+@interface AMiPadBaseViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @end
