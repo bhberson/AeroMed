@@ -60,4 +60,61 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*!
+ Sent to the delegate to determine whether the log in request should be submitted to the server.
+ @param username the username the user tries to log in with.
+ @param password the password the user tries to log in with.
+ @result a boolean indicating whether the log in should proceed.
+ */
+- (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password{
+    // Check if both fields are completed
+    if (username && password && username.length != 0 && password.length != 0){
+        [PFUser logInWithUsernameInBackground:username
+                                     password:password
+                                       target:self
+                                     selector:@selector(handleUserLogin:error:)];
+        return YES; // Begin login process
+    }
+    
+    [[[UIAlertView alloc] initWithTitle:@"Missing Information"
+                                message:@"Please fill out all information!"
+                               delegate:nil
+                      cancelButtonTitle:@"OK"
+                      otherButtonTitles:nil] show];
+    return NO; // Interrupt login process
+}
+
+/*! @name Responding to Actions */
+/// Sent to the delegate when a PFUser is logged in.
+- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+/// Sent to the delegate when the log in attempt fails.
+- (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error{
+    NSLog(@"User failed to log in");
+}
+
+/// Sent to the delegate when the log in screen is dismissed.
+- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController{
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+- (void) handleUserLogin:(PFUser *)user error:(NSError *)error {
+    if (user) {
+        // Login successful
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    } else {
+        // unsucessful login
+        NSLog(@"%@", [error localizedDescription]);
+        
+        [[[UIAlertView alloc] initWithTitle:@"Unsuccessful Login"
+                                    message:@"Please try again"
+                                   delegate:nil
+                          cancelButtonTitle:@"Ok"
+                          otherButtonTitles:nil] show];
+    }
+}
+
 @end
