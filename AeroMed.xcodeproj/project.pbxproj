@@ -517,8 +517,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/mario/Winter14/CIS467/develop,
-					/Users/mario/Winter14/CIS467/develop/AeroMedTests,
+					/Users/brodyberson/Copy/seniorProject/AeroMed,
+					/Users/brodyberson/Copy/seniorProject/AeroMed/AeroMedTests,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
@@ -537,8 +537,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/mario/Winter14/CIS467/develop,
-					/Users/mario/Winter14/CIS467/develop/AeroMedTests,
+					/Users/brodyberson/Copy/seniorProject/AeroMed,
+					/Users/brodyberson/Copy/seniorProject/AeroMed/AeroMedTests,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
