@@ -16,6 +16,12 @@
     // Setup Parse Integration
     [Parse setApplicationId:@"uzcJ9e2B7vMZcpAa1eBuub7fijMZGK8RcIFkemio" clientKey:@"VKmoX4aBbPTpqF4cV60HllI7shGH6nXEYmnwjELO"];
     
+    // Current User
+    PFUser *user = [PFUser currentUser];
+    [user refreshInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        
+    }]; 
+    
     // Track statistics
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions]; 
     NSLog(@"Testing modified log format"); 

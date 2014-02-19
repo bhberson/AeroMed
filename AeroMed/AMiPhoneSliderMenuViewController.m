@@ -29,7 +29,7 @@
     [super viewDidLoad];
 
     
-    _menuItems = @[@"title", @"documentation", @"checklist"];
+    _menuItems = @[@"title", @"documentation", @"checklist", @"logout"];
 
 }
 

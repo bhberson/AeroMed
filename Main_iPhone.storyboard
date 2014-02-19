@@ -17,6 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vom-fg-6jP"/>
                     <connections>
                         <segue destination="F3m-QJ-r8t" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="bgM-5C-nwb"/>
                         <segue destination="oPy-lE-J3e" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="Saq-Ex-3eV"/>
@@ -24,7 +25,169 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIu-ZO-pWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64" y="-97"/>
+            <point key="canvasLocation" x="-444" y="-729"/>
+        </scene>
+        <!--Mi Phone Splash Screen View Controller - AeroMed-->
+        <scene sceneID="WvO-Ka-gYN">
+            <objects>
+                <viewController id="tCb-zR-9QQ" customClass="AMiPhoneSplashScreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tJu-37-ad6"/>
+                        <viewControllerLayoutGuide type="bottom" id="hqg-ZU-nAx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vhf-wV-Gzz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3d-g4-haU">
+                                <rect key="frame" x="20" y="242" width="280" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="5oj-vD-KtL"/>
+                                </constraints>
+                                <state key="normal" title="Login ">
+                                    <color key="titleColor" red="0.033991789529999997" green="0.1072079532" blue="0.1305409307" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="tCb-zR-9QQ" eventType="touchUpInside" id="VTI-K5-tUx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXI-0c-5m2">
+                                <rect key="frame" x="20" y="293" width="280" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.033991789529999997" green="0.1072079532" blue="0.1305409307" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSignup:" destination="tCb-zR-9QQ" eventType="touchUpInside" id="8hR-PA-chT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AeroMed" id="4TD-r0-qLL"/>
+                    <connections>
+                        <outlet property="loginButton" destination="o3d-g4-haU" id="zVq-QU-OJ5"/>
+                        <outlet property="signupButton" destination="EXI-0c-5m2" id="tah-tK-mhX"/>
+                        <segue destination="BnA-j1-PUF" kind="push" identifier="splashToLogin" id="Afe-Xg-G1a"/>
+                        <segue destination="sbH-Yk-QTy" kind="push" identifier="splashToSignup" id="3ay-ee-Y8x"/>
+                        <segue destination="ItR-26-vAv" kind="push" identifier="splashToMain" id="iPz-pd-Him"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3p-ty-m3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="-502"/>
+        </scene>
+        <!--Mi Phone Signup View Controller - Sign Up -->
+        <scene sceneID="PMH-7C-Bms">
+            <objects>
+                <viewController id="sbH-Yk-QTy" customClass="AMiPhoneSignupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7aa-H4-d44"/>
+                        <viewControllerLayoutGuide type="bottom" id="ysu-ik-Mez"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="whc-uZ-0bt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PiE-zP-v7j">
+                                <rect key="frame" x="20" y="183" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G98-hZ-JUd">
+                                <rect key="frame" x="20" y="221" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVG-c3-b7v">
+                                <rect key="frame" x="20" y="315" width="280" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign Up ">
+                                    <color key="titleColor" red="0.033991789529999997" green="0.1072079532" blue="0.1305409307" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSignup:" destination="sbH-Yk-QTy" eventType="touchUpInside" id="H31-wz-8qY"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDG-Za-X1M">
+                                <rect key="frame" x="20" y="259" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up " id="Z4s-fY-wzL"/>
+                    <connections>
+                        <outlet property="emailEntry" destination="sDG-Za-X1M" id="xKg-95-tB1"/>
+                        <outlet property="passwordEntry" destination="G98-hZ-JUd" id="6Yl-41-if0"/>
+                        <outlet property="signupButton" destination="GVG-c3-b7v" id="PbG-ld-ygT"/>
+                        <outlet property="usernameEntry" destination="PiE-zP-v7j" id="ym0-2f-ZQA"/>
+                        <segue destination="ItR-26-vAv" kind="push" identifier="signupToMain" id="fx0-6o-idJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiM-EV-07H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="-69"/>
+        </scene>
+        <!--Mi Phone Login View Controller - Login -->
+        <scene sceneID="WuT-eo-JZg">
+            <objects>
+                <viewController id="BnA-j1-PUF" customClass="AMiPhoneLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eda-Ih-jq2"/>
+                        <viewControllerLayoutGuide type="bottom" id="05J-as-imu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g3N-bX-NnI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cta-wQ-pHk">
+                                <rect key="frame" x="20" y="359" width="280" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.033991789529999997" green="0.1072079532" blue="0.1305409307" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="BnA-j1-PUF" eventType="touchUpInside" id="h5D-Co-GQW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PT-9g-Cdy">
+                                <rect key="frame" x="20" y="207" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ynC-i9-X7P">
+                                <rect key="frame" x="20" y="245" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login " id="Llp-8U-AR2"/>
+                    <connections>
+                        <outlet property="loginButton" destination="cta-wQ-pHk" id="dhv-Vl-By7"/>
+                        <outlet property="passwordEntry" destination="ynC-i9-X7P" id="8zi-3H-FAV"/>
+                        <outlet property="usernameEntry" destination="6PT-9g-Cdy" id="4Xh-Us-akg"/>
+                        <segue destination="ItR-26-vAv" kind="push" identifier="loginToMain" id="QhJ-B3-LpV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVd-w1-sh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="-1146"/>
         </scene>
         <!--Mi Phone Slider Menu View Controller-->
         <scene sceneID="kmn-KY-Kfr">
@@ -102,13 +265,35 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableViewCell>
+                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="logout" id="IzQ-nG-V0H">
+                                <rect key="frame" x="0.0" y="154" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IzQ-nG-V0H" id="1T0-IR-5PI">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKh-Rs-yO2">
+                                            <rect key="frame" x="20" y="11" width="106" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
                         </prototypes>
                         <sections/>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thV-YR-flX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="-531"/>
+            <point key="canvasLocation" x="78" y="-1163"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uly-fF-q4m">
@@ -118,14 +303,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ItR-26-vAv" kind="relationship" relationship="rootViewController" id="vAm-ut-4dp"/>
+                        <segue destination="tCb-zR-9QQ" kind="relationship" relationship="rootViewController" id="UE5-bp-bKC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCa-du-ufR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="130"/>
+            <point key="canvasLocation" x="78" y="-502"/>
         </scene>
-        <!--Mi Phone Base View Controller-->
+        <!--Mi Phone Base View Controller - AeroMed-->
         <scene sceneID="a1C-tv-9fv">
             <objects>
                 <viewController id="ItR-26-vAv" customClass="AMiPhoneBaseViewController" sceneMemberID="viewController">
@@ -136,9 +321,9 @@
                     <view key="view" contentMode="scaleToFill" id="9o7-v5-lgu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="63c-Sd-GVj">
+                    <navigationItem key="navigationItem" title="AeroMed" id="63c-Sd-GVj">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="yO0-tf-gD9"/>
                     </navigationItem>
                     <connections>
@@ -147,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xa-iu-JnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="129"/>
+            <point key="canvasLocation" x="1360" y="-502"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -155,4 +340,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="QhJ-B3-LpV"/>
+    </inferredMetricsTieBreakers>
 </document>
