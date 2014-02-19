@@ -51,6 +51,8 @@
 		7787CF1E18806ECE004F495E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0618806ECE004F495E /* UIKit.framework */; };
 		7787CF2618806ECE004F495E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7787CF2418806ECE004F495E /* InfoPlist.strings */; };
 		7787CF2818806ECE004F495E /* AeroMedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF2718806ECE004F495E /* AeroMedTests.m */; };
+		AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = AC74591F18B487EB00BA0DE2 /* CheckBox.png */; };
+		AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,8 @@
 		7787CF2318806ECE004F495E /* AeroMedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AeroMedTests-Info.plist"; sourceTree = "<group>"; };
 		7787CF2518806ECE004F495E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7787CF2718806ECE004F495E /* AeroMedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroMedTests.m; sourceTree = "<group>"; };
+		AC74591F18B487EB00BA0DE2 /* CheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBox.png; sourceTree = "<group>"; };
+		AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBox@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,8 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */,
+				AC74591F18B487EB00BA0DE2 /* CheckBox.png */,
 				27AB58D918B43D510047D0A7 /* backArrow@2x.png */,
 				27AB58D718B43D4C0047D0A7 /* backArrow.png */,
 				7787CF1218806ECE004F495E /* AppDelegate.m */,
@@ -403,7 +409,9 @@
 				7720280318B12933002302A4 /* style.css in Resources */,
 				27AB58D818B43D4C0047D0A7 /* backArrow.png in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
+				AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
+				AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,
 			);
@@ -560,9 +568,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
-					/Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
 					"$(inherited)",
-					/Users/mike/Documents/iOS/Aeromed/AeroMed/,
+					/Users/mario/Winter14/CIS467/develop/,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
@@ -580,9 +587,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
-					/Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
 					"$(inherited)",
-					/Users/mike/Documents/iOS/Aeromed/AeroMed/,
+					/Users/mario/Winter14/CIS467/develop/,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
