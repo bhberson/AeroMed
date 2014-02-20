@@ -80,7 +80,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EXI-0c-5m2" firstAttribute="width" secondItem="o3d-g4-haU" secondAttribute="width" id="0Kk-gB-dqC"/>
                             <constraint firstItem="o3d-g4-haU" firstAttribute="top" secondItem="tJu-37-ad6" secondAttribute="bottom" constant="247" id="2qf-ji-Ig7"/>
@@ -491,6 +491,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fx0-6o-idJ"/>
+        <segue reference="iPz-pd-Him"/>
     </inferredMetricsTieBreakers>
 </document>

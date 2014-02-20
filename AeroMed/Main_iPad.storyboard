@@ -166,9 +166,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amButton"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTapLogin:" destination="t0L-FF-Y3B" eventType="touchUpInside" id="cNH-vJ-A9T"/>
                                 </connections>
@@ -186,9 +183,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amButton"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTapSignup:" destination="t0L-FF-Y3B" eventType="touchUpInside" id="6cT-Wf-ALL"/>
                                 </connections>
@@ -196,9 +190,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-yW-bg7">
                                 <rect key="frame" x="297" y="158" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="pngImage"/>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,9 +208,6 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="AeroMed" id="jYp-FQ-k1d"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="loginButton" destination="MGd-l5-CNa" id="g2B-3s-g59"/>
                         <outlet property="signupButton" destination="aex-SL-Jf6" id="yLB-AR-geu"/>
@@ -245,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jv-gp-9oO">
-                                <rect key="frame" x="262" y="425" width="239" height="40"/>
+                                <rect key="frame" x="262" y="492" width="239" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -307,11 +295,11 @@
                             <constraint firstAttribute="centerX" secondItem="AoI-0i-Piv" secondAttribute="centerX" constant="2.5" id="Wua-dT-cme"/>
                             <constraint firstItem="yQr-Cs-fhw" firstAttribute="top" secondItem="ccF-9o-IDv" secondAttribute="bottom" constant="298" id="cEH-1q-joX"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="defaultView"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="Rgy-nY-HqN"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="loginButton" destination="3Jv-gp-9oO" id="aUz-2d-sX3"/>
                         <outlet property="passwordEntry" destination="AoI-0i-Piv" id="rxT-lA-6h0"/>
@@ -335,13 +323,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="AeroMed" id="MJu-eD-1Tk">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="ufa-Z4-eiG"/>
                     </navigationItem>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="sidebarButton" destination="ufa-Z4-eiG" id="iyX-G0-OMa"/>
                     </connections>
@@ -421,7 +409,7 @@
                                 <rect key="frame" x="305" y="104" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amButton"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="pngImage"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
@@ -438,11 +426,11 @@
                             <constraint firstAttribute="centerX" secondItem="kgg-7D-chT" secondAttribute="centerX" id="stD-x6-0Z4"/>
                             <constraint firstAttribute="centerX" secondItem="CBb-Tj-Xgt" secondAttribute="centerX" id="tOv-jv-NZt"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up " id="SCh-N5-cFE"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="emailEntry" destination="CBb-Tj-Xgt" id="YpC-Wx-X8S"/>
                         <outlet property="passwordEntry" destination="bdo-mB-fKQ" id="dhu-vL-x3k"/>
@@ -465,6 +453,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="gFa-VB-XHq"/>
+        <segue reference="cot-eW-3KL"/>
     </inferredMetricsTieBreakers>
 </document>
