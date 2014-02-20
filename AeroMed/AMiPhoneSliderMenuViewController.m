@@ -93,4 +93,11 @@
     }
 }
 
+- (void)logoutButtonTouchHandler:(id)sender {
+    if([PFUser currentUser]){
+        [PFUser logOut];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+}
+
 @end

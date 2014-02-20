@@ -10,4 +10,5 @@
 
 @interface AMiPadSliderMenuViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+- (void)logoutButtonTouchHandler:(id)sender;
 @end
