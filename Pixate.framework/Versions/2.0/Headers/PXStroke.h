@@ -48,7 +48,7 @@ typedef enum
 @property (nonatomic, strong) NSArray* dashArray;
 
 /**
- *  An offset to be applied before applying the values of the dashArayy
+ *  An offset to be applied before applying the values of the dashArray
  */
 @property (nonatomic) CGFloat dashOffset;
 
