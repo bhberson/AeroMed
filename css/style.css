@@ -3,4 +3,22 @@
  * as well as any additions to the CSS should go in here.
  *
  */
- 
+.amButton {
+  box-shadow: 3px 3px 3px #333;
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+  color: #fff;
+}
+
+.amTextField {
+  box-shadow: inset 0px 0px 3px #333;
+  background-color: white;
+}
+
+.pngImage {
+  box-shadow: 2px 2px 5px #333;
+}
+
+.defaultView {
+  background-color: linear-gradient(150deg, #666, #444);
+}
