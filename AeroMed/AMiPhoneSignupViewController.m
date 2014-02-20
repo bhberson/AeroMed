@@ -46,6 +46,8 @@
                                    action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"triangular"]];
+    
     [self.usernameEntry setDelegate:self];
     [self.passwordEntry setDelegate:self];
     [self.emailEntry setDelegate:self];

@@ -41,6 +41,8 @@
     
     self.navigationItem.leftBarButtonItem = back;
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"triangular"]];
+    
     [self.usernameEntry setDelegate:self];
     [self.passwordEntry setDelegate:self];
 }

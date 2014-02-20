@@ -42,6 +42,8 @@
         
         // Present the log in view controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
+        
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"triangular"]];
     }
     
     // Change the menu button color
