@@ -154,11 +154,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-l5-CNa">
-                                <rect key="frame" x="283" y="371" width="202" height="30"/>
+                                <rect key="frame" x="283" y="371" width="202" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="202" id="C34-NG-u6C"/>
+                                    <constraint firstAttribute="height" constant="40" id="TTc-0R-JNZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login">
@@ -170,10 +171,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aex-SL-Jf6">
-                                <rect key="frame" x="283" y="409" width="202" height="30"/>
+                                <rect key="frame" x="283" y="426" width="202" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cqf-P7-qcb"/>
                                     <constraint firstAttribute="width" constant="202" id="uje-xL-XQA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -195,9 +197,9 @@
                             <constraint firstItem="aex-SL-Jf6" firstAttribute="width" secondItem="MGd-l5-CNa" secondAttribute="width" id="GDd-s0-cyg"/>
                             <constraint firstItem="aex-SL-Jf6" firstAttribute="top" secondItem="MGd-l5-CNa" secondAttribute="bottom" constant="8" id="HQe-gL-6H7"/>
                             <constraint firstItem="fx5-yW-bg7" firstAttribute="top" secondItem="il0-OQ-0dF" secondAttribute="bottom" constant="90" id="NwP-Ji-vYi"/>
-                            <constraint firstItem="aex-SL-Jf6" firstAttribute="top" secondItem="il0-OQ-0dF" secondAttribute="bottom" constant="345" id="YCZ-PP-Jgl"/>
                             <constraint firstAttribute="centerX" secondItem="aex-SL-Jf6" secondAttribute="centerX" id="aT8-N8-5q4"/>
-                            <constraint firstItem="MGd-l5-CNa" firstAttribute="top" secondItem="il0-OQ-0dF" secondAttribute="bottom" constant="307" id="hjV-mN-sqp"/>
+                            <constraint firstItem="MGd-l5-CNa" firstAttribute="top" secondItem="il0-OQ-0dF" secondAttribute="bottom" constant="307" id="eAt-Ad-ShC"/>
+                            <constraint firstItem="aex-SL-Jf6" firstAttribute="height" secondItem="MGd-l5-CNa" secondAttribute="height" id="oU6-U7-fOE"/>
                             <constraint firstAttribute="centerX" secondItem="MGd-l5-CNa" secondAttribute="centerX" id="ojX-t8-67B"/>
                             <constraint firstAttribute="centerX" secondItem="fx5-yW-bg7" secondAttribute="centerX" constant="-0.5" id="vp5-sb-vDh"/>
                         </constraints>
@@ -228,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jv-gp-9oO">
-                                <rect key="frame" x="262" y="425" width="239" height="30"/>
+                                <rect key="frame" x="262" y="425" width="239" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -273,7 +275,7 @@
                             <constraint firstItem="AoI-0i-Piv" firstAttribute="top" secondItem="ccF-9o-IDv" secondAttribute="bottom" constant="254" id="CtS-JO-Xev"/>
                             <constraint firstItem="gyB-aE-fkv" firstAttribute="top" secondItem="ccF-9o-IDv" secondAttribute="bottom" constant="50" id="Iyp-rH-iL1"/>
                             <constraint firstAttribute="centerX" secondItem="yQr-Cs-fhw" secondAttribute="centerX" constant="2.5" id="KQz-XH-PfO"/>
-                            <constraint firstAttribute="centerX" secondItem="3Jv-gp-9oO" secondAttribute="centerX" constant="-0.5" id="QW0-kx-zTO"/>
+                            <constraint firstAttribute="centerX" secondItem="3Jv-gp-9oO" secondAttribute="centerX" constant="2.5" id="QW0-kx-zTO"/>
                             <constraint firstItem="3Jv-gp-9oO" firstAttribute="top" secondItem="yQr-Cs-fhw" secondAttribute="bottom" constant="33" id="UUJ-Tz-5nn"/>
                             <constraint firstAttribute="centerX" secondItem="AoI-0i-Piv" secondAttribute="centerX" constant="2.5" id="Wua-dT-cme"/>
                             <constraint firstItem="yQr-Cs-fhw" firstAttribute="top" secondItem="ccF-9o-IDv" secondAttribute="bottom" constant="298" id="cEH-1q-joX"/>
@@ -355,7 +357,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fa-df-XsE">
-                                <rect key="frame" x="265" y="449" width="239" height="30"/>
+                                <rect key="frame" x="265" y="449" width="239" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
