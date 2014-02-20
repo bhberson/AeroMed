@@ -580,6 +580,7 @@
 					"$(inherited)",
 					Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
 					/Users/mike/Documents/iOS/Aeromed/AeroMed,
+					/Users/brodyberson/Copy/seniorProject/AeroMed,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
@@ -601,6 +602,7 @@
 					"$(inherited)",
 					Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
 					/Users/mike/Documents/iOS/Aeromed/AeroMed,
+					/Users/brodyberson/Copy/seniorProject/AeroMed,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
