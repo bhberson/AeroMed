@@ -17,7 +17,6 @@
 		2704736618B05E11003AAB09 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736518B05E11003AAB09 /* StoreKit.framework */; };
 		2704736818B05E20003AAB09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736718B05E20003AAB09 /* SystemConfiguration.framework */; };
 		2704736E18B0625B003AAB09 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736D18B0625B003AAB09 /* FacebookSDK.framework */; };
-		270B4AAE18A4358C008578B9 /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AAD18A4358C008578B9 /* Pixate.framework */; };
 		270B4AB018A43606008578B9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AAF18A43606008578B9 /* CoreText.framework */; };
 		270B4AB218A4360E008578B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AB118A4360E008578B9 /* QuartzCore.framework */; };
 		270DB5351887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
@@ -25,6 +24,9 @@
 		2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2720372A18A2F897000BC38A /* Main_iPhone.storyboard */; };
 		2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373018A30699000BC38A /* AMiPadBaseViewController.m */; };
 		2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */; };
+		2786509C18B59A9100EA6E2F /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2786509B18B59A9100EA6E2F /* Pixate.framework */; };
+		2786509F18B59B6C00EA6E2F /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509D18B59B6C00EA6E2F /* cloud.png */; };
+		278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509E18B59B6C00EA6E2F /* cloud@2x.png */; };
 		27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */; };
 		27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */; };
 		27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A9690F18B06D010010A721 /* SWRevealViewController.m */; };
@@ -76,7 +78,6 @@
 		2704736518B05E11003AAB09 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2704736718B05E20003AAB09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2704736D18B0625B003AAB09 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		270B4AAD18A4358C008578B9 /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pixate.framework; path = AeroMedTests/Pixate.framework; sourceTree = "<group>"; };
 		270B4AAF18A43606008578B9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		270B4AB118A4360E008578B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		270DB5341887201600573F3F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
@@ -85,6 +86,9 @@
 		2720373018A30699000BC38A /* AMiPadBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadBaseViewController.m; sourceTree = "<group>"; };
 		2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneBaseViewController.h; sourceTree = "<group>"; };
 		2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneBaseViewController.m; sourceTree = "<group>"; };
+		2786509B18B59A9100EA6E2F /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
+		2786509D18B59B6C00EA6E2F /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		2786509E18B59B6C00EA6E2F /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
 		27A6619A18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneSliderMenuViewController.h; sourceTree = "<group>"; };
 		27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneSliderMenuViewController.m; sourceTree = "<group>"; };
 		27A8EC2318B08D420056EA2A /* AMiPadSliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSliderMenuViewController.h; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 				2704736218B05DF8003AAB09 /* MobileCoreServices.framework in Frameworks */,
 				2704736018B05DEF003AAB09 /* libz.dylib in Frameworks */,
 				2704735E18B05DE4003AAB09 /* CoreLocation.framework in Frameworks */,
+				2786509C18B59A9100EA6E2F /* Pixate.framework in Frameworks */,
 				2704735C18B05DD8003AAB09 /* CFNetwork.framework in Frameworks */,
 				2704735A18B05DCE003AAB09 /* AudioToolbox.framework in Frameworks */,
 				270B4AB018A43606008578B9 /* CoreText.framework in Frameworks */,
@@ -148,7 +153,6 @@
 				7787CF0718806ECE004F495E /* UIKit.framework in Frameworks */,
 				2704736E18B0625B003AAB09 /* FacebookSDK.framework in Frameworks */,
 				7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */,
-				270B4AAE18A4358C008578B9 /* Pixate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +260,8 @@
 		7787CF0118806ECE004F495E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2786509B18B59A9100EA6E2F /* Pixate.framework */,
 				2704736D18B0625B003AAB09 /* FacebookSDK.framework */,
-				270B4AAD18A4358C008578B9 /* Pixate.framework */,
 				2704736718B05E20003AAB09 /* SystemConfiguration.framework */,
 				2704736518B05E11003AAB09 /* StoreKit.framework */,
 				2704736318B05E09003AAB09 /* Security.framework */,
@@ -295,6 +299,8 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2786509D18B59B6C00EA6E2F /* cloud.png */,
+				2786509E18B59B6C00EA6E2F /* cloud@2x.png */,
 				AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */,
 				AC74591F18B487EB00BA0DE2 /* CheckBox.png */,
 				27AB58D918B43D510047D0A7 /* backArrow@2x.png */,
@@ -409,8 +415,10 @@
 				7720280318B12933002302A4 /* style.css in Resources */,
 				27AB58D818B43D4C0047D0A7 /* backArrow.png in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
+				2786509F18B59B6C00EA6E2F /* cloud.png in Resources */,
 				AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
+				278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */,
 				AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,
@@ -568,8 +576,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
+					Users/mike/Documents/iOS/Aeromed/AeroMed,
 					"$(inherited)",
-					/Users/brodyberson/Copy/seniorProject/AeroMed,
+					Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
+					/Users/mike/Documents/iOS/Aeromed/AeroMed,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
@@ -587,8 +597,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
+					Users/mike/Documents/iOS/Aeromed/AeroMed,
 					"$(inherited)",
-					/Users/brodyberson/Copy/seniorProject/AeroMed,
+					Users/mike/Documents/iOS/Aeromed/AeroMed/AeroMedTests,
+					/Users/mike/Documents/iOS/Aeromed/AeroMed,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
