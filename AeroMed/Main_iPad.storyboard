@@ -217,6 +217,9 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="AeroMed" id="jYp-FQ-k1d"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="loginButton" destination="MGd-l5-CNa" id="g2B-3s-g59"/>
                         <outlet property="signupButton" destination="aex-SL-Jf6" id="yLB-AR-geu"/>
@@ -306,6 +309,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="Rgy-nY-HqN"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="loginButton" destination="3Jv-gp-9oO" id="aUz-2d-sX3"/>
                         <outlet property="passwordEntry" destination="AoI-0i-Piv" id="rxT-lA-6h0"/>
@@ -333,6 +339,9 @@
                     <navigationItem key="navigationItem" title="AeroMed" id="MJu-eD-1Tk">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="ufa-Z4-eiG"/>
                     </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="sidebarButton" destination="ufa-Z4-eiG" id="iyX-G0-OMa"/>
                     </connections>
@@ -431,6 +440,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up " id="SCh-N5-cFE"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="emailEntry" destination="CBb-Tj-Xgt" id="YpC-Wx-X8S"/>
                         <outlet property="passwordEntry" destination="bdo-mB-fKQ" id="dhu-vL-x3k"/>
