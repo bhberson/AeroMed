@@ -465,6 +465,11 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
+        <segue reference="cot-eW-3KL"/>
+        <segue reference="XGu-LS-V5C"/>
+=======
         <segue reference="gFa-VB-XHq"/>
+>>>>>>> origin/develop
     </inferredMetricsTieBreakers>
 </document>
