@@ -79,6 +79,14 @@
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
     destViewController.title = [[_menuItems objectAtIndex:indexPath.row] capitalizedString];
     
+    // If we clicked the logout button then logout
+    if ([segue.identifier isEqualToString:@"logout"]) {
+        if([PFUser currentUser]){
+            [PFUser logOut];
+            destViewController.title = @"Aero Med";
+        }
+    }
+    
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
         SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
         
@@ -88,13 +96,6 @@
             [navController setViewControllers: @[dvc] animated: NO ];
             [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
         };
-    }
-}
-- (void)logoutButtonTouchHandler:(id)sender {
-    
-    if([PFUser currentUser]){
-        [PFUser logOut];
-        [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }
 

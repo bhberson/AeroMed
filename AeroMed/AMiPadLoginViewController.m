@@ -77,7 +77,6 @@
 }
 
 - (void)didTapBack:(id)sender {
-    NSLog(@"Going back.");
     [self.navigationController popViewControllerAnimated:YES];
 }
 
