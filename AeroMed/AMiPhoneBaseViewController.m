@@ -8,8 +8,10 @@
 
 #import "AMiPhoneBaseViewController.h"
 #import "SWRevealViewController.h"
+#import "OperatingProcedure.h"
 
 @interface AMiPhoneBaseViewController ()
+@property NSMutableArray *documents;
 
 @end
 
@@ -27,30 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.documents = [NSMutableArray array];
     
     // Set the status bar content to white in navigation bar
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    
-    if (![PFUser currentUser]) { // No user logged in
-        // Create the log in view controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        [logInViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        // Create the sign up view controller
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        // Assign our sign up controller to be displayed from the login controller
-        [logInViewController setSignUpController:signUpViewController];
-        
-        // Present the log in view controller
-        [self presentViewController:logInViewController animated:YES completion:NULL];
-        
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"triangular"]];
-    }
-    
-    // Change the menu button color
-    //_sidebarButton.tintColor = [UIColor colorWithRed:0.118 green:0.302 blue:0.580 alpha:1.000];
+
     
     // Set the side bar button action to show slide out menu
     _sidebarButton.target = self.revealViewController;
@@ -59,7 +42,9 @@
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
+    [self initStandardDocuments];
     
+    NSLog(@"Saved document %@", [[self.documents objectAtIndex:0] title]);
   
 }
 
@@ -67,6 +52,39 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// Create the standard documents
+- (void)initStandardDocuments {
+    
+    OperatingProcedure *alcoholWithdrawal = [OperatingProcedure object];
+    alcoholWithdrawal.title = @"Acute Alcohol Withdrawal";
+    alcoholWithdrawal.originalDate = @"18 October 2012";
+    alcoholWithdrawal.revisedDate = @"18 October 2012";
+    alcoholWithdrawal.considerations = @[@"Patient and Crew Safety due to patient anxiety, etc"];
+    alcoholWithdrawal.interventions = @[@"Treat withdrawal symptoms aggressively",
+                                        @"Anticipate Seizures",
+                                        @"Consider associated diagnosis",
+                                        @"Head injury",
+                                        @"GI Bleed",
+                                        @"Infection/Sepsis"];
+    alcoholWithdrawal.testsAndStudies = @[@"Blood Alcohol Level",
+                                          @"CMP",
+                                          @"Head CT",
+                                          @"12 Lead ECG"];
+    alcoholWithdrawal.medications = @[@"Benzodiazepines",
+                                      @"Diprovan (propofol)",
+                                      @"Thiamine",
+                                      @"Glucose"];
+    alcoholWithdrawal.checklist = @[@"Duration/Amount of alcohol ingestion",
+                                    @"Time of last alcohol intake",
+                                    @"Other substance ingestion"];
+    alcoholWithdrawal.impressions = @[@"Acute alcohol withdrawal",
+                                      @"Alcohol Dependence",
+                                      @"Delirium Tremens",
+                                      @"Acute agitation"];
+    alcoholWithdrawal.otherConsiderations = nil;
+    [self.documents addObject:alcoholWithdrawal];
 }
 
 - (IBAction)didTap1:(id)sender {
