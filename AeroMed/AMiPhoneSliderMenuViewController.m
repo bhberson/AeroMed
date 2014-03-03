@@ -27,10 +27,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     
     _menuItems = @[@"title", @"documentation", @"checklist", @"logout"];
 
+}
+
+// Set status bar content to white 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning
