@@ -33,6 +33,9 @@
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
     
+    // Set the status bar content to white in navigation bar
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     

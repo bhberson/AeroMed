@@ -36,7 +36,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hqg-ZU-nAx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Vhf-wV-Gzz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3d-g4-haU">
@@ -72,7 +72,7 @@
                                     <action selector="didTapSignup:" destination="tCb-zR-9QQ" eventType="touchUpInside" id="8hR-PA-chT"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-be-d6k">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-be-d6k">
                                 <rect key="frame" x="73" y="120" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -115,7 +115,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ysu-ik-Mez"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="whc-uZ-0bt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PiE-zP-v7j">
@@ -203,7 +203,7 @@
                         <viewControllerLayoutGuide type="bottom" id="05J-as-imu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g3N-bX-NnI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cta-wQ-pHk">
@@ -384,9 +384,10 @@
         <scene sceneID="uly-fF-q4m">
             <objects>
                 <navigationController definesPresentationContext="YES" id="oPy-lE-J3e" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7EN-c4-C6R">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7EN-c4-C6R">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="tCb-zR-9QQ" kind="relationship" relationship="rootViewController" id="UE5-bp-bKC"/>
@@ -405,7 +406,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jUX-re-9ux"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9o7-v5-lgu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yon-Hc-O89">
@@ -487,7 +488,7 @@
         <image name="CheckBox.png" width="30" height="30"/>
         <image name="cloud.png" width="175" height="121"/>
     </resources>
-    <color key="tintColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.22745099663734436" green="0.79607850313186646" blue="1" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

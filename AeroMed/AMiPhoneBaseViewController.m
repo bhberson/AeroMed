@@ -28,6 +28,9 @@
 {
     [super viewDidLoad];
     
+    // Set the status bar content to white in navigation bar
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
     if (![PFUser currentUser]) { // No user logged in
         // Create the log in view controller
         PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
@@ -66,7 +69,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)didTap1:(id)sender{
+- (IBAction)didTap1:(id)sender {
     if ([self.check1.titleLabel.text length] == 0){
         [self.check1 setTitle:@"✔︎"
                  forState:UIControlStateNormal];

@@ -30,6 +30,9 @@
     UIImage *backArrow = [UIImage imageNamed:@"backArrow"];
     UIImage *backArrowPressed = [UIImage imageNamed:@"backArrowPressed"];
     
+    // Set the status bar content to white in navigation bar
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [backButton setImage:backArrow forState:UIControlStateNormal];
     [backButton setImage:backArrowPressed forState:UIControlStateSelected];
@@ -52,6 +55,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (IBAction)didTapLogin:(id)sender {
     

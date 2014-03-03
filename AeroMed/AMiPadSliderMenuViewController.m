@@ -29,6 +29,9 @@
     [super viewDidLoad];
 
    _menuItems = @[@"title", @"documentation", @"checklist", @"logout"];
+    
+    // Set the status bar content to white in navigation bar
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
 - (void)didReceiveMemoryWarning
