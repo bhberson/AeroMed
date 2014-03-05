@@ -26,7 +26,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"triangular"]];
     
     // Set the status bar content to white in navigation bar
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;

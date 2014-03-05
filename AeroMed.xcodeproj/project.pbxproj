@@ -33,8 +33,6 @@
 		27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */; };
 		27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A9690F18B06D010010A721 /* SWRevealViewController.m */; };
 		27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB0EFD18C5253900A99048 /* OperatingProcedure.m */; };
-		27AB58D818B43D4C0047D0A7 /* backArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AB58D718B43D4C0047D0A7 /* backArrow.png */; };
-		27AB58DA18B43D510047D0A7 /* backArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AB58D918B43D510047D0A7 /* backArrow@2x.png */; };
 		27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DC18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m */; };
 		27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */; };
 		27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58E218B445F20047D0A7 /* AMiPadLoginViewController.m */; };
@@ -102,8 +100,6 @@
 		27A9690F18B06D010010A721 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		27AB0EFC18C5253900A99048 /* OperatingProcedure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatingProcedure.h; sourceTree = "<group>"; };
 		27AB0EFD18C5253900A99048 /* OperatingProcedure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatingProcedure.m; sourceTree = "<group>"; };
-		27AB58D718B43D4C0047D0A7 /* backArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backArrow.png; sourceTree = "<group>"; };
-		27AB58D918B43D510047D0A7 /* backArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backArrow@2x.png"; sourceTree = "<group>"; };
 		27AB58DB18B445CB0047D0A7 /* AMiPadSplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSplashScreenViewController.h; sourceTree = "<group>"; };
 		27AB58DC18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadSplashScreenViewController.m; sourceTree = "<group>"; };
 		27AB58DE18B445E20047D0A7 /* AMiPadSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSignupViewController.h; sourceTree = "<group>"; };
@@ -312,8 +308,6 @@
 				2786509E18B59B6C00EA6E2F /* cloud@2x.png */,
 				AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */,
 				AC74591F18B487EB00BA0DE2 /* CheckBox.png */,
-				27AB58D918B43D510047D0A7 /* backArrow@2x.png */,
-				27AB58D718B43D4C0047D0A7 /* backArrow.png */,
 				1673E56E18B68E3900E325AA /* triangular.png */,
 				1673E57318B68E9000E325AA /* triangular@2x.png */,
 				7787CF1218806ECE004F495E /* AppDelegate.m */,
@@ -425,9 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */,
-				27AB58DA18B43D510047D0A7 /* backArrow@2x.png in Resources */,
 				7720280318B12933002302A4 /* style.css in Resources */,
-				27AB58D818B43D4C0047D0A7 /* backArrow.png in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				2786509F18B59B6C00EA6E2F /* cloud.png in Resources */,
 				AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */,

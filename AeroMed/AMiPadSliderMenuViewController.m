@@ -89,7 +89,7 @@
     if ([segue.identifier isEqualToString:@"logout"]) {
         if([PFUser currentUser]){
             [PFUser logOut];
-            destViewController.title = @"Aero Med";
+            destViewController.title = @"AeroMed";
         }
     }
     

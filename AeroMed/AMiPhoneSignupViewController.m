@@ -25,32 +25,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Back up in navigation
-    UIImage *backArrow = [UIImage imageNamed:@"backArrow"];
-    UIImage *backArrowPressed = [UIImage imageNamed:@"backArrowPressed"];
     
     // Set the status bar content to white in navigation bar
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
-    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backButton setImage:backArrow forState:UIControlStateNormal];
-    [backButton setImage:backArrowPressed forState:UIControlStateSelected];
-    
-    backButton.frame = CGRectMake(2.0f, 2.0f, 40.0f, 40.0f);
-    [backButton addTarget:self action:@selector(didTapBack:) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:backButton];
-    
-    self.navigationItem.leftBarButtonItem = back;
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(didTapBack:)];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
-    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"triangular"]];
-    
+        
     [self.usernameEntry setDelegate:self];
     [self.passwordEntry setDelegate:self];
     [self.emailEntry setDelegate:self];
