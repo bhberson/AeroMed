@@ -396,6 +396,13 @@
                         <segue destination="tCb-zR-9QQ" kind="relationship" relationship="rootViewController" id="UE5-bp-bKC"/>
                     </connections>
                 </navigationController>
+                <navigationItem title="Aero Med" id="oUI-EI-UWE">
+                    <barButtonItem key="rightBarButtonItem" title="Menu" id="MPd-bw-wdS">
+                        <connections>
+                            <segue destination="F3m-QJ-r8t" kind="custom" id="ugu-eh-SXK"/>
+                        </connections>
+                    </barButtonItem>
+                </navigationItem>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCa-du-ufR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="78" y="-502"/>
@@ -550,7 +557,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="UE5-bp-bKC"/>
         <segue reference="iPz-pd-Him"/>
+        <segue reference="UE5-bp-bKC"/>
+        <segue reference="ugu-eh-SXK"/>
     </inferredMetricsTieBreakers>
 </document>

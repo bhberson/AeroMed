@@ -78,6 +78,10 @@
     
 }
 
+- (void)didTapBack:(id)sender {
+    NSLog(@"Going back.");
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -100,6 +104,7 @@
     if ([segue.identifier isEqualToString:@"documentation"]) {
         if([PFUser currentUser]){
             destViewController.title = @"Documentation";
+            destViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(didTapBack:)];
         }
     }
     
