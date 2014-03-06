@@ -593,6 +593,7 @@
 					/Users/brodyberson/Copy/seniorProject/AeroMed,
 					"$(inherited)",
 					/Users/kschelhaas/Copy/workspace/AeroMed,
+					/Users/mario/Winter14/CIS467/develop,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
@@ -619,6 +620,7 @@
 					/Users/brodyberson/Copy/seniorProject/AeroMed,
 					"$(inherited)",
 					/Users/kschelhaas/Copy/workspace/AeroMed,
+					/Users/mario/Winter14/CIS467/develop,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
