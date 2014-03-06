@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Kieran Lafferty. All rights reserved.
 //
 
-#import "KLCustomViewController.h"
+#import "AMDocumentViewController.h"
 
-@implementation KLCustomViewController
+@implementation AMDocumentViewController
 -(void) viewDidLoad {
     [super viewDidLoad];
     [self.navigationController.navigationBar setBackgroundImage: [UIImage imageNamed:[self.info objectForKey:@"image"]]

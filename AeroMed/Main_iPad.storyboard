@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -68,6 +68,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="tVP-ah-kJr" kind="custom" identifier="documentation" customClass="SWRevealViewControllerSegue" id="Lrb-RC-BSE"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="checklist" id="ZOi-WS-Ffs">
                                 <rect key="frame" x="0.0" y="110" width="768" height="44"/>
@@ -117,6 +120,60 @@
             </objects>
             <point key="canvasLocation" x="-580" y="-1368"/>
         </scene>
+        <!--File Manager View Controller-->
+        <scene sceneID="MLc-in-Oss">
+            <objects>
+                <viewController id="tVP-ah-kJr" customClass="AMFileManagerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qgY-hc-2Wo"/>
+                        <viewControllerLayoutGuide type="bottom" id="bxE-r8-QQ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Pr-Yu-MMn">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Uao-IR-b55">
+                                <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.22745099660000001" green="0.79607850309999995" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Uao-IR-b55" secondAttribute="trailing" id="Q8K-BO-cD6"/>
+                            <constraint firstItem="Uao-IR-b55" firstAttribute="leading" secondItem="2Pr-Yu-MMn" secondAttribute="leading" id="T13-Rs-5XY"/>
+                            <constraint firstAttribute="centerX" secondItem="Uao-IR-b55" secondAttribute="centerX" id="g1A-DW-yVM"/>
+                            <constraint firstItem="Uao-IR-b55" firstAttribute="top" secondItem="qgY-hc-2Wo" secondAttribute="bottom" id="mho-lu-ZX3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cAh-OF-x16"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Uao-IR-b55" id="JOb-vl-LDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNe-Yp-Rfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="394" y="-2199"/>
+        </scene>
+        <!--Document View Controller-->
+        <scene sceneID="dWF-bN-jYB">
+            <objects>
+                <viewController storyboardIdentifier="RootViewController" id="l1b-1x-k8w" customClass="AMDocumentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wqu-wp-kdg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ufh-uj-G9c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oRQ-ov-teG">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpb-IC-bFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1378" y="-2347"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="1GP-tp-dsf">
             <objects>
@@ -142,7 +199,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VTa-4N-ei5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iYW-ja-o7n">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-l5-CNa">
@@ -230,7 +287,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mET-eu-HqB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ok5-cb-yWH">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jv-gp-9oO">
@@ -252,7 +309,7 @@
                                     <action selector="didTapLogin:" destination="a0P-vU-OXO" eventType="touchUpInside" id="btJ-PB-gwx"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AoI-0i-Piv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AoI-0i-Piv">
                                 <rect key="frame" x="210" y="318" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -264,7 +321,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQr-Cs-fhw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQr-Cs-fhw">
                                 <rect key="frame" x="210" y="362" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -321,7 +378,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kMo-tC-BS6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eYj-hK-kOt">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <userDefinedRuntimeAttributes>
@@ -348,10 +405,10 @@
                         <viewControllerLayoutGuide type="bottom" id="ozs-v0-5DZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WWk-dX-8aq">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-7D-chT">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-7D-chT">
                                 <rect key="frame" x="114" y="311" width="540" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -363,7 +420,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdo-mB-fKQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdo-mB-fKQ">
                                 <rect key="frame" x="114" y="349" width="540" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -375,7 +432,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBb-Tj-Xgt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBb-Tj-Xgt">
                                 <rect key="frame" x="114" y="387" width="540" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -454,7 +511,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="XGu-LS-V5C"/>
-        <segue reference="cot-eW-3KL"/>
+        <segue reference="fBo-1Q-5ED"/>
+        <segue reference="gFa-VB-XHq"/>
     </inferredMetricsTieBreakers>
 </document>

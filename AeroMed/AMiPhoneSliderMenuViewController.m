@@ -104,7 +104,7 @@
     if ([segue.identifier isEqualToString:@"documentation"]) {
         if([PFUser currentUser]){
             destViewController.title = @"Documentation";
-            destViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(didTapBack:)];
+            destViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(didTapBack:)];
         }
     }
     

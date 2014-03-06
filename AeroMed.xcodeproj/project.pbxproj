@@ -55,8 +55,8 @@
 		7787CF2818806ECE004F495E /* AeroMedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF2718806ECE004F495E /* AeroMedTests.m */; };
 		779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181AB18C82E9000AE1019 /* KLNoteViewController.m */; };
 		779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 779181AD18C82F7C00AE1019 /* Podfile.txt */; };
-		779181B318C832A500AE1019 /* KLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B018C832A500AE1019 /* KLViewController.m */; };
-		779181B418C832A500AE1019 /* KLCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* KLCustomViewController.m */; };
+		779181B318C832A500AE1019 /* AMFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B018C832A500AE1019 /* AMFileManagerViewController.m */; };
+		779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* AMDocumentViewController.m */; };
 		779181B718C832E800AE1019 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 779181B618C832E800AE1019 /* NavigationControllerData.plist */; };
 		779181BB18C833E200AE1019 /* bar-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181B918C833E200AE1019 /* bar-mid.png */; };
 		779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181BA18C833E200AE1019 /* bar-mid@2x.png */; };
@@ -140,10 +140,10 @@
 		779181AA18C82E9000AE1019 /* KLNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLNoteViewController.h; sourceTree = "<group>"; };
 		779181AB18C82E9000AE1019 /* KLNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLNoteViewController.m; sourceTree = "<group>"; };
 		779181AD18C82F7C00AE1019 /* Podfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.txt; sourceTree = "<group>"; };
-		779181AF18C832A500AE1019 /* KLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLViewController.h; sourceTree = "<group>"; };
-		779181B018C832A500AE1019 /* KLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLViewController.m; sourceTree = "<group>"; };
-		779181B118C832A500AE1019 /* KLCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCustomViewController.h; sourceTree = "<group>"; };
-		779181B218C832A500AE1019 /* KLCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCustomViewController.m; sourceTree = "<group>"; };
+		779181AF18C832A500AE1019 /* AMFileManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileManagerViewController.h; sourceTree = "<group>"; };
+		779181B018C832A500AE1019 /* AMFileManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileManagerViewController.m; sourceTree = "<group>"; };
+		779181B118C832A500AE1019 /* AMDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentViewController.h; sourceTree = "<group>"; };
+		779181B218C832A500AE1019 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
 		779181B618C832E800AE1019 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
 		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
 		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
@@ -360,10 +360,10 @@
 		779181B518C832BD00AE1019 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				779181AF18C832A500AE1019 /* KLViewController.h */,
-				779181B018C832A500AE1019 /* KLViewController.m */,
-				779181B118C832A500AE1019 /* KLCustomViewController.h */,
-				779181B218C832A500AE1019 /* KLCustomViewController.m */,
+				779181AF18C832A500AE1019 /* AMFileManagerViewController.h */,
+				779181B018C832A500AE1019 /* AMFileManagerViewController.m */,
+				779181B118C832A500AE1019 /* AMDocumentViewController.h */,
+				779181B218C832A500AE1019 /* AMDocumentViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -495,7 +495,7 @@
 				2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */,
 				27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */,
 				27F94E0D18B424A3001F8F4F /* AMiPhoneSignupViewController.m in Sources */,
-				779181B318C832A500AE1019 /* KLViewController.m in Sources */,
+				779181B318C832A500AE1019 /* AMFileManagerViewController.m in Sources */,
 				27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */,
 				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
 				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
@@ -507,7 +507,7 @@
 				27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
 				27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */,
-				779181B418C832A500AE1019 /* KLCustomViewController.m in Sources */,
+				779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */,
 				2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */,
 				27F94E1018B424C2001F8F4F /* AMiPhoneLoginViewController.m in Sources */,
 				27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */,

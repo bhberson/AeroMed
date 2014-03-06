@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "KLNoteViewController.h"
 
-@interface KLViewController : KLNoteViewController
+@interface AMFileManagerViewController : KLNoteViewController
 - (IBAction)reloadCardData:(id)sender;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, strong) NSArray* viewControllerData;
 @end

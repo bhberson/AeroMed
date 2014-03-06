@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KLCustomViewController : UIViewController
+@interface AMDocumentViewController : UIViewController
 @property (nonatomic, strong) NSDictionary* info;
 @end

@@ -6,13 +6,15 @@
 //  Copyright (c) 2012 Kieran Lafferty. All rights reserved.
 //
 
-#import "KLViewController.h"
-#import "KLCustomViewController.h"
-@interface KLViewController ()
+#import "AMFileManagerViewController.h"
+#import "AMDocumentViewController.h"
+#import "SWRevealViewController.h"
+
+@interface AMFileManagerViewController ()
 
 @end
 
-@implementation KLViewController
+@implementation AMFileManagerViewController
 
 - (void)viewDidLoad
 {
@@ -24,6 +26,14 @@
                                                           ofType: @"plist"];
     // Build the array from the plist
     self.viewControllerData = [[NSArray alloc] initWithContentsOfFile:plistPath];
+    
+    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
+    // Set the side bar button action to show slide out menu
+    sidebarButton.target = self.revealViewController;
+    sidebarButton.action = @selector(revealToggle:);
+  
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     [super viewDidLoad];
 
@@ -44,7 +54,7 @@
     //Initialize a blank uiviewcontroller for display purposes
     UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
     
-    KLCustomViewController* viewController = [st instantiateViewControllerWithIdentifier:@"RootViewController"];
+    AMDocumentViewController* viewController = [st instantiateViewControllerWithIdentifier:@"RootViewController"];
     [viewController setInfo: navDict];
 
     //Return the custom view controller wrapped in a UINavigationController

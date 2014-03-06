@@ -1,0 +1,10 @@
+PODS:
+  - KLNoteViewController (1.0)
+
+DEPENDENCIES:
+  - KLNoteViewController
+
+SPEC CHECKSUMS:
+  KLNoteViewController: 74c80408021ebd482e2af8d162b14e23041fb06d
+
+COCOAPODS: 0.29.0
