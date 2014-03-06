@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1673E57018B68E3900E325AA /* triangular.png in Resources */ = {isa = PBXBuildFile; fileRef = 1673E56E18B68E3900E325AA /* triangular.png */; };
-		1673E57418B68E9000E325AA /* triangular@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1673E57318B68E9000E325AA /* triangular@2x.png */; };
+		16EF700C18C8259C00F41E9D /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EF700B18C8259C00F41E9D /* Medication.m */; };
 		2704735818B05D7F003AAB09 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735718B05D7F003AAB09 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2704735A18B05DCE003AAB09 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735918B05DCE003AAB09 /* AudioToolbox.framework */; };
 		2704735C18B05DD8003AAB09 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735B18B05DD8003AAB09 /* CFNetwork.framework */; };
@@ -69,8 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1673E56E18B68E3900E325AA /* triangular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangular.png; sourceTree = "<group>"; };
-		1673E57318B68E9000E325AA /* triangular@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triangular@2x.png"; sourceTree = "<group>"; };
+		16EF700A18C8259C00F41E9D /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
+		16EF700B18C8259C00F41E9D /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
 		2704735718B05D7F003AAB09 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		2704735918B05DCE003AAB09 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2704735B18B05DD8003AAB09 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -212,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				27AB0EFC18C5253900A99048 /* OperatingProcedure.h */,
+				16EF700A18C8259C00F41E9D /* Medication.h */,
+				16EF700B18C8259C00F41E9D /* Medication.m */,
 				27AB0EFD18C5253900A99048 /* OperatingProcedure.m */,
 			);
 			name = Models;
@@ -308,8 +309,6 @@
 				2786509E18B59B6C00EA6E2F /* cloud@2x.png */,
 				AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */,
 				AC74591F18B487EB00BA0DE2 /* CheckBox.png */,
-				1673E56E18B68E3900E325AA /* triangular.png */,
-				1673E57318B68E9000E325AA /* triangular@2x.png */,
 				7787CF1218806ECE004F495E /* AppDelegate.m */,
 				7787CF1118806ECE004F495E /* AppDelegate.h */,
 				7787CF0A18806ECE004F495E /* AeroMed-Info.plist */,
@@ -423,8 +422,6 @@
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				2786509F18B59B6C00EA6E2F /* cloud.png in Resources */,
 				AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */,
-				1673E57418B68E9000E325AA /* triangular@2x.png in Resources */,
-				1673E57018B68E3900E325AA /* triangular.png in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
 				278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */,
 				AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */,
@@ -452,6 +449,7 @@
 				27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */,
 				27F94E0D18B424A3001F8F4F /* AMiPhoneSignupViewController.m in Sources */,
 				27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */,
+				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
 				27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */,
