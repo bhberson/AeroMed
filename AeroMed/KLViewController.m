@@ -18,7 +18,6 @@
 {
 
 	// Do any additional setup after loading the view, typically from a nib.
-    [self.view setBackgroundColor: [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-dark-gray-tex.png"]]];
     
     //Initialize the controller data
     NSString* plistPath = [[NSBundle mainBundle] pathForResource: @"NavigationControllerData"
@@ -45,7 +44,7 @@
     //Initialize a blank uiviewcontroller for display purposes
     UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
     
-    KLCustomViewController* viewController = [st instantiateViewControllerWithIdentifier:@"RootViewController"];
+    KLCustomViewController* viewController = [st instantiateViewControllerWithIdentifier:@"ViewController"];
     [viewController setInfo: navDict];
 
     //Return the custom view controller wrapped in a UINavigationController
