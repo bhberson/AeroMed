@@ -53,6 +53,13 @@
 		7787CF1E18806ECE004F495E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0618806ECE004F495E /* UIKit.framework */; };
 		7787CF2618806ECE004F495E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7787CF2418806ECE004F495E /* InfoPlist.strings */; };
 		7787CF2818806ECE004F495E /* AeroMedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF2718806ECE004F495E /* AeroMedTests.m */; };
+		779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181AB18C82E9000AE1019 /* KLNoteViewController.m */; };
+		779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 779181AD18C82F7C00AE1019 /* Podfile.txt */; };
+		779181B318C832A500AE1019 /* KLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B018C832A500AE1019 /* KLViewController.m */; };
+		779181B418C832A500AE1019 /* KLCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* KLCustomViewController.m */; };
+		779181B718C832E800AE1019 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 779181B618C832E800AE1019 /* NavigationControllerData.plist */; };
+		779181BB18C833E200AE1019 /* bar-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181B918C833E200AE1019 /* bar-mid.png */; };
+		779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181BA18C833E200AE1019 /* bar-mid@2x.png */; };
 		AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = AC74591F18B487EB00BA0DE2 /* CheckBox.png */; };
 		AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */; };
 /* End PBXBuildFile section */
@@ -130,6 +137,16 @@
 		7787CF2318806ECE004F495E /* AeroMedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AeroMedTests-Info.plist"; sourceTree = "<group>"; };
 		7787CF2518806ECE004F495E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7787CF2718806ECE004F495E /* AeroMedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroMedTests.m; sourceTree = "<group>"; };
+		779181AA18C82E9000AE1019 /* KLNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLNoteViewController.h; sourceTree = "<group>"; };
+		779181AB18C82E9000AE1019 /* KLNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLNoteViewController.m; sourceTree = "<group>"; };
+		779181AD18C82F7C00AE1019 /* Podfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.txt; sourceTree = "<group>"; };
+		779181AF18C832A500AE1019 /* KLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLViewController.h; sourceTree = "<group>"; };
+		779181B018C832A500AE1019 /* KLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLViewController.m; sourceTree = "<group>"; };
+		779181B118C832A500AE1019 /* KLCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCustomViewController.h; sourceTree = "<group>"; };
+		779181B218C832A500AE1019 /* KLCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCustomViewController.m; sourceTree = "<group>"; };
+		779181B618C832E800AE1019 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
+		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
+		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
 		AC74591F18B487EB00BA0DE2 /* CheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBox.png; sourceTree = "<group>"; };
 		AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBox@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,11 +217,13 @@
 			path = ../css;
 			sourceTree = "<group>";
 		};
-		27CDBCB8188095D6000960F3 /* Views */ = {
+		27CDBCB8188095D6000960F3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
+				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
 			);
-			name = Views;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		27CDBCB9188095EE000960F3 /* Models */ = {
@@ -293,9 +312,10 @@
 				27CDBCBB18809633000960F3 /* User Interface */,
 				2720373218A306AF000BC38A /* iPhone View Controllers */,
 				27CDBCBA188095FC000960F3 /* iPad View Controllers */,
+				779181B518C832BD00AE1019 /* View Controllers */,
 				27CDBCB9188095EE000960F3 /* Models */,
 				27C8060018A443CF00243EB1 /* css */,
-				27CDBCB8188095D6000960F3 /* Views */,
+				27CDBCB8188095D6000960F3 /* Classes */,
 				7787CF1418806ECE004F495E /* Images.xcassets */,
 				7787CF0918806ECE004F495E /* Supporting Files */,
 			);
@@ -305,10 +325,8 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2786509D18B59B6C00EA6E2F /* cloud.png */,
-				2786509E18B59B6C00EA6E2F /* cloud@2x.png */,
-				AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */,
-				AC74591F18B487EB00BA0DE2 /* CheckBox.png */,
+				779181B618C832E800AE1019 /* NavigationControllerData.plist */,
+				779181B818C833D200AE1019 /* Images */,
 				7787CF1218806ECE004F495E /* AppDelegate.m */,
 				7787CF1118806ECE004F495E /* AppDelegate.h */,
 				7787CF0A18806ECE004F495E /* AeroMed-Info.plist */,
@@ -316,6 +334,7 @@
 				7787CF0E18806ECE004F495E /* main.m */,
 				7787CF1018806ECE004F495E /* AeroMed-Prefix.pch */,
 				270DB5341887201600573F3F /* Common.m */,
+				779181AD18C82F7C00AE1019 /* Podfile.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -336,6 +355,30 @@
 				7787CF2418806ECE004F495E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		779181B518C832BD00AE1019 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				779181AF18C832A500AE1019 /* KLViewController.h */,
+				779181B018C832A500AE1019 /* KLViewController.m */,
+				779181B118C832A500AE1019 /* KLCustomViewController.h */,
+				779181B218C832A500AE1019 /* KLCustomViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		779181B818C833D200AE1019 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				779181B918C833E200AE1019 /* bar-mid.png */,
+				779181BA18C833E200AE1019 /* bar-mid@2x.png */,
+				2786509D18B59B6C00EA6E2F /* cloud.png */,
+				2786509E18B59B6C00EA6E2F /* cloud@2x.png */,
+				AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */,
+				AC74591F18B487EB00BA0DE2 /* CheckBox.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,8 +460,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779181BB18C833E200AE1019 /* bar-mid.png in Resources */,
+				779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */,
 				2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */,
 				7720280318B12933002302A4 /* style.css in Resources */,
+				779181B718C832E800AE1019 /* NavigationControllerData.plist in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				2786509F18B59B6C00EA6E2F /* cloud.png in Resources */,
 				AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */,
@@ -427,6 +473,7 @@
 				AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,
+				779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,8 +495,10 @@
 				2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */,
 				27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */,
 				27F94E0D18B424A3001F8F4F /* AMiPhoneSignupViewController.m in Sources */,
+				779181B318C832A500AE1019 /* KLViewController.m in Sources */,
 				27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */,
 				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
+				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
 				27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */,
@@ -458,6 +507,7 @@
 				27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
 				27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */,
+				779181B418C832A500AE1019 /* KLCustomViewController.m in Sources */,
 				2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */,
 				27F94E1018B424C2001F8F4F /* AMiPhoneLoginViewController.m in Sources */,
 				27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */,

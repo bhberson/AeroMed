@@ -324,6 +324,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="DRC-gf-XVz" kind="custom" customClass="SWRevealViewControllerSegue" id="dcv-uf-iCc"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="checklist" id="fc2-L1-SbB">
                                 <rect key="frame" x="0.0" y="110" width="320" height="44"/>
@@ -378,7 +381,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thV-YR-flX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="-1163"/>
+            <point key="canvasLocation" x="84" y="-1189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uly-fF-q4m">
@@ -482,6 +485,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xa-iu-JnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1360" y="-502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hqo-N1-k9d">
+            <objects>
+                <viewController id="DRC-gf-XVz" customClass="KLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g2h-te-40j"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Xc-j7-w58"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHf-jR-RHh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXt-ol-7D9">
+                                <rect key="frame" x="113" y="30" width="94" height="30"/>
+                                <state key="normal" title="Reload Cards">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadCardData:" destination="DRC-gf-XVz" eventType="touchUpInside" id="v2i-Kz-o0q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yXt-ol-7D9" firstAttribute="top" secondItem="dHf-jR-RHh" secondAttribute="top" constant="30" id="c2B-IW-sCX"/>
+                            <constraint firstItem="yXt-ol-7D9" firstAttribute="centerX" secondItem="dHf-jR-RHh" secondAttribute="centerX" id="dVd-Bd-q4D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="23X-yK-WrC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWh-eV-5J7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="-2034"/>
+        </scene>
+        <!--Custom View Controller-->
+        <scene sceneID="qwN-s5-iZH">
+            <objects>
+                <viewController storyboardIdentifier="RootViewController" id="q16-hC-oEp" customClass="KLCustomViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xbc-CH-Unj"/>
+                        <viewControllerLayoutGuide type="bottom" id="WkR-9o-e3e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iot-V5-BE1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHt-90-dCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="-2028"/>
         </scene>
     </scenes>
     <resources>
