@@ -44,7 +44,7 @@
     //Initialize a blank uiviewcontroller for display purposes
     UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
     
-    KLCustomViewController* viewController = [st instantiateViewControllerWithIdentifier:@"ViewController"];
+    KLCustomViewController* viewController = [st instantiateViewControllerWithIdentifier:@"RootViewController"];
     [viewController setInfo: navDict];
 
     //Return the custom view controller wrapped in a UINavigationController
