@@ -312,7 +312,7 @@
 				27CDBCBB18809633000960F3 /* User Interface */,
 				2720373218A306AF000BC38A /* iPhone View Controllers */,
 				27CDBCBA188095FC000960F3 /* iPad View Controllers */,
-				779181B518C832BD00AE1019 /* View Controllers */,
+				779181B518C832BD00AE1019 /* Mutual View Controllers */,
 				27CDBCB9188095EE000960F3 /* Models */,
 				27C8060018A443CF00243EB1 /* css */,
 				27CDBCB8188095D6000960F3 /* Classes */,
@@ -357,7 +357,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		779181B518C832BD00AE1019 /* View Controllers */ = {
+		779181B518C832BD00AE1019 /* Mutual View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				779181AF18C832A500AE1019 /* AMFileManagerViewController.h */,
@@ -365,7 +365,7 @@
 				779181B118C832A500AE1019 /* AMDocumentViewController.h */,
 				779181B218C832A500AE1019 /* AMDocumentViewController.m */,
 			);
-			name = "View Controllers";
+			name = "Mutual View Controllers";
 			sourceTree = "<group>";
 		};
 		779181B818C833D200AE1019 /* Images */ = {

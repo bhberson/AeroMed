@@ -1,0 +1,859 @@
+{
+  "results":[
+    {
+      "title":"Acute Alcohol Withdrawal",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Patient and Crew Safety due to patient anxiety, etc"
+      ],
+      "interventions":[
+        "Treat withdrawal symptoms aggressively",
+        "Anticipate Seizures",
+        "Consider associated diagnosis",
+        "Head injury",
+        "GI Bleed",
+        "Infection/Sepsis"
+      ],
+      "testAndStudies":[
+        "Blood Alcohol Level",
+        "CMP",
+        "Head CT",
+        "12 Lead ECG"
+      ],
+      "medications":[
+        "Benzodiazepines",
+        "Diprovan (propofol)",
+        "Thiamine",
+        "Glucose"
+      ],
+      "checklist":[
+        "Duration/Amount of alcohol ingestion",
+        "Time of last alcohol intake",
+        "Other substance ingestion"
+      ],
+      "impressions":[
+        "Acute alcohol withdrawal",
+        "Alcohol Dependence",
+        "Delirium Tremens",
+        "Acute agitation"
+      ],
+      "otherConsiderations":[
+
+      ]
+    },
+    {
+      "title":"Anaphylaxis",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Consider early airway intervention"
+      ],
+      "interventions":[
+        "Monitor for hypotension",
+        "Prepare for advanced airway intervention"
+      ],
+      "testAndStudies":[
+
+      ],
+      "medications":[
+        "Epinephrine (ensure correct IV bolus/gtt concentration",
+        "Steroid",
+        "Benadryl",
+        "Albuterol",
+        "Racemic Epinephrine",
+        "H2 Blocker",
+        "Vasopresor (if applicable)"
+      ],
+      "checklist":[
+        "Allergy History",
+        "Time of onset"
+      ],
+      "impressions":[
+        "Acute anaphylactic reaction",
+        "Acute airway obstruction",
+        "Anaphylactic shock"
+      ],
+      "otherConsiderations":[
+
+      ]
+    },
+    {
+      "title":"Aortic Aneurysm and Dissection",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "This is potentially a surgical emergency.",
+        "Being coordination with accepting facility/surgeon ASAP",
+        "Take blood into sending facility"
+      ],
+      "interventions":[
+        "Keep BP < 120 systolic",
+        "Hang blood tubing in anticipation of transfusion"
+        "If BP < 90 systolic, transfuse PRBC",
+        "Pain/Nausea management",
+        "Check pulses and BP in all 4 extremities"
+      ],
+      "testAndStudies":[
+        "Coags",
+        "Hgb",
+        "CT and/or US",
+        "CXR",
+        "Type and Screen",
+        "12 Lead EKG"
+      ],
+      "medications":[
+        "Labatelol",
+        "----OR----",
+        "Nipride"
+      ],
+      "checklist":[
+        "Location",
+        "CT results",
+        "Pulses in all 4 extremities",
+        "Blood Pressure Management"
+      ],
+      "impressions":[
+        "Abdominal Aneurysm, Ruptured",
+        "Abdominal Aneurysm, Without Mention of Rupture",
+        "Dissection of Aorta, unspecified site"
+      ],
+      "otherConsiderations":[
+				"Typing Systems Include:",
+        "DeBakey (Type I, II, III)",
+        "Stanford (Type A & B)",
+        "Treatment may vary (surgical versus medical) depending on aneurysm location"
+      ]
+    },
+    {
+      "title":"Unstable Arrhythmias",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Stabilize prior to transport",
+        "Notify PIC prior to defibrillation/cardioversion"
+      ],
+      "interventions":[
+        "Utilize ACLS/PALS/NRP guidelines",
+        "Place defibrillation pads",
+        "Cardiovert, defibrillate, pace when appropriate",
+        "Airway management",
+        "Medication administration"
+      ],
+      "testAndStudies":[
+        "12 Lead ECG",
+        "Electrolytes"
+      ],
+      "medications":[
+        "ACLS / PALS / NRP"
+      ],
+      "checklist":[
+        "Response to interventions",
+        "Printed ECG strips",
+        "Time of onset"
+      ],
+      "impressions":[
+        "Arrhythmia type",
+        "Identify cause",
+        "Other Symptoms (Chest Pain, Nausea, etc.)"
+      ],
+      "otherConsiderations":[
+
+      ]
+    },
+    {
+      "title":"Arterial Occlusion",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Transport with affected extremity in position of comfort",
+        "This is a surgically urgent/emergent diagnosis",
+        "Pulses via Doppler",
+        "Examine for changes ruing transport (worsening or loss of pulses)"
+      ],
+      "interventions":[
+        "Pain control",
+        "Anticoagulants as directed by vascular surgeon",
+        "Oxygen"
+      ],
+      "testAndStudies":[
+        "Angiogram",
+        "Coags"
+      ],
+      "medications":[
+       "Heparin/Lovenox",
+       "Aspirin"
+      ],
+      "checklist":[
+        "INR",
+        "Ischemia time",
+        "Vascular assessement"
+      ],
+      "impressions":[
+        "Arterial Embolism and Thrombosis of Unspecified Artery",
+        "Pain, acute"
+      ],
+      "otherConsiderations":[
+
+      ]
+    },
+    {
+      "title":"Asthma and COPD",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Ensure adequate amount of nebulizer medications for transport",
+        "If on Heliox must be transported by ground with RT"
+      ],
+      "interventions":[
+        "Airway management",
+        "Medication administration",
+        "Use of asthma/COPD ase ventilator settings (PEEP 0-5)",
+        "Consider BIPAPA -vs- Intubation",
+        "Beware of auto-PEEP and pneumothorax during air transport phase"
+      ],
+      "testAndStudies":[
+        "CXR",
+        "ABG"
+      ],
+      "medications":[
+       "Nebulizers",
+       "Steroid",
+       "IVF (hold with COPD)",
+       "Magnesium",
+       "Ketamine",
+       "HeliOx"
+      ],
+      "checklist":[
+        "History",
+        "Previous intubation",
+        "Home medication/O2 Therapy",
+        "Frequency of Exacerbations",
+        "Code Status (COPD)"
+      ],
+      "impressions":[
+        "Acute Asthma Exacerbations",
+        "Acute COPD Exacerbations",
+        "Respiratory Failure/Distress",
+        "Status Asthmaticus"
+      ],
+      "otherConsiderations":[
+				"Status Asthmaticus with Arrest",
+        "1. Disconnect Ventilator",
+        "2. Manual compression of chest",
+        "3. Bilateral Chest Tubes"
+      ]
+    },
+    {
+      "title":"Carbon Monoxide Poisoning",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Appropriate Receiving Facility (consider HBO)",
+        "Anticipate multiple patients",
+        "Ensure adequate oxygen availability for transport"
+      ],
+      "interventions":[
+        "100% NRB or 100% FIO2 if intubated or CPAP",
+        "Screen for pregnancy, cardiac signs and symptoms"
+      ],
+      "testAndStudies":[
+        "ABG (with CO levels)",
+        "12 Lead EKG",
+        "Cardiac Enzymes (>65 years)"
+      ],
+      "medications":[
+       "Oxygen"
+      ],
+      "checklist":[
+        "Route and FIO2 of Oxygen Administration",
+        "CO Level",
+        "Level of Consciousness"
+      ],
+      "impressions":[
+        "Carbon Monoxide Poisoning",
+        "Toxic Effect of Carbon Monoxide"
+      ],
+      "otherConsiderations":[
+				"Consider accidental versus intentional cause",
+        "Consider other possible toxic exposure (Cyanide, polydrug)"
+      ]
+    },
+    {
+      "title":"Cardiac Arrest / Arrest After Flight Team Arrival",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Do NOT life if patient is an adult in Cardiac Arrest",
+        "May consider lift if pediatric",
+        "Follow ACLS/PALS/NRP guidelines",
+        "If arrest occurs during transport phase and unnsuccessful in ROSC",
+        "During loading phase return to ED",
+        "During flight phase:",
+        "Consider continuing to destination and divert to ED",
+        "Notify flight communications and request additional help on helistop",
+        "Notify PIC prior to defibrillation or cardioversion"
+        "Do not attempt during takeoff or landing"
+      ],
+      "interventions":[
+        "Place pads on all patients who are unstable",
+        "Consider therapeutic hypothermia protocol if ROSC",
+        "Consider causes of arrest"
+      ],
+      "testAndStudies":[
+  
+      ],
+      "medications":[
+       "Per ACLS/PALS/NRP guidelines"
+      ],
+      "checklist":[
+        "Time of onset",
+        "Any prior arrests",
+        "Reason for termination",
+        "All interventions",
+        "Printed ECG strips"
+      ],
+      "impressions":[
+        "Cardiopulmonary arrest",
+        "Underlying cause (of cardiac arrest)"
+      ],
+      "otherConsiderations":[
+				"Discuss code status and possible diversion with family prior to departure if arrest anticipated",
+        "See Declaration of Death Cessation of Resuscitation Efforts SOP"
+      ]
+    },
+    {
+      "title":"Congestive Heart Failure and Pulmonary Edema",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Transport in a position of comfort (HOB elevated)"
+      ],
+      "interventions":[
+        "Supplemental 02 vs BIPAP vs Intubation",
+        "BP control (Nitrates and Morphine)",
+        "Diurese",
+        "Foley (monitor output)"
+      ],
+      "testAndStudies":[
+        "CXR",
+        "12 Lead EKG",
+        "CBC",
+        "CMP",
+        "BNP"
+      ],
+      "medications":[
+       "Nitrates",
+       "Diuretics if volume overload"
+      ],
+      "checklist":[
+        "BNP",
+        "CXR Interpretation"
+      ],
+      "impressions":[
+        "CHF Exacerbation",
+        "Pulmonary Edema",
+        "Respiratory Distress/Failure",
+        "Hypoxia"
+      ],
+      "otherConsiderations":[
+
+      ]
+    },
+    {
+      "title":"Disseminated Instravascular Coagulation",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Determine need for blood products (e.g. FFP) and consider obtaining from SHBWH prior to arrival at sending hospital",
+        "Consultation with Obstetrician prior to launch and/or during appropriate phases of transport (if applicable)"
+      ],
+      "interventions":[
+        "Correct coagulopathy only if at high risk for bleeding, active bleeding or prior to required invasive procedure",
+        "Treate underlying disease/cause",
+        "Examples: Sepsis, Retained products of conception"
+      ],
+      "testAndStudies":[
+        "Coags",
+        "D-Dimer",
+        "CBC"
+      ],
+      "medications":[
+       "Antibiotics",
+       "Blood products",
+       "Vitamin K",
+       "Heparing (consider with consultation)"
+      ],
+      "checklist":[
+        "Bleeding sites/amount",
+        "Underlying cause"
+      ],
+      "impressions":[
+        "Disseminated Intravascular Coagulation",
+        "Sepsis",
+        "Complications of pregnancy",
+        "Coagulopathy"
+      ],
+      "otherConsiderations":[
+				"Avoid invasive procedures (consider risk/benefit)"
+      ]
+    },
+    {
+      "title":"Electrolyte Imbalance and Renal Failure",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+      	"Appropriate receiving facility able to administer dialysis"
+      ],
+      "interventions":[
+        "Correct acidosis FIRST in presence of hyperkalemia",
+        "Appropriate fluid management and output monitoring",
+        "Electrolyte correction (specifically K)",
+        "Do not correct hyponatremia too quickly"
+      ],
+      "testAndStudies":[
+        "CMP",
+        "Glucose",
+        "ABG or VBG",
+        "12 Lead EKG"
+      ],
+      "medications":[
+       "Kaxolate",
+       "Insulin with D50. Check glucose prior to administration and hold D50 if severely hyperglycemic",
+       "Calcium Chloride (only if QRS complex widening",
+       "Albuterol",
+       "Bicarbonate (only if acidotic)"
+      ],
+      "checklist":[
+        "I & O",
+        "12 Lead ECG", 
+        "Fistula Exam or Dialysis port site exam if applicable",
+        "K+",
+        "pH"
+      ],
+      "impressions":[
+      	"Hypo/Hyper Electrolyte imbalance",
+      	"Renal Failure + Underlying cause"
+      ],
+      "otherConsiderations":[
+				"No BP in extremity if fistula present and pass information on in report"
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+    {
+      "title":"",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        
+      ],
+      "interventions":[
+        
+      ],
+      "testAndStudies":[
+        
+      ],
+      "medications":[
+       
+      ],
+      "checklist":[
+        
+      ],
+      "impressions":[
+        
+      ],
+      "otherConsiderations":[
+				
+      ]
+    },
+  ]
+}
