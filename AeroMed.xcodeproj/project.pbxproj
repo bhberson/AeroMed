@@ -191,8 +191,6 @@
 		2720373218A306AF000BC38A /* iPhone View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				27A9690E18B06D010010A721 /* SWRevealViewController.h */,
-				27A9690F18B06D010010A721 /* SWRevealViewController.m */,
 				2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */,
 				2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */,
 				27A6619A18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.h */,
@@ -215,15 +213,6 @@
 			);
 			name = css;
 			path = ../css;
-			sourceTree = "<group>";
-		};
-		27CDBCB8188095D6000960F3 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
-				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 		27CDBCB9188095EE000960F3 /* Models */ = {
@@ -315,7 +304,6 @@
 				779181B518C832BD00AE1019 /* Mutual View Controllers */,
 				27CDBCB9188095EE000960F3 /* Models */,
 				27C8060018A443CF00243EB1 /* css */,
-				27CDBCB8188095D6000960F3 /* Classes */,
 				7787CF1418806ECE004F495E /* Images.xcassets */,
 				7787CF0918806ECE004F495E /* Supporting Files */,
 			);
@@ -325,6 +313,10 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
+				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
+				27A9690E18B06D010010A721 /* SWRevealViewController.h */,
+				27A9690F18B06D010010A721 /* SWRevealViewController.m */,
 				779181B618C832E800AE1019 /* NavigationControllerData.plist */,
 				779181B818C833D200AE1019 /* Images */,
 				7787CF1218806ECE004F495E /* AppDelegate.m */,

@@ -1,16 +1,15 @@
 //
-//  KLViewController.h
-//  KLNoteViewController
+//  AMFileManagerViewController.h
+//  AeroMed
 //
-//  Created by Kieran Lafferty on 2012-12-29.
-//  Copyright (c) 2012 Kieran Lafferty. All rights reserved.
-//
+//  Copyright (c) 2014 GVSU. All rights reserved.
 
 #import <UIKit/UIKit.h>
 #import "KLNoteViewController.h"
 
-@interface AMFileManagerViewController : KLNoteViewController
-- (IBAction)reloadCardData:(id)sender;
+@interface AMFileManagerViewController : KLNoteViewController <NSCoding>
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, strong) NSArray* viewControllerData;
+@property (weak, nonatomic) IBOutlet UILabel *centerText;
+@property (strong, nonatomic) NSMutableArray *viewControllerData;
+@property (weak, nonatomic) NSArray *navigationStructure;
 @end

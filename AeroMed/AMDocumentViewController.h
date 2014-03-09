@@ -1,13 +1,12 @@
 //
-//  KLCustomViewController.h
-//  KLNoteViewController
+//  AMDocumentViewController.h
+//  AeroMed
 //
-//  Created by Kieran Lafferty on 2013-01-03.
-//  Copyright (c) 2013 Kieran Lafferty. All rights reserved.
-//
+//  Copyright (c) 2014 GVSU. All rights reserved.
 
 #import <UIKit/UIKit.h>
 
-@interface AMDocumentViewController : UIViewController
+@interface AMDocumentViewController : UIViewController <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) NSDictionary* info;
 @end

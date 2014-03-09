@@ -1,14 +1,14 @@
 //
-//  KLViewController.m
-//  KLNoteViewController
+//  AMFileManagerViewController.m
+//  AeroMed
 //
-//  Created by Kieran Lafferty on 2012-12-29.
-//  Copyright (c) 2012 Kieran Lafferty. All rights reserved.
-//
+//  Copyright (c) 2014 GVSU. All rights reserved.
 
 #import "AMFileManagerViewController.h"
 #import "AMDocumentViewController.h"
 #import "SWRevealViewController.h"
+
+#define kStructureKey @"Structure"
 
 @interface AMFileManagerViewController ()
 
@@ -18,14 +18,10 @@
 
 - (void)viewDidLoad
 {
+    // Get data from parse
+    //TODO: select a company and handle no internet connection
+    [self queryForFiles];
 
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    //Initialize the controller data
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource: @"NavigationControllerData"
-                                                          ofType: @"plist"];
-    // Build the array from the plist
-    self.viewControllerData = [[NSArray alloc] initWithContentsOfFile:plistPath];
     
     UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
     // Set the side bar button action to show slide out menu
@@ -39,11 +35,50 @@
 
 }
 
+- (void) queryForFiles {
+    PFQuery *query = [PFQuery queryWithClassName:@"NavigationStructure"];
+    [query whereKey:@"organization" equalTo:@"Aero Med"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            self.viewControllerData = [[NSMutableArray alloc] init];
+            NSLog(@"Found %d", objects.count);
+            PFObject *company = [objects firstObject];
+            NSLog(@"company: %@", company[@"organization"]);
+            
+            // Get the structure property which is an array
+            NSArray *structure = company[@"structure"];
+            
+            // Convert the array into json
+            NSError *err;
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:structure options:NSJSONWritingPrettyPrinted error:&err];
+            
+            // Returns an array of dictionaries
+            NSArray *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&err];
+            
+            // Loop through our top level structures and store the dictionary info
+            for (int i = 0; i < [json count]; i++) {
+                NSMutableDictionary *data = [json objectAtIndex:i];
+                [self.viewControllerData addObject:data];
+            }
+            
+            // Reload the data
+            [self reloadDataAnimated:YES];
+            [self.centerText removeFromSuperview];
+        } else {
+            self.viewControllerData = [[NSArray alloc] init];
+            [self.centerText setText:@"Need internet connection"];
+            //TODO: refresh when connection available
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Note card control
 - (NSInteger)numberOfControllerCardsInNoteView:(KLNoteViewController*) noteView {
     return  [self.viewControllerData count];
 }
@@ -67,8 +102,17 @@
     
     NSLog(@"%@ changed state %ld", [navDict objectForKey:@"title"], toState);
 }
-- (IBAction)reloadCardData:(id)sender {
-    [self reloadDataAnimated:YES];
-    
-}
+
+#pragma mark - Saving and loading data
+
+//- (void)encodeWithCoder:(NSCoder *)encoder {
+//    [encoder encodeObject:self.navigationStructure forKey:kStructureKey];
+//}
+//
+//- (id)initWithCoder:(NSCoder *)decoder {
+//    NSArray *structure = [decoder decodeObjectForKey:kStructureKey];
+//    self.navigationStructure = structure;
+//    return self;
+//}
+
 @end

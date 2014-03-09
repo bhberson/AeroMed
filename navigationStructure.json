@@ -1,0 +1,1096 @@
+{
+	"results":[
+		{
+			"organization":"Aero Med",
+			"structure":[
+				{
+					"title":"General Patient Care Information",
+					"type":"folder",
+					"contains":[
+					
+					]
+				},
+				{
+					"title":"Logistics",
+					"type":"folder",
+					"contains":[
+						{
+							"title":"Trauma Activiation Guidelines",
+							"type":"folder",
+							"contains":[
+								{
+									"title":"Adult and Pediatric Trauma Activiation Summary of Changes",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Pediatric Trauma Activation Guideline Flowchart",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"SHBW Trauma Activation Criteria 8 20 2013",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title":"Medical Diagnoses",
+					"type":"folder",
+					"contains":[
+						{
+							"title":"ACS, STEMI, NSTEMI",
+							"type":"folder",
+							"contains":[
+								{
+									"title":"Acute Coronary Syndrome and STEMI and NSTEMI",
+									"type":"object",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Appropriate Cardiac Cath Lab Activiation",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Brillnt Flyer 8",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"NEW STEMI Protocol Summary 8",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								}
+							]
+						},
+						{
+							"title":"Stroke Ischemic",
+							"type":"folder",
+							"contains":[
+								{
+									"title":"2013 Stroke Update Newsletter - Inclusion and Exclusion for IV tPA",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"SH Acute Ischemic Stroke",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Stroke Ischemic",
+									"type":"object",
+									"contains":[
+									
+									]
+								}
+							]
+						},
+						{
+							"title":"Acute Alcohol Withdrawal",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Anaphylaxis",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Aortic Aneurysm and Dissection",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Arrhythmias, Unstable",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Arterial Occlusion",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Asthma and COPD",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Carbon Monoxide Poisoning",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Cardiac Arrest",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Congestive Heart Failure and Pulmonary Edema",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Disseminated Intravascular Coagulation",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Electrolyte Imbalance and Renal Failure",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Epiglottitis",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"GI Bleed",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Hyperglycemia and Diabetic Ketoacidosis and Hyperosmolar Nonketotic Coma",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Hypertensive Crisis",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"LVAD Transport Considerations",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Meningitis",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Necrotizing Fasciitis",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Pulmonary Embolus",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Respiratory Failure",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Sepsis",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Sickle Cell Crisis",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Status Epilepticus and Seizures",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Stroke Hermorrhagic",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Thrombocytopenia and Heparin Induced Thrombocytopenia",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Toxic Ingestion and Exposure",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Violent or Combative Patient",
+							"type":"object",
+							"contains":[
+									
+							]
+						}
+					]
+				},
+				{
+					"title":"Medications",
+					"type":"folder",
+					"contains":[
+						{
+							"title":"Drugs to be Reviewed",
+							"type":"folder",
+							"contains":[
+								{
+									"title":"Asprin-salicylic Acid",
+									"type":"object",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Atrovent-albuterol and Ipratropium",
+									"type":"object",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Dilaudid-hydromorphone",
+									"type":"object",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Propofol-diprivan",
+									"type":"object",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Tranexamic Acid-TXA",
+									"type":"object",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"Tylenol-acetaminophen",
+									"type":"object",
+									"contains":[
+									
+									]
+								}
+							]
+						},
+						{
+							"title":"TXA",
+							"type":"folder",
+							"contains":[
+								{
+									"title":"Tranexamic Acid TXA Pediatric Trauma Guideline",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								}
+							]
+						},
+						{
+							"title":"Adenocard-adenosine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Adrenalin-epinephrine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Amidate-etomidate",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Anectine-succinlycholine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Apresoline-hydralazine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Ativan-lorazepam",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Atropine-atropine Sulfate",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Atrovent-ipratopium",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Benadryl-diphenhydramine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Brethine-terbutaline Sulfate",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Brillinta-tricagrelor",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Calcium Chloride",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Calcium Gluconate",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Cardene-nicardipine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Cardizem-diltiazem",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Cordarone-amiodarone",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Dextrose 25, 50%",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Dilantin-phenytoin",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Dobutrex-dobutamine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"GlucaGen-glucagon",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Haldol-Haloperidol",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Heparin",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Humulin R-insulin",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Inapsine-droperidol",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Inotropin-dopamine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Ketalar-ketamine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Lasix-furosemide",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Levophed-norepinephrine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Lidocaine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Lopressor-metoprolol",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Magnesium Sulfate",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Methergine-methylergonovine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Morphine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Narcan-naloxone",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Neosynephrine-phenylephrine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Nesiritide-natrecor",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Nimbex-cisatracurium",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Nipride-nitroprusside",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Nitroglycerin",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Norcuron-vecuronium",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Normodyne-labetalol",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Osmitrol-mannitol",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Pavulon-pancuronium Review",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Phenergan-promethazine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Pitocin-oxytocin",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Pitressin-vasopressin",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Plavix-clopidogrel - Reviewed",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Primacor-milrinone",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Pronestly-procainamide",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Prostin-dinoprostone",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Racemic Epi-racephinephrine",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Regitine-phentolamine - Reviewed",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Sodium Bicarbonate - Reviewed",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Solfoton-phenobarbital - Reviewed",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Solu-medrol-methylprednisolone",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Sublimaze-fentanyl",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"TPA - Reviewed",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Valium-diazepam",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Ventolin-albuterol",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Versed-midazolam",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Zemuron-rocuronium",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Zofran-ondansetron - Reviewed",
+							"type":"object",
+							"contains":[
+									
+							]
+						}
+					]
+				},
+				{
+					"title":"OB Impressions",
+					"type":"folder",
+					"contains":[
+						{
+							"title":"Abrupto Placenta and Placenta Previa",
+							"type":"object",
+							"contains":[
+							
+							]
+						},
+						{
+							"title":"Cardiac Arrest in Term Pregnancy",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Delivery Eminent",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"General High Risk OB Guidelines",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Newborn Resusitation",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Postpartum Hemorrhage",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Pre-Term Labor",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Preeclampsia and Eclampsia",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Prolapsed Cord",
+							"type":"object",
+							"contains":[
+									
+							]
+						}
+					]
+				},
+				{
+					"title":"Procedures",
+					"type":"folder",
+					"contains":[
+						{
+							"title":"Hypothermia Protocol",
+							"type":"folder",
+							"contains":[
+								{
+									"title":"TH Protocol Documentation",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								},
+								{
+									"title":"TH for Referral Protocol Fax",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								},
+														{
+									"title":"TH Posting for Flight Physician or Nurse",
+									"type":"pdf",
+									"contains":[
+									
+									]
+								}
+							]
+						},
+						{
+							"title":"Blood Product Administration",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Cardiac Pacing - Transvenous",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Continuous Positive Airway Pressure CPAP-BIPAP",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Cricothyrotomy - Needle",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Cricothytomy - Open",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Hemorrhage - Severe",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"King Airway Insertion",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Pericardiocentesis",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Rapid Sequence Intubation",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Thoracostomy",
+							"type":"object",
+							"contains":[
+									
+							]
+						}
+					]
+				},	
+				{
+					"title":"Trauma Diagnoses",
+					"type":"folder",
+					"contains":[
+						{
+							"title":"Airway Management",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Bites",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Breathing Management",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Burns-thermal, Chemical, and Electrical",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Circulation Management",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Closed Head Injury",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Cold Injury",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Decompression Syndrome, Bends",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Drowning",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Heat Injury",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Hemorrhage Control",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Medical SOP Template",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"OB Trauma",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Orthopaedic Trauma, Major",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Penetrating Trauma",
+							"type":"object",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Trauma, General",
+							"type":"object",
+							"contains":[
+									
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

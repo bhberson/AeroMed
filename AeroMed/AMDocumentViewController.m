@@ -1,19 +1,32 @@
 //
-//  KLCustomViewController.m
-//  KLNoteViewController
+//  AMDocumentViewController.m
+//  AeroMed
 //
-//  Created by Kieran Lafferty on 2013-01-03.
-//  Copyright (c) 2013 Kieran Lafferty. All rights reserved.
-//
-
+//  Copyright (c) 2014 GVSU. All rights reserved.
 #import "AMDocumentViewController.h"
 
 @implementation AMDocumentViewController
+
 -(void) viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBackgroundImage: [UIImage imageNamed:[self.info objectForKey:@"image"]]
-                                                  forBarMetrics: UIBarMetricsDefault];
+    //TODO: Handle ios 6 bar color
+    
+    // Set right barbutton item to display type 
+    NSString *type = [self.info objectForKey:@"type"];
+    UIBarButtonItem *displayType = [[UIBarButtonItem alloc] initWithTitle:type style:UIBarButtonItemStylePlain target:self action:nil];
+    self.navigationItem.rightBarButtonItem = displayType;
+    [displayType setEnabled:NO];
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.200 green:0.749 blue:1.000 alpha:1.000]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
+    
+    [self.scrollView setDelegate:self];
 }
 
+
+#pragma mark - Scrollview methods 
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"Scrolling");
+}
 @end
