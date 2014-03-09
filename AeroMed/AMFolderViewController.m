@@ -33,6 +33,7 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.200 green:0.749 blue:1.000 alpha:1.000]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
     _navigationStructure = [self.info objectForKey:@"contains"];
+
    // [self.tableView reloadData];
 }
 
@@ -62,7 +63,7 @@
     
     // Data for cell
     NSDictionary *data = [_navigationStructure objectAtIndex:indexPath.row];
-    NSLog(@"%@", data);
+   // NSLog(@"%@", data);
     
     static NSString *CellIdentifier = @"myCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];

@@ -422,57 +422,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yon-Hc-O89">
-                                <rect key="frame" x="20" y="88" width="30" height="30"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Transport" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQx-mN-0YY">
+                                <rect key="frame" x="89" y="45" width="142" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="CheckBox.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTap1:" destination="ItR-26-vAv" eventType="touchUpInside" id="dZ9-7a-Tmd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBp-Xo-wjC">
-                                <rect key="frame" x="20" y="141" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="CheckBox.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTap2:" destination="ItR-26-vAv" eventType="touchUpInside" id="8nO-SX-nEh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0B-tg-be6">
-                                <rect key="frame" x="20" y="194" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="CheckBox.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTap3:" destination="ItR-26-vAv" eventType="touchUpInside" id="u14-Q6-qP3"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monitor Heart Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmN-k2-UfE">
-                                <rect key="frame" x="58" y="88" width="250" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.22745099660000001" green="0.79607850309999995" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check Blood Pressure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-jf-6a1">
-                                <rect key="frame" x="58" y="141" width="250" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHX-s8-tMw">
+                                <rect key="frame" x="153" y="124" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cardio Pulmonary Resuscitation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucg-LM-wro">
-                                <rect key="frame" x="58" y="194" width="250" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <userDefinedRuntimeAttributes>
@@ -483,29 +448,23 @@
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="yO0-tf-gD9"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="check1" destination="Yon-Hc-O89" id="ahb-0U-9af"/>
-                        <outlet property="check2" destination="xBp-Xo-wjC" id="6Y5-go-ZFZ"/>
-                        <outlet property="check3" destination="Y0B-tg-be6" id="973-j4-nEH"/>
-                        <outlet property="label1" destination="qmN-k2-UfE" id="I5U-Z4-Vmj"/>
-                        <outlet property="label2" destination="qW2-jf-6a1" id="VYm-1H-1CT"/>
-                        <outlet property="label3" destination="Ucg-LM-wro" id="KbD-Pf-W2v"/>
                         <outlet property="sidebarButton" destination="yO0-tf-gD9" id="k0Q-jQ-SHd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xa-iu-JnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360" y="-502"/>
+            <point key="canvasLocation" x="1454" y="-516"/>
         </scene>
         <!--File Manager View Controller-->
         <scene sceneID="Hqo-N1-k9d">
             <objects>
-                <viewController id="DRC-gf-XVz" customClass="AMFileManagerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FileManagerViewController" id="DRC-gf-XVz" customClass="AMFileManagerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lVB-hk-FZa"/>
                         <viewControllerLayoutGuide type="bottom" id="xI1-oU-OtT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f8r-Vg-QUq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="494"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58x-tP-rQa">
@@ -525,11 +484,13 @@
                     <navigationItem key="navigationItem" id="23X-yK-WrC"/>
                     <connections>
                         <outlet property="centerText" destination="58x-tP-rQa" id="YDF-g5-HJq"/>
+                        <outlet property="view" destination="f8r-Vg-QUq" id="n09-cz-bul"/>
+                        <segue destination="ouS-zE-3Py" kind="push" identifier="toBaseDocument" id="V5a-1X-hzC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWh-eV-5J7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802" y="-2028"/>
+            <point key="canvasLocation" x="816" y="-1818"/>
         </scene>
         <!--Document View Controller-->
         <scene sceneID="qwN-s5-iZH">
@@ -570,7 +531,7 @@
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" textLabel="ig4-aa-509" detailTextLabel="Upx-2X-Bep" style="IBUITableViewCellStyleSubtitle" id="ooR-L2-Soc">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ooR-L2-Soc">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ooR-L2-Soc" id="Jvf-2D-dgc">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -625,7 +586,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="DRC-gf-XVz" kind="embed" id="mPz-r3-icY"/>
+                                    <segue destination="DRC-gf-XVz" kind="embed" identifier="toFileManager" id="mPz-r3-icY"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -650,7 +611,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CheckBox.png" width="30" height="30"/>
         <image name="cloud.png" width="175" height="121"/>
     </resources>
     <color key="tintColor" red="0.22745099663734436" green="0.79607850313186646" blue="1" alpha="1" colorSpace="deviceRGB"/>
@@ -663,5 +623,6 @@
         <segue reference="AXL-zX-oVD"/>
         <segue reference="ugu-eh-SXK"/>
         <segue reference="QhJ-B3-LpV"/>
+        <segue reference="V5a-1X-hzC"/>
     </inferredMetricsTieBreakers>
 </document>

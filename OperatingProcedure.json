@@ -141,7 +141,7 @@
       ],
       "interventions":[
         "Keep BP < 120 systolic",
-        "Hang blood tubing in anticipation of transfusion"
+        "Hang blood tubing in anticipation of transfusion",
         "If BP < 90 systolic, transfuse PRBC",
         "Pain/Nausea management",
         "Check pulses and BP in all 4 extremities"
@@ -344,7 +344,7 @@
         "During flight phase:",
         "Consider continuing to destination and divert to ED",
         "Notify flight communications and request additional help on helistop",
-        "Notify PIC prior to defibrillation or cardioversion"
+        "Notify PIC prior to defibrillation or cardioversion",
         "Do not attempt during takeoff or landing"
       ],
       "interventions":[
@@ -1149,6 +1149,6 @@
       "otherConsiderations":[
 				"Consider use of pediatric spine board with pediatric patient"
       ]
-    },
+    }
   ]
 }

@@ -8,5 +8,5 @@
 
 @interface AMDocumentViewController : UIViewController <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, strong) NSDictionary* info;
+@property (strong, nonatomic) NSDictionary* info;
 @end

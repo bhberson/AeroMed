@@ -7,6 +7,7 @@
 #import "AMFileManagerViewController.h"
 #import "AMDocumentViewController.h"
 #import "AMFolderViewController.h"
+#import "AMBaseDocumentViewController.h"
 #import "SWRevealViewController.h"
 
 #define kStructureKey @"Structure"
@@ -19,13 +20,29 @@
 
 - (void)viewDidLoad
 {
-    // Get data from parse
-    //TODO: select a company and handle no internet connection
-    [self queryForFiles];
+    
+   
     
     [super viewDidLoad];
 
 }
+
+-(void)viewWillAppear:(BOOL)animated {
+    NSLog(@"view will appear");
+    if (!self.isSubFolder) {
+        NSLog(@"quering for structure");
+        if (self.navigationStructure == nil) {
+            [self queryForFiles];
+        } else {
+            self.viewControllerData = [[NSMutableArray alloc] initWithArray:self.navigationStructure];
+             [self.centerText removeFromSuperview];
+        }
+    } else {
+        NSLog(@"not quering for structure");
+         [self.centerText removeFromSuperview];
+    }
+}
+
 
 - (void) queryForFiles {
     PFQuery *query = [PFQuery queryWithClassName:@"NavigationStructure"];
@@ -46,18 +63,19 @@
             
             // Returns an array of dictionaries
             NSArray *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&err];
+            self.navigationStructure = [[NSArray alloc] initWithArray:json];
             
             // Loop through our top level structures and store the dictionary info
             for (int i = 0; i < [json count]; i++) {
                 NSMutableDictionary *data = [json objectAtIndex:i];
                 [self.viewControllerData addObject:data];
             }
-            
+
             // Reload the data
             [self reloadDataAnimated:YES];
             [self.centerText removeFromSuperview];
         } else {
-            self.viewControllerData = [[NSArray alloc] init];
+          //  self.viewControllerData = [[NSArray alloc] init];
             [self.centerText setText:@"Need internet connection"];
             //TODO: refresh when connection available
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -71,10 +89,12 @@
 }
 
 #pragma mark - Note card control
+
 - (NSInteger)numberOfControllerCardsInNoteView:(KLNoteViewController*) noteView {
     return  [self.viewControllerData count];
 }
 - (UIViewController *)noteView:(KLNoteViewController*)noteView viewControllerAtIndex:(NSInteger)index {
+    
     // Get the relevant data for the navigation controller
     NSDictionary* navDict = [self.viewControllerData objectAtIndex: index];
     
@@ -85,21 +105,21 @@
     NSString *type = [navDict objectForKey:@"type"];
     AMDocumentViewController *viewController;
     
+
     if ([type isEqualToString:@"folder"]) {
         AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
         [viewController setInfo: navDict];
         return [[UINavigationController alloc] initWithRootViewController:viewController];
-    } else if ([type isEqualToString:@"object"]) {
-        AMDocumentViewController *viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
+    } else if ([type isEqualToString:@"document"]) {
+        viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
         [viewController setInfo: navDict];
         return [[UINavigationController alloc] initWithRootViewController:viewController];
     } else {
+        NSLog(@"error");
         viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
     }
     
     
-    
-
     //Return the custom view controller wrapped in a UINavigationController
     return [[UINavigationController alloc] initWithRootViewController:viewController];
 }
@@ -108,7 +128,24 @@
     NSInteger index = [noteViewController indexForControllerCard: controllerCard];
     NSDictionary* navDict = [self.viewControllerData objectAtIndex: index];
     
-    NSLog(@"%@ changed state %ld", [navDict objectForKey:@"title"], toState);
+
+    if (toState == 3 && [[navDict objectForKey:@"type"] isEqualToString:@"folder"]) {
+        NSLog(@"Folder was pulled up");
+        self.viewControllerData = [[NSMutableArray alloc] initWithArray:[navDict objectForKey:@"contains"]];
+        [self performSegueWithIdentifier:@"toBaseDocument" sender:self];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    // Go the base document view controller
+    if ([segue.identifier isEqualToString:@"toBaseDocument"]) {
+        NSLog(@"Performing segue to Base Document Controller");
+        AMBaseDocumentViewController *vc = (AMBaseDocumentViewController *) segue.destinationViewController;
+        vc.viewControllerData = [[NSMutableArray alloc] initWithArray:self.viewControllerData];
+        vc.navigationStructure = self.navigationStructure;
+        vc.isSubFolder = !self.isSubFolder;
+    }
 }
 
 #pragma mark - Saving and loading data

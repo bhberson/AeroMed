@@ -11,18 +11,17 @@
     [super viewDidLoad];
     //TODO: Handle ios 6 bar color
     
-    // Set right barbutton item to display type 
-    UIImage *iconType = [UIImage imageNamed:@"folder"];
-    UIBarButtonItem *displayType = [[UIBarButtonItem alloc] initWithImage:iconType style:UIBarButtonItemStylePlain target:self action:nil];
-    self.navigationItem.rightBarButtonItem = displayType;
-    [displayType setEnabled:NO];
-    
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.200 green:0.749 blue:1.000 alpha:1.000]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
     
     [self.scrollView setDelegate:self];
+    
+    [self queryForDocument];
 }
 
+-(void)queryForDocument {
+   // PFQuery *query = [PFQuery queryWithClassName:@""]
+}
 
 #pragma mark - Scrollview methods 
 

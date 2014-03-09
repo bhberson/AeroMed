@@ -92,33 +92,4 @@
     
 }
 
-- (IBAction)didTap1:(id)sender {
-    if ([self.check1.titleLabel.text length] == 0){
-        [self.check1 setTitle:@"✔︎"
-                 forState:UIControlStateNormal];
-    } else {
-        [self.check1 setTitle:@""
-                 forState:UIControlStateNormal];
-    }
-}
-
-- (IBAction)didTap2:(id)sender{
-    if ([self.check2.titleLabel.text length] == 0){
-        [self.check2 setTitle:@"✔︎"
-                 forState:UIControlStateNormal];
-    } else {
-        [self.check2 setTitle:@""
-                 forState:UIControlStateNormal];
-    }
-}
-
-- (IBAction)didTap3:(id)sender{
-    if ([self.check3.titleLabel.text length] == 0){
-        [self.check3 setTitle:@"✔︎"
-                 forState:UIControlStateNormal];
-    } else {
-        [self.check3 setTitle:@""
-                 forState:UIControlStateNormal];
-    }
-}
 @end

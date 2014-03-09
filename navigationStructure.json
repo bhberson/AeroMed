@@ -5,7 +5,6 @@
 			"structure":[
 				{
 					"title":"General Patient Care Information",
-					"level":"1",
 					"type":"folder",
 					"contains":[
 					
@@ -16,36 +15,7 @@
 					"level":"1",
 					"type":"folder",
 					"contains":[
-						{
-							"title":"Trauma Activiation Guidelines",
-							"level":"2",
-							"type":"folder",
-							"contains":[
-								{
-									"title":"Adult and Pediatric Trauma Activiation Summary of Changes",
-									"level":"3",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Pediatric Trauma Activation Guideline Flowchart",
-									"level":"3",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"SHBW Trauma Activation Criteria 8 20 2013",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								}
-							]
-						}
+			
 					]
 				},
 				{
@@ -53,68 +23,14 @@
 					"type":"folder",
 					"contains":[
 						{
-							"title":"ACS, STEMI, NSTEMI",
-							"type":"folder",
-							"contains":[
-								{
-									"title":"Acute Coronary Syndrome and STEMI and NSTEMI",
-									"type":"document",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Appropriate Cardiac Cath Lab Activiation",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Brillnt Flyer 8",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"NEW STEMI Protocol Summary 8",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								}
-							]
-						},
-						{
-							"title":"Stroke Ischemic",
-							"type":"folder",
-							"contains":[
-								{
-									"title":"2013 Stroke Update Newsletter - Inclusion and Exclusion for IV tPA",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"SH Acute Ischemic Stroke",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Stroke Ischemic",
-									"type":"document",
-									"contains":[
-									
-									]
-								}
-							]
-						},
-						{
 							"title":"Acute Alcohol Withdrawal",
+							"type":"document",
+							"contains":[
+									
+							]
+						},
+						{
+							"title":"Acute Coronary Syndrome",
 							"type":"document",
 							"contains":[
 									
@@ -282,6 +198,13 @@
 							]
 						},
 						{
+							"title":"Stroke Ischemic",
+							"type":"document",
+							"contains":[
+									
+							]
+						},
+						{
 							"title":"Thrombocytopenia and Heparin Induced Thrombocytopenia",
 							"type":"document",
 							"contains":[
@@ -308,67 +231,6 @@
 					"title":"Medications",
 					"type":"folder",
 					"contains":[
-						{
-							"title":"Drugs to be Reviewed",
-							"type":"folder",
-							"contains":[
-								{
-									"title":"Asprin-salicylic Acid",
-									"type":"document",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Atrovent-albuterol and Ipratropium",
-									"type":"document",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Dilaudid-hydromorphone",
-									"type":"document",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Propofol-diprivan",
-									"type":"document",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Tranexamic Acid-TXA",
-									"type":"document",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"Tylenol-acetaminophen",
-									"type":"document",
-									"contains":[
-									
-									]
-								}
-							]
-						},
-						{
-							"title":"TXA",
-							"type":"folder",
-							"contains":[
-								{
-									"title":"Tranexamic Acid TXA Pediatric Trauma Guideline",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								}
-							]
-						},
 						{
 							"title":"Adenocard-adenosine",
 							"type":"document",
@@ -878,33 +740,6 @@
 					"title":"Procedures",
 					"type":"folder",
 					"contains":[
-						{
-							"title":"Hypothermia Protocol",
-							"type":"folder",
-							"contains":[
-								{
-									"title":"TH Protocol Documentation",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								},
-								{
-									"title":"TH for Referral Protocol Fax",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								},
-														{
-									"title":"TH Posting for Flight Physician or Nurse",
-									"type":"pdf",
-									"contains":[
-									
-									]
-								}
-							]
-						},
 						{
 							"title":"Blood Product Administration",
 							"type":"document",
