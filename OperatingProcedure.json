@@ -43,6 +43,58 @@
       ]
     },
     {
+      "title":"ACS, STEMI, NSTEMI",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "TIME IS HEART",
+        "Consider helistop rendezvous",
+        "Consult cardiology prior to transport (if applicable)",
+        "Arrange for transport to Cath Lab",
+        "Coordinate with sending team to reduce time at sending location",
+        "Round Trip ground transport by Aero Med medical team NOT indicated if STEMI"
+      ],
+      "interventions":[
+        "Defibrillation pads in place",
+        "Pain, nausea control",
+        "Attain complete history",
+        "See STEMI protocol"
+      ],
+      "testAndStudies":[
+        "12 Lead EKG",
+        "CXR (for widened mediastinum)",
+        "Do not delay transport for pending test results"
+      ],
+      "medications":[
+        "ASA",
+        "Heparin Bolus",
+        "NTG Paste",
+        "Brilinta (Plavix if non-Spectrum Health Affiliate)",
+        "Metoprolol",
+        "Fentanyl/Morphine",
+        "Zofran"
+      ],
+      "checklist":[
+        "12 Lead EKG with interpretation",
+        "Troponin",
+        "Time of symptom onset",
+        "Time of all medication administration",
+        "Pain level (0-10) at time of arrival and delivery",
+        "Pain description",
+        "Time thrombolytic given (if applicable)"
+      ],
+      "impressions":[
+        "STEMI (cardiac location)",
+        "NSTEMI (cardiac location)",
+        "ACS",
+        "Unstable angina",
+        "Chest pain"
+      ],
+      "otherConsiderations":[
+        "Brilinta may be crushed and administered via OGT/NGT"
+      ]
+    },
+    {
       "title":"Anaphylaxis",
       "originalDate":"18 October 2012",
       "revisedDate":"18 October 2012",
@@ -63,7 +115,7 @@
         "Albuterol",
         "Racemic Epinephrine",
         "H2 Blocker",
-        "Vasopresor (if applicable)"
+        "Vasopressor (if applicable)"
       ],
       "checklist":[
         "Allergy History",
@@ -440,419 +492,662 @@
       ]
     },
     {
-      "title":"",
+      "title":"Epiglottitis",
       "originalDate":"18 October 2012",
       "revisedDate":"18 October 2012",
       "considerations":[
-        
+        "Direct sending physician to request Operating Room and Anesthesia for intubation prior to transport",
+        "Request Ceftriaxone"
       ],
       "interventions":[
-        
+        "Airway management prior to transport. Discuss alternate plan for advanced airway or surgical airway (needlecric <10 y/o). Intubate->Bag->Cric. If able to maintain with BVM consider waiting on more advanced airway",
+        "Ensure first dose of antibiotics given",
+        "Use \"hands off approach\" until intubated. Reduce Anxiety"        
       ],
       "testAndStudies":[
-        
+        "X-Ray lateral soft tissue of neck"
       ],
       "medications":[
-       
+        "Ceftriaxone"
       ],
       "checklist":[
-        
+        "Airway Management interventions and reevaluation after all phases of movement"
       ],
       "impressions":[
-        
+        "Epiglottitis with mention of obstruction",
+        "Epiglottitis without mention of obstruction"
+      ],
+      "otherConsiderations":[
+				"Avoid venipuncture and invasive procedures until airway secured",
+        "Avoid ENT exam"
+      ]
+    },
+    {
+      "title":"GI Bleed",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Blakemore tube: one kg of cephlad traction",
+        "DO NOT DEFLATE BALLOON",
+        "Request FFP from sending prior to departure to expedite thawing process"
+      ],
+      "interventions":[
+        "2 large bore IVs with blood tubing",
+        "Consider IO (not central line) if difficult access",
+        "Blood product transfusion. If no radial pulse or blood pressure <80 systolic. Take type and crossed blood products from sending only. If universal blood products, prepped by sending, leave unless massive transfusion is anticipated.",
+        "Advanced airway management",
+        "NGT/OGT"
+      ],
+      "testAndStudies":[
+        "CBC",
+        "Coags",
+        "Type and Screen"
+      ],
+      "medications":[
+        "If upper GI bleed. Protonix gtt. Octreotide gtt",
+        "Vitamin K if life threatening bleed and coags not within normal limits"
+      ],
+      "checklist":[
+        "Blood screen",
+        "INR",
+        "HGB"
+      ],
+      "impressions":[
+        "Severe GI bleed. Upper. Lower",
+        "Hypovolemic shock",
+        "Severe anemia"
       ],
       "otherConsiderations":[
 				
       ]
     },
     {
-      "title":"",
+      "title":"Hyperglycemia and Diabetic Ketoacidosis and Hyperosmolar Nonketotic Coma",
       "originalDate":"18 October 2012",
       "revisedDate":"18 October 2012",
       "considerations":[
         
       ],
       "interventions":[
-        
+        "Appropriate IVF administration",
+        "Frequent glucose checks (minimum every hour)",
+        "Insulin",
+        "Determine underlying cause and treat. For example: MI, Infection, Non-Compliance",
+        "If BS less than 200 mg/dL, administer D5NS (add 2 Amps of D50 to 1 L NS @ maintenance rate and adjust for effect) while continuing Insulin drip"
+      ],
+      "testAndStudies":[
+        "CMP",
+        "Beta-Hydroxybutyrate (BOHB)-aka: Ketones",
+        "Blood gas (ABG or VBG)",
+        "12 Lead EKG",
+        "Bedside glucose"
+      ],
+      "medications":[
+        "Insulin drip",
+        "IVF",
+        "Antibiotics (if appropriate)",
+        "Sodium Bicarbonate ONLY if pH less than 6.9"
+      ],
+      "checklist":[
+        "Initial glucose and time drawn/checked",
+        "Serial glucose checks",
+        "Signs and symptoms of dehydration",
+        "I & O",
+        "LOC"
+      ],
+      "impressions":[
+        "Hyperglycemia",
+        "Diabetic ketoacidosis",
+        "Hyperglycemic Hyperosmolar Nonketotic Coma"
+      ],
+      "otherConsiderations":[
+				"Pediatrics: Careful fluid management"
+      ]
+    },
+    {
+      "title":"Hypertensive Crisis",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Monitor BP q 5 minutes and as needed",
+        "Prepare for a-line monitoring"
+      ],
+      "interventions":[
+        "Decrease MAP by 30% from initial presentation",
+        "Supplemental 02 vs BIPAP vs Intubation",
+        "Pain/anxiety/nausea control"
+      ],
+      "testAndStudies":[
+        "Renal function",
+        "CMP",
+        "CXR",
+        "12 lead ECG",
+        "HCT"
+      ],
+      "medications":[
+        "Nitroglycerin",
+        "Nipride (strongly consider arterial line)",
+        "Labatelol",
+        "Hydralizine"
+      ],
+      "checklist":[
+        "Initial BP",
+        "LOC"
+      ],
+      "impressions":[
+        "Hypertensive Crisis",
+        "Unspecified Essential Hypertension"
+      ],
+      "otherConsiderations":[
+				"Monitor for decreased cerebral blood flow and CVA symptoms"
+      ]
+    },
+    {
+      "title":"LVAD (HeartMate II LVAS) Transport Considerations",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Request spare batteries from sending/patient",
+        "Ask patient/Family for specific information regarding device",
+        "Must always be connected to a power source",
+        "Do not unplug power base unit with patient attached",
+        "Never disconnect both cables at the same time-pump will stop",
+        "Refer to patient's pocket alarm guide for any pump alarms",
+        "CONTACT LVAD COORDINATOR VIA PAGER/PHONE"
+      ],
+      "interventions":[
+        "Discuss transport considerations with receving physician prior to departure",
+        "Monitor ECG",
+        "Obtain BP with doppler",
+        "Listen over left chest for hum of pump"
       ],
       "testAndStudies":[
         
       ],
       "medications":[
-       
+        "Heparin/Lovenox"
       ],
       "checklist":[
         
       ],
       "impressions":[
-        
+        "Severe heart failure",
+        "Cardiogenic shock"
+      ],
+      "otherConsiderations":[
+				"If V-Tach/V-Fib still consider defibrillation/cardioversion",
+        "Risk of device displacement with chest compressions",
+        "Will not have a palpable pulse"
+      ]
+    },
+    {
+      "title":"Meningitis",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Implement Isolation precautions for entire flight/transport crew"
+      ],
+      "interventions":[
+        "Medicate appropriately"
+      ],
+      "testAndStudies":[
+        "CSF Analysis",
+        "HCT"
+      ],
+      "medications":[
+        "Antibiotics",
+        "Steroids (if Herpes Simplex Virus unlikely"
+      ],
+      "checklist":[
+        "LOC",
+        "CSF Results",
+        "Antibiotics administered and time"
+      ],
+      "impressions":[
+        "Meningitis (Viral vs Bacterial, if known)",
+        "Cephalgia"
+      ],
+      "otherConsiderations":[
+				"If less than ONE month old, request medication guidance from intensivist"
+      ]
+    },
+    {
+      "title":"Necrotizing Fasciitis",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Surgical intervention is required ASAP so consider transfer of care in OR at receiving hospital"
+      ],
+      "interventions":[
+        "Broad Spectrum Antibiotics",
+        "Anticipate Septic Shock",
+        "Aggressive fluid resuscitation"
+      ],
+      "testAndStudies":[
+        "Pan Cultures"
+      ],
+      "medications":[
+        "Antibiotics",
+        "Vasopressors (Levophed as first line)",
+        "IVF"
+      ],
+      "checklist":[
+        "Pain out of proportion to injury or presentation",
+        "Onset time"
+      ],
+      "impressions":[
+        "Necrotizing Fasciitis",
+        "Septic Shock",
+        "Pain"
+      ],
+      "otherConsiderations":[
+				"Elevated affected extremity"
+      ]
+    },
+    {
+      "title":"Pulmonary Embolus",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Handle with care avoiding extreme or jarring movement",
+        "HOB elevated"
+      ],
+      "interventions":[
+        "Airway/ventilator management with aggressive FIO2/PEEP using ARDS Net Scale",
+        "Maintain sa02 >88%",
+        "Anticoagulants if applicable"
+      ],
+      "testAndStudies":[
+        "CT/VQ Scan",
+        "ABG",
+        "Coags",
+        "CXR",
+        "EKG"
+      ],
+      "medications":[
+        "Lovenox sq --OR-- Heparin gtt",
+        "Vasopressor (Levophed is pressor of choice)",
+        "Thrombolytics (if in shock after consultation with receiving physician)"
+      ],
+      "checklist":[
+        "Airway Management",
+        "Anticoagulaton",
+        "Diagnostic Result"
+      ],
+      "impressions":[
+        "Acute Pulmonary Embolism",
+        "Dyspnea",
+        "Chest Pain",
+        "Hypercoagulopathic Condition"
+      ],
+      "otherConsiderations":[
+				"Anxiety Common"
+      ]
+    },
+    {
+      "title":"Respiratory Failure",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Ensure adequate oxygen supply for transport",
+        "HOB elevated",
+        "Adequate Nebulizer medications for continuous administration",
+        "EtCO2",
+        "Monitor for pneumothorax"
+      ],
+      "interventions":[
+        "NRB vs BIPAP vs Intubation",
+        "Antibiotics as appropriate",
+        "Nebulized medications as appropriate",
+        "Airway suctioning",
+        "Utilize appropriate ventilator settings per diagnosis"
+      ],
+      "testAndStudies":[
+        "CXR",
+        "ABG",
+        "12 lead ECG as appropriate"
+      ],
+      "medications":[
+        "Bronchodilators",
+        "RSI/Sedation/Paralytics",
+        "Antibiotics",
+        "Steroids"
+      ],
+      "checklist":[
+        "Lung Sounds",
+        "Airway assessement",
+        "Airway interventions",
+        "Response to Therapy"
+      ],
+      "impressions":[
+        "Respiratory failure. Acute Respiratory Distress Syndrome",
+        "Hypoxia",
+        "Pertinent associated diagnosis (i.e. pneumonia, COPD, status, asthmaticus, etc.)"
+      ],
+      "otherConsiderations":[
+				"For intubated pediatric patients consider using spinal immobilization device to reduce incidence of endotracheal tube displacement"
+      ]
+    },
+    {
+      "title":"Sepsis",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Obtain antibiotics prior to departure from sending and begin transfusion ASAP"
+      ],
+      "interventions":[
+        "Broad spectrum antibiotics",
+        "Aggressive fluid resuscitation of 500-1000 mL every 15 minutes to goal of MAP of >65 or CVP >8",
+        "Anticipate Shock",
+        "Intubate if hypoxia or increased work of breathing"
+      ],
+      "testAndStudies":[
+        "Pan Cultures",
+        "Lactate",
+        "CBC (WBC)",
+        "CMP"
+      ],
+      "medications":[
+        "Vasopressors (Levophed as first line)",
+        "Antibiotics with coverage for MRSA and Pseudomonas",
+        "Blood if Hgb <10 or HCT <30 and SVO2 below 70 and Oxygen now working"
+      ],
+      "checklist":[
+        "Antibiotics administered and accurate times",
+        "I & O",
+        "Source of infection (presumed at minimum)",
+        "Lactate",
+        "Oxygen"
+      ],
+      "impressions":[
+        "Sepsis --vs--",
+        "Severe Sepsis --vs--",
+        "Septic Shock",
+        "Underlying cause"
+      ],
+      "otherConsiderations":[
+				"Aggressive search for source may require early surgical intervention"
+      ]
+    },
+    {
+      "title":"Sickle Cell Crisis",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Transport at the lowest safe altitude"
+      ],
+      "interventions":[
+        "100% NRB or intubation if required",
+        "IVF boluses",
+        "Aggressive pain management",
+        "Antibiotics if febrile"
+      ],
+      "testAndStudies":[
+        "Retic Count",
+        "CXR",
+        "CBC",
+        "Cultures if febrile"
+      ],
+      "medications":[
+        "Opiates",
+        "IVF",
+        "Steroids"
+      ],
+      "checklist":[
+        "Pain level",
+        "Previous episodes",
+        "Hgb"
+      ],
+      "impressions":[
+        "Sickle Cell Crisis",
+        "Pain"
+      ],
+      "otherConsiderations":[
+				"External warmth may help"
+      ]
+    },
+    {
+      "title":"Status Epilepticus and Seizures",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Safety of patient if actively seizing"
+      ],
+      "interventions":[
+        "Rapid termination of seizure activity. Seizure >30 minutes may lead to brain damage",
+        "Seizure >5 minutes requires antiepileptic therapy",
+        "Monitor for hypoglycemia",
+        "If chemically paralyzed may still be seizing",
+        "IV med route preferred",
+        "Consider PR medications if IV/IO access not immediately available"
+      ],
+      "testAndStudies":[
+        "Antiepileptic drug levels",
+        "CMP/Glucose",
+        "Toxicology Screen",
+        "Head CT",
+        "LP (if infection suspected)"
+      ],
+      "medications":[
+        "Stop Seizures. Benzodiazepines",
+        "Prevent Seizures. Antiepileptics"
+      ],
+      "checklist":[
+        "--Observable signs and symptoms--",
+        "Extremity involvement",
+        "Length of time seizure lasted",
+        "Incontinence",
+        "Injuries",
+        "Presence of tonic/clonic component",
+        "Pupils",
+        "Fixed eye deviation\\n\\n",
+        "Medication intervention prior to AM arrival and during transport",
+        "--History--",
+        "Family history",
+        "Illness/fever",
+        "Head trauma",
+        "First seizure or history of seizures"
+      ],
+      "impressions":[
+        "Status epilepticus, Grand Mal",
+        "Pertinent other diagnoses (febrile, etc.)"
+      ],
+      "otherConsiderations":[
+				"Drug doses vary in pediatric patient",
+        "Febrile seizures common in children"
+      ]
+    },
+    {
+      "title":"Stroke, Hemorrhagic",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "Appropriate receiving facility with Neurosurgeon (if applicable)",
+        "Consider arranging for FFP if anticipated"
+      ],
+      "interventions":[
+        "Correct coagulopathies. FFP. Vitamin K",
+        "HOB elevated",
+        "Mannitol if signs and symptoms of herniation",
+        "Advanced airway management",
+        "ETCO2 monitoring for ALL patients",
+        "Maintain SBP < 150"
+      ],
+      "testAndStudies":[
+        "Coags",
+        "Head CT",
+        "Electrolytes"
+      ],
+      "medications":[
+        "Labatelol",
+        "Nipride (if arterial line available)",
+        "Mannitol",
+        "Nicardipine",
+        "Vitamin K"
+      ],
+      "checklist":[
+        "Time of symprom onset",
+        "Serial Neuro Exams"
+      ],
+      "impressions":[
+        "SAH",
+        "Intracranial Hemorrhage"
       ],
       "otherConsiderations":[
 				
       ]
     },
     {
-      "title":"",
+      "title":"Stroke, Ishemic",
       "originalDate":"18 October 2012",
       "revisedDate":"18 October 2012",
       "considerations":[
-        
+        "Appropriate Receiving facility (Neurologist)",
+        "Clarify BP control perimeters with receiving physician"
       ],
       "interventions":[
-        
+        "Advanced airway management",
+        "Supportive measures",
+        "Avoid significant, rapid drops in blood pressure due to medication administration",
+        "Be prepared to treat for seizure activity"
       ],
       "testAndStudies":[
-        
+        "Head CT (especially if tPA is being considered)",
+        "Glucose",
+        "Baseline Coags"
+      ],
+      "medications":[
+        "tPA",
+        "Nicardipine"
+      ],
+      "checklist":[
+        "Time of symprom onset",
+        "tPA checklist",
+        "Time of tPA administration",
+        "Initial Coags",
+        "Neuro Exam-NIHSS",
+        "Serial Neuro Exams"
+      ],
+      "impressions":[
+        "Cerebral Artery Occlusion with cerebral infarction"
+      ],
+      "otherConsiderations":[
+        "Consider interventional radiology",
+        "Refer to SH Rural Stroke Clinical Pathway"
+      ]
+    },
+    {
+      "title":"Thrombocytopenia and Heparin Induced Thrombocytopenia",
+      "originalDate":"18 October 2012",
+      "revisedDate":"18 October 2012",
+      "considerations":[
+        "If life threatening bleeding present, consider obtaining blood products from BWH (platelets) prior to arriving at sending hospital"
+      ],
+      "interventions":[
+        "Transfuse platelets only if life threatening bleeding present (or at direction of receiving physician)",
+        "DO NOT transfuse platelets if TTP is possible or schistocytes are present on blood smear unless death imminent due to uncontrolled bleeding"
+      ],
+      "testAndStudies":[
+        "CBC",
+        "Coags",
+        "CMP"
       ],
       "medications":[
        
       ],
       "checklist":[
-        
+        "Bleeding location and amount if applicable"
       ],
       "impressions":[
-        
+        "Thrombocytopenia",
+        "Heparin Induced Thrombocytopenia",
+        "Hemorrhage"
       ],
       "otherConsiderations":[
 				
       ]
     },
     {
-      "title":"",
+      "title":"Toxic Ingestion and Exposure",
       "originalDate":"18 October 2012",
       "revisedDate":"18 October 2012",
       "considerations":[
-        
+        "Poison Control Number: 800-222-1222",
+        "Spectrum Health BWH Toxicology Service:",
+        "Poison Control consultation prior to departure from AM in case of antidote needed from BWH",
+        "Consider need for decontamination and ground transport as an alternative to air transport"
       ],
       "interventions":[
-        
+        "Indentify possible substance exposed to or ingested",
+        "Antidote if applicable",
+        "Supportive care",
+        "Consult Intensivist",
+        "Decontamination"
       ],
       "testAndStudies":[
-        
+        "CMP",
+        "Tylenol Level",
+        "ETOH Level",
+        "ASA Level",
+        "Urine Tox Screen",
+        "Miscellaneous Drug Levels. For Example: Digoxin, Lithium, Dilantin, etc."
       ],
       "medications":[
-       
+        "Specific Antidote as applicable",
+        "Supportive Care"
       ],
       "checklist":[
-        
+        "Possible toxin, amount ingested or exposed to and time of exposure"
       ],
       "impressions":[
-        
+        "Overdose, Toxic",
+        "Symptom specific diagnoses"
       ],
       "otherConsiderations":[
-				
+		    "Transport bottles of substance or medications if possible and not harmful to crew/patient",
+        "Protect patient/team from additional harm"
       ]
     },
     {
-      "title":"",
+      "title":"Violent or Combative Patient",
       "originalDate":"18 October 2012",
       "revisedDate":"18 October 2012",
       "considerations":[
-        
+        "Safety of patient and crew is the primary concern",
+        "Consider ground transport as alternative",
+        "Restrain patient prior to loading onto aircraft",
+        "Consider contacting AOC"
       ],
       "interventions":[
-        
+        "Evaluate for physical and/or chemical restraint administration. RSI",
+        "Consider medical etiology for behavior (anoxia, hypercarbia, hypertensive crisis) adn intervene appropriately"
       ],
       "testAndStudies":[
-        
+        "ABG",
+        "Urine Tox Screen",
+        "ETOH",
+        "HCT",
+        "CBC",
+        "CMP",
+        "Carbon Monoxide"
       ],
       "medications":[
-       
+        "RSI Medications",
+        "Versed",
+        "Haldol",
+        "Ativan"
       ],
       "checklist":[
-        
+        "Document restraints per SH guidelines",
+        "Neurovascular status (extremity pulses) before & after restrains are applied and as required"
       ],
       "impressions":[
-        
+        "Altered Mental Status",
+        "Delirium",
+        "Unspecified transient mental disorder"
       ],
       "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
-      ]
-    },
-    {
-      "title":"",
-      "originalDate":"18 October 2012",
-      "revisedDate":"18 October 2012",
-      "considerations":[
-        
-      ],
-      "interventions":[
-        
-      ],
-      "testAndStudies":[
-        
-      ],
-      "medications":[
-       
-      ],
-      "checklist":[
-        
-      ],
-      "impressions":[
-        
-      ],
-      "otherConsiderations":[
-				
+				"Consider use of pediatric spine board with pediatric patient"
       ]
     },
   ]
