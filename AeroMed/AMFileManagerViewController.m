@@ -6,6 +6,7 @@
 
 #import "AMFileManagerViewController.h"
 #import "AMDocumentViewController.h"
+#import "AMFolderViewController.h"
 #import "SWRevealViewController.h"
 
 #define kStructureKey @"Structure"
@@ -74,14 +75,30 @@
     return  [self.viewControllerData count];
 }
 - (UIViewController *)noteView:(KLNoteViewController*)noteView viewControllerAtIndex:(NSInteger)index {
-    //Get the relevant data for the navigation controller
+    // Get the relevant data for the navigation controller
     NSDictionary* navDict = [self.viewControllerData objectAtIndex: index];
     
-    //Initialize a blank uiviewcontroller for display purposes
+    // Get the storyboard
     UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
     
-    AMDocumentViewController* viewController = [st instantiateViewControllerWithIdentifier:@"RootViewController"];
-    [viewController setInfo: navDict];
+    // Determine if it is a folder or a document
+    NSString *type = [navDict objectForKey:@"type"];
+    AMDocumentViewController *viewController;
+    
+    if ([type isEqualToString:@"folder"]) {
+        AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
+        [viewController setInfo: navDict];
+        return [[UINavigationController alloc] initWithRootViewController:viewController];
+    } else if ([type isEqualToString:@"object"]) {
+        AMDocumentViewController *viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
+        [viewController setInfo: navDict];
+        return [[UINavigationController alloc] initWithRootViewController:viewController];
+    } else {
+        viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
+    }
+    
+    
+    
 
     //Return the custom view controller wrapped in a UINavigationController
     return [[UINavigationController alloc] initWithRootViewController:viewController];
