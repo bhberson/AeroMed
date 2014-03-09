@@ -31,6 +31,7 @@
 		27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */; };
 		27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */; };
 		27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A9690F18B06D010010A721 /* SWRevealViewController.m */; };
+		27AA4AB118CC092B001B3915 /* AMBaseDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */; };
 		27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB0EFD18C5253900A99048 /* OperatingProcedure.m */; };
 		27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DC18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m */; };
 		27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */; };
@@ -104,6 +105,8 @@
 		27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadSliderMenuViewController.m; sourceTree = "<group>"; };
 		27A9690E18B06D010010A721 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		27A9690F18B06D010010A721 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		27AA4AAF18CC092B001B3915 /* AMBaseDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBaseDocumentViewController.h; sourceTree = "<group>"; };
+		27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBaseDocumentViewController.m; sourceTree = "<group>"; };
 		27AB0EFC18C5253900A99048 /* OperatingProcedure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatingProcedure.h; sourceTree = "<group>"; };
 		27AB0EFD18C5253900A99048 /* OperatingProcedure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatingProcedure.m; sourceTree = "<group>"; };
 		27AB58DB18B445CB0047D0A7 /* AMiPadSplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSplashScreenViewController.h; sourceTree = "<group>"; };
@@ -356,6 +359,8 @@
 				779181B018C832A500AE1019 /* AMFileManagerViewController.m */,
 				779181B118C832A500AE1019 /* AMDocumentViewController.h */,
 				779181B218C832A500AE1019 /* AMDocumentViewController.m */,
+				27AA4AAF18CC092B001B3915 /* AMBaseDocumentViewController.h */,
+				27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */,
 			);
 			name = "Mutual View Controllers";
 			sourceTree = "<group>";
@@ -492,6 +497,7 @@
 				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
 				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
+				27AA4AB118CC092B001B3915 /* AMBaseDocumentViewController.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
 				27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */,
 				27F94E0A18B41DB6001F8F4F /* AMiPhoneSplashScreenViewController.m in Sources */,

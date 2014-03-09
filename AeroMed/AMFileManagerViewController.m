@@ -21,15 +21,6 @@
     // Get data from parse
     //TODO: select a company and handle no internet connection
     [self queryForFiles];
-
-    
-    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
-    // Set the side bar button action to show slide out menu
-    sidebarButton.target = self.revealViewController;
-    sidebarButton.action = @selector(revealToggle:);
-  
-    // Set the gesture
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     [super viewDidLoad];
 
