@@ -30,8 +30,10 @@
 		278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509E18B59B6C00EA6E2F /* cloud@2x.png */; };
 		27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */; };
 		27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */; };
+		27A9052218CC21C800DAFE10 /* AMFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A9052118CC21C800DAFE10 /* AMFolderViewController.m */; };
 		27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A9690F18B06D010010A721 /* SWRevealViewController.m */; };
 		27AA4AB118CC092B001B3915 /* AMBaseDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */; };
+		27AA4AB318CC1567001B3915 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AA4AB218CC1567001B3915 /* folder.png */; };
 		27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB0EFD18C5253900A99048 /* OperatingProcedure.m */; };
 		27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DC18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m */; };
 		27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */; };
@@ -103,10 +105,13 @@
 		27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneSliderMenuViewController.m; sourceTree = "<group>"; };
 		27A8EC2318B08D420056EA2A /* AMiPadSliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSliderMenuViewController.h; sourceTree = "<group>"; };
 		27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadSliderMenuViewController.m; sourceTree = "<group>"; };
+		27A9052018CC21C800DAFE10 /* AMFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFolderViewController.h; sourceTree = "<group>"; };
+		27A9052118CC21C800DAFE10 /* AMFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFolderViewController.m; sourceTree = "<group>"; };
 		27A9690E18B06D010010A721 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		27A9690F18B06D010010A721 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		27AA4AAF18CC092B001B3915 /* AMBaseDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBaseDocumentViewController.h; sourceTree = "<group>"; };
 		27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBaseDocumentViewController.m; sourceTree = "<group>"; };
+		27AA4AB218CC1567001B3915 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
 		27AB0EFC18C5253900A99048 /* OperatingProcedure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatingProcedure.h; sourceTree = "<group>"; };
 		27AB0EFD18C5253900A99048 /* OperatingProcedure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatingProcedure.m; sourceTree = "<group>"; };
 		27AB58DB18B445CB0047D0A7 /* AMiPadSplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSplashScreenViewController.h; sourceTree = "<group>"; };
@@ -316,6 +321,7 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27AA4AB218CC1567001B3915 /* folder.png */,
 				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
 				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
 				27A9690E18B06D010010A721 /* SWRevealViewController.h */,
@@ -361,6 +367,8 @@
 				779181B218C832A500AE1019 /* AMDocumentViewController.m */,
 				27AA4AAF18CC092B001B3915 /* AMBaseDocumentViewController.h */,
 				27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */,
+				27A9052018CC21C800DAFE10 /* AMFolderViewController.h */,
+				27A9052118CC21C800DAFE10 /* AMFolderViewController.m */,
 			);
 			name = "Mutual View Controllers";
 			sourceTree = "<group>";
@@ -471,6 +479,7 @@
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,
 				779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */,
+				27AA4AB318CC1567001B3915 /* folder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +513,7 @@
 				27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */,
 				27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
+				27A9052218CC21C800DAFE10 /* AMFolderViewController.m in Sources */,
 				27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */,
 				779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */,
 				2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */,

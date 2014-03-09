@@ -12,8 +12,8 @@
     //TODO: Handle ios 6 bar color
     
     // Set right barbutton item to display type 
-    NSString *type = [self.info objectForKey:@"type"];
-    UIBarButtonItem *displayType = [[UIBarButtonItem alloc] initWithTitle:type style:UIBarButtonItemStylePlain target:self action:nil];
+    UIImage *iconType = [UIImage imageNamed:@"folder"];
+    UIBarButtonItem *displayType = [[UIBarButtonItem alloc] initWithImage:iconType style:UIBarButtonItemStylePlain target:self action:nil];
     self.navigationItem.rightBarButtonItem = displayType;
     [displayType setEnabled:NO];
     
