@@ -5,7 +5,12 @@
 //  Copyright (c) 2014 GVSU. All rights reserved.
 #import "AMDocumentViewController.h"
 
-@implementation AMDocumentViewController
+@interface AMDocumentViewController ()
+@property (weak, atomic) PFObject *doc;
+
+@end
+
+@implementation AMDocumentViewController 
 
 -(void) viewDidLoad {
     [super viewDidLoad];
@@ -14,18 +19,37 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
     
-    [self.scrollView setDelegate:self];
-    
-    [self queryForDocument];
+   // [self queryForDocument];
 }
 
--(void)queryForDocument {
-   // PFQuery *query = [PFQuery queryWithClassName:@""]
-}
+//TODO: get differenty types of documents
+//-(void)queryForDocument {
+//    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
+//    [query whereKey:@"title" equalTo:[self.info objectForKey:@"title"]];
+//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+//        _doc = [objects firstObject];
+//        [self addData];
+//    }];
+//}
 
-#pragma mark - Scrollview methods 
+//-(void)addData {
+//    
+//    if (_doc) {
+//        
+//        NSMutableString *text = [self formatOperatingProcedure];
+//        self.textView.text = text;
+//        
+//    }
+//}
+//                            
+//-(NSMutableString *)formatOperatingProcedure {
+//    NSMutableString *data = [[NSMutableString alloc] initWithString:_doc[@"title"]];
+//    [data appendString:@"\n"];
+//    [data appendString:@"Original Data:"];
+//    [data appendString:_doc[@"originalDate"]];
+//    
+//                            
+//    return data;
+//}
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    NSLog(@"Scrolling");
-}
 @end

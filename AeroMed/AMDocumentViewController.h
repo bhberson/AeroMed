@@ -6,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMDocumentViewController : UIViewController <UIScrollViewDelegate>
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@interface AMDocumentViewController : UIViewController <UITextViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (strong, nonatomic) NSDictionary* info;
 @end

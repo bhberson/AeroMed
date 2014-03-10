@@ -13,7 +13,7 @@
 #define kStructureKey @"Structure"
 
 @interface AMFileManagerViewController ()
-
+@property (strong, nonatomic) NSArray *documents;
 @end
 
 @implementation AMFileManagerViewController
@@ -29,20 +29,36 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     NSLog(@"view will appear");
+    
+    // If we are in the main folder structure
     if (!self.isSubFolder) {
         NSLog(@"quering for structure");
+        
+        // If we do not have a structure then query the database
         if (self.navigationStructure == nil) {
             [self queryForFiles];
+            
+        // We already have a structure
         } else {
             self.viewControllerData = [[NSMutableArray alloc] initWithArray:self.navigationStructure];
              [self.centerText removeFromSuperview];
         }
+        
+    // If we are displaying the documents in a folder
     } else {
-        NSLog(@"not quering for structure");
-         [self.centerText removeFromSuperview];
+        [self queryForDocuments];
+        [self.centerText removeFromSuperview];
     }
 }
 
+-(void) queryForDocuments {
+    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
+    [query whereKeyExists:@"title"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        _documents = objects;
+        
+    }];
+}
 
 - (void) queryForFiles {
     PFQuery *query = [PFQuery queryWithClassName:@"NavigationStructure"];
