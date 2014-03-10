@@ -469,7 +469,7 @@
             </objects>
             <point key="canvasLocation" x="1350" y="-1107"/>
         </scene>
-        <!--Mi Pad Base View Controller - Aero Med-->
+        <!--Mi Pad Base View Controller - AeroMed Transports-->
         <scene sceneID="Pbh-MV-192">
             <objects>
                 <viewController id="HKG-Gs-QQM" customClass="AMiPadBaseViewController" sceneMemberID="viewController">
@@ -478,7 +478,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Aero Med" id="MJu-eD-1Tk">
+                    <navigationItem key="navigationItem" title="AeroMed Transports" id="MJu-eD-1Tk">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="ufa-Z4-eiG"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EHO-nF-Z3x">
                             <connections>
