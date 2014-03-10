@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AMFolderViewController : UITableViewController
-@property (nonatomic, strong) NSDictionary* info;
+@property (nonatomic, strong) NSDictionary *info;
+@property (nonatomic, strong) NSArray *allDocuments;
 @end

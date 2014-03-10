@@ -9,4 +9,5 @@
 @interface AMDocumentViewController : UIViewController <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (strong, nonatomic) NSDictionary* info;
+@property (strong, nonatomic) NSArray *data;
 @end

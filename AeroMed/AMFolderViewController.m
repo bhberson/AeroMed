@@ -31,10 +31,14 @@
     [displayType setEnabled:NO];
     
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.200 green:0.749 blue:1.000 alpha:1.000]];
-	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
-    _navigationStructure = [self.info objectForKey:@"contains"];
-
-   // [self.tableView reloadData];
+    
+    // If we are passed in documents to show then show them as an All Documents table
+    if (self.allDocuments) {
+        [self.navigationItem setTitle:@"All Documents"];
+    } else {
+        [self.navigationItem setTitle:[self.info objectForKey:@"title"]];
+        _navigationStructure = [self.info objectForKey:@"contains"];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,22 +59,35 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return _navigationStructure.count;
+    NSInteger items = 0;
+    if (self.allDocuments) {
+        items = [self.allDocuments count];
+    } else {
+        items = [_navigationStructure count];
+    }
+    return items;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    // Data for cell
-    NSDictionary *data = [_navigationStructure objectAtIndex:indexPath.row];
-   // NSLog(@"%@", data);
-    
     static NSString *CellIdentifier = @"myCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    cell.textLabel.text = [data objectForKey:@"title"];
-    cell.detailTextLabel.text = [data objectForKey:@"type"];
+    if (self.allDocuments) {
+        // Data for all documents
+        PFObject *document = [self.allDocuments objectAtIndex:indexPath.row];
+        
+        // Configure the cell...
+        cell.textLabel.text = document[@"title"];
+    } else {
+        // Data for cell
+        NSDictionary *data = [_navigationStructure objectAtIndex:indexPath.row];
+    
+        // Configure the cell...
+        cell.textLabel.text = [data objectForKey:@"title"];
+        cell.detailTextLabel.text = [data objectForKey:@"type"];
+    }
     
     return cell;
 }

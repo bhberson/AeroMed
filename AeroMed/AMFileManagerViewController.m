@@ -14,15 +14,14 @@
 
 @interface AMFileManagerViewController ()
 @property (strong, nonatomic) NSArray *documents;
+@property (nonatomic) BOOL tooManyDocuments;
+
 @end
 
 @implementation AMFileManagerViewController
 
 - (void)viewDidLoad
 {
-    
-   
-    
     [super viewDidLoad];
 
 }
@@ -46,6 +45,7 @@
         
     // If we are displaying the documents in a folder
     } else {
+
         [self queryForDocuments];
         [self.centerText removeFromSuperview];
     }
@@ -55,6 +55,8 @@
     PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
     [query whereKeyExists:@"title"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        // Contains an array of PFObjects
         _documents = objects;
         
     }];
@@ -107,12 +109,21 @@
 #pragma mark - Note card control
 
 - (NSInteger)numberOfControllerCardsInNoteView:(KLNoteViewController*) noteView {
-    return  [self.viewControllerData count];
+    NSInteger numCards =[self.viewControllerData count];
+    
+    // Limit the number of cards to display
+    if (numCards > 10) {
+        numCards = 10;
+        _tooManyDocuments = YES;
+    }
+    
+    return numCards;
 }
 - (UIViewController *)noteView:(KLNoteViewController*)noteView viewControllerAtIndex:(NSInteger)index {
     
     // Get the relevant data for the navigation controller
-    NSDictionary* navDict = [self.viewControllerData objectAtIndex: index];
+    NSDictionary *navDict = [self.viewControllerData objectAtIndex: index];
+    NSArray *cardData = [self.documents objectAtIndex:index];
     
     // Get the storyboard
     UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
@@ -121,6 +132,12 @@
     NSString *type = [navDict objectForKey:@"type"];
     AMDocumentViewController *viewController;
     
+    // If we are the 10th card in too many documents we want to show All Documents in the folder
+    if (_tooManyDocuments && index == 10) {
+        AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
+        [viewController setAllDocuments:_documents];
+        return viewController;
+    }
 
     if ([type isEqualToString:@"folder"]) {
         AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
@@ -129,6 +146,7 @@
     } else if ([type isEqualToString:@"document"]) {
         viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
         [viewController setInfo: navDict];
+        [viewController setData:cardData];
         return [[UINavigationController alloc] initWithRootViewController:viewController];
     } else {
         NSLog(@"error");

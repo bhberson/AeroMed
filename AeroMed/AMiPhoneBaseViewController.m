@@ -94,6 +94,7 @@
     
 }
 
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 	return 1;
@@ -141,7 +142,8 @@
 {
 	if ([segue.identifier isEqualToString:@"AddTransport"])
 	{
-		UINavigationController *navigationController =
+        
+		UINavigationController *navigationController = (UINavigationController *)
         segue.destinationViewController;
 		AMiPhoneTransportViewController
         *amiPhoneTransportViewController =

@@ -12,4 +12,5 @@
 @property (strong, nonatomic) NSMutableArray *viewControllerData;
 @property (strong, nonatomic) NSArray *navigationStructure;
 @property (nonatomic) BOOL isSubFolder;
+@property (nonatomic) BOOL isLoadingDocuments;
 @end
