@@ -60,13 +60,9 @@
         [self queryForDocuments];
         [self.centerText removeFromSuperview];
     }
-    
-
-
 }
 
-
-
+// Query for the document contents 
 -(void) queryForDocuments {
     PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
     [query whereKeyExists:@"title"];
@@ -79,6 +75,7 @@
     }];
 }
 
+// Query for all the filenames and structure
 - (void) queryForFiles {
     PFQuery *query = [PFQuery queryWithClassName:@"NavigationStructure"];
     [query whereKey:@"organization" equalTo:@"Aero Med"];
@@ -126,17 +123,13 @@
 -(void)upButtonTapped:(id)sender {
     _isSubFolder = NO;
     [self removeAllCards];
-    _viewControllerData = nil;
-    [self reloadDataAnimated:YES];
     _viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
-    [self reloadDataAnimated:YES];
-    
 }
 
 #pragma mark - Note card control
 
 - (NSInteger)numberOfControllerCardsInNoteView:(KLNoteViewController*) noteView {
-    NSInteger numCards =[self.viewControllerData count];
+    NSInteger numCards =[_viewControllerData count];
     
     // Limit the number of cards to display
     if (numCards > 10) {
@@ -187,35 +180,37 @@
 
 -(void) noteViewController: (KLNoteViewController*) noteViewController didUpdateControllerCard:(KLControllerCard*)controllerCard toDisplayState:(KLControllerCardState) toState fromDisplayState:(KLControllerCardState) fromState {
     
-    NSInteger index = [noteViewController indexForControllerCard: controllerCard];
-    NSDictionary* navDict = [_viewControllerData objectAtIndex: index];
+    if (!_isClearingViews) {
+        NSInteger index = [noteViewController indexForControllerCard: controllerCard];
+        NSDictionary* navDict = [_viewControllerData objectAtIndex: index];
+        
 
-
-    if (toState == 3 && [[navDict objectForKey:@"type"] isEqualToString:@"folder"]) {
-        NSLog(@"Folder was pulled up");
-        self.viewControllerData = [[NSMutableArray alloc] initWithArray:[navDict objectForKey:@"contains"]];
-        _isSubFolder = YES;
-        [self removeAllCards];
-        [self reloadDataAnimated:YES];
+        // If it is a folder, moves into the full screen state, and has elements to contain then procede to subfolders
+        if (toState == 3 && [[navDict objectForKey:@"type"] isEqualToString:@"folder"] && [[navDict objectForKey:@"contains"] count] > 0) {
+            NSLog(@"Folder was pulled up");
+            self.viewControllerData = [[NSMutableArray alloc] initWithArray:[navDict objectForKey:@"contains"]];
+            _isSubFolder = YES;
+            [self removeAllCards];
+        
+        }
     }
     
 }
 
 // Remove all the cards from the view
 -(void)removeAllCards {
-    _isClearingViews = YES;
     for (UIView *view in self.view.subviews) {
         if ([view isMemberOfClass:[KLControllerCard class]]) {
             [(KLControllerCard *)view removeFromSuperview];
         }
     }
     
+    [self reloadDataAnimated:YES];
     if (!_isSubFolder) {
         self.upButton.hidden = YES;
     } else {
         self.upButton.hidden = NO;
     }
-    _isClearingViews = NO;
 }
 
 #pragma mark - Saving and loading data

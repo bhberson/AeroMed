@@ -20,7 +20,7 @@
 #define kDefaultReloadShowAnimationDuration 0.6
 
 //Position for the stack of navigation controllers to originate at
-#define kDefaultVerticalOrigin 100              //Vertical origin of the controller card stack. Making this value larger/smaller will make the card shift down/up.
+#define kDefaultVerticalOrigin 75              //Vertical origin of the controller card stack. Making this value larger/smaller will make the card shift down/up.
 
 //Corner radius properties
 #define kDefaultCornerRadius 5.0
