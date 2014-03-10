@@ -1,274 +1,443 @@
 {
-  "results":[
-  	{
-	  "title":"Adenocard (adenosine)",
-	  "originalDate":"18 October 2012",
-	  "revisedDate":"18 October 2012",
-	  "indications":[
-	  	"SVT"
-	  ],
-	  "adultDosage":[
-	  	"6mg rapid IV push",
-	  	"May repeat with dose 12mg in 1-2 minutes if needed x2"
-	  ],
-	  "pediatricDosage":[
-	  	"0.1 mg/kg, max dose 6 mg",
-	  	"Repeat dose is doubled, up to 12 mg x 2 if needed"
-	  ],
-	  "considerations":[
-	  	"Warn patient of possible symptoms (feeling of discomfort, nervousness, chest pressure/discomfort) prior to pushing drug",
-	  	"Push drugs as close to IV site as possible",
-	  	"Push rapidly (1-2 seconds) and flush immediately with 20 mL",
-	  	"Administer 3 mg if given via central line"
-	  ],
-	  "authoredBy":"",
-	  "approvedBy":""
-  	},
-  	{
-	  "title":"Adrenaline (epinephrine)",
-	  "originalDate":"18 October 2012",
-	  "revisedDate":"18 October 2012",
-	  "indications":[
-	  	"Severe hypotension unresponsive to other vasopressors and fluid resuscitation",
-	  	"Cardiopulmonary resuscitation",
-	  	"Sever allergic reaction"
-	  ],
-	  "adultDosage":[
-	  	"Cardiac arrest = 1 mg IVP every 3 minutes (1:10,000)",
-	  	"Hypotension = 1-10 mcg/min. If weight based dosing desired, may give 0.01-0.1 mcg/kg/min. Standard concentration is 5 mg in 250ml.",
-	  	"Anaphylaxis & Allergic reaction = 0.3-0.5 mg of the 1:1000 epi given SQ/IM (0.3-0.5 ml) or IV 0.3-0.5 mg of the 1:10,000 epi (3-5 ml)"
-	  ],
-	  "pediatricDosage":[
-	  	"Cardiac arrest = 0.01 mg/kg (1:10,000)",
-	  	"Hypotension = 0.1-1 mcg/kg/min. Standard concentration is 5 mg in 250 ml",
-	  	"Allergic reaction and Anaphylaxis = 0.01 mg/kg of the 1:1000 epi given IM/SQ. (0.01 ml/kg). Max dose 0.3 mg"
-	  ],
-	  "considerations":[
-	  	"IV infusion may cause tissue necrosis, administer through central line or large IV if possible",
-	  	"May repeat doses every 5 minutes (or sooner) as needed, when treating allergic reaction",
-	  	"IM preferred route for anaphylaxis"
-	  ],
-	  "authoredBy":"",
-	  "approvedBy":""
-  	},
-  	{
-	  "title":"Amidate (etomidate)",
-	  "originalDate":"18 October 2012",
-	  "revisedDate":"18 October 2012",
-	  "indications":[
-	  	"Facilitation of endotracheal intubation"
-	  ],
-	  "adultDosage":[
-	  	"0.3 mg/kg given over 15 - 60 seconds. Standard concentration is 2 mg/ml"
-	  ],
-	  "pediatricDosage":[
-	  	"Same as adult"
-	  ],
-	  "considerations":[
-	  	"Onset less than 1 minute, duration of action 3-5 minutes",,
-	  	"Incompatible with Vecuronium"
-	  ],
-	  "authoredBy":"",
-	  "approvedBy":""
-  	},
-  	{
-	  "title":"Anectine (succinlycholine)",
-	  "originalDate":"18 October 2012",
-	  "revisedDate":"18 October 2012",
-	  "indications":[
-	  	"Rapid Sequence Intubation",
-	  	"Facilitation of mechanical ventilation"
-	  ],
-	  "adultDosage":[
-	  	"RSI: 1-1.5 mg per kg IV; up to 150 mg total dose"
-	  ],
-	  "pediatricDosage":[
-	  	"See Adult Dose"
-	  ],
-	  "considerations":[
-	  	"IMPORTANT NOTE: Neuromuscular blockers require the concurrent use of sedatives and analgesics",
-	  	"NMB's only cause of paralysis and do not provide any sedative or analgesic effects. MUST administer sedative & analgesic",
-	  	"Onset in 0.5-1 minutes",
-	  	"Duration 5-10 minutes",
-	  	"Dose using total body weight; consider use of adjusted body weight for obese patients",
-	  	"Avoid in burn, trauma, and crush injury patients"
-	  ],
-	  "authoredBy":"",
-	  "approvedBy":""
-  	},
-  	{
-	  "title":"Apresoline (hydralazine)",
-	  "originalDate":"18 October 2012",
-	  "revisedDate":"18 October 2012",
-	  "indications":[
-	  	"Management of moderate to severe HTN",
-	  	"Treatment of HTN secondary to pre-eclampsia or eclampsia",
-	  	"Treatement of primary pulmonary HTN"
-	  ],
-	  "adultDosage":[
-	  ],
-	  "pediatricDosage":[
-	  ],
-	  "considerations":[
-	  	"If ineffective consider alternating doses with labetalol"
-	  ],
-	  "authoredBy":"",
-	  "approvedBy":""
-  	},
-  	{
-	  "title":"Ativan (lorazepam)",
-	  "originalDate":"18 October 2012",
-	  "revisedDate":"18 October 2012",
-	  "indications":[
-	  	"Sedative, anti-convulsant"
-	  ],
-	  "adultDosage":[
-	  	"0.5 - 2 mg IV push."
-	  ],
-	  "pediatricDosage":[
-	  	"0.05 mg/kg."
-	  ],
-	  "considerations":[
-	  	"Dilute with equal amount 0.9% NS before pushing",
-	  	"Onset 1 - 5 minutes",
-	  	"Watch for respiratory depression",
-	  	"Reverse with Romazicon (flumazenil)",
-	  	"Anxiolytic properties"
-	  ],
-	  "authoredBy":"",
-	  "approvedBy":""
-  	},
-  	{
-	  "title":"Atropine",
-	  "originalDate":"18 October 2012",
-	  "revisedDate":"18 October 2012",
-	  "indications":[
-	  	"Symptomatic bradycardia",
-	  	"organophosphate or carbamate poisoning",
-	  	"Inhibition of secretions"
-	  ],
-	  "adultDosage":[
-	  	"Bradycardia, give 0.5 - 1.0 mg IVP x 3 doses. Do not exceed 3 mg",
-	  	"Organophosphate or carbamate poisoning, give 2 mg IV/IM followed by 2mg q 15 minutes until symptoms improve",
-	  	"Inhibition of secretions, give 0.4 - 0.6 mg IV/IM"
-	  ],
-	  "pediatricDosage":[
-	  	"Bradycardia, give 0.02 mg/kg IV. Max of 0.5 mg/dose; minimum of 0.1 mg",
-	  	"Inhibition of secretions pre-intubation, give 0.01 mg/kg IV. Max dose dose of 0.4 mg/dose; minimum of 0.1 mg/dose if >5kg"
-	  ],
-	  "considerations":[
-	  	"Use for pediatric bradycardia ONLY if suspected vagal event has occured",
-	  	"Use routinely for pre-intubation only in peds patients less than 1 year old",
-	  	"Cholinergic poisonings may require high total doses of 20 mg or more"
-	  ],
-	  "authoredBy":"",
-	  "approvedBy":""
-  	},
-  	{
-	  "title":"Atrovent (ipratropium)",
-	  "originalDate":"",
-	  "revisedDate":"",
-	  "indications":[
-	  	"Anti-cholindergic bronchodilator used in the treatment of asthma, and bronchospasm associated with COPD, bronchitis, and emphysema"
-	  ],
-	  "adultDosage":[
-	  	"Asthma: 500 mcg nebulized every 20 mins for 3 doses, then as needed",
-	  	"Bronchospasm with COPD: 500 mcg nebulized 3-4 times a day"
-	  ],
-	  "pediatricDosage":[
-	  	"Children 12 or under: 250-500 mcg nebulized every 20 mins for 3 doses then as needed"
-	  ],
-	  "considerations":[
-	  	"Atrovent"
-	  ],
-	  "authoredBy":"Your Name and Credentials  Laura Haig RN, BSN, EMT-P Flight Nurse",
-	  "approvedBy":"Pattie Russell, RN, BSN, CFRN, EMT-P Manager, Clinical Flight Operations"
-  	},
-  	{
-  	  "title":"Benadryl (diphenhydramine)",
-  	  "originalDate":"",
-  	  "revisedDate":"",
-  	  "indications":[
-  	  	"Allergic reaction"
-  	  ],
-  	  "adultDosage":[
-  	  	"10 - 50 mg IM/IVP over 1-2 minutes",
-  	  	"Max dose 400 mg per day"
-  	  ],
-  	  "pediatricDosage":[
-  	  	"1-2 mg/kg IVP; max single dose 50 mg"
-  	  ],
-  	  "considerations":[
-  	  	"Contraindicated in pt's with sever asthma"
-  	  ],
-  	  "authoredBy":"Your name and Credentials Flight Nurse",
-  	  "approvedBy":"Pattie Russell, RN, BSN, CFRN, EMT-P Manager, Clinical Flight Operations"
-  	},
-  	{
-  	  "title":"Brethine (terbutaline sulfate)",
-  	  "originalDate":"",
-  	  "revisedDate":"",
-  	  "indications":[
-  	  	"Bronchospasm",
-  	  	"Tocolysis Fetal distress"
-  	  ],
-  	  "adultDosage":[
-  	  	"FOR SUB Q ONLY",
-  	  	"Standard Concentration 1000 mcg/ml",
-  	  	"SQ Dosing : 0.25 mg SQ to lateral deltoid x 1 dose, may repeat in 15-30 minutes x 1 dose. If the patient does not respond after 2 doses employ other therapeutic measures.",
-  	  	"Max dose 0.5 mg within 4 hours"
-  	  ],
-  	  "pediatricDosage":[
-  	  	"<12 years: 0.005-0.01 mg/kg/dose to a maximum of 0.4 mg/dose every 15-20 minutes for 3 doses; may repeat every 2-6 hours as needed",
-  	  	">= 12 years: Refer to adult dosing"
-  	  ],
-  	  "considerations":[
-  	  	"Protect from light",
-  	  	"COMMON",
-  	  	"-- Cardiovascular: Palpitations - rapid, Tachyarrhythmia",
-  	  	"-- Neurologic: Headache, Seizure, Tremor",
-  	  	"-- Psychiatric: Nervousness",
-  	  	"SERIOUS",
-  	  	"-- Cardiovascular: Cardiac Disrhythmia",
-  	  	"-- Respiratory: Paradoxical bronchospasm"
-  	  ],
-  	  "authoredBy":"Your Name and Credentials Flight Nurse",
-  	  "approvedBy":"Pattie Russell, RN, BSN, CFRN, EMT-P Manager, Clinical Flight Operations"
-  	},
-  	{
-  	  "title":"Brilinta (Tricagrelor)",
-  	  "originalDate":"",
-  	  "revisedDate":"",
-  	  "indications":[
-  	  	"Anti-platelet agent, used in the treatment of ACS."
-  	  ],
-  	  "adultDosage":[
-  	  	"ACS pt's: Two 90 mg tablets.",
-  	  	"Maintenance dose: one 90 mg tablets BID"
-  	  ],
-  	  "pediatricDosage":[
-  	  	"Not approved for pediatric patients"
-  	  ],
-  	  "considerations":[
-  	  	"Pills may be crushed"
-  	  ],
-  	  "authoredBy":"Your Name and Credentials Laura Haig RN, BSN, EMT-P Flight Nurse",
-  	  "approvedBy":"Pattie Russell, RN, BSN, CFRN, EMT-P Manager, Clinical Flight Operations"
-  	},
-  	{
-  	  "title":"",
-  	  "originalDate":"",
-  	  "revisedDate":"",
-  	  "indications":[
-  	  ],
-  	  "adultDosage":[
-  	  ],
-  	  "pediatricDosage":[
-  	  ],
-  	  "considerations":[
-  	  ],
-  	  "authoredBy":"",
-  	  "approvedBy":""
-  	},
-  ]
-}
+	"medication": [
+	{
+		"title":  "Adenocard (adenosine)",
+		"originalDate": "18 October 2012",
+		"revisedDate": "18 October 2012",
+		"indications": [
+			"SVT"
+		],
+		"adultDosage": [
+			"6mg rapid IV push",
+			"May repeat with dose 12mg in 1-2 minutes if needed x2"
+		],
+		"pediatricDosage": [
+			"0.1 mg/kg, max dose 6 mg",
+			"Repeat dose is doubled, up to 12 mg x 2 if needed"
+		],
+		"considerations": [
+			"Warn patient of possible symptoms (feeling of discomfort, nervousness, chest pressure/discomfort) prior to pushing drug",
+			"Push drugs as close to IV site as possible",
+			"Push rapidly (1-2 seconds) and flush immediately with 20 mL",
+			"Administer 3 mg if given via central line"
+		]
+	},
+	{
+		"title": "Adrenaline (epinephrine)",
+		"originalDate": "18 October 2012",
+		"revisedDate": "18 October 2012",
+		"indications": [
+			"Severe hypotension unresponsive to other vasopressors and fluid resuscitation",
+			"Cardiopulmonary resuscitation",
+			"Sever allergic reaction"
+		],
+		"adultDosage": [
+			"Cardiac arrest = 1 mg IVP every 3 minutes (1:10,000)",
+			"Hypotension = 1-10 mcg/min. If weight based dosing desired, may give 0.01-0.1 mcg/kg/min. Standard concentration is 5 mg in 250ml.",
+			"Anaphylaxis & Allergic reaction = 0.3-0.5 mg of the 1: 1000 epi given SQ/IM (0.3-0.5 ml) or IV 0.3-0.5 mg of the 1:10,000 epi (3-5 ml)"
+		],
+		"pediatricDosage": [
+			"Cardiac arrest = 0.01 mg/kg (1: 10,000)",
+			"Hypotension = 0.1-1 mcg/kg/min. Standard concentration is 5 mg in 250 ml",
+			"Allergic reaction and Anaphylaxis = 0.01 mg/kg of the 1: 1000 epi given IM/SQ. (0.01 ml/kg). Max dose 0.3 mg"
+		],
+		"considerations": [
+			"IV infusion may cause tissue necrosis, administer through central line or large IV if possible",
+			"May repeat doses every 5 minutes (or sooner) as needed, when treating allergic reaction",
+			"IM preferred route for anaphylaxis"
+		]
+	},
+	{
+		"title": "Amidate (etomidate)",
+		"originalDate": "18 October 2012",
+		"revisedDate": "18 October 2012",
+		"indications": [
+			"Facilitation of endotracheal intubation"
+		],
+		"adultDosage": [
+			"0.3 mg/kg given over 15 - 60 seconds. Standard concentration is 2 mg/ml"
+		],
+		"pediatricDosage": [
+			"Same as adult"
+		],
+		"considerations": [
+			"Onset less than 1 minute, duration of action 3-5 minutes",
+			"Incompatible with Vecuronium"
+		]
+	},
+	{
+		"title": "Anectine (succinlycholine)",
+		"originalDate": "18 October 2012",
+		"revisedDate": "18 October 2012",
+		"indications": [
+			"Rapid Sequence Intubation",
+			"Facilitation of mechanical ventilation"
+		],
+		"adultDosage": [
+			"RSI:  1-1.5 mg per kg IV; up to 150 mg total dose"
+		],
+		"pediatricDosage": [
+			"See Adult Dose"
+		],
+		"considerations": [
+			"IMPORTANT NOTE:  Neuromuscular blockers require the concurrent use of sedatives and analgesics",
+			"NMB's only cause of paralysis and do not provide any sedative or analgesic effects. MUST administer sedative & analgesic",
+			"Onset in 0.5-1 minutes",
+			"Duration 5-10 minutes",
+			"Dose using total body weight; consider use of adjusted body weight for obese patients",
+			"Avoid in burn, trauma, and crush injury patients"
+		]
+	},
+	{
+		"title": "Apresoline (hydralazine)",
+		"originalDate": "18 October 2012",
+		"revisedDate": "18 October 2012",
+		"indications": [
+			"Management of moderate to severe HTN",
+			"Treatment of HTN secondary to pre-eclampsia or eclampsia",
+			"Treatement of primary pulmonary HTN"
+		],
+		"adultDosage": [
+			"10-20 mg IVP. May give at 10 mg per minute. Onset is 5 – 20 minutes"
+		],
+		"pediatricDosage": [],
+		"considerations": [
+			"If ineffective consider alternating doses with labetalol"
+		]
+	},
+	{
+		"title": "Ativan (lorazepam)",
+		"originalDate": "18 October 2012",
+		"revisedDate": "18 October 2012",
+		"indications": [
+			"Sedative, anti-convulsant"
+		],
+		"adultDosage": [
+			"0.5 - 2 mg IV push."
+		],
+		"pediatricDosage": [
+			"0.05 mg/kg."
+		],
+		"considerations": [
+			"Dilute with equal amount 0.9% NS before pushing",
+			"Onset 1 - 5 minutes",
+			"Watch for respiratory depression",
+			"Reverse with Romazicon (flumazenil)",
+			"Anxiolytic properties"
+		]
+	},
+	{
+		"title": "Atropine",
+		"originalDate": "18 October 2012",
+		"revisedDate": "18 October 2012",
+		"indications": [
+			"Symptomatic bradycardia",
+			"organophosphate or carbamate poisoning",
+			"Inhibition of secretions"
+		],
+		"adultDosage": [
+			"Bradycardia, give 0.5 - 1.0 mg IVP x 3 doses. Do not exceed 3 mg",
+			"Organophosphate or carbamate poisoning, give 2 mg IV/IM followed by 2mg q 15 minutes until symptoms improve",
+			"Inhibition of secretions, give 0.4 - 0.6 mg IV/IM"
+		],
+		"pediatricDosage": [
+			"Bradycardia, give 0.02 mg/kg IV. Max of 0.5 mg/dose; minimum of 0.1 mg",
+			"Inhibition of secretions pre-intubation, give 0.01 mg/kg IV. Max dose dose of 0.4 mg/dose; minimum of 0.1 mg/dose if >5kg"
+		],
+		"considerations": [
+			"Use for pediatric bradycardia ONLY if suspected vagal event has occured",
+			"Use routinely for pre-intubation only in peds patients less than 1 year old",
+			"Cholinergic poisonings may require high total doses of 20 mg or more"
+		]
+	},
+	{
+		"title": "Atrovent (ipratropium)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Anti-cholindergic bronchodilator used in the treatment of asthma, and bronchospasm associated with COPD, bronchitis, and emphysema"
+		],
+		"adultDosage": [
+			"Asthma:  500 mcg nebulized every 20 mins for 3 doses, then as needed",
+			"Bronchospasm with COPD:  500 mcg nebulized 3-4 times a day"
+		],
+		"pediatricDosage": [
+			"Children 12 or under:  250-500 mcg nebulized every 20 mins for 3 doses then as needed"
+		],
+		"considerations": [
+			"Atrovent"
+		]
+	},
+	{
+		"title": "Benadryl (diphenhydramine)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Allergic reaction"
+		],
+		"adultDosage": [
+			"10 - 50 mg IM/IVP over 1-2 minutes",
+			"Max dose 400 mg per day"
+		],
+		"pediatricDosage": [
+			"1-2 mg/kg IVP; max single dose 50 mg"
+		],
+		"considerations": [
+			"Contraindicated in pt's with sever asthma"
+		]
+	},
+	{
+		"title": "Brethine (terbutaline sulfate)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Bronchospasm",
+			"Tocolysis Fetal distress"
+		],
+		"adultDosage": [
+			"FOR SUB Q ONLY",
+			"Standard Concentration 1000 mcg/ml",
+			"SQ Dosing :  0.25 mg SQ to lateral deltoid x 1 dose, may repeat in 15-30 minutes x 1 dose. If the patient does not respond after 2 doses employ other therapeutic measures.",
+			"Max dose 0.5 mg within 4 hours"
+		],
+		"pediatricDosage": [
+			"<12 years:  0.005-0.01 mg/kg/dose to a maximum of 0.4 mg/dose every 15-20 minutes for 3 doses; may repeat every 2-6 hours as needed",
+			">= 12 years:  Refer to adult dosing"
+		],
+		"considerations": [
+			"Protect from light",
+			"COMMON",
+			"-- Cardiovascular:  Palpitations - rapid, Tachyarrhythmia",
+			"-- Neurologic:  Headache, Seizure, Tremor",
+			"-- Psychiatric:  Nervousness",
+			"SERIOUS",
+			"-- Cardiovascular:  Cardiac Disrhythmia",
+			"-- Respiratory:  Paradoxical bronchospasm"
+		]
+	},
+	{
+		"title": "Brilinta (Tricagrelor)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Anti-platelet agent, used in the treatment of ACS."
+		],
+		"adultDosage": [
+			"ACS pt's:  Two 90 mg tablets.",
+			"Maintenance dose:  one 90 mg tablets BID"
+		],
+		"pediatricDosage": [
+			"Not approved for pediatric patients"
+		],
+		"considerations": [
+			"Pills may be crushed"
+		]
+	},
+	{
+		"title": "Calcium Chloride",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Calcium channel blocker toxicity"
+		],
+		"adultDosage": [
+			"1000-2000mg IV. May repeat every 10-20 minutes with 3-4 additional doses or 1000mg every 2-3 minutes until clinical effect is achieved."
+		],
+		"pediatricDosage": [
+			"10-20mg/kg/dose IV (maximum dose 2000mg). Repeat in 10-15 minutes if necessary."
+		],
+		"considerations": [
+			"May give as a rapid IV injection at max rate of 50 mg/min",
+			"If IV infusion, may infuse at 45-90 mg/kg/hr",
+			"Administer in a central line, or deep vein when possible"
+		]
+	},
+	{
+		"title": "Calcium Gluconate",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Hypocalcemia",
+			"Mag. Sulfate toxicity",
+			"Hyperkalemia",
+			"Hydrofluoric acid burns"
+		],
+		"adultDosage": [
+			"1 – 2 Gm. Infuse over 10 mins."
+		],
+		"pediatricDosage": [
+			"Hypocalcemia: 200 mg - 500 mg/day",
+			"Hyperkalemia: 60 – 100 mg/kg/dose (max of 3000 mg/dose)"
+		],
+		"considerations": [
+			"May cause tissue necrosis if infiltrated. Give in central line, or large IV when possible.",
+			"May cause hypotension."
+		]
+	},
+	{
+		"title": "Cardene (nicardipine)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Hypertensive emergencies-if nitroprusside contraindicated (liver, renal failure)",
+			"Hypertension-when oral agents not feasible",
+			"Preferred agent for stroke and subarachnoid hemorrhage"
+		],
+		"adultDosage": [
+			"IV Infusion: 5-15 mg per hr, no bolus needed",
+			"Initial titration by 2.5mg increments every 15 minutes to desired BP",
+			"Downward titration should be attempted once goal BP achieved",
+			"Weaning: Titrate drip down every 15 minutes by 2.5 mg increments"
+		],
+		"pediatricDosage": [
+			"Initial dose: 0.5-1 mcg/kg/min, rate of infusion may be increased every 15-30 minutes to desired BP",
+			"Usual dose: 1 – 2 mcg/kg/min",
+			"Maximum dose: 5 mcg/kg/min"
+		],
+		"considerations": [
+			"Monitor the patient's BP and HR",
+			"Central line administration preferred"
+		]
+	},
+	{
+		"title": "Cardizem (diltiazem)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"SVT",
+			"Rapid atrial fibrillation or atrial flutter"
+		],
+		"adultDosage": [
+			"Bolus = 0.25 mg/kg over 2 minutes (average dose = 20 mg). If no effect after 15 mins, may give a second dose of 0.35 mg/kg (average dose = 25 mg).",
+			"Standard drip = Initiate at 5-10 mg/hr, range of 5 - 15 mg/hr. Concentration: 1 mg/1ml drip. Stable in 0.9%NS or D5W."
+		],
+		"pediatricDosage": [],
+		"considerations": [
+			"May cause hypotension",
+			"May cause or worsen heart block"
+		]
+	},
+	{
+		"title": "Cordarone (amiodarone)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Refractory V-Tach and V-Fib",
+			"Stable V-Tach",
+			"Treatment and prevention of ventricular dysrhythmias"
+		],
+		"adultDosage": [
+			"In cardiac arrest, give 300 mg IVP",
+			"For loading dose, give 150 mg in 100 ml D5W over 10 minutes. Set pump at 600 ml/hr DO NOT GIVE if 300 mg given during arrest, start with maintenance infusion",
+			"For slow loading infusion, give 360 mg over 6 hrs. Usually mixed as 500 mg in 500 ml D5W. Set pump at 1 mg/min (60 ml/hr)",
+			"Maintenance infusion, give 0.5 mg/min. Set pump at 30 ml/hr"
+		],
+		"pediatricDosage": [
+			"In cardiac arrest, give 5 mg/kg IV (maximum: 300 mg/dose) rapid bolus; repeat up to a maximum total dose of 15 mg/kg during acute treatment.",
+			"For loading dose, give 5 mg/kg (maximum: 300 mg/dose) over 20-60 minutes; may repeat up to maximum total dose of 15 mg/kg during acute treatment."
+		],
+		"considerations": [
+			"Use a 0.22 micron filter for all infusions",
+			"Must use non-PVC bag & tubing for slow loading infusion & maintenance infusion",
+			"May cause hypotension and bradycardia. Reduce the rate of infusion as needed",
+			"May increase the action of Lidocaine. Do not run both drips concurrently, or decrease Lido rate by half",
+			"Contraindicated with prolonged QTc interval"
+		]
+	},
+	{
+		"title": "Dextrose 25, 50%",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Hypoglycemia"
+		],
+		"adultDosage": [
+			"25 g (1 amp. of D50%)"
+		],
+		"pediatricDosage": [
+			"Infant <6 month: 0.25 – 0.5 g/kg/dose D25% (max of 25 g)",
+			"≥6 months: 0.5 – 1 Gm/kg of D25% (maximum dose of 25g)"
+		],
+		"considerations": [
+			"May cause tissue necrosis if infiltrated. Give through central line, or large IV when possible",
+			"Incompatible with blood, norepinephrine, dobutamine, vasopressin, zosyn, levaquin, and fentanyl"
+		]
+	},
+	{
+		"title": "Dilantin (phenytoin)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Management of generalized seizures",
+			"Prevention of seizures following traumatic brain injury"
+		],
+		"adultDosage": [
+			"Initial load: 15 -20 mg per kg",
+			"Maximum rate of infusion: 50mg/min"
+		],
+		"pediatricDosage": [
+			"See adult dose"
+		],
+		"considerations": [
+			"May cause hypotension",
+			"Skin infiltration may cause necrosis",
+			"Dilute with 0.9 NS ONLY",
+			"Do Not mix with other drugs",
+			"An in-line 0.22 micron filter is recommended for IVPB solutions"
+		]
+	},
+	{
+		"title": "Dobutrex (dobutamine)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"General inotropic support. Causes increased cardiac contractility and heart rate.",
+			"Heart failure"
+		],
+		"adultDosage": [
+			"2.5 – 20 mcg/kg/min"
+		],
+		"pediatricDosage": [
+			"Refer to adult dosing"
+		],
+		"considerations": [
+			"Rapid onset of action, may titrate every 10 mins as needed.",
+			"May cause slight decrease in blood pressure due to vasodilation",
+			"Do not stop abruptly"
+		]
+	},
+	{
+		"title": "GlucaGen (glucagon)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Used to treat hypoglycemia",
+			"Used in beta-blocker, or calcium channel blocker overdose"
+		],
+		"adultDosage": [
+			"Hypoglycemia: 1mg IM, IV, SQ every 20 mins PRN",
+			"Beta-blocker or calcium channel blocker overdose: 0.05-0.15 mg/kg bolus, followed by an infusion of 0.05-0.1 mg/kg/hr."
+		],
+		"pediatricDosage": [
+			"Hypoglycemia: Children < 20 kg: 20-30 mcg/kg, repeat in 20 mins PRN. Children >20kg, use adult dosing.",
+			"Beta-blocker, or calcium channel blocker overdose: 30-15- mcg/kg followed by an infusion of 70mcg/kg/hr (max=5mg/hr)."
+		],
+		"considerations": [
+			"Give bolus over 3-5 minutes. May cause nausea and vomiting.",
+			"In cases of overdose, titrate infusion rate to hemodynamic response."
+		]
+	},
+	{
+		"title": "",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+		],
+		"adultDosage": [
+		],
+		"pediatricDosage": [
+		],
+		"considerations": [
+		]
+	}
+]}
