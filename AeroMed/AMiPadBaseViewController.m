@@ -8,15 +8,17 @@
 
 #import "AMiPadBaseViewController.h"
 #import "SWRevealViewController.h"
+#import "Transport.h"
+#import "TransportCell.h"
 
 @interface AMiPadBaseViewController ()
 
 @end
 @implementation AMiPadBaseViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -45,6 +47,78 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+	return [self.transports count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	TransportCell *cell = (TransportCell *)[tableView
+                                            dequeueReusableCellWithIdentifier:@"TransportCell"];
+	Transport *transport = [self.transports objectAtIndex:indexPath.row];
+	cell.numLabel.text = transport.number;
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if (editingStyle == UITableViewCellEditingStyleDelete)
+	{
+		[self.transports removeObjectAtIndex:indexPath.row];
+		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+	}
+}
+
+- (void)amiPadTransportViewControllerDidCancel:
+(AMiPadTransportViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)amiPadTransportViewControllerDidSave:
+(AMiPadTransportViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"AddTransport"])
+	{
+		UINavigationController *navigationController =
+        segue.destinationViewController;
+		AMiPadTransportViewController
+        *amiPadTransportViewController =
+        [[navigationController viewControllers]
+         objectAtIndex:0];
+		amiPadTransportViewController.delegate = self;
+	}
+}
+
+- (void)amiPadTransportViewController:
+(AMiPadTransportViewController *)controller
+                        didAddTransport:(Transport *)transport
+{
+	[self.transports addObject:transport];
+	NSIndexPath *indexPath =
+    [NSIndexPath indexPathForRow:[self.transports count] - 1
+                       inSection:0];
+	[self.tableView insertRowsAtIndexPaths:
+     [NSArray arrayWithObject:indexPath]
+                          withRowAnimation:UITableViewRowAnimationAutomatic];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

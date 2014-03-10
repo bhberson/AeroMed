@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AMiPadTransportViewController.h"
 
-@interface AMiPadBaseViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+@interface AMiPadBaseViewController : UITableViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, AMiPadTransportViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+@property (nonatomic, strong) NSMutableArray *transports;
+
 @end
