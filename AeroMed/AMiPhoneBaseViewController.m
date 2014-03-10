@@ -9,6 +9,8 @@
 #import "AMiPhoneBaseViewController.h"
 #import "SWRevealViewController.h"
 #import "OperatingProcedure.h"
+#import "Transport.h"
+#import "TransportCell.h"
 
 @interface AMiPhoneBaseViewController ()
 @property NSMutableArray *documents;
@@ -17,9 +19,9 @@
 
 @implementation AMiPhoneBaseViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -90,6 +92,77 @@
     [self.documents addObject:alcoholWithdrawal];
   
     
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+	return [self.transports count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	TransportCell *cell = (TransportCell *)[tableView
+                                      dequeueReusableCellWithIdentifier:@"TransportCell"];
+	Transport *transport = [self.transports objectAtIndex:indexPath.row];
+	cell.numLabel.text = transport.number;
+	cell.typeLabel.text = transport.type;
+
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if (editingStyle == UITableViewCellEditingStyleDelete)
+	{
+		[self.transports removeObjectAtIndex:indexPath.row];
+		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+	}
+}
+
+- (void)amiPhoneTransportViewControllerDidCancel:
+(AMiPhoneTransportViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)amiPhoneTransportViewControllerDidSave:
+(AMiPhoneTransportViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"AddTransport"])
+	{
+		UINavigationController *navigationController =
+        segue.destinationViewController;
+		AMiPhoneTransportViewController
+        *amiPhoneTransportViewController =
+        [[navigationController viewControllers]
+         objectAtIndex:0];
+		amiPhoneTransportViewController.delegate = self;
+	}
+}
+
+- (void)amiPhoneTransportViewController:
+(AMiPhoneTransportViewController *)controller
+                       didAddTransport:(Transport *)transport
+{
+	[self.transports addObject:transport];
+	NSIndexPath *indexPath =
+    [NSIndexPath indexPathForRow:[self.transports count] - 1
+                       inSection:0];
+	[self.tableView insertRowsAtIndexPaths:
+     [NSArray arrayWithObject:indexPath]
+                          withRowAnimation:UITableViewRowAnimationAutomatic];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
