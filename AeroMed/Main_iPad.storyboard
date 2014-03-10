@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -473,20 +473,18 @@
         <scene sceneID="Pbh-MV-192">
             <objects>
                 <viewController id="HKG-Gs-QQM" customClass="AMiPadBaseViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0Kg-jD-rKi"/>
-                        <viewControllerLayoutGuide type="bottom" id="kMo-tC-BS6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eYj-hK-kOt">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="eKb-9f-1Wr">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
                     <navigationItem key="navigationItem" title="Aero Med" id="MJu-eD-1Tk">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="ufa-Z4-eiG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EHO-nF-Z3x">
+                            <connections>
+                                <segue destination="ShM-6C-1Lw" kind="modal" identifier="AddTransport" id="g7U-eK-cSs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="sidebarButton" destination="ufa-Z4-eiG" id="iyX-G0-OMa"/>
@@ -495,6 +493,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fv-1s-nmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2300" y="-37"/>
+        </scene>
+        <!--Mi Pad Transport View Controller - New Transport-->
+        <scene sceneID="QJ1-KC-C65">
+            <objects>
+                <tableViewController id="CLB-ka-Llm" customClass="AMiPadTransportViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KUw-0q-9jf">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0xz-vk-RYI">
+                                <rect key="frame" x="0.0" y="86" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0xz-vk-RYI" id="OeX-kI-K6r">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="New Transport" id="G5F-UE-88n">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="3Xv-EK-OPE">
+                            <connections>
+                                <action selector="cancel:" destination="CLB-ka-Llm" id="jaO-TQ-1MS"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="ZRa-fo-k0X">
+                            <connections>
+                                <action selector="done:" destination="CLB-ka-Llm" id="QLG-js-7jh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHc-UO-vUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4174" y="-29"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AVA-eb-JIR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ShM-6C-1Lw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UA8-2l-Bej">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CLB-ka-Llm" kind="relationship" relationship="rootViewController" id="oQD-Zk-ugb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9Z-0i-ROx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3194" y="-29"/>
         </scene>
         <!--Mi Pad Signup View Controller - Sign Up -->
         <scene sceneID="1Lv-xO-AqM">

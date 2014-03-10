@@ -91,9 +91,7 @@
     // Add all documents
     [self.documents addObject:alcoholWithdrawal];
   
-    
 }
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -112,7 +110,6 @@
                                       dequeueReusableCellWithIdentifier:@"TransportCell"];
 	Transport *transport = [self.transports objectAtIndex:indexPath.row];
 	cell.numLabel.text = transport.number;
-	cell.typeLabel.text = transport.type;
 
     return cell;
 }

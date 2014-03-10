@@ -9,8 +9,12 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import "OperatingProcedure.h"
+#import "Transport.h"
+#import "AMiPhoneBaseViewController.h"
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    NSMutableArray *transports;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -28,8 +32,18 @@
     
     // Track statistics
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions]; 
-    NSLog(@"Testing modified log format"); 
+    NSLog(@"Testing modified log format");
+    
+    transports = [NSMutableArray arrayWithCapacity:20];
+	Transport *transport = [[Transport alloc] init];
+	transport.number = @"019";
+	[transports addObject:transport];
+	transport = [[Transport alloc] init];
+	transport.number = @"1234";
+	[transports addObject:transport];
+
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

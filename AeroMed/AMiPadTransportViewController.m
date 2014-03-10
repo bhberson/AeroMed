@@ -1,37 +1,37 @@
 //
-//  AMiPhoneTransportViewController.m
+//  AMiPadTransportViewController.m
 //  AeroMed
 //
-//  Created by Brody Berson on 3/9/14.
+//  Created by Brody Berson on 3/10/14.
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "AMiPhoneTransportViewController.h"
+#import "AMiPadTransportViewController.h"
 
-@interface AMiPhoneTransportViewController ()
+@interface AMiPadTransportViewController ()
 
 @end
 
-@implementation AMiPhoneTransportViewController
+@implementation AMiPadTransportViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
 	if ((self = [super initWithCoder:aDecoder]))
 	{
-		NSLog(@"init AMiPhoneTransportViewController");
+		NSLog(@"init AMiPadTransportViewController");
 	}
 	return self;
 }
 
 - (IBAction)cancel:(id)sender
 {
-    [self.delegate amiPhoneTransportViewControllerDidCancel:self];
+    [self.delegate amiPadTransportViewControllerDidCancel:self];
 }
 - (IBAction)done:(id)sender
 {
     Transport *transport = [[Transport alloc] init];
 	transport.number = self.numTextField.text;
-	[self.delegate amiPhoneTransportViewController:self
+	[self.delegate amiPadTransportViewController:self
                                    didAddTransport:transport];
 }
 
@@ -64,7 +64,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (void)dealloc
 {
-	NSLog(@"dealloc AMiPhoneTransportViewController");
+	NSLog(@"dealloc AMiPadTransportViewController");
 }
 
 @end

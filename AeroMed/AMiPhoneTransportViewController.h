@@ -19,7 +19,6 @@
 @interface AMiPhoneTransportViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UITextField *numTextField;
 @property (weak, nonatomic) IBOutlet UITextField *notesTextField;
-@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 
 @property (nonatomic, weak) id <AMiPhoneTransportViewControllerDelegate> delegate;
 
