@@ -9,8 +9,7 @@
 
 @interface AMFileManagerViewController : KLNoteViewController <NSCoding>
 @property (weak, nonatomic) IBOutlet UILabel *centerText;
-@property (strong, nonatomic) NSMutableArray *viewControllerData;
-@property (strong, nonatomic) NSArray *navigationStructure;
-@property (nonatomic) BOOL isSubFolder;
-@property (nonatomic) BOOL isLoadingDocuments;
+@property (weak, nonatomic) IBOutlet UIButton *upButton;
+- (IBAction)upButtonTapped:(id)sender;
+
 @end

@@ -29,6 +29,7 @@
 		2786509F18B59B6C00EA6E2F /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509D18B59B6C00EA6E2F /* cloud.png */; };
 		278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509E18B59B6C00EA6E2F /* cloud@2x.png */; };
 		27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */; };
+		27A6AED918CD720E0055CCED /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A6AED818CD720E0055CCED /* arrow-up.png */; };
 		27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */; };
 		27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A9690F18B06D010010A721 /* SWRevealViewController.m */; };
 		27AA4AB118CC092B001B3915 /* AMBaseDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */; };
@@ -106,6 +107,7 @@
 		2786509E18B59B6C00EA6E2F /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
 		27A6619A18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneSliderMenuViewController.h; sourceTree = "<group>"; };
 		27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneSliderMenuViewController.m; sourceTree = "<group>"; };
+		27A6AED818CD720E0055CCED /* arrow-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-up.png"; sourceTree = "<group>"; };
 		27A8EC2318B08D420056EA2A /* AMiPadSliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSliderMenuViewController.h; sourceTree = "<group>"; };
 		27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadSliderMenuViewController.m; sourceTree = "<group>"; };
 		27A9690E18B06D010010A721 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27A6AED818CD720E0055CCED /* arrow-up.png */,
 				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
 				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
 				27A9690E18B06D010010A721 /* SWRevealViewController.h */,
@@ -493,6 +496,7 @@
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
 				278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */,
 				AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */,
+				27A6AED918CD720E0055CCED /* arrow-up.png in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,
 				779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */,

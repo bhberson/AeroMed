@@ -15,7 +15,10 @@
 @interface AMFileManagerViewController ()
 @property (strong, nonatomic) NSArray *documents;
 @property (nonatomic) BOOL tooManyDocuments;
-
+@property (nonatomic) BOOL isSubFolder;
+@property (strong, nonatomic) NSMutableArray *viewControllerData;
+@property (strong, nonatomic) NSArray *topFolders;
+@property (atomic) BOOL isClearingViews;
 @end
 
 @implementation AMFileManagerViewController
@@ -23,6 +26,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if (!_isSubFolder) {
+        self.upButton.hidden = YES;
+    } else {
+        self.upButton.hidden = NO;
+    }
+   
+  
 
 }
 
@@ -30,16 +41,16 @@
     NSLog(@"view will appear");
     
     // If we are in the main folder structure
-    if (!self.isSubFolder) {
-        NSLog(@"quering for structure");
+    if (!_isSubFolder) {
         
         // If we do not have a structure then query the database
-        if (self.navigationStructure == nil) {
+        if (_topFolders == nil) {
             [self queryForFiles];
             
         // We already have a structure
         } else {
-            self.viewControllerData = [[NSMutableArray alloc] initWithArray:self.navigationStructure];
+            self.viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
+            
              [self.centerText removeFromSuperview];
         }
         
@@ -49,7 +60,12 @@
         [self queryForDocuments];
         [self.centerText removeFromSuperview];
     }
+    
+
+
 }
+
+
 
 -(void) queryForDocuments {
     PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
@@ -58,7 +74,8 @@
         
         // Contains an array of PFObjects
         _documents = objects;
-        
+        [self removeAllCards];
+        [self reloadDataAnimated:YES];
     }];
 }
 
@@ -81,7 +98,7 @@
             
             // Returns an array of dictionaries
             NSArray *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&err];
-            self.navigationStructure = [[NSArray alloc] initWithArray:json];
+            _topFolders = [[NSArray alloc] initWithArray:json];
             
             // Loop through our top level structures and store the dictionary info
             for (int i = 0; i < [json count]; i++) {
@@ -104,6 +121,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)upButtonTapped:(id)sender {
+    _isSubFolder = NO;
+    [self removeAllCards];
+    _viewControllerData = nil;
+    [self reloadDataAnimated:YES];
+    _viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
+    [self reloadDataAnimated:YES];
+    
 }
 
 #pragma mark - Note card control
@@ -158,28 +185,37 @@
     return [[UINavigationController alloc] initWithRootViewController:viewController];
 }
 
--(void) noteViewController: (KLNoteViewController*) noteViewController didUpdateControllerCard:(KLControllerCard*)controllerCard toDisplayState:(KLControllerCardState) toState fromDisplayState:(KLControllerCardState) fromState {    
-    NSInteger index = [noteViewController indexForControllerCard: controllerCard];
-    NSDictionary* navDict = [self.viewControllerData objectAtIndex: index];
+-(void) noteViewController: (KLNoteViewController*) noteViewController didUpdateControllerCard:(KLControllerCard*)controllerCard toDisplayState:(KLControllerCardState) toState fromDisplayState:(KLControllerCardState) fromState {
     
+    NSInteger index = [noteViewController indexForControllerCard: controllerCard];
+    NSDictionary* navDict = [_viewControllerData objectAtIndex: index];
+
 
     if (toState == 3 && [[navDict objectForKey:@"type"] isEqualToString:@"folder"]) {
         NSLog(@"Folder was pulled up");
         self.viewControllerData = [[NSMutableArray alloc] initWithArray:[navDict objectForKey:@"contains"]];
-        [self performSegueWithIdentifier:@"toBaseDocument" sender:self];
+        _isSubFolder = YES;
+        [self removeAllCards];
+        [self reloadDataAnimated:YES];
     }
+    
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    // Go the base document view controller
-    if ([segue.identifier isEqualToString:@"toBaseDocument"]) {
-        NSLog(@"Performing segue to Base Document Controller");
-        AMBaseDocumentViewController *vc = (AMBaseDocumentViewController *) segue.destinationViewController;
-        vc.viewControllerData = [[NSMutableArray alloc] initWithArray:self.viewControllerData];
-        vc.navigationStructure = self.navigationStructure;
-        vc.isSubFolder = !self.isSubFolder;
+// Remove all the cards from the view
+-(void)removeAllCards {
+    _isClearingViews = YES;
+    for (UIView *view in self.view.subviews) {
+        if ([view isMemberOfClass:[KLControllerCard class]]) {
+            [(KLControllerCard *)view removeFromSuperview];
+        }
     }
+    
+    if (!_isSubFolder) {
+        self.upButton.hidden = YES;
+    } else {
+        self.upButton.hidden = NO;
+    }
+    _isClearingViews = NO;
 }
 
 #pragma mark - Saving and loading data

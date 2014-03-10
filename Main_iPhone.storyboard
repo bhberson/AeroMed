@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SCC-d1-1AC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SCC-d1-1AC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -673,18 +673,30 @@
                                 <color key="textColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcA-7o-03X">
+                                <rect key="frame" x="113" y="30" width="95" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow-up.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upButtonTapped:" destination="DRC-gf-XVz" eventType="touchUpInside" id="mlF-d9-itZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zcA-7o-03X" firstAttribute="top" secondItem="lVB-hk-FZa" secondAttribute="bottom" constant="30" id="22u-yZ-HVS"/>
                             <constraint firstAttribute="centerX" secondItem="58x-tP-rQa" secondAttribute="centerX" constant="-0.5" id="FD1-V1-ZCL"/>
-                            <constraint firstAttribute="centerY" secondItem="58x-tP-rQa" secondAttribute="centerY" constant="0.5" id="bOU-iD-Xun"/>
+                            <constraint firstAttribute="centerY" secondItem="58x-tP-rQa" secondAttribute="centerY" constant="-36.5" id="bOU-iD-Xun"/>
+                            <constraint firstAttribute="centerX" secondItem="zcA-7o-03X" secondAttribute="centerX" constant="-0.5" id="m9D-Yd-The"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="23X-yK-WrC"/>
                     <connections>
                         <outlet property="centerText" destination="58x-tP-rQa" id="YDF-g5-HJq"/>
+                        <outlet property="upButton" destination="zcA-7o-03X" id="hSj-Rg-j7y"/>
                         <outlet property="view" destination="f8r-Vg-QUq" id="n09-cz-bul"/>
-                        <segue destination="ouS-zE-3Py" kind="push" identifier="toBaseDocument" id="V5a-1X-hzC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWh-eV-5J7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -813,6 +825,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow-up.png" width="40" height="40"/>
         <image name="cloud.png" width="175" height="121"/>
     </resources>
     <color key="tintColor" red="0.22745099663734436" green="0.79607850313186646" blue="1" alpha="1" colorSpace="deviceRGB"/>
@@ -822,9 +835,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="AXL-zX-oVD"/>
         <segue reference="ugu-eh-SXK"/>
-        <segue reference="iPz-pd-Him"/>
-        <segue reference="V5a-1X-hzC"/>
+        <segue reference="AXL-zX-oVD"/>
+        <segue reference="QhJ-B3-LpV"/>
     </inferredMetricsTieBreakers>
 </document>

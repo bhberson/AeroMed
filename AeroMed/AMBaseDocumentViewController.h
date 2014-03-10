@@ -10,7 +10,4 @@
 
 @interface AMBaseDocumentViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (nonatomic) BOOL isSubFolder;
-@property (strong, nonatomic) NSMutableArray *viewControllerData;
-@property (strong, nonatomic) NSArray *navigationStructure;
 @end

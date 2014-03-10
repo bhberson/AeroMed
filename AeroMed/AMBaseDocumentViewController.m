@@ -46,15 +46,4 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"toFileManager"]) {
-        NSLog(@"Performing segue to File Manager");
-        AMFileManagerViewController *vc = (AMFileManagerViewController *) segue.destinationViewController;
-        vc.isSubFolder = self.isSubFolder;
-        vc.navigationStructure = self.navigationStructure;
-        vc.viewControllerData = self.viewControllerData;
-    }
-}
-
-
 @end
