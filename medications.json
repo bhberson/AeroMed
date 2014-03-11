@@ -1,5 +1,5 @@
 {
-	"medication": [
+	"results": [
 	{
 		"title":  "Adenocard (adenosine)",
 		"originalDate": "18 October 2012",
@@ -207,12 +207,12 @@
 		"considerations": [
 			"Protect from light",
 			"COMMON",
-			"-- Cardiovascular:  Palpitations - rapid, Tachyarrhythmia",
-			"-- Neurologic:  Headache, Seizure, Tremor",
-			"-- Psychiatric:  Nervousness",
+			"• Cardiovascular:  Palpitations - rapid, Tachyarrhythmia",
+			"• Neurologic:  Headache, Seizure, Tremor",
+			"• Psychiatric:  Nervousness",
 			"SERIOUS",
-			"-- Cardiovascular:  Cardiac Disrhythmia",
-			"-- Respiratory:  Paradoxical bronchospasm"
+			"• Cardiovascular:  Cardiac Disrhythmia",
+			"• Respiratory:  Paradoxical bronchospasm"
 		]
 	},
 	{
@@ -425,6 +425,323 @@
 		"considerations": [
 			"Give bolus over 3-5 minutes. May cause nausea and vomiting.",
 			"In cases of overdose, titrate infusion rate to hemodynamic response."
+		]
+	},
+	{
+		"title": "Haldol (haloperidol)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Psychotic disorders",
+			"Alcoholic delirium",
+			"Agitation"
+		],
+		"adultDosage": [
+			"May give 2.5 - 5 mg IV or IM for severe agitation. Can repeat with 5 mg every 30 minutes as needed up to a maximum of 20 mg"
+		],
+		"pediatricDosage": [
+			"0.05 mg/kg IV or IM. Can repeat every 5 minutes up to a maximum of 0.15 mg/kg"
+		],
+		"considerations": [
+			"May lower seizure threshold",
+			"May potentiate other CNS depressants",
+			"Do not use in pregnancy",
+			"Prolongs QTc interval especially in larger doses",
+			"Avoid use in Parkinson’s patients"
+		]
+	},
+	{
+		"title": "Heparin",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Treatment of DVT, PE, and peripheral arterial embolism",
+			"Treatment in acute MI",
+			"Treatment in A. Fib"
+		],
+		"adultDosage": [
+			"Based on weight, and diagnosis. Use high -intensity, or reduced- intensity nomograms",
+			"For ACS: give 60 U/kg IVP bolus, MAX 4,000 units; initiate infusion at 12 U/kg/hr",
+			"For treatment of confirmed DVT/PE: give 80 U/kg IVP bolus MAX 10,000 units; initiate infusion at 18 U/kg/hr"
+		],
+		"pediatricDosage": [],
+		"considerations": [
+			"Have baseline CBC and coags drawn before starting/giving Heparin when possible",
+			"Watch for bleeding",
+			"Reverse with Protamine Sulfate 1 mg neutralizes approximately 100 U heparin; max of 50 mg"
+		]
+	},
+	{
+		"title": "Humulin R (regular insulin)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Hyperglycemia",
+			"Hyperkalemia"
+		],
+		"adultDosage": [
+			"Insulin drip:",
+			"• Mixed as 100 units in 100 ml normal saline (1 unit/mL drip)",
+			"• Initiate infusion at 1 unit/hr",
+			"• May be used in treating calcium channel and beta blocker overdose",
+			"• Do not decrease blood sugar by more than 100 – 130 points per hour",
+			"Hyperkalemia: 10 units IVP once"
+		],
+		"pediatricDosage": [
+			"Insulin infusion start at 0.1 units/kg/hr"
+		],
+		"considerations": [
+			"Rapid acting:",
+			"• NovoLog, HumaLog, Novolin R, Humulin R : onset 10 – 30 mins. Peaks in 30 mins to 5 hrs",
+			"Long acting:",
+			"• Lantus, Levemir: onset 1 – 2 hours. Lasts up to 24 hours.",
+			"In short term hypoglycemia is far more harmful than hyperglycemia",
+			"Symptoms of hypoglycemia (tremors, confusion, loss of consciousness) may appear even in “normal” range in patients accustomed to elevated blood glucose (uncontrolled diabetics)",
+			"Reverse with Dextrose 50% IVP or glucagon 1mg"
+		]
+	},
+	{
+		"title": "Inapsine (droperidol)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Antiemetic (used to prevent post-op N/V)",
+			"Antipsychotic"
+		],
+		"adultDosage": [
+			"Max initial dose: 2.5mg IM, IV",
+			"Additional doses: 1.25mg"
+		],
+		"pediatricDosage": [
+			"Children 2-12 yrs : Maximum dose of 0.1mg/kg"
+		],
+		"considerations": [
+			"Can cause arrhythmias, including QT prolongation and torsade de pointes.",
+			"Can cause extrapyramidal symptoms",
+			"Causes sleepiness",
+			"Can cause neuroleptic malignant syndrome"
+		]
+	},
+	{
+		"title": "Intropin (dopamine)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"All types of shock, (except hypovolemic)",
+			"Severe, refractory heart failure"
+		],
+		"adultDosage": [
+			"0.5 – 20 mcg/kg/min. Concentration: 400mg in 250ml NS (1600 mcg/mL).",
+			"Usual starting dose is 5-10 mcg/kg/min. Rapid onset, titrate by 1 – 2.5 mcg/kg/min q 5 mins to desired effects."
+		],
+		"pediatricDosage": [],
+		"considerations": [
+			"May cause severe tissue necrosis if infiltrated. Infuse through a central line, or large bore IV. If run peripherally, check IV site frequently and document.",
+			"Do not stop abruptly. Wean every 5 -15 minutes based on patient response"
+		]
+	},
+	{
+		"title": "Ketalar (Ketamine)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"General anesthetic",
+			"Sedation/analgesia"
+		],
+		"adultDosage": [
+			"IM: 2-4mg/kg",
+			"IV: 0.2-0.75 mg/kg"
+		],
+		"pediatricDosage": [
+			"Oral: 5-8mg/kg given 30 mins before procedure",
+			"IM: 2-5mg/kg",
+			"IV: 0.5-1mg/kg",
+ 			"(in children less than 16 years old)"
+		],
+		"considerations": [
+			"May produce emergence psychosis, especially in adults. May pretreat with a benzodiazepine to reduce this incidence.",
+			"Causes increased salivation, may pretreat with anticholinergics"
+		]
+	},
+	{
+		"title": "Lasix (furosemide)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Loop diuretic for treatment of CHF and edema"
+		],
+		"adultDosage": [
+			"20 – 80 mg IVP over 1-2 minutes. Max single dose of 200 mg"
+		],
+		"pediatricDosage": [
+			"1 mg/kg/dose"
+		],
+		"considerations": [
+			"Onset of action is 5 minutes, and drug effects peak at 30 minutes. Have foley in place for transport.",
+			"Watch serum electrolytes, especially potassium.",
+			"Incompatible with numerous other meds. Flush line before and after dose if giving with other infusions."
+		]
+	},
+	{
+		"title": "Levophed (norepinephrine)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Severe hypotension/shock, especially septic shock with adequate fluid resuscitation",
+			"Massive vasodilation",
+			"Short term support of BP in hypotensive situations"
+		],
+		"adultDosage": [
+			"Standard concentration: 16 mcg per mL in 0.9% sodium chloride (4mg/250ml Normal Saline)",
+			"Weight based – starting dose of 0.1 mcg/kg/min; wean up or down at 0.02 mcg/kg/min increments as frequently as needed to meet the ordered blood pressure goals (within 10 minutes). Normal dose range is 0.05 – 0.2 mcg/kg/min. Some patients may require higher doses.",
+			"Use the Aero Med quick reference cards"
+		],
+		"pediatricDosage": [
+			"See adult dosing guidelines",
+			"Start at 0.05 – 0.1 mcg/kg/min"
+		],
+		"considerations": [
+			"Monitor blood pressure, heart rate, ECG, fluid volume status",
+			"Tachycardia’s and dysrhythmias with excessive stimulation",
+			"Increased myocardial oxygen demands",
+			"May cause tissue necrosis if extravasation occurs. Preferable administration via a central line or large bore"
+		]
+	},
+	{
+		"title": "Lidocaine",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Treatment of ventricular ectopy",
+			"Treatment of V-Tach and V-Fib",
+			"Pre-treatment of increased ICP and reactive airway disease, when intubating"
+		],
+		"adultDosage": [
+			"1 – 1.5 mg/kg bolus, may repeat in 5 minutes at 50% of dose; max of 3 mg/kg",
+			"Followed by continuous infusion at 1 – 4 mg/min typically within 10 minutes of 1st bolus dose. Standard concentration is 2 Gm in 500ml D5W, or 4 mg/ml.",
+			"Titrate infusion to results (decreased ventricular dysrhythmias)",
+			"For intubation, just pre-treat with 1.5 mg/kg. Max dose 100 mg. (Standard adult dose is 100mg.)"
+		],
+		"pediatricDosage": [
+			"1 – 1.5 mg/kg bolus, max dose is 3 mg/kg, followed by continuous infusion at 20 – 50 mcg/kg/min"
+		],
+		"considerations": [
+			"Do not stop infusion abruptly wean by 1 mg/min every 15 – 30 min until off"
+		]
+	},
+	{
+		"title": "Lopressor",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Antianginal agent",
+			"Beta-blocker",
+			"May be used in treatment of tachydysrhythmias, heart failure, HTN, MI, thyrotoxicosis."
+		],
+		"adultDosage": [
+			"Tachydysrythmias: 2.5-5mg IV every 2-5 minutes.",
+			"HTN: 50mg BID PO, immediate release tabs"
+		],
+		"pediatricDosage": [
+			"HTN: 1-2mg/kg/day, divided into 2 doses.",
+			"(in children 1-17 years)"
+		],
+		"considerations": [
+			"May cause bradycardia and hypotension. Use with caution in pt’s already on calcium channel blockers., or digoxin.",
+			"Abrupt withdrawal may cause rebound angina, arrhythmias, and MI."
+		]
+	},
+	{
+		"title": "Magnesium Sulfate",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Eclamptic seizures",
+			"Torsades de Pointes",
+			"Status Asthmaticus"
+		],
+		"adultDosage": [
+			"Cardiac arrest situation = 1 -2 Gm (dilute in at least 10ml of NS or D5W if not already done)",
+			"V-tach with a pulse and known hypomagnesemia = 1 – 2 Gm diluted in 50-100 ml of NS or D5W. Give over at least 5 minutes",
+			"Eclampsia or Pre-Term Labor = loading dose of 4 Gm over 30 minutes, then maintenance infusion of 2 – 4 Gm/hr"
+		],
+		"pediatricDosage": [
+			"Torsades, Status Asthmaticus = 25-50 mg/kg (max dose = 2 Gm) over 10-60 minutes"
+		],
+		"considerations": [
+			"Watch for respiratory depression and loss of deep tendon reflexes.",
+			"Reverse with Calcium Chloride"
+		]
+	},
+	{
+		"title": "Methergine",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Prevention of postpartum and postabortion hemorrhage.",
+			"Potent vasoconstrictor."
+		],
+		"adultDosage": [
+			"Oral: 0.2mg 3-4 times a day for 2-7 days",
+			"IM: 0.2mg after delivery of placenta. May be repeated every 2-4 hrs."
+		],
+		"pediatricDosage": [
+			"No age limits indicated when treating postpartum or postabortion hemorrhage."
+		],
+		"considerations": [
+			"Avoid IV administration if possible, due to risk of sudden HTN and CVA.",
+			"Use only after delivery of the baby."
+		]
+	},
+	{
+		"title": "Morphine",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Generalized pain of injury/trauma",
+			"Cardiac chest pain",
+			"Dyspnea associated with CHF"
+		],
+		"adultDosage": [
+			"0.1 mg/kg",
+			"Typical IV doses of 2 – 5 mg repeated PRN smaller doses repeated more frequently (ex 2 mg q5 min PRN vs 5 mg q15 min)"
+		],
+		"pediatricDosage": [
+			"0.1 mg/kg"
+		],
+		"considerations": [
+			"IV Onset 5- 10 minutes, lasts 1 – 4 hours",
+			"Watch for nausea, itching, and respiratory depression",
+			"Larger doses may lead to drops in blood pressure consider alternative opioids in hypotensive patients"
+		]
+	},
+	{
+		"title": "Narcan (naloxone)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Known opiate overdose",
+			"Unconscious patient of unknown origin",
+			"Reversal of respiratory depression due to therapeutic opioid doses"
+		],
+		"adultDosage": [
+			"Opioid Overdose:",
+			"• 0.4-2 mg IV push every 2-3 min as needed, may need to repeat doses every 20-60 min. If no response is observed after a total dose of 10 mg, question the diagnosis.",
+			"Reversal of respiratory depression with therapeutic opioid dose:",
+			"• Initial (I.V., I.M., SubQ.): 0.04-0.4 mg; may repeat until desired response achieved. If desired response is not observed after 0.8 mg total, consider other causes of respiratory depression."
+		],
+		"pediatricDosage": [
+			"I.V. (preferred)",
+			"Opioid Overdose:",
+			"• Birth (including premature infants) - 5 years or <20 kg: 0.1 mg/kg; repeat every 2-3 minutes, as needed based on response.",
+			"• >5yrs or >20kg: 2 mg; if no response, repeat every 2-3 minutes. If no response is observed after 10 mg total, consider other causes of respiratory depression",
+			"Reversal of respiratory depression with therapeutic opioid doses:",
+			"• 0.001 – 0.015 mg/kg/dose, repeat as warranted"
+		],
+		"considerations": [
+			"Potential for withdrawal especially in physically dependent narcotic patients",
+			"Monitor respiratory rate, heart rate and blood pressure",
+			"Effects of Narcan are shorter that actions of narcotics, therefore close observation and repeat dosage may be required"
 		]
 	},
 	{
