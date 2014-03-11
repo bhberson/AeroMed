@@ -7,7 +7,7 @@
 
 #import <Parse/Parse.h>
 
-@interface OperatingProcedure : PFObject <PFSubclassing>
+@interface OperatingProcedure : PFObject <PFSubclassing, NSCoding>
 
 // Title
 @property (nonatomic, retain) NSString *title;

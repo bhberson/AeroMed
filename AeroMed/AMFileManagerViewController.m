@@ -9,6 +9,7 @@
 #import "AMFolderViewController.h"
 #import "AMBaseDocumentViewController.h"
 #import "SWRevealViewController.h"
+#import "OperatingProcedure.h"
 
 #define kStructureKey @"Structure"
 
@@ -39,14 +40,17 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     NSLog(@"view will appear");
+     NSUserDefaults *storedData = [NSUserDefaults standardUserDefaults];
     
     // If we are in the main folder structure
     if (!_isSubFolder) {
         
         // If we do not have a structure then query the database
         if (_topFolders == nil) {
-            [self queryForFiles];
-            
+           // [self queryForFiles];
+            self.viewControllerData = [storedData objectForKey:@"structure"];
+            _topFolders = self.viewControllerData;
+            [self reloadDataAnimated:YES];
         // We already have a structure
         } else {
             self.viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
@@ -57,63 +61,11 @@
     // If we are displaying the documents in a folder
     } else {
 
-        [self queryForDocuments];
         [self.centerText removeFromSuperview];
     }
 }
 
-// Query for the document contents 
--(void) queryForDocuments {
-    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
-    [query whereKeyExists:@"title"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        
-        // Contains an array of PFObjects
-        _documents = objects;
-        [self removeAllCards];
-        [self reloadDataAnimated:YES];
-    }];
-}
 
-// Query for all the filenames and structure
-- (void) queryForFiles {
-    PFQuery *query = [PFQuery queryWithClassName:@"NavigationStructure"];
-    [query whereKey:@"organization" equalTo:@"Aero Med"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            self.viewControllerData = [[NSMutableArray alloc] init];
-            NSLog(@"Found %d", objects.count);
-            PFObject *company = [objects firstObject];
-            NSLog(@"company: %@", company[@"organization"]);
-            
-            // Get the structure property which is an array
-            NSArray *structure = company[@"structure"];
-            
-            // Convert the array into json
-            NSError *err;
-            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:structure options:NSJSONWritingPrettyPrinted error:&err];
-            
-            // Returns an array of dictionaries
-            NSArray *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&err];
-            _topFolders = [[NSArray alloc] initWithArray:json];
-            
-            // Loop through our top level structures and store the dictionary info
-            for (int i = 0; i < [json count]; i++) {
-                NSMutableDictionary *data = [json objectAtIndex:i];
-                [self.viewControllerData addObject:data];
-            }
-
-            // Reload the data
-            [self reloadDataAnimated:YES];
-            [self.centerText removeFromSuperview];
-        } else {
-          //  self.viewControllerData = [[NSArray alloc] init];
-            [self.centerText setText:@"Need internet connection"];
-            //TODO: refresh when connection available
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-    }];
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -210,19 +162,11 @@
         self.upButton.hidden = YES;
     } else {
         self.upButton.hidden = NO;
+        NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
+        
+        _documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        OperatingProcedure *op = _documents[0];
     }
 }
-
-#pragma mark - Saving and loading data
-
-//- (void)encodeWithCoder:(NSCoder *)encoder {
-//    [encoder encodeObject:self.navigationStructure forKey:kStructureKey];
-//}
-//
-//- (id)initWithCoder:(NSCoder *)decoder {
-//    NSArray *structure = [decoder decodeObjectForKey:kStructureKey];
-//    self.navigationStructure = structure;
-//    return self;
-//}
 
 @end

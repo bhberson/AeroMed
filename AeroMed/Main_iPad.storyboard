@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Reveal View Controller-->
@@ -134,26 +134,10 @@
                     <view key="view" contentMode="scaleToFill" id="2Pr-Yu-MMn">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7w-11-yP4">
-                                <rect key="frame" x="300" y="473" width="168" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="H7w-11-yP4" secondAttribute="centerX" id="3Vc-yE-AA5"/>
-                            <constraint firstItem="H7w-11-yP4" firstAttribute="top" secondItem="qgY-hc-2Wo" secondAttribute="bottom" constant="453" id="DgX-sL-F9l"/>
-                            <constraint firstAttribute="centerY" secondItem="H7w-11-yP4" secondAttribute="centerY" id="Euv-E2-grl"/>
-                            <constraint firstItem="H7w-11-yP4" firstAttribute="leading" secondItem="2Pr-Yu-MMn" secondAttribute="leading" constant="300" id="MgY-l6-BLb"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cAh-OF-x16"/>
                     <connections>
-                        <outlet property="centerText" destination="H7w-11-yP4" id="Gn8-Pz-Tpp"/>
                         <segue destination="f4b-e3-NDQ" kind="push" identifier="toBaseDocument" id="iX2-O3-efi"/>
                     </connections>
                 </viewController>

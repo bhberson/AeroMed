@@ -45,8 +45,6 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     [self initStandardDocuments];
-    
-    NSLog(@"Saved document %@", [[self.documents objectAtIndex:0] title]);
   
 }
 
@@ -59,37 +57,9 @@
 // Create the standard documents
 - (void)initStandardDocuments {
     
-    OperatingProcedure *alcoholWithdrawal = [OperatingProcedure object];
-    alcoholWithdrawal.title = @"Acute Alcohol Withdrawal";
-    alcoholWithdrawal.originalDate = @"18 October 2012";
-    alcoholWithdrawal.revisedDate = @"18 October 2012";
-    alcoholWithdrawal.considerations = @[@"Patient and Crew Safety due to patient anxiety, etc"];
-    alcoholWithdrawal.interventions = @[@"Treat withdrawal symptoms aggressively",
-                                        @"Anticipate Seizures",
-                                        @"Consider associated diagnosis",
-                                        @"Head injury",
-                                        @"GI Bleed",
-                                        @"Infection/Sepsis"];
-    alcoholWithdrawal.testsAndStudies = @[@"Blood Alcohol Level",
-                                          @"CMP",
-                                          @"Head CT",
-                                          @"12 Lead ECG"];
-    alcoholWithdrawal.medications = @[@"Benzodiazepines",
-                                      @"Diprovan (propofol)",
-                                      @"Thiamine",
-                                      @"Glucose"];
-    alcoholWithdrawal.checklist = @[@"Duration/Amount of alcohol ingestion",
-                                    @"Time of last alcohol intake",
-                                    @"Other substance ingestion"];
-    alcoholWithdrawal.impressions = @[@"Acute alcohol withdrawal",
-                                      @"Alcohol Dependence",
-                                      @"Delirium Tremens",
-                                      @"Acute agitation"];
-    alcoholWithdrawal.otherConsiderations = nil;
+    [self queryForDocuments];
+    [self queryForFiles];
     
-
-    // Add all documents
-    [self.documents addObject:alcoholWithdrawal];
   
 }
 
@@ -164,4 +134,52 @@
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+#pragma mark - Queries
+
+// Query for the document contents
+-(void) queryForDocuments {
+    
+    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
+    [query whereKeyExists:@"title"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (!error) {
+            // Save an array of PFObjects
+            NSMutableArray *operatingProcedures = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+            
+            for (int i = 0; i < objects.count; i++) {
+                OperatingProcedure *op = objects[i];
+                [operatingProcedures addObject:op];
+            }
+            NSArray *documents = [[NSArray alloc] initWithArray:operatingProcedures];
+            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:documents];
+            [storage setObject:data forKey:@"OperatingProcedures"];
+            [storage synchronize];
+        }
+        
+    }];
+}
+
+// Query for all the filenames and structure
+- (void) queryForFiles {
+    
+    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"NavigationStructure"];
+    [query whereKey:@"organization" equalTo:@"Aero Med"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            PFObject *company = [objects firstObject];
+            
+            // Get the structure property which is an array
+            NSArray *structure = company[@"structure"];
+            [storage setObject:structure forKey:@"structure"];
+            [storage synchronize];
+        }
+        
+    }];
+}
 @end

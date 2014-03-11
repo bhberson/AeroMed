@@ -7,7 +7,7 @@
 #import <UIKit/UIKit.h>
 #import "KLNoteViewController.h"
 
-@interface AMFileManagerViewController : KLNoteViewController <NSCoding>
+@interface AMFileManagerViewController : KLNoteViewController 
 @property (weak, nonatomic) IBOutlet UILabel *centerText;
 @property (weak, nonatomic) IBOutlet UIButton *upButton;
 - (IBAction)upButtonTapped:(id)sender;

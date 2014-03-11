@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "Transport.h"
 #import "TransportCell.h"
+#import "OperatingProcedure.h"
 
 @interface AMiPadBaseViewController ()
 
@@ -31,6 +32,8 @@
     
     NSLog(@"User logged in? %@", [PFUser currentUser] ? @"YES" : @"NO");
     
+    [self initStandardDocuments];
+    
     // Set the side bar button action to show slide out menu
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
@@ -47,6 +50,15 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// Create the standard documents
+- (void)initStandardDocuments {
+    
+    [self queryForDocuments];
+    [self queryForFiles];
+    
+    
 }
 
 #pragma mark - Table view data source
@@ -119,6 +131,54 @@
      [NSArray arrayWithObject:indexPath]
                           withRowAnimation:UITableViewRowAnimationAutomatic];
 	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - Queries
+
+// Query for the document contents
+-(void) queryForDocuments {
+    
+    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
+    [query whereKeyExists:@"title"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (!error) {
+            // Save an array of PFObjects
+            NSMutableArray *operatingProcedures = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+            
+            for (int i = 0; i < objects.count; i++) {
+                OperatingProcedure *op = objects[i];
+                [operatingProcedures addObject:op];
+            }
+            NSArray *documents = [[NSArray alloc] initWithArray:operatingProcedures];
+            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:documents];
+            [storage setObject:data forKey:@"OperatingProcedures"];
+            [storage synchronize];
+        }
+        
+    }];
+}
+
+// Query for all the filenames and structure
+- (void) queryForFiles {
+    
+    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"NavigationStructure"];
+    [query whereKey:@"organization" equalTo:@"Aero Med"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            PFObject *company = [objects firstObject];
+            
+            // Get the structure property which is an array
+            NSArray *structure = company[@"structure"];
+            [storage setObject:structure forKey:@"structure"];
+            [storage synchronize];
+        }
+        
+    }];
 }
 
 @end
