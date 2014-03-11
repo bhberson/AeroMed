@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailEntry;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 - (IBAction)didTapSignup:(id)sender;
+- (void)dismissKeyboard;
+
 @end
