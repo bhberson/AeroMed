@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 - (IBAction)didTapLogin:(id)sender;
+- (void)dismissKeyboard;
+
 @end

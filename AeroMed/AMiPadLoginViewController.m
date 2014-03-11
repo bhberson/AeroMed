@@ -31,7 +31,13 @@
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(didTapBack:)];
-        
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    
     [self.usernameEntry setDelegate:self];
     [self.passwordEntry setDelegate:self];
 }
@@ -72,6 +78,11 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (void)dismissKeyboard {
+    [self.usernameEntry resignFirstResponder];
+    [self.passwordEntry resignFirstResponder];
 }
 
 @end

@@ -47,6 +47,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,6 +66,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	if (indexPath.section == 0)
 		[self.numTextField becomeFirstResponder];
+}
+
+- (void)dismissKeyboard {
+    [self.numTextField resignFirstResponder];
+    [self.notesTextField resignFirstResponder];
 }
 
 - (void)dealloc
