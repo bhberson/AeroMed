@@ -7,6 +7,7 @@
 //
 
 #import "AMFolderViewController.h"
+#import "AMDocumentViewController.h"
 
 @interface AMFolderViewController ()
 @property (weak, nonatomic) NSArray *navigationStructure;
@@ -51,7 +52,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
@@ -80,6 +80,7 @@
         
         // Configure the cell...
         cell.textLabel.text = document[@"title"];
+        cell.detailTextLabel.text = @"";
     } else {
         // Data for cell
         NSDictionary *data = [_navigationStructure objectAtIndex:indexPath.row];
@@ -91,6 +92,16 @@
     
     return cell;
 }
+
+// user selected a card from the table
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // Send a notification to the file manager to display the card that was selected
+    PFObject *document = [self.allDocuments objectAtIndex:indexPath.row];
+    NSDictionary *data = [NSDictionary dictionaryWithObject:document forKey:@"cardSelected"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"tappedCard" object:nil userInfo:data];
+}
+
 
 /*
 // Override to support conditional editing of the table view.

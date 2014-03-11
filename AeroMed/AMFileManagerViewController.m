@@ -20,6 +20,7 @@
 @property (strong, nonatomic) NSMutableArray *viewControllerData;
 @property (strong, nonatomic) NSArray *topFolders;
 @property (atomic) BOOL isClearingViews;
+
 @end
 
 @implementation AMFileManagerViewController
@@ -34,7 +35,8 @@
         self.upButton.hidden = NO;
     }
    
-  
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showSelectedDocument:) name:@"tappedCard" object:nil];
+    
 
 }
 
@@ -78,6 +80,15 @@
     _viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
 }
 
+- (void)showSelectedDocument:(NSNotification *)notification {
+    [self removeAllCards];
+    NSDictionary *info = [notification userInfo];
+    PFObject *card = [info valueForKey:@"cardSelected"];
+    self.viewControllerData = [[NSMutableArray alloc] initWithObjects:card, nil];
+    //self.documents = [[NSArray alloc] initWithObjects:card, nil];
+   
+}
+
 #pragma mark - Note card control
 
 - (NSInteger)numberOfControllerCardsInNoteView:(KLNoteViewController*) noteView {
@@ -115,14 +126,11 @@
         AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
         [viewController setInfo: navDict];
         return [[UINavigationController alloc] initWithRootViewController:viewController];
-    } else if ([type isEqualToString:@"document"]) {
+    } else {
         viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
         [viewController setInfo: navDict];
         [viewController setData:cardData];
         return [[UINavigationController alloc] initWithRootViewController:viewController];
-    } else {
-        NSLog(@"error");
-        viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
     }
     
     

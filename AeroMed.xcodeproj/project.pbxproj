@@ -94,6 +94,7 @@
 		2704736518B05E11003AAB09 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2704736718B05E20003AAB09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2704736D18B0625B003AAB09 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		2706A5CD18CFA611007B3248 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		270B4AAF18A43606008578B9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		270B4AB118A4360E008578B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		270DB5341887201600573F3F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
@@ -167,8 +168,10 @@
 		779181B618C832E800AE1019 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
 		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
 		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
+		9DBE07FD16E044AE9885993B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC74591F18B487EB00BA0DE2 /* CheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBox.png; sourceTree = "<group>"; };
 		AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBox@2x.png"; sourceTree = "<group>"; };
+		E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +290,7 @@
 				7787CF2118806ECE004F495E /* AeroMedTests */,
 				7787CF0118806ECE004F495E /* Frameworks */,
 				7787CF0018806ECE004F495E /* Products */,
+				E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -302,6 +306,7 @@
 		7787CF0118806ECE004F495E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2706A5CD18CFA611007B3248 /* libPods.a */,
 				2786509B18B59A9100EA6E2F /* Pixate.framework */,
 				2704736D18B0625B003AAB09 /* FacebookSDK.framework */,
 				2704736718B05E20003AAB09 /* SystemConfiguration.framework */,
@@ -319,6 +324,7 @@
 				7787CF0418806ECE004F495E /* CoreGraphics.framework */,
 				7787CF0618806ECE004F495E /* UIKit.framework */,
 				7787CF1B18806ECE004F495E /* XCTest.framework */,
+				9DBE07FD16E044AE9885993B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -413,9 +419,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7787CF2B18806ECE004F495E /* Build configuration list for PBXNativeTarget "AeroMed" */;
 			buildPhases = (
+				4D49CF6DEE7D429B9095C53D /* Check Pods Manifest.lock */,
 				7787CEFB18806ECE004F495E /* Sources */,
 				7787CEFC18806ECE004F495E /* Frameworks */,
 				7787CEFD18806ECE004F495E /* Resources */,
+				DFCDE84F55FB4DC6BDDA130F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -512,6 +520,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D49CF6DEE7D429B9095C53D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFCDE84F55FB4DC6BDDA130F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7787CEFB18806ECE004F495E /* Sources */ = {
@@ -661,6 +702,7 @@
 		};
 		7787CF2C18806ECE004F495E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -679,6 +721,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
 				INFOPLIST_FILE = "AeroMed/AeroMed-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -689,6 +735,7 @@
 		};
 		7787CF2D18806ECE004F495E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -707,6 +754,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
 				INFOPLIST_FILE = "AeroMed/AeroMed-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "03E43C7D-F8E5-4A29-8B26-00438979977C";
