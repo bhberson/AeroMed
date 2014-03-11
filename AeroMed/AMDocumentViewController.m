@@ -19,37 +19,29 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
     
-   // [self queryForDocument];
+    [self addData];
 }
 
-//TODO: get differenty types of documents
-//-(void)queryForDocument {
-//    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
-//    [query whereKey:@"title" equalTo:[self.info objectForKey:@"title"]];
-//    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-//        _doc = [objects firstObject];
-//        [self addData];
-//    }];
-//}
 
-//-(void)addData {
-//    
-//    if (_doc) {
-//        
-//        NSMutableString *text = [self formatOperatingProcedure];
-//        self.textView.text = text;
-//        
-//    }
-//}
-//                            
-//-(NSMutableString *)formatOperatingProcedure {
-//    NSMutableString *data = [[NSMutableString alloc] initWithString:_doc[@"title"]];
-//    [data appendString:@"\n"];
-//    [data appendString:@"Original Data:"];
-//    [data appendString:_doc[@"originalDate"]];
-//    
-//                            
-//    return data;
-//}
+
+-(void)addData {
+    
+    if (_doc) {
+        
+        NSMutableString *text = [self formatOperatingProcedure];
+        self.textView.text = text;
+        
+    }
+}
+
+-(NSMutableString *)formatOperatingProcedure {
+    NSMutableString *data = [[NSMutableString alloc] initWithString:_doc[@"title"]];
+    [data appendString:@"\n"];
+    [data appendString:@"Original Data:"];
+    [data appendString:_doc[@"originalDate"]];
+    
+                            
+    return data;
+}
 
 @end

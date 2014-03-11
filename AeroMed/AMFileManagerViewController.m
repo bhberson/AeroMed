@@ -105,10 +105,10 @@
     AMDocumentViewController *viewController;
     
     // If we are the 10th card in too many documents we want to show All Documents in the folder
-    if (_tooManyDocuments && index == 10) {
+    if (_tooManyDocuments && index == 9) {
         AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
         [viewController setAllDocuments:_documents];
-        return viewController;
+        return [[UINavigationController alloc] initWithRootViewController:viewController];
     }
 
     if ([type isEqualToString:@"folder"]) {
@@ -139,7 +139,7 @@
 
         // If it is a folder, moves into the full screen state, and has elements to contain then procede to subfolders
         if (toState == 3 && [[navDict objectForKey:@"type"] isEqualToString:@"folder"] && [[navDict objectForKey:@"contains"] count] > 0) {
-            NSLog(@"Folder was pulled up");
+          
             self.viewControllerData = [[NSMutableArray alloc] initWithArray:[navDict objectForKey:@"contains"]];
             _isSubFolder = YES;
             [self removeAllCards];
