@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -134,16 +134,33 @@
                     <view key="view" contentMode="scaleToFill" id="2Pr-Yu-MMn">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyo-GQ-0W3">
+                                <rect key="frame" x="350" y="92" width="95" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow-up.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upButtonTapped:" destination="tVP-ah-kJr" eventType="touchUpInside" id="N7o-jd-JjQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Iyo-GQ-0W3" secondAttribute="centerX" constant="-13.5" id="147-nz-G0f"/>
+                            <constraint firstItem="Iyo-GQ-0W3" firstAttribute="top" secondItem="qgY-hc-2Wo" secondAttribute="bottom" constant="30" id="jhj-5n-Z3F"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cAh-OF-x16"/>
                     <connections>
+                        <outlet property="upButton" destination="Iyo-GQ-0W3" id="xZH-ZP-Htn"/>
                         <segue destination="f4b-e3-NDQ" kind="push" identifier="toBaseDocument" id="iX2-O3-efi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNe-Yp-Rfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="-2486"/>
+            <point key="canvasLocation" x="1082" y="-2486"/>
         </scene>
         <!--Base Document View Controller-->
         <scene sceneID="rGG-pb-aKF">
@@ -163,10 +180,9 @@
                                 <color key="barTintColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <containerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrL-gl-7uF">
+                            <containerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrL-gl-7uF">
                                 <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="tVP-ah-kJr" kind="embed" identifier="toFileManager" id="cCY-UY-U1q"/>
                                 </connections>
@@ -175,11 +191,10 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Rtf-Io-PEw" firstAttribute="top" secondItem="XFW-Dk-s1e" secondAttribute="bottom" id="1n9-iY-Z4E"/>
-                            <constraint firstAttribute="trailing" secondItem="Rtf-Io-PEw" secondAttribute="trailing" id="Bi5-Gh-Cel"/>
-                            <constraint firstAttribute="trailing" secondItem="OrL-gl-7uF" secondAttribute="trailing" id="IJC-g9-Z6o"/>
-                            <constraint firstItem="Rtf-Io-PEw" firstAttribute="leading" secondItem="PwQ-Ib-KCw" secondAttribute="leading" id="KFU-zk-Fye"/>
-                            <constraint firstItem="3Fq-PM-kdP" firstAttribute="top" secondItem="OrL-gl-7uF" secondAttribute="bottom" id="fse-8R-zyQ"/>
-                            <constraint firstItem="OrL-gl-7uF" firstAttribute="leading" secondItem="PwQ-Ib-KCw" secondAttribute="leading" id="m0L-ei-nI6"/>
+                            <constraint firstAttribute="trailing" secondItem="Rtf-Io-PEw" secondAttribute="trailing" id="MIc-F8-3cf"/>
+                            <constraint firstItem="Rtf-Io-PEw" firstAttribute="leading" secondItem="PwQ-Ib-KCw" secondAttribute="leading" id="dOn-8o-Qx5"/>
+                            <constraint firstAttribute="trailing" secondItem="OrL-gl-7uF" secondAttribute="trailing" id="iTE-aw-ph1"/>
+                            <constraint firstItem="OrL-gl-7uF" firstAttribute="leading" secondItem="PwQ-Ib-KCw" secondAttribute="leading" id="qI9-JM-g1h"/>
                             <constraint firstItem="OrL-gl-7uF" firstAttribute="top" secondItem="Rtf-Io-PEw" secondAttribute="bottom" constant="10" id="rMg-aQ-Upw"/>
                         </constraints>
                     </view>
@@ -190,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5z-6E-VPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="346" y="-2486"/>
+            <point key="canvasLocation" x="74" y="-2502"/>
         </scene>
         <!--Document View Controller-->
         <scene sceneID="dWF-bN-jYB">
@@ -217,7 +232,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="DN0-aI-4kS">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -232,20 +247,17 @@
                                             <rect key="frame" x="15" y="3" width="34" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y7R-zh-SU8">
                                             <rect key="frame" x="15" y="25" width="43" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.22745099660000001" green="0.79607850309999995" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -771,8 +783,26 @@
             </objects>
             <point key="canvasLocation" x="1330" y="1165"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kn9-8g-dCY">
+            <objects>
+                <viewController id="FRa-MK-18v" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KOR-3K-BAE"/>
+                        <viewControllerLayoutGuide type="bottom" id="yVk-Pk-BLK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QGx-P7-WRI">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rwc-0Q-alY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrow-up.png" width="40" height="40"/>
         <image name="cloud.png" width="175" height="121"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

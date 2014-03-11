@@ -35,7 +35,10 @@
         self.upButton.hidden = NO;
     }
    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showSelectedDocument:) name:@"tappedCard" object:nil];
+    // Setup notification for if user selects a card in the subfiew folder card
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showSelectedDocument:)
+                                                 name:@"tappedCard" object:nil];
     
 
 }
@@ -72,6 +75,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 -(void)upButtonTapped:(id)sender {
