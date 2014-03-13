@@ -1,0 +1,356 @@
+{
+  "results": [
+  {
+  	"title":"Abrupt Placenta and Placenta Previa",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"considerations":[
+  	  "If unable to deliver prior to departing sending facility, coordinate with receiving facility for emergent delivery upon arrival"
+  	],
+  	"interventions":[
+  	  "Positioning",
+  	  "Oxygen via NRB",
+  	  "IVF and blood products as warranted",
+  	  "Evaluation and estimation of vaginal blood loss",
+  	  "Do not attempt to stop internal bleeding",
+  	  "Do not perform vaginal exam",
+  	  "Tranfuse blood products as needed"
+  	],
+  	"testsAndStudies":[
+  	  "FHT and Decels if present via Toco FHT monitor",
+  	  "Coags",
+  	  "HgB",
+  	  "Type and Screen"
+  	],
+  	"medications":[
+  	  "Pain medications (hold if deliver eminent)"
+	],
+	"documentationItems":[
+	  "Pain history",
+	  "History of recent trauma",
+	  "EBL",
+	  "Decelerations if present"
+	],
+	"impressions":[
+	  "Abrupto Placenta",
+	  "Fetal Distress",
+	  "Placenta Previa"
+	],
+	"otherConsiderations":[
+	]
+  },
+  {
+  	"title":"Cardiac Arrest in Term Pregnancy",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"considerations":[
+  	  "Do not transport if in full arrest"
+  	],
+  	"interventions":[
+  	  "Stop Magnesium Sulfate",
+  	  "Give Calcium Chloride",
+  	  "Manual uterine displacement",
+  	  "Consider reversible causes",
+  	  "Prepare for emergency c-section if no ROSC and fetus > 24 weeks (physician only)"
+  	],
+  	"testsAndStudies":[
+  	],
+  	"medications":[
+  	  "Magnesium Sulfate",
+  	  "Calcium Chloride",
+  	  "Epinephrine"
+	],
+	"documentationItems":[
+	  "Code Summary"
+	],
+	"impressions":[
+	  "Pregnancy",
+	  "Cardiopulmonary Arrest"
+	],
+	"otherConsiderations":[
+	  "Only attempt c-section if crew composition is physician and nurse",
+	  "Follow AHA guidelines for Adult Cardiac Arrest (BLS/ACLS)"
+	]
+  },
+  {
+  	"title":"Delivery, Eminent",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"considerations":[
+  	  "Do not transport if delivery eminent",
+  	  "Request assistance on helistop",
+  	  "Assess for NICU team versus transport of pregnant mother prior to departure from Aero Med and again prior to departure from sending facility (conference call with OB and NICU attendings)",
+  	  "If transporting pregnant mother, decide which team member will transport in aft, forward face seat",
+  	  "Have a new baby equipment available in cabin"
+  	],
+  	"interventions":[
+  	  "Increase ambient temperature of cabin",
+  	  "Keep mother in LLR and RLR position",
+  	  "NRB if fetal distress suspected",
+  	  "If breech, foot or hand presentation expedite transport (if noted while enroute) and notify receiving",
+  	  "Follow NRP guidelines",
+  	  "Check for nuchal cord and gently reduce if present",
+  	  "Suction mouth and nose only if thick myconium present (causes respiratory depression)",
+  	  "Delay cord cutting for at least one minute or until pulsating stops",
+  	  "Do not pull on cord to deliver placenta",
+  	  "Transport placenta with patient",
+  	  "Massage fundus after delivery",
+  	  "Initiate skin on skin (kangaroo care) if applicable after initial assessement",
+  	  "Consider breast feeding if appropriate",
+  	  "Observe for postpartum hemorrhage (EBL > 500 mL)"
+  	],
+  	"testsAndStudies":[
+  	],
+  	"medications":[
+	],
+	"documentationItems":[
+	  "Time of delivery",
+	  "Complications if present",
+	  "EBL",
+	  "Possible retained products",
+	  "Time placenta delivered",
+	  "Meconium presence",
+	  "Nuchal cord presence and number of wraps"
+	],
+	"impressions":[
+	  "Emergency delivery",
+	  "Associated complications if applicable",
+	  "Precipitous Delivery"
+	],
+	"otherConsiderations":[
+	]
+  },
+  {
+  	"title":"General High Risk OB Guidelines",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"considerations":[
+  	  "Left Lateral Recombinant position (RLR also acceptable)",
+  	  "Do not transport if delivery eminent"
+  	],
+  	"interventions":[
+  	  "Pregnancy decreases Oxygen reserve which may be further complicated by increased edema (preeclampsia) and lowers the threshold for intubation",
+  	  "Ensure not delivering eminently",
+  	  "Perform external (not manual) exam looking for prolapsed cord, increased hemorrhage, crowning, presenting parts (arms, legs)",
+  	  "Oxygent via NRB whenever fetal distress present",
+  	  "IV access (avoiding AC if possible)",
+  	  "Fetal Heart Tones: Not necessary enroute",
+  	  "Positioning (LLR, RLR, and HOB elevated)",
+  	  "If delivery occurs, follow NRP guidelines"
+  	],
+  	"testsAndStudies":[
+  	  "US for presentation",
+  	  "Results of Toco/FHT monitor strip (FHT and Decelerations if applicable)",
+  	  "Consider labs related to primary diagnosis or chief complaint"
+  	],
+  	"medications":[
+  	  "Confer with receiving OB attending prior to departure"
+	],
+	"documentationItems":[
+	  "History: Presentation, multiples, gestation, gravida, para",
+	  "Membrane condition",
+	  "Fetal movement",
+	  "FHT and Decelerations if present"
+	],
+	"impressions":[
+	  "Pregnancy",
+	  "Eclampsia",
+	  "Pre-term labor",
+	  "Fetal Distress"
+	],
+	"otherConsiderations":[
+	  "Consider deliver at sending"
+	]
+  },
+  {
+  	"title":"Newborn Resuscitation",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"considerations":[
+  	  "Deliver prior to departure if possible",
+  	  "Request team to helistop for assistance if applicable"
+  	],
+  	"interventions":[
+  	  "Follow NRP Guidelines",
+  	  "Be Prepared",
+  	  "• New baby pack",
+  	  "• PPE",
+  	  "• Increased ambient temperature",
+  	  "• Determine appropriate crew member for aft, forward facing seat if in aircraft",
+  	  "• Extra blankets and pads",
+  	  "• Suction with 6 french catheter available"
+  	],
+  	"testsAndStudies":[
+  	  "FHT and Decels if present via Toco FHT monitor prior to departure from sending facility if available"
+  	],
+  	"medications":[
+	],
+	"documentationItems":[
+	  "Time of delivery",
+	  "• Baby",
+	  "• Placenta",
+	  "APGAR at 1 and 5 minutes"
+	],
+	"impressions":[
+	  "Delivery, Uncomplicated",
+	  "Delivery, Complicated"
+	],
+	"otherConsiderations":[
+	]
+  },
+  {
+  	"title":"Postpartum Hemorrhage",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"considerations":[
+  	  "Evaluate need for blood products from BWH prior to departing for sending facility",
+  	  "Consider consulting SICU and OB attending prior to departure"
+  	],
+  	"interventions":[
+  	  "Assess for (ask sending physician) EBL > 500 mL with known source (cervix vs vagina vs perineum)",
+  	  "Treat as hemorrhagic shock if appropriate",
+  	  "Oxygen via NRB",
+  	  "Monitor blood loss from vagina",
+  	  "Do not attempt to apply direct pressure",
+  	  "Fundal massage",
+  	  "Pitocin",
+  	  "If infant present, encourage breast feeding if appropriate",
+  	  "Blood product tranfusion"
+  	],
+  	"testsAndStudies":[
+  	  "HgB",
+  	  "Coags",
+  	  "Type and Screen"
+  	],
+  	"medications":[
+  	  "Pitocin",
+  	  "Pain medications"
+	],
+	"documentationItems":[
+	  "EBL",
+	  "Source of hemorrhage",
+	  "Blood pressure trends",
+	  "Products tranfused"
+	],
+	"impressions":[
+	  "Postpartum hemorrhage",
+	  "Shock, hemorrhagic",
+	  "Specific source of bleeding"
+	],
+	"otherConsiderations":[
+	]
+  },
+  {
+  	"title":"Pre-Term Labor",
+  	"originalDate":"",
+  	"revisedDate":"",
+  	"considerations":[
+  	  "Have baby delivery supplies/equipment available"
+  	],
+  	"interventions":[
+  	  "Appropriate positioning (LLR, RLR, HOB elevated)",
+  	  "IV hydration",
+  	  "Medications per receiving physician",
+  	  "No internal vaginal exams",
+  	  "Steroids ASAP"
+  	],
+  	"testsAndStudies":[
+  	  "Ultra Sound",
+  	  "Toco and FHT"
+  	],
+  	"medications":[
+  	  "Magnesium Sulfate",
+  	  "Betamethasona"
+	],
+	"documentationItems":[
+	  "Input and Output",
+	  "Fetal Heart Tones"
+	],
+	"impressions":[
+	  "Pre-term labor"
+	],
+	"otherConsiderations":[
+	]
+  },
+  {
+  	"title":"Preeclampsia adn Eclampsia",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"considerations":[
+  	  "Consider requesting medications from sending facility prior to departure"
+  	],
+  	"interventions":[
+  	  "Medications per receiving physician",
+  	  "Proper positioning",
+  	  "Blood pressure control goals",
+  	  "• Systolic 140-160",
+  	  "• Diastolic 90-100",
+  	  "Anti-Hypertensives",
+  	  "• 1st Line Labatelol bolus (300 mg max)",
+  	  "• 2nd Line Nipride drip",
+  	  "Assess for signs of Magnesium toxicity"
+  	],
+  	"testsAndStudies":[
+  	  "FHT and Decels if present via Toco FHT monitor",
+  	  "Mg",
+  	  "CMP"
+  	],
+  	"medications":[
+  	  "Magnesium Sulfate",
+  	  "Labatelol (intermittent IV dose only and limit number---NO gtt)",
+  	  "Nipride",
+  	  "Benzodiazapines: intractable seizure abatement"
+	],
+	"documentationItems":[
+	  "History",
+	  "• Seizures",
+	  "• Hypertension",
+	  "Deep tendong reflexes",
+	  "Serial blood pressures"
+	],
+	"impressions":[
+	  "Eclampsia",
+	  "Preeclampsia",
+	  "Pregnancy, complicated",
+	  "hypertension"
+	],
+	"otherConsiderations":[
+	  "Definitive treatment is delivery"
+	]
+  },
+  {
+  	"title":"Prolapsed Cord",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"considerations":[
+  	  "Deliver prior to transport if at all possible",
+  	  "Notify receiving ASAP to coordinate appropriate receiving team and location for transfer of care"
+  	],
+  	"interventions":[
+  	  "Positioning of mother",
+  	  "Oxygen via NRB",
+  	  "Insert hand in vagina to direct pressure away from cord",
+  	  "Cover cord with sterile saline dressing",
+  	  "Do NOT attempt to reinsert",
+  	  "If nuchal cord present, gently reduce"
+  	],
+  	"testsAndStudies":[
+  	  "Ultrasound",
+  	  "FHT and Decels if present via Toco FHT monitor"
+  	],
+  	"medications":[
+	],
+	"documentationItems":[
+	  "Interventions",
+	  "Toco FHT monitor strip",
+	  "Decels via toco strip if present",
+	  "Improvement of fetal activity with positioning"
+	],
+	"impressions":[
+	  "Prolapsed Cord"
+	],
+	"otherConsiderations":[
+	]
+  }
+  ]
+}
