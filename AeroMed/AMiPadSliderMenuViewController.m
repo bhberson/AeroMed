@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
 
-   _menuItems = @[@"title", @"documentation", @"checklist", @"logout"];
+   _menuItems = @[@"title",@"transports", @"documentation", @"logout"];
 
 }
 
@@ -64,6 +64,18 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell..
+    // Configure the cell..
+    if ([CellIdentifier isEqualToString:@"title"]) {
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        NSString *email = [[PFUser currentUser] email];
+        NSMutableString *greeting = [[NSMutableString alloc] init];
+        [greeting appendString:@"Hi "];
+        [greeting appendString:[email substringToIndex:[email rangeOfString:@"@"].location]];
+        cell.textLabel.text = greeting;
+        cell.textLabel.textColor = [UIColor whiteColor];
+        cell.textLabel.enabled = YES;
+    }
+    
     
     
     return cell;
@@ -99,6 +111,11 @@
             destViewController.title = @"Documentation";
             destViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(didTapBack:)];
         }
+    }
+    
+    // If we clicked the transports cell
+    if ([segue.identifier isEqualToString:@"transport"]) {
+        destViewController.title = @"All Transports";
     }
     
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
