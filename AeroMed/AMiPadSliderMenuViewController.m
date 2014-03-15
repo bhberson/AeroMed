@@ -63,8 +63,7 @@
     NSString *CellIdentifier = [self.menuItems objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell..
-    // Configure the cell..
+//    // Configure the cell..
     if ([CellIdentifier isEqualToString:@"title"]) {
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         NSString *email = [[PFUser currentUser] email];
@@ -72,10 +71,12 @@
         [greeting appendString:@"Hi "];
         [greeting appendString:[email substringToIndex:[email rangeOfString:@"@"].location]];
         cell.textLabel.text = greeting;
+        NSLog(@"%@",greeting);
+        
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.enabled = YES;
+        cell.textLabel.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
     }
-    
     
     
     return cell;
@@ -88,6 +89,11 @@
     self.tableView.separatorColor = [UIColor colorWithWhite:0.15f alpha:0.2f];
     cell.contentView.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
     
+}
+
+- (void)didTapBack:(id)sender {
+    NSLog(@"Going back.");
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -105,7 +111,7 @@
         }
     }
     
-    // If we clicked the docuements button
+    // If we clicked the docuements cell
     if ([segue.identifier isEqualToString:@"documentation"]) {
         if([PFUser currentUser]){
             destViewController.title = @"Documentation";
