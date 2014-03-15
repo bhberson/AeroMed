@@ -55,7 +55,7 @@
            // [self queryForFiles];
             self.viewControllerData = [storedData objectForKey:@"structure"];
             _topFolders = self.viewControllerData;
-            [self reloadData];
+            [self reloadDataAnimated:YES];
         // We already have a structure
         } else {
             self.viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
@@ -83,8 +83,9 @@
 
 -(void)upButtonTapped:(id)sender {
     _isSubFolder = NO;
-    [self removeAllCards];
+
     _viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
+    [self removeAllCards];
 }
 
 - (void)showSelectedDocument:(NSNotification *)notification {
@@ -169,9 +170,11 @@
     for (UIView *view in self.view.subviews) {
         if ([view isMemberOfClass:[KLControllerCard class]]) {
             [(KLControllerCard *)view removeFromSuperview];
+            NSLog(@"Removing card");
+            
         }
     }
-    
+
     [self reloadDataAnimated:YES];
     if (!_isSubFolder) {
         self.upButton.hidden = YES;
