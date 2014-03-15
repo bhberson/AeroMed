@@ -55,7 +55,7 @@
            // [self queryForFiles];
             self.viewControllerData = [storedData objectForKey:@"structure"];
             _topFolders = self.viewControllerData;
-            [self reloadDataAnimated:YES];
+            [self reloadData];
         // We already have a structure
         } else {
             self.viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
