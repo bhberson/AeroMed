@@ -9,6 +9,7 @@
 #import "AMFolderViewController.h"
 #import "SWRevealViewController.h"
 #import "OperatingProcedure.h"
+#import "AMCheckListTableViewController.h"
 
 #define kStructureKey @"Structure"
 
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) NSMutableArray *viewControllerData;
 @property (strong, nonatomic) NSArray *topFolders;
 @property (atomic) BOOL isClearingViews;
+@property (strong, nonatomic) NSArray *checkList;
 
 @end
 
@@ -43,6 +45,8 @@
                                              selector:@selector(showSelectedDocument:)
                                                  name:@"tappedCard" object:nil];
 
+    // Setup another notification for if the user selects to open up the checklist for a document
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showCheckList:) name:@"checkTapped" object:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -85,7 +89,8 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void)upButtonTapped:(id)sender {
+// Go back to main navigation folders
+- (void)upButtonTapped:(id)sender {
     _isSubFolder = NO;
     
     UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
@@ -100,6 +105,13 @@
     _documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 }
 
+- (void)showCheckList:(NSNotification *)notification {
+    
+    NSDictionary *info = [notification userInfo];
+    _checkList = [info valueForKey:@"checkList"];
+    [self performSegueWithIdentifier:@"toCheckList" sender:self];
+}
+
 - (void)showSelectedDocument:(NSNotification *)notification {
     [self removeAllCards];
     NSDictionary *info = [notification userInfo];
@@ -109,6 +121,13 @@
    
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"toCheckList"]) {
+        AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
+        [vc setCheckList:_checkList];
+    }
+}
 
 #pragma mark - Note card control
 
@@ -254,7 +273,7 @@
     sidebarButton.target = self;
     sidebarButton.title = @"Back";
     sidebarButton.action = @selector(upButtonTapped:);
-    NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
+   
     
 }
 

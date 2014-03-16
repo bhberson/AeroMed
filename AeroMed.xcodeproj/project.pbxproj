@@ -25,6 +25,8 @@
 		2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373018A30699000BC38A /* AMiPadBaseViewController.m */; };
 		2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */; };
 		2783BC5618D58B8C008E9790 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2783BC5518D58B8C008E9790 /* Main_iPhone.storyboard */; };
+		2783BC5918D58F56008E9790 /* AMCheckListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2783BC5818D58F56008E9790 /* AMCheckListTableViewController.m */; };
+		2783BC5B18D59483008E9790 /* check-false.png in Resources */ = {isa = PBXBuildFile; fileRef = 2783BC5A18D59483008E9790 /* check-false.png */; };
 		2786509C18B59A9100EA6E2F /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2786509B18B59A9100EA6E2F /* Pixate.framework */; };
 		2786509F18B59B6C00EA6E2F /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509D18B59B6C00EA6E2F /* cloud.png */; };
 		278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509E18B59B6C00EA6E2F /* cloud@2x.png */; };
@@ -100,6 +102,9 @@
 		2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneBaseViewController.h; sourceTree = "<group>"; };
 		2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneBaseViewController.m; sourceTree = "<group>"; };
 		2783BC5518D58B8C008E9790 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2783BC5718D58F56008E9790 /* AMCheckListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCheckListTableViewController.h; sourceTree = "<group>"; };
+		2783BC5818D58F56008E9790 /* AMCheckListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCheckListTableViewController.m; sourceTree = "<group>"; };
+		2783BC5A18D59483008E9790 /* check-false.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-false.png"; sourceTree = "<group>"; };
 		2786509B18B59A9100EA6E2F /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
 		2786509D18B59B6C00EA6E2F /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		2786509E18B59B6C00EA6E2F /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
@@ -384,6 +389,8 @@
 				779181B018C832A500AE1019 /* AMFileManagerViewController.m */,
 				779181B118C832A500AE1019 /* AMDocumentViewController.h */,
 				779181B218C832A500AE1019 /* AMDocumentViewController.m */,
+				2783BC5718D58F56008E9790 /* AMCheckListTableViewController.h */,
+				2783BC5818D58F56008E9790 /* AMCheckListTableViewController.m */,
 			);
 			name = "Mutual View Controllers";
 			sourceTree = "<group>";
@@ -391,6 +398,7 @@
 		779181B818C833D200AE1019 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2783BC5A18D59483008E9790 /* check-false.png */,
 				27A6AED818CD720E0055CCED /* arrow-up.png */,
 				27AC12E818D56874004B471D /* check-true.png */,
 				779181B918C833E200AE1019 /* bar-mid.png */,
@@ -484,6 +492,7 @@
 			files = (
 				779181BB18C833E200AE1019 /* bar-mid.png in Resources */,
 				779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */,
+				2783BC5B18D59483008E9790 /* check-false.png in Resources */,
 				7720280318B12933002302A4 /* style.css in Resources */,
 				27AC12E918D56874004B471D /* check-true.png in Resources */,
 				2783BC5618D58B8C008E9790 /* Main_iPhone.storyboard in Resources */,
@@ -546,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2783BC5918D58F56008E9790 /* AMCheckListTableViewController.m in Sources */,
 				2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */,
 				27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */,
 				27F94E0D18B424A3001F8F4F /* AMiPhoneSignupViewController.m in Sources */,

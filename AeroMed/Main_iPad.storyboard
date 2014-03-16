@@ -131,6 +131,34 @@
             </objects>
             <point key="canvasLocation" x="-580" y="-1368"/>
         </scene>
+        <!--Check List Table View Controller-->
+        <scene sceneID="CLj-XA-6LD">
+            <objects>
+                <tableViewController id="f2x-Uo-Jji" customClass="AMCheckListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IXj-hc-H77">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Hhv-e1-twl">
+                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hhv-e1-twl" id="jgX-4D-Ahn">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="f2x-Uo-Jji" id="rpH-7N-0z3"/>
+                            <outlet property="delegate" destination="f2x-Uo-Jji" id="ANY-gy-7Ta"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afR-sw-IyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-3179"/>
+        </scene>
         <!--File Manager View Controller-->
         <scene sceneID="MLc-in-Oss">
             <objects>
@@ -159,6 +187,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="3UN-tr-cbF" id="YsS-In-4Zi"/>
+                        <segue destination="f2x-Uo-Jji" kind="modal" identifier="toCheckList" id="Qdr-n4-51b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNe-Yp-Rfw" userLabel="First Responder" sceneMemberID="firstResponder"/>

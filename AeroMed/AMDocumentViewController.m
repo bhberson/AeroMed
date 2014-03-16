@@ -20,7 +20,7 @@
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
     
     UIImage *img = [UIImage imageNamed:@"check-true.png"];
-    UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:nil];
+    UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(checkMarkTapped:)];
     self.navigationItem.rightBarButtonItem = checklist;
     
     
@@ -172,18 +172,18 @@
         case 0:
             str = _doc[@"originalDate"];
            rect = [str boundingRectWithSize:max
-                                                       options:NSStringDrawingUsesLineFragmentOrigin
-                                                    attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                                       context:nil];
+                                   options:NSStringDrawingUsesLineFragmentOrigin
+                                attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
+                                   context:nil];
             height = rect.size.height;
             
             break;
         case 1:
             str = _doc[@"revisedDate"];
             rect = [str boundingRectWithSize:max
-                                                       options:NSStringDrawingUsesLineFragmentOrigin
-                                                    attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                                       context:nil];
+                                   options:NSStringDrawingUsesLineFragmentOrigin
+                                attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
+                                   context:nil];
             height = rect.size.height;
             
             break;
@@ -210,9 +210,9 @@
         case 4:
             str = [self getDocumentString:@"testsAndStudies"];
             rect = [str boundingRectWithSize:max
-                                                                            options:NSStringDrawingUsesLineFragmentOrigin
-                                                                         attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                                                            context:nil];
+                                    options:NSStringDrawingUsesLineFragmentOrigin
+                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
+                                    context:nil];
             height = rect.size.height;
             
             break;
@@ -220,27 +220,27 @@
         case 5:
             str = [self getDocumentString:@"medications"];
             rect = [str boundingRectWithSize:max
-                                                                            options:NSStringDrawingUsesLineFragmentOrigin
-                                                                         attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                                                            context:nil];
+                                options:NSStringDrawingUsesLineFragmentOrigin
+                             attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
+                                context:nil];
            height = rect.size.height;
             
             break;
         case 6:
             str = [self getDocumentString:@"impressions"];
             rect = [str boundingRectWithSize:max
-                                                                            options:NSStringDrawingUsesLineFragmentOrigin
-                                                                         attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                                                            context:nil];
+                                    options:NSStringDrawingUsesLineFragmentOrigin
+                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
+                                    context:nil];
             height = rect.size.height;
             
             break;
         case 7:
             str = [self getDocumentString:@"other"];
             rect = [str boundingRectWithSize:max
-                                                                            options:NSStringDrawingUsesLineFragmentOrigin
-                                                                         attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                                                            context:nil];
+                                    options:NSStringDrawingUsesLineFragmentOrigin
+                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
+                                    context:nil];
             height = rect.size.height;
             
             break;
@@ -252,43 +252,12 @@
     return height+45;
     
 }
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
 
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
+- (void)checkMarkTapped:(id)sender {
+    
+    // Post a notification to the superclass to show checklist
+    NSDictionary *data = [NSDictionary dictionaryWithObject:_doc[@"checklist"] forKey:@"checkList"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"checkTapped" object:nil userInfo:data];
+}
 
 @end
