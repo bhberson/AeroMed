@@ -16,12 +16,17 @@
     [super viewDidLoad];
     //TODO: Handle ios 6 bar color
     
-    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.055 green:0.431 blue:0.439 alpha:1.000]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
+    
+    UIImage *img = [UIImage imageNamed:@"check-true.png"];
+    UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:nil];
+    self.navigationItem.rightBarButtonItem = checklist;
+    
     
 }
 
-
+// Convert the array of strings into a formatted string
 - (NSString *)getDocumentString:(NSString *)section {
     NSMutableString *data = [[NSMutableString alloc] init];
     NSArray *ar = _doc[section];
@@ -44,14 +49,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 8;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    int count = 8;
-    return count;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,51 +65,41 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    UILabel *label = (UILabel *)[cell.contentView viewWithTag:10];
-    
     
     UITextView *data = (UITextView *)[cell.contentView viewWithTag:11];
     
     
     // Configure cell
-    switch (indexPath.row) {
+    switch (indexPath.section) {
         case 0:
-            label.text = @"Original Date:";
             data.text = _doc[@"originalDate"];
             break;
             
         case 1:
-            label.text = @"Revised Date:";
             data.text = _doc[@"revisedDate"];
             break;
             
         case 2:
-            label.text = @"Considerations:";
             data.text = [self getDocumentString:@"considerations"];
             break;
             
         case 3:
-            label.text = @"Interventions:";
             data.text = [self getDocumentString:@"interventions"];
             break;
             
         case 4:
-            label.text = @"Tests and Studies:";
             data.text = [self getDocumentString:@"testsAndStudies"];
             break;
             
         case 5:
-            label.text = @"Medications:";
             data.text = [self getDocumentString:@"medications"];
             break;
             
         case 6:
-            label.text = @"Impressions:";
             data.text = [self getDocumentString:@"impressions"];
             break;
             
         case 7:
-            label.text = @"Other Considerations:";
             data.text = [self getDocumentString:@"other"];
             break;
             
@@ -119,6 +113,49 @@
     return cell;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSString *title = [[NSString alloc] init];
+    
+    switch (section) {
+        case 0:
+            title = @"Original Date";
+            break;
+            
+        case 1:
+            title = @"Revised Date";
+            break;
+            
+        case 2:
+            title = @"Considerations";
+            break;
+            
+        case 3:
+            title = @"Interventions";
+            break;
+            
+        case 4:
+            title = @"Tests and Studies";
+            break;
+            
+        case 5:
+            title = @"Medications";
+            break;
+            
+        case 6:
+            title = @"Impressions";
+            break;
+            
+        case 7:
+            title = @"Other Considerations";
+            break;
+            
+        default:
+            break;
+    }
+    
+    return title;
+}
+
 // user selected a card from the table
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -127,11 +164,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat height = 20.0f;
-    CGSize max = CGSizeMake(201, 800);
+    CGSize max = CGSizeMake(self.view.frame.size.width, 800);
     CGRect rect;
     NSString *str = [[NSString alloc] init];
     
-    switch (indexPath.row) {
+    switch (indexPath.section) {
         case 0:
             str = _doc[@"originalDate"];
            rect = [str boundingRectWithSize:max
@@ -212,7 +249,7 @@
             break;
     }
    
-    return height+60;
+    return height+45;
     
 }
 /*

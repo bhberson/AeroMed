@@ -86,7 +86,9 @@
 
     [self removeAllCards];
     _viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
+    NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
     
+    _documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 }
 
 - (void)showSelectedDocument:(NSNotification *)notification {
@@ -94,7 +96,7 @@
     NSDictionary *info = [notification userInfo];
     PFObject *card = [info valueForKey:@"cardSelected"];
     self.viewControllerData = [[NSMutableArray alloc] initWithObjects:card, nil];
-    //self.documents = [[NSArray alloc] initWithObjects:card, nil];
+    self.documents = [[NSArray alloc] initWithObjects:card, nil];
    
 }
 
@@ -183,7 +185,6 @@
         NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
         
         _documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        OperatingProcedure *op = _documents[0];
     }
 }
 
