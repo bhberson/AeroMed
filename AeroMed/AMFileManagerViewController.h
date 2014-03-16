@@ -7,9 +7,9 @@
 #import <UIKit/UIKit.h>
 #import "KLNoteViewController.h"
 
-@interface AMFileManagerViewController : KLNoteViewController 
+@interface AMFileManagerViewController : KLNoteViewController <UISearchBarDelegate>
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UILabel *centerText;
-@property (weak, nonatomic) IBOutlet UIButton *upButton;
 - (IBAction)upButtonTapped:(id)sender;
 
 @end

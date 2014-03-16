@@ -22,9 +22,9 @@
 		270B4AB218A4360E008578B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AB118A4360E008578B9 /* QuartzCore.framework */; };
 		270DB5351887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
 		270DB5361887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
-		2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2720372A18A2F897000BC38A /* Main_iPhone.storyboard */; };
 		2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373018A30699000BC38A /* AMiPadBaseViewController.m */; };
 		2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */; };
+		2783BC5618D58B8C008E9790 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2783BC5518D58B8C008E9790 /* Main_iPhone.storyboard */; };
 		2786509C18B59A9100EA6E2F /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2786509B18B59A9100EA6E2F /* Pixate.framework */; };
 		2786509F18B59B6C00EA6E2F /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509D18B59B6C00EA6E2F /* cloud.png */; };
 		278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509E18B59B6C00EA6E2F /* cloud@2x.png */; };
@@ -32,7 +32,6 @@
 		27A6AED918CD720E0055CCED /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A6AED818CD720E0055CCED /* arrow-up.png */; };
 		27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */; };
 		27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A9690F18B06D010010A721 /* SWRevealViewController.m */; };
-		27AA4AB118CC092B001B3915 /* AMBaseDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */; };
 		27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB0EFD18C5253900A99048 /* OperatingProcedure.m */; };
 		27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DC18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m */; };
 		27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */; };
@@ -96,11 +95,11 @@
 		270B4AAF18A43606008578B9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		270B4AB118A4360E008578B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		270DB5341887201600573F3F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
-		2720372A18A2F897000BC38A /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPhone.storyboard; path = ../Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2720372F18A30699000BC38A /* AMiPadBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadBaseViewController.h; sourceTree = "<group>"; };
 		2720373018A30699000BC38A /* AMiPadBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadBaseViewController.m; sourceTree = "<group>"; };
 		2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneBaseViewController.h; sourceTree = "<group>"; };
 		2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneBaseViewController.m; sourceTree = "<group>"; };
+		2783BC5518D58B8C008E9790 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2786509B18B59A9100EA6E2F /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
 		2786509D18B59B6C00EA6E2F /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		2786509E18B59B6C00EA6E2F /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
@@ -111,8 +110,6 @@
 		27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadSliderMenuViewController.m; sourceTree = "<group>"; };
 		27A9690E18B06D010010A721 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		27A9690F18B06D010010A721 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		27AA4AAF18CC092B001B3915 /* AMBaseDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBaseDocumentViewController.h; sourceTree = "<group>"; };
-		27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBaseDocumentViewController.m; sourceTree = "<group>"; };
 		27AB0EFC18C5253900A99048 /* OperatingProcedure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatingProcedure.h; sourceTree = "<group>"; };
 		27AB0EFD18C5253900A99048 /* OperatingProcedure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatingProcedure.m; sourceTree = "<group>"; };
 		27AB58DB18B445CB0047D0A7 /* AMiPadSplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadSplashScreenViewController.h; sourceTree = "<group>"; };
@@ -273,7 +270,7 @@
 		27CDBCBB18809633000960F3 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				2720372A18A2F897000BC38A /* Main_iPhone.storyboard */,
+				2783BC5518D58B8C008E9790 /* Main_iPhone.storyboard */,
 				27CDBCB61880948A000960F3 /* Main_iPad.storyboard */,
 			);
 			name = "User Interface";
@@ -387,8 +384,6 @@
 				779181B018C832A500AE1019 /* AMFileManagerViewController.m */,
 				779181B118C832A500AE1019 /* AMDocumentViewController.h */,
 				779181B218C832A500AE1019 /* AMDocumentViewController.m */,
-				27AA4AAF18CC092B001B3915 /* AMBaseDocumentViewController.h */,
-				27AA4AB018CC092B001B3915 /* AMBaseDocumentViewController.m */,
 			);
 			name = "Mutual View Controllers";
 			sourceTree = "<group>";
@@ -489,9 +484,9 @@
 			files = (
 				779181BB18C833E200AE1019 /* bar-mid.png in Resources */,
 				779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */,
-				2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */,
 				7720280318B12933002302A4 /* style.css in Resources */,
 				27AC12E918D56874004B471D /* check-true.png in Resources */,
+				2783BC5618D58B8C008E9790 /* Main_iPhone.storyboard in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				2786509F18B59B6C00EA6E2F /* cloud.png in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
@@ -560,7 +555,6 @@
 				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
 				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
-				27AA4AB118CC092B001B3915 /* AMBaseDocumentViewController.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
 				27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */,
 				7749F73A18CD50A400B582C0 /* Transport.m in Sources */,

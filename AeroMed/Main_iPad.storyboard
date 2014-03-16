@@ -97,7 +97,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="f4b-e3-NDQ" kind="custom" identifier="documentation" customClass="SWRevealViewControllerSegue" id="UES-1q-fsG"/>
+                                    <segue destination="tVP-ah-kJr" kind="custom" identifier="documentation" customClass="SWRevealViewControllerSegue" id="d1a-GT-dvu"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="logout" id="ouw-cj-lPx">
@@ -140,82 +140,30 @@
                         <viewControllerLayoutGuide type="bottom" id="bxE-r8-QQ4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Pr-Yu-MMn">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyo-GQ-0W3">
-                                <rect key="frame" x="350" y="92" width="95" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow-up.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="3UN-tr-cbF">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="upButtonTapped:" destination="tVP-ah-kJr" eventType="touchUpInside" id="N7o-jd-JjQ"/>
+                                    <outlet property="delegate" destination="tVP-ah-kJr" id="UMl-at-gZ9"/>
                                 </connections>
-                            </button>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Iyo-GQ-0W3" secondAttribute="centerX" constant="-13.5" id="147-nz-G0f"/>
-                            <constraint firstItem="Iyo-GQ-0W3" firstAttribute="top" secondItem="qgY-hc-2Wo" secondAttribute="bottom" constant="30" id="jhj-5n-Z3F"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cAh-OF-x16"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="upButton" destination="Iyo-GQ-0W3" id="xZH-ZP-Htn"/>
-                        <segue destination="f4b-e3-NDQ" kind="push" identifier="toBaseDocument" id="iX2-O3-efi"/>
+                        <outlet property="searchBar" destination="3UN-tr-cbF" id="YsS-In-4Zi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNe-Yp-Rfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1082" y="-2486"/>
-        </scene>
-        <!--Base Document View Controller-->
-        <scene sceneID="rGG-pb-aKF">
-            <objects>
-                <viewController id="f4b-e3-NDQ" customClass="AMBaseDocumentViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XFW-Dk-s1e"/>
-                        <viewControllerLayoutGuide type="bottom" id="3Fq-PM-kdP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PwQ-Ib-KCw">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" misplaced="YES" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Rtf-Io-PEw">
-                                <rect key="frame" x="0.0" y="20" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <containerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrL-gl-7uF">
-                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="tVP-ah-kJr" kind="embed" identifier="toFileManager" id="cCY-UY-U1q"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Rtf-Io-PEw" firstAttribute="top" secondItem="XFW-Dk-s1e" secondAttribute="bottom" id="1n9-iY-Z4E"/>
-                            <constraint firstAttribute="trailing" secondItem="Rtf-Io-PEw" secondAttribute="trailing" id="MIc-F8-3cf"/>
-                            <constraint firstItem="Rtf-Io-PEw" firstAttribute="leading" secondItem="PwQ-Ib-KCw" secondAttribute="leading" id="dOn-8o-Qx5"/>
-                            <constraint firstAttribute="trailing" secondItem="OrL-gl-7uF" secondAttribute="trailing" id="iTE-aw-ph1"/>
-                            <constraint firstItem="OrL-gl-7uF" firstAttribute="leading" secondItem="PwQ-Ib-KCw" secondAttribute="leading" id="qI9-JM-g1h"/>
-                            <constraint firstItem="OrL-gl-7uF" firstAttribute="top" secondItem="Rtf-Io-PEw" secondAttribute="bottom" constant="10" id="rMg-aQ-Upw"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="s96-eV-eZ8"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <connections>
-                        <outlet property="searchBar" destination="Rtf-Io-PEw" id="pci-Rx-xRs"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5z-6E-VPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="74" y="-2502"/>
         </scene>
         <!--Document View Controller-->
         <scene sceneID="ee6-dp-WUc">
@@ -818,26 +766,8 @@
             </objects>
             <point key="canvasLocation" x="1330" y="1165"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="kn9-8g-dCY">
-            <objects>
-                <viewController id="FRa-MK-18v" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KOR-3K-BAE"/>
-                        <viewControllerLayoutGuide type="bottom" id="yVk-Pk-BLK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QGx-P7-WRI">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rwc-0Q-alY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
-        <image name="arrow-up.png" width="40" height="40"/>
         <image name="cloud.png" width="175" height="121"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -846,8 +776,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="iX2-O3-efi"/>
-        <segue reference="fBo-1Q-5ED"/>
         <segue reference="T9g-Mx-br5"/>
+        <segue reference="fBo-1Q-5ED"/>
     </inferredMetricsTieBreakers>
 </document>

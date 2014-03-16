@@ -7,7 +7,6 @@
 #import "AMFileManagerViewController.h"
 #import "AMDocumentViewController.h"
 #import "AMFolderViewController.h"
-#import "AMBaseDocumentViewController.h"
 #import "SWRevealViewController.h"
 #import "OperatingProcedure.h"
 
@@ -29,17 +28,20 @@
 {
     [super viewDidLoad];
     
-    if (!_isSubFolder) {
-        self.upButton.hidden = YES;
-    } else {
-        self.upButton.hidden = NO;
-    }
+    
+    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
+    // Set the side bar button action to show slide out menu
+    sidebarButton.target = self.revealViewController;
+    sidebarButton.action = @selector(revealToggle:);
+    
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
    
     // Setup notification for if user selects a card in the subfiew folder card
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(showSelectedDocument:)
                                                  name:@"tappedCard" object:nil];
-    
 
 }
 
@@ -65,9 +67,11 @@
         
     // If we are displaying the documents in a folder
     } else {
-
+        
         [self.centerText removeFromSuperview];
     }
+    
+    
 }
 
 
@@ -83,6 +87,11 @@
 
 -(void)upButtonTapped:(id)sender {
     _isSubFolder = NO;
+    
+    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
+    sidebarButton.target = self.revealViewController;
+    sidebarButton.action = @selector(revealToggle:);
+    sidebarButton.title = @"Menu";
 
     [self removeAllCards];
     _viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
@@ -99,6 +108,7 @@
     self.documents = [[NSArray alloc] initWithObjects:card, nil];
    
 }
+
 
 #pragma mark - Note card control
 
@@ -159,7 +169,7 @@
         // If it is a folder, moves into the full screen state, and has elements to contain then procede to subfolders
         if (toState == 3 && [[navDict objectForKey:@"type"] isEqualToString:@"folder"] && [[navDict objectForKey:@"contains"] count] > 0) {
           
-            self.viewControllerData = [[NSMutableArray alloc] initWithArray:[navDict objectForKey:@"contains"]];
+            _viewControllerData = [[NSMutableArray alloc] initWithArray:[navDict objectForKey:@"contains"]];
             _isSubFolder = YES;
             [self removeAllCards];
         
@@ -177,15 +187,75 @@
         }
     }
 
+    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
     [self reloadDataAnimated:YES];
     if (!_isSubFolder) {
-        self.upButton.hidden = YES;
+    
+        sidebarButton.target = self.revealViewController;
+        sidebarButton.action = @selector(revealToggle:);
+        sidebarButton.title = @"Menu";
+        
     } else {
-        self.upButton.hidden = NO;
+
+        // Set the side bar button to go back up
+        sidebarButton.target = self;
+        sidebarButton.title = @"Back";
+        sidebarButton.action = @selector(upButtonTapped:);
         NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
         
         _documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     }
+}
+
+#pragma mark -Search delegate methods
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    [searchBar setShowsCancelButton:YES animated:YES];
+    
+    if (!_documents) {
+        NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
+        
+        _documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    }
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+   
+    
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"Cancel clicked");
+    [searchBar setShowsCancelButton:NO animated:YES];
+    [searchBar resignFirstResponder];
+    [self upButtonTapped:self];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"Search Clicked");
+    NSLog(@"Searched text: %@", searchBar.text);
+    [searchBar setShowsCancelButton:NO animated:YES];
+    [searchBar resignFirstResponder];
+   [self removeAllCards];
+    NSMutableArray *filteredData = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < _documents.count; i++) {
+        PFObject *doc = [_documents objectAtIndex: i];
+        NSString *title = [[doc objectForKey:@"title"] lowercaseString];
+        NSString *check = [searchBar.text lowercaseString];
+        if ([title rangeOfString:check].location != NSNotFound) {
+            [filteredData addObject:doc];
+        }
+    }
+    _viewControllerData = [[NSMutableArray alloc] initWithArray:filteredData];
+    _documents = [[NSArray alloc] initWithArray:filteredData];
+    
+    // Set the side bar button to go back up
+    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
+    sidebarButton.target = self;
+    sidebarButton.title = @"Back";
+    sidebarButton.action = @selector(upButtonTapped:);
+    NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
+    
 }
 
 @end
