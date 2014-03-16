@@ -37,6 +37,7 @@
 		27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DC18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m */; };
 		27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */; };
 		27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58E218B445F20047D0A7 /* AMiPadLoginViewController.m */; };
+		27AC12E918D56874004B471D /* check-true.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AC12E818D56874004B471D /* check-true.png */; };
 		27ADD93A18CCC97E0074CE1B /* AMFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ADD93918CCC97E0074CE1B /* AMFolderViewController.m */; };
 		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
 		27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Main_iPad.storyboard */; };
@@ -64,11 +65,8 @@
 		779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 779181AD18C82F7C00AE1019 /* Podfile.txt */; };
 		779181B318C832A500AE1019 /* AMFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B018C832A500AE1019 /* AMFileManagerViewController.m */; };
 		779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* AMDocumentViewController.m */; };
-		779181B718C832E800AE1019 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 779181B618C832E800AE1019 /* NavigationControllerData.plist */; };
 		779181BB18C833E200AE1019 /* bar-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181B918C833E200AE1019 /* bar-mid.png */; };
 		779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181BA18C833E200AE1019 /* bar-mid@2x.png */; };
-		AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */ = {isa = PBXBuildFile; fileRef = AC74591F18B487EB00BA0DE2 /* CheckBox.png */; };
-		AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +121,7 @@
 		27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadSignupViewController.m; sourceTree = "<group>"; };
 		27AB58E118B445F20047D0A7 /* AMiPadLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadLoginViewController.h; sourceTree = "<group>"; };
 		27AB58E218B445F20047D0A7 /* AMiPadLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadLoginViewController.m; sourceTree = "<group>"; };
+		27AC12E818D56874004B471D /* check-true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-true.png"; sourceTree = "<group>"; };
 		27ADD93818CCC97E0074CE1B /* AMFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFolderViewController.h; sourceTree = "<group>"; };
 		27ADD93918CCC97E0074CE1B /* AMFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFolderViewController.m; sourceTree = "<group>"; };
 		27C8060118A443CF00243EB1 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
@@ -165,12 +164,9 @@
 		779181B018C832A500AE1019 /* AMFileManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileManagerViewController.m; sourceTree = "<group>"; };
 		779181B118C832A500AE1019 /* AMDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentViewController.h; sourceTree = "<group>"; };
 		779181B218C832A500AE1019 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
-		779181B618C832E800AE1019 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
 		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
 		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
 		9DBE07FD16E044AE9885993B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC74591F18B487EB00BA0DE2 /* CheckBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBox.png; sourceTree = "<group>"; };
-		AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheckBox@2x.png"; sourceTree = "<group>"; };
 		E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -347,12 +343,10 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				27A6AED818CD720E0055CCED /* arrow-up.png */,
 				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
 				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
 				27A9690E18B06D010010A721 /* SWRevealViewController.h */,
 				27A9690F18B06D010010A721 /* SWRevealViewController.m */,
-				779181B618C832E800AE1019 /* NavigationControllerData.plist */,
 				779181B818C833D200AE1019 /* Images */,
 				7787CF1218806ECE004F495E /* AppDelegate.m */,
 				7787CF1118806ECE004F495E /* AppDelegate.h */,
@@ -402,12 +396,12 @@
 		779181B818C833D200AE1019 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				27A6AED818CD720E0055CCED /* arrow-up.png */,
+				27AC12E818D56874004B471D /* check-true.png */,
 				779181B918C833E200AE1019 /* bar-mid.png */,
 				779181BA18C833E200AE1019 /* bar-mid@2x.png */,
 				2786509D18B59B6C00EA6E2F /* cloud.png */,
 				2786509E18B59B6C00EA6E2F /* cloud@2x.png */,
-				AC74592018B487EB00BA0DE2 /* CheckBox@2x.png */,
-				AC74591F18B487EB00BA0DE2 /* CheckBox.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -497,13 +491,11 @@
 				779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */,
 				2720372B18A2F897000BC38A /* Main_iPhone.storyboard in Resources */,
 				7720280318B12933002302A4 /* style.css in Resources */,
-				779181B718C832E800AE1019 /* NavigationControllerData.plist in Resources */,
+				27AC12E918D56874004B471D /* check-true.png in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				2786509F18B59B6C00EA6E2F /* cloud.png in Resources */,
-				AC74592118B487EB00BA0DE2 /* CheckBox.png in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
 				278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */,
-				AC74592218B487EB00BA0DE2 /* CheckBox@2x.png in Resources */,
 				27A6AED918CD720E0055CCED /* arrow-up.png in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,

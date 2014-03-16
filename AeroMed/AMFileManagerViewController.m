@@ -84,8 +84,9 @@
 -(void)upButtonTapped:(id)sender {
     _isSubFolder = NO;
 
-    _viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
     [self removeAllCards];
+    _viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
+    
 }
 
 - (void)showSelectedDocument:(NSNotification *)notification {
@@ -113,8 +114,8 @@
 - (UIViewController *)noteView:(KLNoteViewController*)noteView viewControllerAtIndex:(NSInteger)index {
     
     // Get the relevant data for the navigation controller
-    NSDictionary *navDict = [self.viewControllerData objectAtIndex: index];
-    NSArray *cardData = [self.documents objectAtIndex:index];
+    NSDictionary *navDict = [_viewControllerData objectAtIndex: index];
+    PFObject *cardData = [_documents objectAtIndex:index];
     
     // Get the storyboard
     UIStoryboard *st = [UIStoryboard storyboardWithName:[[NSBundle mainBundle].infoDictionary objectForKey:@"UIMainStoryboardFile"] bundle:[NSBundle mainBundle]];
@@ -137,7 +138,7 @@
     } else {
         viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
         [viewController setInfo: navDict];
-        [viewController setData:cardData];
+        [viewController setDoc:cardData];
         return [[UINavigationController alloc] initWithRootViewController:viewController];
     }
     
@@ -170,7 +171,6 @@
     for (UIView *view in self.view.subviews) {
         if ([view isMemberOfClass:[KLControllerCard class]]) {
             [(KLControllerCard *)view removeFromSuperview];
-            NSLog(@"Removing card");
             
         }
     }

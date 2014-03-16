@@ -6,8 +6,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMDocumentViewController : UIViewController <UITextViewDelegate>
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@interface AMDocumentViewController : UITableViewController <UITextFieldDelegate>
+
 @property (strong, nonatomic) NSDictionary* info;
-@property (strong, nonatomic) NSArray *data;
+@property (weak, atomic) PFObject *doc;
 @end
