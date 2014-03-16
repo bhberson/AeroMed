@@ -140,12 +140,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Hhv-e1-twl">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="checkCell" textLabel="Mvg-KK-suq" style="IBUITableViewCellStyleDefault" id="Hhv-e1-twl">
                                 <rect key="frame" x="0.0" y="22" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hhv-e1-twl" id="jgX-4D-Ahn">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mvg-KK-suq">
+                                            <rect key="frame" x="15" y="0.0" width="738" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -154,6 +163,9 @@
                             <outlet property="delegate" destination="f2x-Uo-Jji" id="ANY-gy-7Ta"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="HKG-Gs-QQM" kind="push" identifier="toTransport" id="D8o-Wb-2nW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afR-sw-IyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,7 +199,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="3UN-tr-cbF" id="YsS-In-4Zi"/>
-                        <segue destination="f2x-Uo-Jji" kind="modal" identifier="toCheckList" id="Qdr-n4-51b"/>
+                        <segue destination="f2x-Uo-Jji" kind="push" identifier="toCheckList" id="Qdr-n4-51b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNe-Yp-Rfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -805,7 +817,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="T9g-Mx-br5"/>
+        <segue reference="D8o-Wb-2nW"/>
         <segue reference="fBo-1Q-5ED"/>
     </inferredMetricsTieBreakers>
 </document>

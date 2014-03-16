@@ -662,32 +662,25 @@
         <scene sceneID="7xq-rF-edG">
             <objects>
                 <tableViewController id="RpM-pa-n7g" customClass="AMCheckListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8cW-be-Iog">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8cW-be-Iog">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="checkCell" id="SN1-CV-e9n">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="checkCell" textLabel="6Ic-la-QcB" style="IBUITableViewCellStyleDefault" id="SN1-CV-e9n">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SN1-CV-e9n" id="26r-I2-yep">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yV4-eE-29s">
-                                            <rect key="frame" x="20" y="11" width="215" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ic-la-QcB">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMk-ZC-qS3">
-                                            <rect key="frame" x="254" y="7" width="37" height="35"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" image="check-false.png">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -697,6 +690,9 @@
                             <outlet property="delegate" destination="RpM-pa-n7g" id="h46-Iy-nCp"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="ItR-26-vAv" kind="push" identifier="toTransport" id="unq-NJ-uxq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkM-ld-e01" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -734,7 +730,7 @@
                     <connections>
                         <outlet property="searchBar" destination="cco-Q1-yAi" id="YF9-BV-Lmu"/>
                         <outlet property="view" destination="f8r-Vg-QUq" id="n09-cz-bul"/>
-                        <segue destination="RpM-pa-n7g" kind="modal" identifier="toCheckList" id="WnI-xW-xb6"/>
+                        <segue destination="RpM-pa-n7g" kind="push" identifier="toCheckList" id="WnI-xW-xb6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWh-eV-5J7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -829,7 +825,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="check-false.png" width="40" height="40"/>
         <image name="cloud.png" width="175" height="121"/>
     </resources>
     <color key="tintColor" red="0.22745099663734436" green="0.79607850313186646" blue="1" alpha="1" colorSpace="deviceRGB"/>
@@ -839,8 +834,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="AXL-zX-oVD"/>
+        <segue reference="unq-NJ-uxq"/>
         <segue reference="ugu-eh-SXK"/>
-        <segue reference="dc9-A4-zO4"/>
+        <segue reference="AXL-zX-oVD"/>
     </inferredMetricsTieBreakers>
 </document>

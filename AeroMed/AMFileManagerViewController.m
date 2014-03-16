@@ -126,6 +126,7 @@
     if ([segue.identifier isEqualToString:@"toCheckList"]) {
         AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
         [vc setCheckList:_checkList];
+        [vc setTitle:@"Checklist"];
     }
 }
 

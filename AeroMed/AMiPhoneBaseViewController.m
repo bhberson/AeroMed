@@ -31,20 +31,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.documents = [NSMutableArray array];
     
-    // Set the status bar content to white in navigation bar
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    if (self) {
+        self.documents = [NSMutableArray array];
+        
+        // Set the status bar content to white in navigation bar
+        self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 
-    
-    // Set the side bar button action to show slide out menu
-    _sidebarButton.target = self.revealViewController;
-    _sidebarButton.action = @selector(revealToggle:);
-    
-    // Set the gesture
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    
-    [self initStandardDocuments];
+        
+        // Set the side bar button action to show slide out menu
+        _sidebarButton.target = self.revealViewController;
+        _sidebarButton.action = @selector(revealToggle:);
+        
+        // Set the gesture
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        
+        [self initStandardDocuments];
+    }
   
 }
 

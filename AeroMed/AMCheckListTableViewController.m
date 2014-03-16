@@ -7,8 +7,11 @@
 //
 
 #import "AMCheckListTableViewController.h"
+#import "AMiPadBaseViewController.h"
+#import "AMiPhoneBaseViewController.h"
 
 @interface AMCheckListTableViewController ()
+@property NSMutableArray *dataArray;
 
 @end
 
@@ -27,13 +30,23 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+
+    UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneTapped:)];
+    self.navigationItem.rightBarButtonItem = done;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+ 
     
     NSLog(@"%@",_checkList);
+ 
+    _dataArray = [[NSMutableArray alloc] initWithCapacity:self.checkList.count];
+    
+    // Initialize our data array to hold a dictionary to hold cell data and checkmark data
+    for (NSString *item in self.checkList) {
+        NSMutableDictionary *dataDic = [[NSMutableDictionary alloc] initWithCapacity:2];
+        [dataDic setObject:[NSNumber numberWithBool:NO] forKey:@"checked"];
+        [_dataArray addObject:dataDic];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,63 +77,82 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"checkCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    UILabel *item = (UILabel *)[cell.contentView viewWithTag:12];
-    [item setText:[self.checkList objectAtIndex:indexPath.row]];
     
+    cell.textLabel.text =[self.checkList objectAtIndex:indexPath.row];
+  
+    NSMutableDictionary *item = [_dataArray objectAtIndex:indexPath.row];
     
+    BOOL checked = [[item objectForKey:@"checked"] boolValue];
     
+    UIImage *img = (checked) ? [UIImage imageNamed:@"check-true"] : [UIImage imageNamed:@"check-false"];
     
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    CGRect frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
+    button.frame = frame;
+    [button setBackgroundImage:img forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(checkMarkTapped:withEvent:) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor clearColor];
+    cell.accessoryView = button;
+     
+    [item setObject:cell forKey:@"cell"];
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self tableView:self.tableView accessoryButtonTappedForRowWithIndexPath:indexPath];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    
+    NSMutableDictionary *item = [_dataArray objectAtIndex:indexPath.row];
+    
+    BOOL checked = [[item objectForKey:@"checked"] boolValue];
+    
+    checked = !checked;
+    
+    [item setObject:[NSNumber numberWithBool:checked] forKey:@"checked"];
+    
+    UITableViewCell *cell = [item objectForKey:@"cell"];
+    UIButton *button = (UIButton *)cell.accessoryView;
+    
+    UIImage *newImage = (checked) ? [UIImage imageNamed:@"check-true"] : [UIImage imageNamed:@"check-false"];
+    
+    [button setBackgroundImage:newImage forState:UIControlStateNormal];
+
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
+
+# pragma mark - Buttons
+- (void)checkMarkTapped:(id)sender withEvent: (UIEvent *) event {
+  
+    NSSet *touches = [event allTouches];
+    UITouch *touch = [touches anyObject];
+    CGPoint currentTouchPosition = [touch locationInView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:currentTouchPosition];
+    
+    if (indexPath != nil) {
+        [self tableView: self.tableView accessoryButtonTappedForRowWithIndexPath:indexPath];
+    }
+    
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+- (void)doneTapped:(id)sender {
+    [self performSegueWithIdentifier:@"toTransport" sender:self];
 }
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"toTransport"]) {
+        //TODO pass data and probably combine base view controllers of ipad and iphones
+        
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            AMiPadBaseViewController *ipadVC = (AMiPadBaseViewController *)segue.destinationViewController;
+            
+        } else {
+            AMiPhoneBaseViewController *iphoneVC = (AMiPhoneBaseViewController *)segue.destinationViewController;
+        }
+    }
 }
-*/
 
 @end
