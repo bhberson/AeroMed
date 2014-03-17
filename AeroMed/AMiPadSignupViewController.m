@@ -60,7 +60,10 @@
     } else if ([email length] < 8) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Entry" message:@"Please enter your email address." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
         [alert show];
-    } else {
+    } else if ([[email lowercaseString]rangeOfString:@"@spectrumhealth.org"].location == NSNotFound){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Entry" message:@"Please a Spectrum Health email address." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        [alert show];
+    }else {
         
         [self.activityIndicator startAnimating];
         
