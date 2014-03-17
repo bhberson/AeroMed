@@ -19,7 +19,7 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.055 green:0.431 blue:0.439 alpha:1.000]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
     
-    UIImage *img = [UIImage imageNamed:@"check-true.png"];
+    UIImage *img = [UIImage imageNamed:@"checklist.png"];
     UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(checkMarkTapped:)];
     self.navigationItem.rightBarButtonItem = checklist;
     

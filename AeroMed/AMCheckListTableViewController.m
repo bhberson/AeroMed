@@ -84,7 +84,7 @@
     
     BOOL checked = [[item objectForKey:@"checked"] boolValue];
     
-    UIImage *img = (checked) ? [UIImage imageNamed:@"check-true"] : [UIImage imageNamed:@"check-false"];
+    UIImage *img = (checked) ? [UIImage imageNamed:@"check-yes"] : [UIImage imageNamed:@"check-no"];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     CGRect frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
@@ -116,7 +116,7 @@
     UITableViewCell *cell = [item objectForKey:@"cell"];
     UIButton *button = (UIButton *)cell.accessoryView;
     
-    UIImage *newImage = (checked) ? [UIImage imageNamed:@"check-true"] : [UIImage imageNamed:@"check-false"];
+    UIImage *newImage = (checked) ? [UIImage imageNamed:@"check-yes"] : [UIImage imageNamed:@"check-no"];
     
     [button setBackgroundImage:newImage forState:UIControlStateNormal];
 

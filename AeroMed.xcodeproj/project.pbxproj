@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1625073518D72D3400BC3A72 /* checklist.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625073318D72D3400BC3A72 /* checklist.png */; };
+		1625073618D72D3400BC3A72 /* checklist@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625073418D72D3400BC3A72 /* checklist@2x.png */; };
+		1625074318D7358900BC3A72 /* check-no.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625073F18D7358900BC3A72 /* check-no.png */; };
+		1625074418D7358900BC3A72 /* check-no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625074018D7358900BC3A72 /* check-no@2x.png */; };
+		1625074518D7358900BC3A72 /* check-yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625074118D7358900BC3A72 /* check-yes.png */; };
+		1625074618D7358900BC3A72 /* check-yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625074218D7358900BC3A72 /* check-yes@2x.png */; };
 		16EF700C18C8259C00F41E9D /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EF700B18C8259C00F41E9D /* Medication.m */; };
 		2704735818B05D7F003AAB09 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735718B05D7F003AAB09 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2704735A18B05DCE003AAB09 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735918B05DCE003AAB09 /* AudioToolbox.framework */; };
@@ -81,6 +87,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1625073318D72D3400BC3A72 /* checklist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checklist.png; sourceTree = "<group>"; };
+		1625073418D72D3400BC3A72 /* checklist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checklist@2x.png"; sourceTree = "<group>"; };
+		1625073F18D7358900BC3A72 /* check-no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-no.png"; sourceTree = "<group>"; };
+		1625074018D7358900BC3A72 /* check-no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-no@2x.png"; sourceTree = "<group>"; };
+		1625074118D7358900BC3A72 /* check-yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-yes.png"; sourceTree = "<group>"; };
+		1625074218D7358900BC3A72 /* check-yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-yes@2x.png"; sourceTree = "<group>"; };
 		16EF700A18C8259C00F41E9D /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
 		16EF700B18C8259C00F41E9D /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
 		2704735718B05D7F003AAB09 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -398,6 +410,12 @@
 		779181B818C833D200AE1019 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1625073F18D7358900BC3A72 /* check-no.png */,
+				1625074018D7358900BC3A72 /* check-no@2x.png */,
+				1625074118D7358900BC3A72 /* check-yes.png */,
+				1625074218D7358900BC3A72 /* check-yes@2x.png */,
+				1625073318D72D3400BC3A72 /* checklist.png */,
+				1625073418D72D3400BC3A72 /* checklist@2x.png */,
 				2783BC5A18D59483008E9790 /* check-false.png */,
 				27A6AED818CD720E0055CCED /* arrow-up.png */,
 				27AC12E818D56874004B471D /* check-true.png */,
@@ -492,15 +510,21 @@
 			files = (
 				779181BB18C833E200AE1019 /* bar-mid.png in Resources */,
 				779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */,
+				1625074418D7358900BC3A72 /* check-no@2x.png in Resources */,
 				2783BC5B18D59483008E9790 /* check-false.png in Resources */,
 				7720280318B12933002302A4 /* style.css in Resources */,
 				27AC12E918D56874004B471D /* check-true.png in Resources */,
 				2783BC5618D58B8C008E9790 /* Main_iPhone.storyboard in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
+				1625073618D72D3400BC3A72 /* checklist@2x.png in Resources */,
 				2786509F18B59B6C00EA6E2F /* cloud.png in Resources */,
+				1625073518D72D3400BC3A72 /* checklist.png in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
 				278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */,
+				1625074618D7358900BC3A72 /* check-yes@2x.png in Resources */,
+				1625074518D7358900BC3A72 /* check-yes.png in Resources */,
 				27A6AED918CD720E0055CCED /* arrow-up.png in Resources */,
+				1625074318D7358900BC3A72 /* check-no.png in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,
 				779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */,
