@@ -759,8 +759,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Michael Torres (3W6ZBXDV73)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Torres (3W6ZBXDV73)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Torres (3SJG6SQ226)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Torres (3SJG6SQ226)";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Users/mike/Documents/iOS/Aeromed/AeroMed,
 					"$(inherited)",
@@ -780,7 +780,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "03E43C7D-F8E5-4A29-8B26-00438979977C";
+				PROVISIONING_PROFILE = "394BF591-ECCD-4B48-B077-3E325E478A65";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

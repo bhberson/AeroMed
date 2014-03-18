@@ -136,8 +136,8 @@
     NSInteger numCards =[_viewControllerData count];
     
     // Limit the number of cards to display
-    if (numCards > 10) {
-        numCards = 10;
+    if (numCards > 7) {
+        numCards = 7;
         _tooManyDocuments = YES;
     }
     
@@ -157,7 +157,7 @@
     AMDocumentViewController *viewController;
     
     // If we are the 10th card in too many documents we want to show All Documents in the folder
-    if (_tooManyDocuments && index == 9) {
+    if (_tooManyDocuments && index == 6) {
         AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
         [viewController setAllDocuments:_documents];
         return [[UINavigationController alloc] initWithRootViewController:viewController];
