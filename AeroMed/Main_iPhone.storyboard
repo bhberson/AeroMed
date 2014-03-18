@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SCC-d1-1AC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SCC-d1-1AC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -335,6 +335,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="ItR-26-vAv" kind="custom" identifier="transports" customClass="SWRevealViewControllerSegue" id="GyM-Ub-WM2"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="documentation" id="pOp-GY-np4">
                                 <rect key="frame" x="0.0" y="110" width="320" height="44"/>
@@ -389,13 +392,10 @@
                         </prototypes>
                         <sections/>
                     </tableView>
-                    <connections>
-                        <segue destination="ItR-26-vAv" kind="custom" identifier="transports" customClass="SWRevealViewControllerSegue" id="dc9-A4-zO4"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thV-YR-flX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="266" y="-1197"/>
+            <point key="canvasLocation" x="166" y="-1167"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uly-fF-q4m">
@@ -456,7 +456,7 @@
                         </prototypes>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="AeroMed Transports" id="63c-Sd-GVj">
+                    <navigationItem key="navigationItem" title="Aero Med Transports" id="63c-Sd-GVj">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="yO0-tf-gD9"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pFg-7m-obc">
                             <connections>
@@ -841,8 +841,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="QhJ-B3-LpV"/>
         <segue reference="AXL-zX-oVD"/>
         <segue reference="ugu-eh-SXK"/>
+        <segue reference="GyM-Ub-WM2"/>
     </inferredMetricsTieBreakers>
 </document>

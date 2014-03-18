@@ -106,7 +106,7 @@
     if ([segue.identifier isEqualToString:@"logout"]) {
         if([PFUser currentUser]){
             [PFUser logOut];
-            destViewController.title = @"AeroMed";
+            destViewController.title = @"Aero Med";
         }
     }
     
@@ -119,8 +119,8 @@
     }
     
     // If we clicked the transports cell
-    if ([segue.identifier isEqualToString:@"transport"]) {
-        destViewController.title = @"All Transports";
+    if ([segue.identifier isEqualToString:@"transports"]) {
+        destViewController.title = @"Aero Med Transports";
     }
     
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {

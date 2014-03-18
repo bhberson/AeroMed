@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -60,7 +60,7 @@
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
                                 </accessibility>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="transports" id="ZOi-WS-Ffs">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="transports" id="ZOi-WS-Ffs">
                                 <rect key="frame" x="0.0" y="66" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZOi-WS-Ffs" id="s7z-s7-paP">
@@ -80,7 +80,7 @@
                                     <segue destination="HKG-Gs-QQM" kind="custom" identifier="transports" customClass="SWRevealViewControllerSegue" id="T9g-Mx-br5"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="documentation" id="Sqe-w2-W6q">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="documentation" id="Sqe-w2-W6q">
                                 <rect key="frame" x="0.0" y="110" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sqe-w2-W6q" id="A5o-bu-6Ff">
@@ -100,7 +100,7 @@
                                     <segue destination="tVP-ah-kJr" kind="custom" identifier="documentation" customClass="SWRevealViewControllerSegue" id="d1a-GT-dvu"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="logout" id="ouw-cj-lPx">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="logout" id="ouw-cj-lPx">
                                 <rect key="frame" x="0.0" y="154" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ouw-cj-lPx" id="fWe-QN-wWQ">
@@ -496,7 +496,7 @@
             </objects>
             <point key="canvasLocation" x="1350" y="-1107"/>
         </scene>
-        <!--Mi Pad Base View Controller - AeroMed Transports-->
+        <!--Mi Pad Base View Controller - Aero Med Transports-->
         <scene sceneID="Pbh-MV-192">
             <objects>
                 <viewController id="HKG-Gs-QQM" customClass="AMiPadBaseViewController" sceneMemberID="viewController">
@@ -505,7 +505,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
-                    <navigationItem key="navigationItem" title="AeroMed Transports" id="MJu-eD-1Tk">
+                    <navigationItem key="navigationItem" title="Aero Med Transports" id="MJu-eD-1Tk">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="ufa-Z4-eiG"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EHO-nF-Z3x">
                             <connections>
@@ -824,7 +824,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="gFa-VB-XHq"/>
         <segue reference="fBo-1Q-5ED"/>
+        <segue reference="T9g-Mx-br5"/>
     </inferredMetricsTieBreakers>
 </document>

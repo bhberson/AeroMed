@@ -1381,10 +1381,10 @@ pixate-config {
 
 /* Note: would prefer to use classes here, but since we're not using a custom section view, there's no easy way to set one */
 table-view-headerfooter-view {
-  background-color: #0070a3;
+  background-color: #ebe9f0;
   font-family: "Avenir"; }
 
 table-view-headerfooter-view text-label {
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-size: 12pt; }
