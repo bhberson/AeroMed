@@ -16,7 +16,7 @@
     [super viewDidLoad];
     //TODO: Handle ios 6 bar color
     
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.055 green:0.431 blue:0.439 alpha:1.000]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.051 green:0.431 blue:0.549 alpha:1.000]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
     
     UIImage *img = [UIImage imageNamed:@"checklist.png"];

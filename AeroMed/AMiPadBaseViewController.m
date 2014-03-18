@@ -127,9 +127,10 @@
 	NSIndexPath *indexPath =
     [NSIndexPath indexPathForRow:[self.transports count] - 1
                        inSection:0];
-	[self.tableView insertRowsAtIndexPaths:
-     [NSArray arrayWithObject:indexPath]
-                          withRowAnimation:UITableViewRowAnimationAutomatic];
+#warning This was causing the nil pointer when done pressed
+//	[self.tableView insertRowsAtIndexPaths:
+//     [NSArray arrayWithObject:indexPath]
+//                          withRowAnimation:UITableViewRowAnimationAutomatic];
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
