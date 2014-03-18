@@ -33,8 +33,7 @@
 
     UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneTapped:)];
     self.navigationItem.rightBarButtonItem = done;
-    
- 
+
     
     NSLog(@"%@",_checkList);
  
@@ -138,7 +137,21 @@
 }
 
 - (void)doneTapped:(id)sender {
-    [self performSegueWithIdentifier:@"toTransport" sender:self];
+    UIAlertView *confirm = [[UIAlertView alloc]
+        initWithTitle:@"Confirm"
+        message:@"Are you sure you want to submit this checklist?"
+        delegate:self
+        cancelButtonTitle:nil
+        otherButtonTitles:@"Yes", @"No", nil];
+
+    [confirm show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        [self performSegueWithIdentifier:@"toTransport" sender:self];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
