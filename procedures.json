@@ -1,0 +1,519 @@
+{
+  "results": [
+  {
+  	"title":"Blood Product Administration",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+  	  "Per SOP (shock) and/or in conjunction with medical direction",
+  	  "Aero Med administers blood products on emergent basis"
+  	],
+  	"equipment":[
+  	  "0.9% NaCl",
+  	  "Appropriate tubing and filter",
+  	  "Pressure bag(s) if applicable"
+  	],
+  	"procedure":[
+  	  "Verify IV/IO/central line site is patent",
+  	  "• Smallest gauge is 20 ga, 22 ga if only available",
+  	  "Prime tubing with appropriate IVF (warm IVF if possible)",
+  	  "Tile blood to mix",
+  	  "Verify expiration date and blood product type",
+  	  "If typed and crossed at sending do a 2 person check of the following:",
+  	  "• Name",
+  	  "• MRN",
+  	  "• Unit Number",
+  	  "• Recipient and donor blood type",
+  	  "• Expiration date",
+  	  "• Sign by both Medical Providers",
+  	  "If emergent O- blood from sending or receiving check the following",
+  	  "• Blood unit number",
+  	  "• Expiration date",
+  	  "• Type of product",
+  	  "• IV solution",
+  	  "Transfuse at rate necessary per diagnoses",
+  	  "Prevent Hypothermia",
+  	  "Observe for transfusion reaction"
+  	],
+  	"documentationItems":[
+  	  "Blood Slip Documentation",
+  	  "• Patient name (if available)",
+  	  "• Receiving hospital medical record number (if available)",
+  	  "• • May use unidentified patient MRN",
+  	  "• Time infusion initiated",
+  	  "• Time infusion completed (if applicable)",
+  	  "• Signature of medical providers (who completed double check)",
+  	  "Medical Record Documentation",
+  	  "• Blood product unit number",
+  	  "• Expiration Date",
+  	  "• Blood product type",
+  	  "• IV Solution type",
+  	  "• Amount transfused",
+  	  "• Time infusion initiated",
+  	  "• Signs/Symptoms of transfusion reaction",
+  	  "• • If yes, document therapy administered"
+  	],
+  	"impressions":[
+  	  "Hypovolema",
+  	  "Hemorrhagic Shock"
+  	],
+  	"otherConsiderations":[
+  	  "Blood slip copies",
+  	  "• Original to blood bank (to retrieve replacement units)",
+  	  "• Copy left with receiving paperwork",
+  	  "• Copy ot Aero Med",
+  	  "Blood sent with patient from sending facility, if not transfused, should be left with the patient and receiving staff",
+  	  "See Spectrum Health Clinical Procedure: “Blood/Blood Components Administration (Adult)” CPRO-B00-S0927",
+  	  "See Spectrum Health Clinical Procedure—Department Specific: “Blood and Blood Component Issue from the Blood Bank” CPRO-B00-D3259-LABBB"
+  	]
+  },
+  {
+  	"title":"Cardiac Pacing - Transvenous",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+  	  "Symptomatic bradycardia & unable to capture with transcutaneous pacing"
+  	],
+  	"equipment":[
+  	  "Cordis Kit",
+	  "Pacing Wire Kit",
+	  "Pulse Generator"
+	],
+  	"procedure":[
+  	  "1. Using sterile precautions insert and secure Cordis, right IJ prefered",
+  	  "2. Open pacer wire kit, insert wire through sterile sheath, check balloon, connect to pulse generator",
+  	  "3. Set rate to 80 and ventricular output to the max on pulse generator",
+  	  "4. Insert wire into Cordis to 20 cm",
+  	  "5. Inflate balloon",
+  	  "6. Continue to insert until capture is seen on monitor",
+  	  "7. Deflate balloon; decrease output until capture is lost then increase output to double that amount and lock",
+  	  "8. Extend sterile over wire and secure"
+  	],
+  	"documentationItems":[
+  	  "Procedure performed and complicatons, if any",
+  	  "Depth of Cordis/pacer wire",
+  	  "Pacer settings",
+  	  "Patient response to procedure"
+  	],
+  	"impressions":[
+  	  "Underlying cardiac disease process or event"
+  	],
+  	"otherConsiderations":[
+  	  "Prioritize the use of Aero Med pacer box as many outside hospitals have only ONE in their entire facility"]
+  },
+  {
+  	"title":"Continuous Positive Airway Pressure CPAP-BIPAP",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+      "INDICATIONS",
+  	  "• Severe Dyspnea, Hypercapnia, Hypoxia",
+  	  "• Stable on CPAP / BIPAP at sending facility",
+      "CONTRAINDICATIONS",
+      "• Inadequate mental status or uncooperative",
+      "• Inability to maintain airway (emesis or blood)",
+      "• Potential for airway obstruction",
+      "• Inadequate mask seal",
+      "• Pneumothorax or penetrating chest trauma"
+    ],
+  	"equipment":[
+      "LTV 1200",
+      "Adequate available Oxygen",
+      "Ventilator Tubing with fliter",
+      "CPAP/BIPAP mask with appropriate fit"
+    ],
+  	"procedure":[
+      "1. HOB elevated",
+      "2. Ensure adequate seal of mask",
+      "3. Turn on. Select New Patient, then Adult",
+      "4. Set Low Pressure alarm to zero",
+      "5. Push Assist Control, SIMV/CPAP 4 times, NPPV LED will flash on the 3rd & 4th times",
+      "6. Turn dial to set PS, then push PS button",
+      "7. Turn dial to set PEEP, then push PEEP button",
+      "8. Push FiO2 button, turn dial to set.",
+      "9. Secure proper size mask with good seal connect to ETCO2 probe and vent circuit",
+      "10. Check Vte, if < 5 ml/kg ideal body wt↑ PS (max 15) High levels of pressure support are uncomfortable, if needed mildly sedate patient",
+      "11. Titrate FiO2 to O2 sat > 90% ",
+      "For hypoxia ↑ PEEP by 2. Continue prn. (max 15) Keep (Pressure Support+PEEP) < 25",
+      "If not providing adequate ventilation or O2 → Intubate"
+    ],
+  	"documentationItems":[
+      "Ventilator Settings",
+      "Blood Pressure q 5 minutes until stable then q 10-15 minutes",
+      "Oxygen Saturation Trends",
+      "Patient Response"
+    ],
+  	"impressions":[
+      "Respiratory Distress",
+      "Hypercarbia",
+      "Hypoxia"
+    ],
+  	"otherConsiderations":[
+      "TERMS:",
+      "• Inspiratory Positive Airway Pressure (IPAP)",
+      "• Expiratory Positive Airway Pressure (EPAP) = PEEP",
+      "• Pressure Support (PS) = IPAP - EPAP. i.e. for BIPAP of 12 / 5, PS = (12-5) = 7; PEEP = 5. i.e. for CPAP of 8, PS = 0; PEEP = 8"
+    ]
+  },
+  {
+  	"title":"Cricothyrotomy - Needles",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+      "INDICATIONS",
+      "• Cannot intubate AND cannot ventilate AND open cricothyrotomy is contraindicated or impossible"
+    ],
+  	"equipment":[
+      "Chloraprep",
+      "≥ 16g angiocath",
+      "10 ml syringe with 2 ml Lidocaine",
+      "3.0 ETT",
+      "Pediatric BVM"
+    ],
+  	"procedure":[
+      "1. Chloraprep neck",
+      "2. Stabilize trachea w/ non-dominant hand",
+      "3. Hold 10 ml syringe with 2 ml of 1% Lido attached to angiocath in dominant hand",
+      "4. Insert angiocath through cricothyroid membrane at 30º to skin maintaining negative pressure on the syringe",
+      "5. When needle enters trachea, syringe will fill w/ air, bubbles will be seen in Lidocaine",
+      "6. Inject Lidocaine to suppress cough reflex",
+      "7. Advance catheter into trachea while removing needle",
+      "8. Connect syringe to catheter and check for correct placement by aspirating air",
+      "9. Connect adapter from 3.0 ETT to cath",
+      "10. Ventilate w/ Ped BVM (will feel resistance due to diameter of angiocath)",
+      "11. Secure catheter to neck"
+    ],
+  	"documentationItems":[
+      "Procedure in detail",
+      "Reasons for alternative ways"
+    ],
+  	"impressions":[
+      "Respiratory arrest",
+      "Respiratory failure",
+      "Difficult Airway",
+      "Partial or Complete Airway Obstruction"
+    ],
+  	"otherConsiderations":[
+      "Notify receiving attending of alternative airway procedure",
+      "See ATLS App, \"Just-In-Time\" Videos"
+    ]
+  },
+  {
+  	"title":"Cricothyrotomy - Open",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+      "INDICATION",
+      "• Cannot Intubate and cannot ventilate",
+      "CONTRAINDICATION",
+      "• < 12 yo"
+    ],
+  	"equipment":[
+      "Sterile Gloves",
+      "Chloraprep",
+      "#10 Scalpel",
+      "Trach Hook",
+      "6.0 Cuffed ETT"
+    ],
+  	"procedure":[
+      "1. Chloraprep neck",
+      "2. Stabilize larynx with non-dominant thumb and middle finger on thyroid cartilage",
+      "3. Use index finger to identify cricothyroid membrane (If unable to palpate cricothyroid membrane make 4 cm vertical incision through skin and soft tissue)",
+      "4. With dominant hand use #10 blade to make 1.5 cm horizontal incision through skin and cricothyroid membrane (Careful not to injure esophagus by cutting too deep)",
+      "5. Keep blade in airway, place trach hook parallel to scalpel, caudad to blade",
+      "6. Rotate hook and pull gentle traction on cricoid ring",
+      "7. Remove scalpel",
+      "8. Insert 6.0 cuffed ETT, inflate cuff and secure in place",
+      "9. *May place Bougie 1st to guide ETT"
+    ],
+  	"documentationItems":[
+      "Reason for alternative airway",
+      "Procedure steps",
+      "Patient response",
+      "Level of ETT at neck"
+    ],
+  	"impressions":[
+      "Respiratory Failure",
+      "Difficult Airway",
+      "Partial or Complete Airway Obstruction"
+    ],
+  	"otherConsiderations":[
+      "Notify receiving attending of alternate airway procedure",
+      "See ATLS App, \"Just-In-Time\" Videos"
+    ]
+  },
+  {
+  	"title":"Hemorrhage - Severe",
+  	"originalDate":"20 March 2013",
+    "revisedDate":"20 March 2013",
+  	"indications":[
+      "INDICATION",
+      "• Presence of potentially life-threatening hemorrhage"
+    ],
+  	"equipment":[
+      "Kerlex and general dressings",
+      "Combat Dressing",
+      "Combat Tourniquet",
+      "Celox Powder and/or Celox Syringe",
+      "Warming Blanket",
+      "Blood Tubing",
+      "Blood",
+      "TXA"
+    ],
+  	"procedure":[
+      "STOP THE BLEEDING",
+      "1. Apply direct pressure",
+      "2. If direct pressure fails or major arterial bleeding present apply combat tourniquet",
+      "3. Disconnect buckle and wrap around extremity on skin 2\" proximal to injury",
+      "4. Reconnect buckle and remove slack by pulling on tail of webbing",
+      "5. Tighten by twisting handle until bleeding & distal pulse stop",
+      "6. Secure handle in tri-ring",
+      "7. Write time of application on label at end of webbing",
+      "8. If unable to place tourniquet or unable to stop hemorrhage then use Celox powder",
+      "9. Clear blood, clot & debris from wound",
+      "10. For gash wounds empty dust pan over wound, for puncture wounds insert Celox syringe to base of wound and inject powder",
+      "11. Place Kerlix roll on top, hold pressure with hand > 2 min",
+      "12. Wrap with combat dressing\n",
+      "PREVENT HYPOTHERMIA",
+      "1. Extract pt to sheltered area as soon as safely possible",
+      "2. Remove wet clothes",
+      "3. Apply external warming blanket",
+      "4. Ensure aircraft ambient temperature is kept warm",
+      "CONSIDER TXA",
+      "Indication: Adult Trauma Pt w/ Signs of Severe Hemorrhage (such as SBP < 90 or EBL > 500 ml)",
+      "Administer 1g in 100 ml NS over 10 min\nNOT IV Compatible with IV Products\n",
+      "AVOID IVF BOLUSES\n",
+      "TRANSFUSE PRBCs IF ANY OF THE FOLLOWING ARE PRESENT:",
+      "SBP < 90",
+      "Loss of Radial Pulse",
+      "Altered Mental Status Likely from Shock\n",
+      "If available transfuse PRBC:FFP:Plts 1:1:1"
+    ],
+  	"documentationItems":[
+      "Site of Hemorrhage",
+      "EBL",
+      "Interventions taken and times completed"
+    ],
+  	"impressions":[
+      "Severe Hemorrhage",
+      "Shock"
+    ],
+  	"otherConsiderations":[]
+  },
+  {
+  	"title":"King Airway Insertion",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+      "INDICATIONS",
+      "• Failure to oxygenate or ventilate and intubation attempts have failed or are likely to fail",
+      "• Delay of transport for intubation is detrimental to patient",
+      "CONTRAINDICATIONS",
+      "• Positive gag reflex",
+      "• Esophageal disease",
+      "• Caustic ingestion"
+    ],
+  	"equipment":[
+      "King airway kit of appropriate size",
+      "Suction",
+      "BVM",
+      "Stethoscope",
+      "Disposable CO2 Detector or ETCO2 Monitor"
+    ],
+  	"procedure":[
+      "1. Select appropriate size King Airway",
+      "2. Lube posterior side of tip",
+      "3. Attach air filled syringe, check balloon",
+      "4. Insert until hub is at teeth",
+      "5. Inflate cuff with specified volume of air",
+      "6. Slowly pull out airway while bagging until chest rise is noted",
+      "7. Confirm with disposable CO2 detector or ETCO2 monitor",
+      "8. Secure",
+      "9. Utilize Port for up to 18 Fr NGT in King Airway sizes 3, 4 & 5"
+    ],
+  	"documentationItems":[
+      "Reason for alternative airway",
+      "Size used",
+      "Patient response"
+    ],
+  	"impressions":[
+      "Respiratory Failure"
+    ],
+  	"otherConsiderations":[]
+  },
+  {
+  	"title":"Pericardiocentesis",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+      "Cardiac Tamponade as defined by shock plus pericardial effusion on ultrasound without a more likely cause of hypotension",
+      "Traumatic PEA not improved by pleural decompression, IVF bolus or PRBC transfusion"
+    ],
+  	"equipment":[
+      "Sterile Gloves",
+      "Chloraprep",
+      "20 ml Syringe",
+      "5.25\" 14g Angiocath",
+      "Stopcock"
+    ],
+  	"procedure":[
+      "1. Administer IVF Bolus",
+      "2. Chloraprep to subxiphoid area.",
+      "3. Under US guidance if possible insert needle just left of xiphoid process at 45º angle toward tip of left or right scapula while aspirating Follow needle tip on US as it enters pericardial fluid",
+      "4. Popping sensation may be felt when entering pericardium",
+      "5. If no fluid is aspirated redirect needle",
+      "6. Advance catheter when fluid is aspirated",
+      "7. Attach stopcock & syringe",
+      "8. Aspirate as needed",
+      "9. Secure catheter",
+      "10. Removing 5 ml can significantly increase cardiac output",
+      "11. If >20 ml of blood is aspirated rapidly needle is usually in ventricle"
+    ],
+  	"documentationItems":[
+      "Indication",
+      "Type and amount of fluid aspirated",
+      "Complications"
+    ],
+  	"impressions":[
+      "Pericardiotamponade"
+    ],
+  	"otherConsiderations":[]
+  },
+  {
+  	"title":"Rapid Sequence Intubation",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+      "INDICATIONS",
+      "• Respiratory failure",
+      "• Severely decreased mental status",
+      "• Failure to oxygenate or ventilate via non-invasive measures",
+      "• Excessive work of breathing",
+      "• Impending airway compromise (such as inhalation injury)"
+    ],
+  	"equipment":[
+      "Medications",
+      "BVM",
+      "OPA/NPA",
+      "Suction",
+      "L-Scope",
+      "ETT",
+      "Stylet",
+      "Bougie",
+      "Syringe",
+      "Esophageal Intubation Device",
+      "Stethoscope",
+      "OGT / NGT",
+      "ETCO2"
+    ],
+  	"procedure":[
+      "1. Place Patient on Monitor",
+      "2. Pre-Oxygenate: BVM without bagging for 3 minutes is preferred",
+      "• If low O2 Sats or decreased breathing",
+      "• Use NRB on infants instead of BVM unless assisted breathes are needed",
+      "• Position pt with HOB elevated or reverse Trendelenberg if possible while preoxygenating",
+      "3. Evaluate for Difficult Airway",
+      "• Eval 3-3-2",
+      "• Mallampati",
+      "• Obese",
+      "• Neck flex",
+      "4. Consider giving only Etomidate",
+      "5. Have backup plan ready (King Airway / Cricothyrotomy)",
+      "6. Determine if contraindications to Succinylcholine are present",
+      "• Known Hyperkalemia",
+      "• PMHx Malignant Hyperthermia",
+      "• Neuromuscular disease",
+      "• 3 days - 6 months out from Severe Crush, Burn, Stroke, Spinal Injury, Intra-Abdominal Sepsis",
+      "7. If above present use Vecuronium 0.1 mg/kg or Rocuronium 1 mg/kg",
+      "8. Prepare all needed materials (see above)",
+      "9. Position: Lie down in Sniffing Position",
+      "10. Push Etomidate 0.3 mg/kg",
+      "11. Push Succinylcholine 2 mg/kg",
+      "• If contraindicated use Rocuronium 1 mg/kg or Vecuronium 0.1 mg/kg",
+      "12. Wait: 45 sec, only bag if O2 Sat < 90%",
+      "13: Intubate: use BURP / Bougie if needed",
+      "14. If O2 Sat < 90% abort intubation, attempt BAG w/ OPA/NPA in place",
+      "15. Prior to next attempt change some aspect to improve success",
+      "16. After ETT placed, confirm via:",
+      "• ETCO2",
+      "• Auscultation",
+      "• Esophageal Intubation Device",
+      "17. Insert OGT",
+      "18. Secure ETT",
+      "19. Consider chest x-ray if appropriate"
+    ],
+  	"documentationItems":[
+      "Indication",
+      "Number of attempts",
+      "Size of ETT",
+      "Complications"
+    ],
+  	"impressions":[
+      "Respiratory Failure",
+      "Respiratory Arrest"
+    ],
+  	"otherConsiderations":[
+      "See ATLS App, \"Just-In-Time\" Videos"
+    ]
+  },
+  {
+  	"title":"Thoracostomy",
+  	"originalDate":"20 March 2013",
+  	"revisedDate":"20 March 2013",
+  	"indications":[
+      "INDICATIONS",
+      "Continued signs of tension pneumothorax post needle decompression",
+      "Respiratory Failure",
+      "Shock",
+      "Decreased breath Sounds",
+      "Distended Neck Veins (with other s/s)",
+      "Trachea Deviation",
+      "Pneumothorax in intubated patient"
+    ],
+  	"equipment":[
+      "Sterile Gloves",
+      "Chloraprep",
+      "#10 Scalpel",
+      "Clamp",
+      "Suture",
+      "Chest tube",
+      "Drainage Kit with tubing",
+      "Vaseline gauze",
+      "4x4s",
+      "Tape",
+      "Suction"
+    ],
+  	"procedure":[
+      "1. Chloraprep lateral chest",
+      "2. Identify lateral edge of Pectoralis at the nipple line (5th rib at anterior axillary line)",
+      "3. If patients conditions allows time,  infiltrate Lidocaine from skin to pleura",
+      "4. Make 3 cm transverse incision on the rib at the MAL between ribs 4 and 5",
+      "5. Use finger to dissect bluntly superiorly over the rib to intercostals",
+      "6. Insert clamp, carefully push through pleura, then open clamp to enlarge hole",
+      "7. Before removing clamp, insert finger to verify position and free adhesions",
+      "8. For SIMPLE thoracostomy (intubated pt only) cover with dry sterile gauze",
+      "9. For TUBE thoracostomy insert chest tube (> 24 Fr anteriorly for pneumothorax, > 32 Fr posteriorly for hemothorax) until last hole is > 3 cm inside chest wall",
+      "• Secure with suture",
+      "• Connect to chest drain",
+      "• Dress with vaseline gauze, 4x4s and tape in Dressing Kit"
+    ],
+  	"documentationItems":[
+      "Indication",
+      "Site",
+      "Size chest tube",
+      "Insertion depth",
+      "Complications"
+    ],
+  	"impressions":[
+      "Hemothorax",
+      "Pneumothorax"
+    ],
+  	"otherConsiderations":[
+      "See ATLS App, \"Just-In-Time\" Videos"
+    ]
+  }
+  ]
+}
+
+
+
