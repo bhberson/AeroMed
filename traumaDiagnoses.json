@@ -1,0 +1,556 @@
+{
+	"results":[
+		{
+			"title":"Airway Management",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Even if GCS ≤ 8 consider delaying intubation if transport time is minimal and able to oxygenate via less invasive means"
+			],
+			"interventions":[
+				"Adjunct airway (Nasopharyngeal Airway/Oral Pharyngeal Airway)",
+				"King tube",
+				"Intubation (avoid nasal intubation)",
+				"Cricothyrotomy",
+				"Maintain c-spine precautions",
+				"Goal oxygen saturation ≥ 90%"
+			],
+			"testAndStudies":[
+
+			],
+			"medications":[
+				"Supplemental O2",
+				"RSI",
+				"Analgesia",
+				"Anti-emetics"
+			],
+			"documentationItems":[
+				"Paralytic times",
+				"Medication doses",
+				"Interventions"
+			],
+			"impressions":[
+				"Respiratory distress",
+				"Respiratory failure"
+			],
+			"otherConsiderations":[
+				"If intubated place OGT en route",
+				"See applicable procedures SOPs"
+			]
+		},
+		{
+			"title":"Bites",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Determine from receiving if anti-venom is needed prior to transport. May need to collect and transport prior to patient intervention"
+			],
+			"interventions":[
+				"Maintain area of bite dependent",
+				"Keep patient calm",
+				"Anti-venom if applicable",
+				"Observe for anaphylaxis",
+				"Oxygen",
+				"No constricting bands"
+			],
+			"testAndStudies":[
+
+			],
+			"medications":[
+				"Anti-anxiety medications",
+				"Narcotics",
+				"Antibiotics"
+			],
+			"documentationItems":[
+				"Animal types",
+				"Describe wound",
+				"Time of bite"
+			],
+			"impressions":[
+				"Bite (type of animal)"
+			],
+			"otherConsiderations":[
+				"See Anaphylaxis SOP",
+				"DO NOT: Bring live snake, apply ice, apply tourniquet, or cut and suck"
+			]
+		},
+		{
+			"title":"Breathing Management",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Ensure aircraft suction functioning PTA"
+			],
+			"interventions":[
+				"O2 Sat ≥ 90%",
+				"EtCO2 goal 30-40",
+				"Flail chest may require intubation",
+				"Pneumo/hemothorax: if s/s tension, needle decompression. If no success consider simple vs. tube thoracostomy.",
+				"Open chest wound: apply occlusive dressing and observe for tension pneumothorax (flutter valve taped three sides)",
+				"Serial BS assessement"
+			],
+			"testAndStudies":[
+				"CXR/CT if completed PTA"
+			],
+			"medications":[
+				"O2",
+				"Sedation"
+			],
+			"documentationItems":[
+				"Interventions",
+				"Chest exam"
+			],
+			"impressions":[
+				"Hemo/pneumo/tension pneumothorax",
+				"Flail chest",
+				"Wounds (septic)",
+				"Hypoxia"
+			],
+			"otherConsiderations":[
+
+			]
+		},
+		{
+			"title":"Burns: Thermal, Chemical, Electrical",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Decontaminate (if appropriate)",
+				"Transport to nearest burn center"
+			],
+			"interventions":[
+				"Ensure scene safety",
+				"Utilize Parkland formula",
+				"Minimum 2 large bore IVs",
+				"Ensure no longer burning",
+				"Airway management (for inhalation burns, airway compromise may occur up to one hour post injury)"
+			],
+			"testAndStudies":[
+				"CONSIDER:",
+				"Carbon Monoxide",
+				"K+",
+				"CPK",
+				"Cyanide"
+			],
+			"medications":[
+				"Lactated Ringers"
+			],
+			"documentationItems":[
+				"Percent of burns based on rule of 9's (or patient's palm = 1%)",
+				"Depth of burns",
+				"Entrance/Exit wounds (electrical)",
+				"Airway burns (soot, singed hair, etc)",
+				"Strict I&O"
+			],
+			"impressions":[
+				"Burns (depth specific)",
+				"Airway compromise",
+				"Inhalation injury"
+			],
+			"otherConsiderations":[
+				"Ensure scene safety",
+				"Succynlycholine NOT contraindicated during first 72 hours post injury"
+			]
+		},
+		{
+			"title":"Circulation Management",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"IV/IO access can be obtained en route"
+			],
+			"interventions":[
+				"Large bore IV/IO access",
+				"Shock management: Transfuse PRBCs to maintain SBP > 80. If Traumatic Brain Injury present maintain SBP > 90",
+				"Continue and reassess hemorrhage control interventions",
+				"Avoid IVF",
+				"Serial radial pulse/BP monitoring",
+				"Tamponade confirmed via US consider pericardiocentesis",
+				"Neurogenic shock: IVF (in absence of severe hemorrhage) to maintain MAP ≥ 85. R/o other causes of shock (tamponade, hemorrhage, etc.) Levophed first line, dopamine/neosinephrine second line to maintain BP"
+			],
+			"testAndStudies":[
+				"Do NOT delay",
+				"Hgb in acute hemorrhage does not correlate to blood loss."
+			],
+			"medications":[
+				"TXA",
+				"Levophed (neurogenic shock)"
+			],
+			"documentationItems":[
+				"Serial BP readings",
+				"Blood product administration",
+				"IV access",
+				"Estimated blood loss"
+			],
+			"impressions":[
+				"Hemorrhagic shock",
+				"Neurogenic shock",
+				"Pericardial tamponade",
+				"Hypotension"
+			],
+			"otherConsiderations":[
+
+			]
+		},
+		{
+			"title":"Closed Head Injury",
+			"originalDate":"",
+			"revisedDate":"",
+			"considerations":[
+				"Receiving neurosurgery availability"
+			],
+			"interventions":[
+				"HOB elevated if appropriate",
+				"Serial neuro exams",
+				"EtCO2 monitoring if applicable (30-40)",
+				"Ensure all interventions protect from ICP increase"
+			],
+			"testAndStudies":[
+				"Head CT",
+				"C-spine CT"
+			],
+			"medications":[
+				"Mannitol for s/s herniation",
+				"Aggressive sedation"
+			],
+			"documentationItems":[
+				"Thorough neuro exam"
+			],
+			"impressions":[
+				"Closed head injury",
+				"Head bleed site specific (epidural, subdural, subarachnoid)"
+			],
+			"otherConsiderations":[
+				"See Cerebral Ventricular Drain procedure"
+			]
+		},
+		{
+			"title":"Cold Injury",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Warm aircraft cabin",
+				"Handle with extreme care to prevent dysrhythmias"
+			],
+			"interventions":[
+				"Warm patient (heat blankets, warm IVF)",
+				"Remove wet garments",
+				"Temperature monioring",
+				"Close EKG monitoring",
+				"Frostbite:",
+				"• Avoid thawing if possibility of refreezing",
+				"• Do not rub effected areas"
+			],
+			"testAndStudies":[
+
+			],
+			"medications":[
+				"Narcotics as needed"
+			],
+			"documentationItems":[
+				"Core and serial temperatures",
+				"Type and length of exposure"
+			],
+			"impressions":[
+				"Hypothermia",
+				"Frostbite"
+			],
+			"otherConsiderations":[
+				"Avoid central venous access",
+				"No CPR for bradycardia if weak pulse present"
+			]
+		},
+		{
+			"title":"Decompression Syndrome (Bends)",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"REQUEST DIVE COMPUTER and transport with patient",
+				"Notify Hyperbaric unit/physician at receiving hospital",
+				"Transport to facility with hyperbaric capability"
+			],
+			"interventions":[
+				"Transport in supine position",
+				"Prevent/treat hypothermia",
+				"Temperature monitoring",
+				"Transport at as low of an altitude as possible",
+				"High flow oxygen",
+				"IVF"
+			],
+			"testAndStudies":[
+
+			],
+			"medications":[
+				"Pain management as needed"
+			],
+			"documentationItems":[
+				"Depth of Dive",
+				"Amount of time at depth",
+				"Time for ascent",
+				"Any post dive altitude exposure (prior to Aero Med flight)",
+				"Altitude of Aero Med transport"
+			],
+			"impressions":[
+				"Decompression Syndrome"
+			],
+			"otherConsiderations":[
+
+			]
+		},
+		{
+			"title":"Drowning",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Handle patient with extreme care to prevent dysrhythmias"
+			],
+			"interventions":[
+				"Consider other reasons for drowning",
+				"C-Spine immobilization",
+				"Remove wet clothing and treat for hypothermia",
+				"Warm IVF bolus",
+				"NGT",
+				"Temperature monitoring (goal of 32 degrees C)",
+				"Monitor for worsening hypoxia due to delayed pulmonary edema which may occur hours after incident"
+			],
+			"testAndStudies":[
+				"ABG",
+				"CMP"
+			],
+			"medications":[
+				"As Needed"
+			],
+			"documentationItems":[
+				"Temperature of water",
+				"Time of Submersion"
+			],
+			"impressions":[
+				"Drowning",
+				"Hypothermia",
+				"Respiratory Failure",
+				"Pulmonary Edema"
+			],
+			"otherConsiderations":[
+				"Avoid central venous access to prevent dysrhythmias"
+			]
+		},
+		{
+			"title":"Heat Injury",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Air Conditioned aircraft cab"
+			],
+			"interventions":[
+				"Cool as rapidly as possible",
+				"Cold IVF",
+				"Ice Packs to groin, neck, axilla",
+				"Consider immersion in cold water prior to departure",
+				"Monitor core temperature"
+			],
+			"testAndStudies":[
+
+			],
+			"medications":[
+				"As Needed"
+			],
+			"documentationItems":[
+				"Initial and serial temperatures",
+				"Circumstances of exposure"
+			],
+			"impressions":[
+				"Heat Stroke"
+			],
+			"otherConsiderations":[
+
+			]
+		},
+		{
+			"title":"Hemorrhage Control",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Catastrophic hemorrhage control may lead to death within minutes. Immediate intervention is critical"
+			],
+			"interventions":[
+				"Tourniquet",
+				"Hemostatic powder (save package and transport with patient)",
+				"Pressure dressing",
+				"T-pod pelvic stabilizer",
+				"Administer blood (PRBCs) if weak radial/SBP < 80; IVF not indicated unless PRBC unavailable",
+				"Treat with end goal of permissive hypotension"
+			],
+			"testAndStudies":[
+				"Hgb in acute hemorrhage does not correlate to blood loss."
+			],
+			"medications":[
+				"TXA"
+			],
+			"documentationItems":[
+				"Estimated blood loss",
+				"Time and location of tourniquet",
+				"Amount of PRBCs infused and perfusion data",
+				"Lowest BP"
+			],
+			"impressions":[
+				"Hemorrhage shock",
+				"Severe hemorrhage",
+				"Wounds (specifics)"
+			],
+			"otherConsiderations":[
+				"Ensure appropriate and complete communication of all interventions to trauma surgeon (tourniquet and hemostatic powder)"
+			]
+		},
+		{
+			"title":"OB Trauma",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Dispalce uterus by tipping backboard or patient to left"
+			],
+			"interventions":[
+				"Treat mother as primary patient",
+				"Manually displace uterus to left during life saving interventions (CPR, Intubations, etc)"
+			],
+			"testAndStudies":[
+
+			],
+			"medications":[
+				"As Needed"
+			],
+			"documentationItems":[
+				"Fundal height (20 cm at umbilicus)",
+				"Weeks gestation",
+				"Fetal heart tones with Doppler or ultrasound"
+			],
+			"impressions":[
+				"Related trauma diagnoses",
+				"Pregnancy (specify trimester)"
+			],
+			"otherConsiderations":[
+				"Post declaration of maternal death c-section with fetus age > 24 weeks by physician ONLY"
+			]
+		},
+		{
+			"title":"Major Orthopaedic Trauma",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Traction Splints may need to be removed due to aircraft space limitations"
+			],
+			"interventions":[
+				"Rhabdomyolysis: IVF to maintain urine output of > 100 mL/hr minimum",
+				"Compartment Syndrome: Rapid transport to surgeon. If suspected remove/loosen constrictive splints/cast/dressings",
+				"Fracture",
+				"• Long bone: Immobilization",
+				"• Pelivs: t-pod if appropriate",
+				"Spine: Spinal Immobilization. Maintain precautions with interventions",
+				"Amputation: Tourniquet if appropriate. Transport amputated part with patient (wrapped then placed on ice if possible)"
+			],
+			"testAndStudies":[
+				"CT/Xray",
+				"CPK level (rhabdomyolysis)",
+				"Do not delay transport in order to obtain"
+			],
+			"medications":[
+				"Narcotics",
+				"Sedation"
+			],
+			"documentationItems":[
+				"Neurovascular exam prior to and after immobilization distal to injured limb or all extremities with suspected spinal cord injury"
+			],
+			"impressions":[
+				"Fracture (specify site only if xray/CT prior to transport or OBVIOUS deformity)",
+				"Suspected Fracture (name site)"
+			],
+			"otherConsiderations":[
+
+			]
+		},
+		{
+			"title":"Penetrating Trauma",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"ENSURE SCENE SAFETY prior to landing or approaching patient"
+			],
+			"interventions":[
+				"Inspect for exit wounds",
+				"Hemorrhage Control",
+				"Eviseration",
+				"• Do not attempt to replace abdominal contents",
+				"• Apply warm moist dressing under occlusive layer",
+				"• Flex knees and elevate HOB if c-spine injury not suspected",
+				"Impalement",
+				"• Do NOT remove foreign body - stabilize in place"
+			],
+			"testAndStudies":[
+
+			],
+			"medications":[
+				"As Needed"
+			],
+			"documentationItems":[
+				"How dressed wound",
+				"Color of abdominal contents protruding from wound",
+				"Weapon",
+				"• Caliber",
+				"• Distance fired from entrance wound"
+			],
+			"impressions":[
+				"Gunshot wound",
+				"Stab wound",
+				"Abdominal Evisceration"
+			],
+			"otherConsiderations":[
+
+			]
+		},
+		{
+			"title":"Trauma, General",
+			"originalDate":"18 October 2012",
+			"revisedDate":"18 October 2012",
+			"considerations":[
+				"Nearest level 1 trauma center",
+				"Avoid unnecessary delays; whenever possible interventions will be done en route"
+			],
+			"interventions":[
+				"2 IV/IO access sites",
+				"Life threatening hemorrhage control",
+				"Airway management",
+				"Ensure adequate ventilation",
+				"Maintain appropriate BP (systolic > 80 unless TBI than > 90)",
+				"Spinal immobilization and splinting as appropriate",
+				"Euthermia",
+				"Decontamination (if applicable)"
+			],
+			"testAndStudies":[
+				"Glucose",
+				"Do NOT delay inerfacility transports to obtain studies/labs"
+			],
+			"medications":[
+				"RSI",
+				"Pain",
+				"Sedation",
+				"Anti-emetics",
+				"TXA"
+			],
+			"documentationItems":[
+				"Mechanism of injury",
+				"Time of incident",
+				"Estimated blood loss",
+				"Lowest recorded BP",
+				"GCS"
+			],
+			"impressions":[
+				"List symptoms",
+				"Do NOT list confirmed diagnoses from receiving facility"
+			],
+			"otherConsiderations":[
+				"On scene cardiac arrests (see SOP)",
+				"Mass casualty (see SOP)"
+			]
+		}
+
+	]
+}
