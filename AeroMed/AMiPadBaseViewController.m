@@ -153,10 +153,8 @@
                 OperatingProcedure *op = objects[i];
                 [operatingProcedures addObject:op];
             }
-            NSArray *documents = [[NSArray alloc] initWithArray:operatingProcedures];
-            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:documents];
-            [storage setObject:data forKey:@"OperatingProcedures"];
-            [storage synchronize];
+            // Save to file
+            [NSKeyedArchiver archiveRootObject:operatingProcedures toFile:[OperatingProcedure getPathToArchive]];
         }
         
     }];

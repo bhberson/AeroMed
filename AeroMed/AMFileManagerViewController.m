@@ -58,8 +58,9 @@
         
         // If we do not have a structure then query the database
         if (_topFolders == nil) {
-           // [self queryForFiles];
+         
             self.viewControllerData = [storedData objectForKey:@"structure"];
+            
             _topFolders = self.viewControllerData;
             [self reloadDataAnimated:YES];
         // We already have a structure
@@ -171,10 +172,11 @@
         viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
         [viewController setInfo: navDict];
         [viewController setDoc:cardData];
+        [viewController setShouldDisplayChecklist:self.shouldDisplayChecklist];
         return [[UINavigationController alloc] initWithRootViewController:viewController];
     }
     
-    
+  
     //Return the custom view controller wrapped in a UINavigationController
     return [[UINavigationController alloc] initWithRootViewController:viewController];
 }
@@ -232,9 +234,6 @@
     [searchBar setShowsCancelButton:YES animated:YES];
     
     if (!_documents) {
-       // NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
-        
-        //_documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         _documents = [NSKeyedUnarchiver unarchiveObjectWithFile:[OperatingProcedure getPathToArchive]];
     }
 }

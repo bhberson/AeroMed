@@ -10,4 +10,5 @@
 
 @property (strong, nonatomic) NSDictionary* info;
 @property (weak, atomic) PFObject *doc;
+@property BOOL shouldDisplayChecklist; 
 @end

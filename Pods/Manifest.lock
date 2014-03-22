@@ -1,10 +1,13 @@
 PODS:
+  - JBChartView (2.0.1)
   - KLNoteViewController (1.0)
 
 DEPENDENCIES:
+  - JBChartView
   - KLNoteViewController
 
 SPEC CHECKSUMS:
+  JBChartView: 45a942ed229a7fe03f7de204cb2e3573ed55f27f
   KLNoteViewController: 74c80408021ebd482e2af8d162b14e23041fb06d
 
 COCOAPODS: 0.29.0
