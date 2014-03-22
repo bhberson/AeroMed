@@ -15,7 +15,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        
+        self.dateStarted = [[NSDate alloc] init];
     }
     return self;
 }
@@ -29,6 +29,8 @@
     [aCoder encodeObject:self.ageGroup forKey:@"ageGroup"];
     [aCoder encodeObject:self.otherNotes forKey:@"otherNotes"];
     [aCoder encodeObject:self.specialTransport forKey:@"specialTransport"];
+    [aCoder encodeObject:self.checkListResults forKey:@"checkListResults"];
+    [aCoder encodeObject:self.dateStarted forKey:@"dateCreated"];
 }
 
 -(id)initWithCoder:(NSCoder *)aDecoder {
@@ -43,6 +45,8 @@
     self.ageGroup = [aDecoder decodeObjectForKey:@"ageGroup"];
     self.otherNotes = [aDecoder decodeObjectForKey:@"otherNotes"];
     self.specialTransport = [aDecoder decodeObjectForKey:@"specialTransport"];
+    self.checkListResults = [aDecoder decodeObjectForKey:@"checkListResults"];
+    self.dateStarted = [aDecoder decodeObjectForKey:@"dateCreated"];
     
     return self;
 }

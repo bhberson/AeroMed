@@ -62,7 +62,6 @@
     
     [self queryForDocuments];
     [self queryForFiles];
-    
   
 }
 
@@ -161,10 +160,7 @@
             
             // Save to file
             [NSKeyedArchiver archiveRootObject:operatingProcedures toFile:[OperatingProcedure getPathToArchive]];
-//            NSArray *documents = [[NSArray alloc] initWithArray:operatingProcedures];
-//            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:documents];
-//            [storage setObject:data forKey:@"OperatingProcedures"];
-//            [storage synchronize];
+
         }
         
     }];

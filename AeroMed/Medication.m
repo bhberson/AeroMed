@@ -19,4 +19,27 @@
     return @"Medication";
 }
 
+#pragma mark - NSCoding for offline use
+
+-(void)encodeWithCoder:(NSCoder *)aCoder {
+   
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+
+    
+    return self;
+}
+
++ (NSString *)getPathToArchive {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    
+    NSString *docsDir = [paths objectAtIndex:0];
+    return [docsDir stringByAppendingPathComponent:@"medications.model"];
+}
 @end
