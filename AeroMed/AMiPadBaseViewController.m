@@ -79,7 +79,7 @@
 	TransportCell *cell = (TransportCell *)[tableView
                                             dequeueReusableCellWithIdentifier:@"TransportCell"];
 	Transport *transport = [self.transports objectAtIndex:indexPath.row];
-	cell.numLabel.text = transport.number;
+	cell.numLabel.text = transport.transportNumber;
     
     return cell;
 }

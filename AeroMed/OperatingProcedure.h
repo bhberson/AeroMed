@@ -38,5 +38,5 @@
 @property (nonatomic, retain) NSArray *otherConsiderations;
 
 + (NSString *)parseClassName;
-
++ (NSString *)getPathToArchive;
 @end

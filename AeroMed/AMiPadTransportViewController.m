@@ -30,7 +30,7 @@
 - (IBAction)done:(id)sender
 {
     Transport *transport = [[Transport alloc] init];
-	transport.number = self.numTextField.text;
+	transport.transportNumber = self.numTextField.text;
 	[self.delegate amiPadTransportViewController:self
                                    didAddTransport:transport];
 }

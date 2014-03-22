@@ -232,9 +232,10 @@
     [searchBar setShowsCancelButton:YES animated:YES];
     
     if (!_documents) {
-        NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
+       // NSData *data = [[NSUserDefaults standardUserDefaults]objectForKey:@"OperatingProcedures"];
         
-        _documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        //_documents = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        _documents = [NSKeyedUnarchiver unarchiveObjectWithFile:[OperatingProcedure getPathToArchive]];
     }
 }
 

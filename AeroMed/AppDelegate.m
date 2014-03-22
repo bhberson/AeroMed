@@ -36,10 +36,10 @@
     
     transports = [NSMutableArray arrayWithCapacity:20];
 	Transport *transport = [[Transport alloc] init];
-	transport.number = @"019";
+	transport.transportNumber = @"019";
 	[transports addObject:transport];
 	transport = [[Transport alloc] init];
-	transport.number = @"1234";
+	transport.transportNumber = @"1234";
 	[transports addObject:transport];
 
     return YES;

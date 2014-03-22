@@ -54,4 +54,10 @@ medications, checklist, impressions, otherConsiderations;
     return self;
 }
 
++ (NSString *)getPathToArchive {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    
+    NSString *docsDir = [paths objectAtIndex:0];
+    return [docsDir stringByAppendingPathComponent:@"operatingprocedure.model"];
+}
 @end
