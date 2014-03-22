@@ -43,6 +43,8 @@
 		27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DC18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m */; };
 		27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */; };
 		27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58E218B445F20047D0A7 /* AMiPadLoginViewController.m */; };
+		27AC453618DD42FB003A4070 /* AMiPHoneChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */; };
+		27AC453818DD43EA003A4070 /* libPods-JBChartView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC453718DD43EA003A4070 /* libPods-JBChartView.a */; };
 		27AC965418DD329000CDFA93 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27AC965318DD329000CDFA93 /* NavigationControllerData.plist */; };
 		27ADD93A18CCC97E0074CE1B /* AMFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ADD93918CCC97E0074CE1B /* AMFolderViewController.m */; };
 		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
@@ -134,6 +136,9 @@
 		27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadSignupViewController.m; sourceTree = "<group>"; };
 		27AB58E118B445F20047D0A7 /* AMiPadLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadLoginViewController.h; sourceTree = "<group>"; };
 		27AB58E218B445F20047D0A7 /* AMiPadLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadLoginViewController.m; sourceTree = "<group>"; };
+		27AC453418DD42FB003A4070 /* AMiPHoneChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPHoneChartViewController.h; sourceTree = "<group>"; };
+		27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPHoneChartViewController.m; sourceTree = "<group>"; };
+		27AC453718DD43EA003A4070 /* libPods-JBChartView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-JBChartView.a"; path = "Pods/build/Debug-iphoneos/libPods-JBChartView.a"; sourceTree = "<group>"; };
 		27AC965318DD329000CDFA93 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
 		27ADD93818CCC97E0074CE1B /* AMFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFolderViewController.h; sourceTree = "<group>"; };
 		27ADD93918CCC97E0074CE1B /* AMFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFolderViewController.m; sourceTree = "<group>"; };
@@ -190,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AC453818DD43EA003A4070 /* libPods-JBChartView.a in Frameworks */,
 				2704736818B05E20003AAB09 /* SystemConfiguration.framework in Frameworks */,
 				2704736618B05E11003AAB09 /* StoreKit.framework in Frameworks */,
 				2704736418B05E09003AAB09 /* Security.framework in Frameworks */,
@@ -225,6 +231,8 @@
 		2720373218A306AF000BC38A /* iPhone View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				27AC453418DD42FB003A4070 /* AMiPHoneChartViewController.h */,
+				27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */,
 				2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */,
 				2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */,
 				27A6619A18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.h */,
@@ -239,6 +247,13 @@
 				7749F73418CD486600B582C0 /* AMiPhoneTransportViewController.m */,
 			);
 			name = "iPhone View Controllers";
+			sourceTree = "<group>";
+		};
+		27AB18F318DD46C0004673CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		27C8060018A443CF00243EB1 /* css */ = {
@@ -319,6 +334,7 @@
 		7787CF0118806ECE004F495E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27AC453718DD43EA003A4070 /* libPods-JBChartView.a */,
 				2706A5CD18CFA611007B3248 /* libPods.a */,
 				2786509B18B59A9100EA6E2F /* Pixate.framework */,
 				2704736D18B0625B003AAB09 /* FacebookSDK.framework */,
@@ -351,6 +367,7 @@
 				779181B518C832BD00AE1019 /* Mutual View Controllers */,
 				27CDBCB9188095EE000960F3 /* Models */,
 				27C8060018A443CF00243EB1 /* css */,
+				27AB18F318DD46C0004673CE /* Views */,
 				7787CF1418806ECE004F495E /* Images.xcassets */,
 				7787CF0918806ECE004F495E /* Supporting Files */,
 			);
@@ -604,6 +621,7 @@
 				779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */,
 				2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */,
 				27F94E1018B424C2001F8F4F /* AMiPhoneLoginViewController.m in Sources */,
+				27AC453618DD42FB003A4070 /* AMiPHoneChartViewController.m in Sources */,
 				27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */,
 				27CB389818DD2D3C00F43680 /* OBImpression.m in Sources */,
 			);

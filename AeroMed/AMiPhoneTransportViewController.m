@@ -62,8 +62,8 @@
 
 - (void)retrieveUsers
 {
-    NSMutableArray *allUsers = [NSMutableArray array];
-    self.crewMemberArray = [NSMutableArray array];
+    NSMutableArray *allUsers = [[NSMutableArray alloc] init];
+    self.crewMemberArray = [[NSMutableArray alloc] init];
     PFQuery *query = [PFUser query];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -131,7 +131,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row   forComponent:(NSInteger)component
 {
-    return [self.crewMemberArray objectAtIndex:row];
+    //return [self.crewMemberArray objectAtIndex:row];
     if(pickerView == self.crewMemberPicker) {
         return [self.crewMemberArray objectAtIndex:row];
     } else if(pickerView == self.ageGroupPicker) {
