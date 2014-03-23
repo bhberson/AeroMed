@@ -16,9 +16,17 @@
 - (void)amiPhoneTransportViewController:(AMiPhoneTransportViewController *)controller didAddTransport:(Transport *)transport;
 @end
 
-@interface AMiPhoneTransportViewController : UITableViewController
+@interface AMiPhoneTransportViewController : UITableViewController <UIPickerViewDataSource,UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *numTextField;
 @property (weak, nonatomic) IBOutlet UITextField *notesTextField;
+@property (strong, nonatomic) IBOutlet UIPickerView *crewMemberPicker;
+@property (strong, nonatomic)          NSMutableArray *crewMemberArray;
+@property (strong, nonatomic) IBOutlet UIPickerView *ageGroupPicker;
+@property (strong, nonatomic)          NSArray *ageGroupArray;
+@property (strong, nonatomic) IBOutlet UIPickerView *transportTypePicker;
+@property (strong, nonatomic)          NSArray *transportTypeArray;
+@property (strong, nonatomic) IBOutlet UIPickerView *specialTransportPicker;
+@property (strong, nonatomic)          NSArray *specialTransportArray;
 
 @property (nonatomic, weak) id <AMiPhoneTransportViewControllerDelegate> delegate;
 

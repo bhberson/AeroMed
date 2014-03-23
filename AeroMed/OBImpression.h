@@ -1,13 +1,13 @@
 //
-//  OperatingProcedure.h
+//  OBImpression.h
 //  AeroMed
 //
-//  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 
-@interface OperatingProcedure : PFObject <PFSubclassing, NSCoding>
+@interface OBImpression : PFObject <PFSubclassing, NSCoding>
 
 // Title
 @property (nonatomic, retain) NSString *title;

@@ -19,9 +19,11 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.051 green:0.431 blue:0.549 alpha:1.000]];
 	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
     
-    UIImage *img = [UIImage imageNamed:@"checklist.png"];
-    UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(checkMarkTapped:)];
-    self.navigationItem.rightBarButtonItem = checklist;
+    if (self.shouldDisplayChecklist) {
+        UIImage *img = [UIImage imageNamed:@"checklist.png"];
+        UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(checkMarkTapped:)];
+        self.navigationItem.rightBarButtonItem = checklist;
+    }
     
     
 }

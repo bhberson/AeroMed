@@ -62,7 +62,6 @@
     
     [self queryForDocuments];
     [self queryForFiles];
-    
   
 }
 
@@ -82,7 +81,7 @@
 	TransportCell *cell = (TransportCell *)[tableView
                                       dequeueReusableCellWithIdentifier:@"TransportCell"];
 	Transport *transport = [self.transports objectAtIndex:indexPath.row];
-	cell.numLabel.text = transport.number;
+	cell.numLabel.text = transport.transportNumber;
 
     return cell;
 }
@@ -158,10 +157,10 @@
                 OperatingProcedure *op = objects[i];
                 [operatingProcedures addObject:op];
             }
-            NSArray *documents = [[NSArray alloc] initWithArray:operatingProcedures];
-            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:documents];
-            [storage setObject:data forKey:@"OperatingProcedures"];
-            [storage synchronize];
+            
+            // Save to file
+            [NSKeyedArchiver archiveRootObject:operatingProcedures toFile:[OperatingProcedure getPathToArchive]];
+
         }
         
     }];

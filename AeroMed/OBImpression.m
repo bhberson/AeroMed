@@ -1,14 +1,13 @@
 //
-//  OperatingProcedure.m
+//  OBImpression.m
 //  AeroMed
 //
-//  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "OperatingProcedure.h"
+#import "OBImpression.h"
 #import <Parse/PFObject+Subclass.h>
 
-@implementation OperatingProcedure
+@implementation OBImpression
 
 // Use dynamic to tell compiler that the setter and getters are declared somewhere else
 @dynamic title, originalDate, revisedDate, considerations, interventions, testsAndStudies,
@@ -16,7 +15,7 @@ medications, checklist, impressions, otherConsiderations;
 
 // Return the class name
 + (NSString *)parseClassName {
-    return @"OperatingProcedure";
+    return @"OBImpression";
 }
 
 #pragma mark - NSCoding for offline use
@@ -58,6 +57,6 @@ medications, checklist, impressions, otherConsiderations;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
     
     NSString *docsDir = [paths objectAtIndex:0];
-    return [docsDir stringByAppendingPathComponent:@"operatingprocedure.model"];
+    return [docsDir stringByAppendingPathComponent:@"obimpression.model"];
 }
 @end

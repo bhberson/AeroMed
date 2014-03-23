@@ -10,6 +10,7 @@
 @interface AMFileManagerViewController : KLNoteViewController <UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UILabel *centerText;
+@property BOOL shouldDisplayChecklist; // If we are just browsing do not display checklist. Transports do show it
 - (IBAction)upButtonTapped:(id)sender;
 
 @end

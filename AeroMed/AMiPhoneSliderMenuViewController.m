@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    _menuItems = @[@"title",@"transports", @"documentation", @"logout"];
+    _menuItems = @[@"title",@"transports", @"documentation",@"trends", @"logout"];
 
 }
 
