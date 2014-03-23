@@ -468,6 +468,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-TC-6We">
+                                <rect key="frame" x="-3" y="788" width="768" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="a0P-vU-OXO" id="E4o-eI-4iS"/>
+                                    <outlet property="delegate" destination="a0P-vU-OXO" id="DIu-nd-duH"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -488,6 +496,7 @@
                     <connections>
                         <outlet property="loginButton" destination="3Jv-gp-9oO" id="aUz-2d-sX3"/>
                         <outlet property="passwordEntry" destination="yQr-Cs-fhw" id="RTx-SH-aUc"/>
+                        <outlet property="userPicker" destination="qjo-TC-6We" id="feY-eA-Cv6"/>
                         <outlet property="usernameEntry" destination="AoI-0i-Piv" id="ucr-LC-5yj"/>
                         <segue destination="HKG-Gs-QQM" kind="push" identifier="loginToMain" id="TuH-TB-JVE"/>
                     </connections>

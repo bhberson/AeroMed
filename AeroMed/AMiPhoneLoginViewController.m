@@ -17,7 +17,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        // Custom initialization        
     }
     return self;
 }
@@ -39,6 +39,16 @@
     
     [self.usernameEntry setDelegate:self];
     [self.passwordEntry setDelegate:self];
+    
+    // Tags used to distinguish textfields
+    self.usernameEntry.tag = 0;
+    self.passwordEntry.tag = 1;
+    
+    // Initially hide UIPicker
+    self.userPicker.hidden = YES;
+    
+    // Query for all users
+    [self queryForUsers];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +56,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (IBAction)didTapLogin:(id)sender {
     
@@ -80,8 +89,51 @@
     return YES;
 }
 
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    if (textField.tag != 0) {
+        return YES;
+    } else {
+        [textField resignFirstResponder];
+        self.userPicker.hidden = NO;
+        return NO;
+    }
+}
+
 - (void)dismissKeyboard {
-    [self.usernameEntry resignFirstResponder];
+    self.userPicker.hidden = YES; // dismiss UIPickerView
     [self.passwordEntry resignFirstResponder];
 }
+
+// returns the number of 'columns' to display.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [self.allUsers count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    PFUser *user = [self.allUsers objectAtIndex:row];
+    return user.username;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+
+    PFUser *user = [self.allUsers objectAtIndex:row];
+    self.usernameEntry.text = user.username;
+    self.userPicker.hidden = YES;
+}
+
+
+#pragma mark - Queries
+
+// Query for all users
+- (void) queryForUsers {
+    PFQuery *query = [PFUser query];
+    self.allUsers = [NSMutableArray array];
+    [self.allUsers addObjectsFromArray:[query findObjects]];
+}
+
 @end
