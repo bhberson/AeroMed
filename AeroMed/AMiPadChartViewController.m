@@ -1,19 +1,19 @@
 //
-//  AMChartViewController.m
+//  AMiPadChartViewController.m
 //  AeroMed
 //
-//  Created by Michael Torres on 3/22/14.
+//  Created by Michael Torres on 3/25/14.
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "AMiPHoneChartViewController.h"
+#import "AMiPadChartViewController.h"
 #import "SWRevealViewController.h"
 
-@interface AMiPHoneChartViewController ()
+@interface AMiPadChartViewController ()
 
 @end
 
-@implementation AMiPHoneChartViewController
+@implementation AMiPadChartViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
     self.bottomText.hidden = YES;
     self.barChart.delegate = self;
     self.barChart.dataSource = self;
@@ -39,11 +41,7 @@
     // Menu button
     UIBarButtonItem *sidebarButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = sidebarButton;
-
-
-    
 }
-
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -62,7 +60,7 @@
     [title appendString:@"'s Performance"];
     self.titleText.text = title;
     
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -107,5 +105,4 @@
     barView.backgroundColor = (index % 2 == 0) ? [UIColor colorWithRed:0.200 green:0.749 blue:1.000 alpha:1.000]: [UIColor greenColor];
     return barView;
 }
-
 @end

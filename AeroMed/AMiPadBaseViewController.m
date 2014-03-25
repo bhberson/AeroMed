@@ -46,6 +46,20 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+//    [super viewWillAppear:animated];
+//    [self.barChart setState:JBChartViewStateCollapsed];
+//    
+//    NSString *email = [[PFUser currentUser] email];
+//    NSMutableString *title = [[NSMutableString alloc] init];
+//    [title appendString:[email substringToIndex:[email rangeOfString:@"@"].location]];
+//    [title appendString:@"'s Performance"];
+//    self.titleText.text = title;
+    
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
