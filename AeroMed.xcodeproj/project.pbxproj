@@ -14,26 +14,34 @@
 		1625074518D7358900BC3A72 /* check-yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625074118D7358900BC3A72 /* check-yes.png */; };
 		1625074618D7358900BC3A72 /* check-yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625074218D7358900BC3A72 /* check-yes@2x.png */; };
 		16EF700C18C8259C00F41E9D /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EF700B18C8259C00F41E9D /* Medication.m */; };
-		2704735818B05D7F003AAB09 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735718B05D7F003AAB09 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		2704735A18B05DCE003AAB09 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735918B05DCE003AAB09 /* AudioToolbox.framework */; };
-		2704735C18B05DD8003AAB09 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735B18B05DD8003AAB09 /* CFNetwork.framework */; };
-		2704735E18B05DE4003AAB09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735D18B05DE4003AAB09 /* CoreLocation.framework */; };
+		27009B6418E2B54800CD95D6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27009B6318E2B54800CD95D6 /* Parse.framework */; };
+		27009B6518E2B56200CD95D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735918B05DCE003AAB09 /* AudioToolbox.framework */; };
+		27009B6618E2B56800CD95D6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735B18B05DD8003AAB09 /* CFNetwork.framework */; };
+		27009B6718E2B57000CD95D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0418806ECE004F495E /* CoreGraphics.framework */; };
+		27009B6818E2B57600CD95D6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735D18B05DE4003AAB09 /* CoreLocation.framework */; };
+		27009B6918E2B58500CD95D6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736118B05DF8003AAB09 /* MobileCoreServices.framework */; };
+		27009B6A18E2B58E00CD95D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AB118A4360E008578B9 /* QuartzCore.framework */; };
+		27009B6B18E2B59600CD95D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736318B05E09003AAB09 /* Security.framework */; };
+		27009B6C18E2B59C00CD95D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736518B05E11003AAB09 /* StoreKit.framework */; };
+		27009B6E18E2B6C700CD95D6 /* PixateFreestyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27009B6D18E2B6C700CD95D6 /* PixateFreestyle.framework */; };
 		2704736018B05DEF003AAB09 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735F18B05DEF003AAB09 /* libz.dylib */; };
-		2704736218B05DF8003AAB09 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736118B05DF8003AAB09 /* MobileCoreServices.framework */; };
-		2704736418B05E09003AAB09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736318B05E09003AAB09 /* Security.framework */; };
-		2704736618B05E11003AAB09 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736518B05E11003AAB09 /* StoreKit.framework */; };
 		2704736818B05E20003AAB09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736718B05E20003AAB09 /* SystemConfiguration.framework */; };
-		2704736E18B0625B003AAB09 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704736D18B0625B003AAB09 /* FacebookSDK.framework */; };
-		270B4AB018A43606008578B9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AAF18A43606008578B9 /* CoreText.framework */; };
-		270B4AB218A4360E008578B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B4AB118A4360E008578B9 /* QuartzCore.framework */; };
 		270DB5351887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
 		270DB5361887201600573F3F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DB5341887201600573F3F /* Common.m */; };
+		271043E918E30C6B003D1740 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043E318E30C6B003D1740 /* JBBarChartView.m */; };
+		271043EA18E30C6B003D1740 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043E518E30C6B003D1740 /* JBChartView.m */; };
+		271043EB18E30C6B003D1740 /* JBChartView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 271043E618E30C6B003D1740 /* JBChartView.podspec */; };
+		271043EC18E30C6B003D1740 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043E818E30C6B003D1740 /* JBLineChartView.m */; };
+		271043F518E30CC0003D1740 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043EE18E30CC0003D1740 /* NSObject+Properties.m */; };
+		271043F618E30CC0003D1740 /* PFACL+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043F018E30CC0003D1740 /* PFACL+NSCoding.m */; };
+		271043F718E30CC0003D1740 /* PFFile+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043F218E30CC0003D1740 /* PFFile+NSCoding.m */; };
+		271043F818E30CC0003D1740 /* PFObject+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043F418E30CC0003D1740 /* PFObject+NSCoding.m */; };
+		271043FA18E30D58003D1740 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271043F918E30D58003D1740 /* FacebookSDK.framework */; };
 		2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373018A30699000BC38A /* AMiPadBaseViewController.m */; };
 		2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */; };
 		272B452518E20CF7005F0032 /* AMiPadChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272B452418E20CF7005F0032 /* AMiPadChartViewController.m */; };
 		2783BC5618D58B8C008E9790 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2783BC5518D58B8C008E9790 /* Main_iPhone.storyboard */; };
 		2783BC5918D58F56008E9790 /* AMCheckListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2783BC5818D58F56008E9790 /* AMCheckListTableViewController.m */; };
-		2786509C18B59A9100EA6E2F /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2786509B18B59A9100EA6E2F /* Pixate.framework */; };
 		2786509F18B59B6C00EA6E2F /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509D18B59B6C00EA6E2F /* cloud.png */; };
 		278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2786509E18B59B6C00EA6E2F /* cloud@2x.png */; };
 		27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6619B18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m */; };
@@ -46,9 +54,15 @@
 		27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */; };
 		27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB58E218B445F20047D0A7 /* AMiPadLoginViewController.m */; };
 		27AC453618DD42FB003A4070 /* AMiPHoneChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */; };
-		27AC453818DD43EA003A4070 /* libPods-JBChartView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC453718DD43EA003A4070 /* libPods-JBChartView.a */; };
 		27AC965418DD329000CDFA93 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27AC965318DD329000CDFA93 /* NavigationControllerData.plist */; };
 		27ADD93A18CCC97E0074CE1B /* AMFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ADD93918CCC97E0074CE1B /* AMFolderViewController.m */; };
+		27B2500718E2899800A5AFD7 /* AMDocumentCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */; };
+		27B2500A18E296E000A5AFD7 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500918E296E000A5AFD7 /* Folder.m */; };
+		27B3799218E246C900244754 /* AMiPadDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3799118E246C900244754 /* AMiPadDocumentViewController.m */; };
+		27B3799518E253A800244754 /* AMiPhoneDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3799418E253A800244754 /* AMiPhoneDocumentViewController.m */; };
+		27B3799718E2604400244754 /* helicopter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27B3799618E2604400244754 /* helicopter.jpg */; };
+		27B3B2C018E27ED200787548 /* AMDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3B2BF18E27ED200787548 /* AMDecorationView.m */; };
+		27B3B2C318E2805300787548 /* AMiPadFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3B2C218E2805300787548 /* AMiPadFlowLayout.m */; };
 		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
 		27CB389818DD2D3C00F43680 /* OBImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CB389718DD2D3C00F43680 /* OBImpression.m */; };
 		27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Main_iPad.storyboard */; };
@@ -61,8 +75,6 @@
 		7749F73B18CD50A400B582C0 /* TransportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749F73918CD50A400B582C0 /* TransportCell.m */; };
 		7749F74118CD7CBB00B582C0 /* AMiPadTransportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749F74018CD7CBB00B582C0 /* AMiPadTransportViewController.m */; };
 		7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0218806ECE004F495E /* Foundation.framework */; };
-		7787CF0518806ECE004F495E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0418806ECE004F495E /* CoreGraphics.framework */; };
-		7787CF0718806ECE004F495E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0618806ECE004F495E /* UIKit.framework */; };
 		7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7787CF0B18806ECE004F495E /* InfoPlist.strings */; };
 		7787CF0F18806ECE004F495E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF0E18806ECE004F495E /* main.m */; };
 		7787CF1318806ECE004F495E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF1218806ECE004F495E /* AppDelegate.m */; };
@@ -73,7 +85,6 @@
 		7787CF2618806ECE004F495E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7787CF2418806ECE004F495E /* InfoPlist.strings */; };
 		7787CF2818806ECE004F495E /* AeroMedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF2718806ECE004F495E /* AeroMedTests.m */; };
 		779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181AB18C82E9000AE1019 /* KLNoteViewController.m */; };
-		779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 779181AD18C82F7C00AE1019 /* Podfile.txt */; };
 		779181B318C832A500AE1019 /* AMFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B018C832A500AE1019 /* AMFileManagerViewController.m */; };
 		779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* AMDocumentViewController.m */; };
 		779181BB18C833E200AE1019 /* bar-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181B918C833E200AE1019 /* bar-mid.png */; };
@@ -99,7 +110,8 @@
 		1625074218D7358900BC3A72 /* check-yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-yes@2x.png"; sourceTree = "<group>"; };
 		16EF700A18C8259C00F41E9D /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
 		16EF700B18C8259C00F41E9D /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
-		2704735718B05D7F003AAB09 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		27009B6318E2B54800CD95D6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		27009B6D18E2B6C700CD95D6 /* PixateFreestyle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PixateFreestyle.framework; sourceTree = "<group>"; };
 		2704735918B05DCE003AAB09 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2704735B18B05DD8003AAB09 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2704735D18B05DE4003AAB09 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -108,11 +120,25 @@
 		2704736318B05E09003AAB09 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2704736518B05E11003AAB09 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2704736718B05E20003AAB09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		2704736D18B0625B003AAB09 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		2706A5CD18CFA611007B3248 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		270B4AAF18A43606008578B9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		270B4AB118A4360E008578B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		270DB5341887201600573F3F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		271043E218E30C6B003D1740 /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		271043E318E30C6B003D1740 /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		271043E418E30C6B003D1740 /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		271043E518E30C6B003D1740 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		271043E618E30C6B003D1740 /* JBChartView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JBChartView.podspec; sourceTree = "<group>"; };
+		271043E718E30C6B003D1740 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		271043E818E30C6B003D1740 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		271043ED18E30CC0003D1740 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Properties.h"; sourceTree = "<group>"; };
+		271043EE18E30CC0003D1740 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
+		271043EF18E30CC0003D1740 /* PFACL+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFACL+NSCoding.h"; sourceTree = "<group>"; };
+		271043F018E30CC0003D1740 /* PFACL+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFACL+NSCoding.m"; sourceTree = "<group>"; };
+		271043F118E30CC0003D1740 /* PFFile+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFFile+NSCoding.h"; sourceTree = "<group>"; };
+		271043F218E30CC0003D1740 /* PFFile+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFFile+NSCoding.m"; sourceTree = "<group>"; };
+		271043F318E30CC0003D1740 /* PFObject+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+NSCoding.h"; sourceTree = "<group>"; };
+		271043F418E30CC0003D1740 /* PFObject+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFObject+NSCoding.m"; sourceTree = "<group>"; };
+		271043F918E30D58003D1740 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		2720372F18A30699000BC38A /* AMiPadBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadBaseViewController.h; sourceTree = "<group>"; };
 		2720373018A30699000BC38A /* AMiPadBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadBaseViewController.m; sourceTree = "<group>"; };
 		2720373318A306D3000BC38A /* AMiPhoneBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneBaseViewController.h; sourceTree = "<group>"; };
@@ -122,7 +148,6 @@
 		2783BC5518D58B8C008E9790 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
 		2783BC5718D58F56008E9790 /* AMCheckListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCheckListTableViewController.h; sourceTree = "<group>"; };
 		2783BC5818D58F56008E9790 /* AMCheckListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCheckListTableViewController.m; sourceTree = "<group>"; };
-		2786509B18B59A9100EA6E2F /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
 		2786509D18B59B6C00EA6E2F /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
 		2786509E18B59B6C00EA6E2F /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
 		27A6619A18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneSliderMenuViewController.h; sourceTree = "<group>"; };
@@ -144,10 +169,22 @@
 		27AB58E218B445F20047D0A7 /* AMiPadLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadLoginViewController.m; sourceTree = "<group>"; };
 		27AC453418DD42FB003A4070 /* AMiPHoneChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPHoneChartViewController.h; sourceTree = "<group>"; };
 		27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPHoneChartViewController.m; sourceTree = "<group>"; };
-		27AC453718DD43EA003A4070 /* libPods-JBChartView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-JBChartView.a"; path = "Pods/build/Debug-iphoneos/libPods-JBChartView.a"; sourceTree = "<group>"; };
 		27AC965318DD329000CDFA93 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
 		27ADD93818CCC97E0074CE1B /* AMFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFolderViewController.h; sourceTree = "<group>"; };
 		27ADD93918CCC97E0074CE1B /* AMFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFolderViewController.m; sourceTree = "<group>"; };
+		27B2500518E2899800A5AFD7 /* AMDocumentCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentCellView.h; sourceTree = "<group>"; };
+		27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentCellView.m; sourceTree = "<group>"; };
+		27B2500818E296E000A5AFD7 /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
+		27B2500918E296E000A5AFD7 /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
+		27B3799018E246C900244754 /* AMiPadDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadDocumentViewController.h; sourceTree = "<group>"; };
+		27B3799118E246C900244754 /* AMiPadDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadDocumentViewController.m; sourceTree = "<group>"; };
+		27B3799318E253A800244754 /* AMiPhoneDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPhoneDocumentViewController.h; sourceTree = "<group>"; };
+		27B3799418E253A800244754 /* AMiPhoneDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPhoneDocumentViewController.m; sourceTree = "<group>"; };
+		27B3799618E2604400244754 /* helicopter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = helicopter.jpg; sourceTree = "<group>"; };
+		27B3B2BE18E27ED200787548 /* AMDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDecorationView.h; sourceTree = "<group>"; };
+		27B3B2BF18E27ED200787548 /* AMDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDecorationView.m; sourceTree = "<group>"; };
+		27B3B2C118E2805300787548 /* AMiPadFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadFlowLayout.h; sourceTree = "<group>"; };
+		27B3B2C218E2805300787548 /* AMiPadFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadFlowLayout.m; sourceTree = "<group>"; };
 		27C8060118A443CF00243EB1 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		27CB389618DD2D3C00F43680 /* OBImpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBImpression.h; sourceTree = "<group>"; };
 		27CB389718DD2D3C00F43680 /* OBImpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBImpression.m; sourceTree = "<group>"; };
@@ -192,8 +229,6 @@
 		779181B218C832A500AE1019 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
 		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
 		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
-		9DBE07FD16E044AE9885993B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,23 +236,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27AC453818DD43EA003A4070 /* libPods-JBChartView.a in Frameworks */,
 				2704736818B05E20003AAB09 /* SystemConfiguration.framework in Frameworks */,
-				2704736618B05E11003AAB09 /* StoreKit.framework in Frameworks */,
-				2704736418B05E09003AAB09 /* Security.framework in Frameworks */,
-				270B4AB218A4360E008578B9 /* QuartzCore.framework in Frameworks */,
-				2704736218B05DF8003AAB09 /* MobileCoreServices.framework in Frameworks */,
+				27009B6E18E2B6C700CD95D6 /* PixateFreestyle.framework in Frameworks */,
+				27009B6C18E2B59C00CD95D6 /* StoreKit.framework in Frameworks */,
+				27009B6B18E2B59600CD95D6 /* Security.framework in Frameworks */,
+				27009B6A18E2B58E00CD95D6 /* QuartzCore.framework in Frameworks */,
+				27009B6918E2B58500CD95D6 /* MobileCoreServices.framework in Frameworks */,
+				27009B6818E2B57600CD95D6 /* CoreLocation.framework in Frameworks */,
+				27009B6718E2B57000CD95D6 /* CoreGraphics.framework in Frameworks */,
+				27009B6618E2B56800CD95D6 /* CFNetwork.framework in Frameworks */,
+				27009B6518E2B56200CD95D6 /* AudioToolbox.framework in Frameworks */,
 				2704736018B05DEF003AAB09 /* libz.dylib in Frameworks */,
-				2704735E18B05DE4003AAB09 /* CoreLocation.framework in Frameworks */,
-				2786509C18B59A9100EA6E2F /* Pixate.framework in Frameworks */,
-				2704735C18B05DD8003AAB09 /* CFNetwork.framework in Frameworks */,
-				2704735A18B05DCE003AAB09 /* AudioToolbox.framework in Frameworks */,
-				270B4AB018A43606008578B9 /* CoreText.framework in Frameworks */,
-				7787CF0518806ECE004F495E /* CoreGraphics.framework in Frameworks */,
-				2704735818B05D7F003AAB09 /* Parse.framework in Frameworks */,
-				7787CF0718806ECE004F495E /* UIKit.framework in Frameworks */,
-				2704736E18B0625B003AAB09 /* FacebookSDK.framework in Frameworks */,
 				7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */,
+				27009B6418E2B54800CD95D6 /* Parse.framework in Frameworks */,
+				271043FA18E30D58003D1740 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +266,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271043E018E30C44003D1740 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				271043E118E30C6B003D1740 /* Classes */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		271043E118E30C6B003D1740 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				271043ED18E30CC0003D1740 /* NSObject+Properties.h */,
+				271043EE18E30CC0003D1740 /* NSObject+Properties.m */,
+				271043EF18E30CC0003D1740 /* PFACL+NSCoding.h */,
+				271043F018E30CC0003D1740 /* PFACL+NSCoding.m */,
+				271043F118E30CC0003D1740 /* PFFile+NSCoding.h */,
+				271043F218E30CC0003D1740 /* PFFile+NSCoding.m */,
+				271043F318E30CC0003D1740 /* PFObject+NSCoding.h */,
+				271043F418E30CC0003D1740 /* PFObject+NSCoding.m */,
+				271043E218E30C6B003D1740 /* JBBarChartView.h */,
+				271043E318E30C6B003D1740 /* JBBarChartView.m */,
+				271043E418E30C6B003D1740 /* JBChartView.h */,
+				271043E518E30C6B003D1740 /* JBChartView.m */,
+				271043E618E30C6B003D1740 /* JBChartView.podspec */,
+				271043E718E30C6B003D1740 /* JBLineChartView.h */,
+				271043E818E30C6B003D1740 /* JBLineChartView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2720373218A306AF000BC38A /* iPhone View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +313,8 @@
 				27F94E0F18B424C2001F8F4F /* AMiPhoneLoginViewController.m */,
 				7749F73318CD486600B582C0 /* AMiPhoneTransportViewController.h */,
 				7749F73418CD486600B582C0 /* AMiPhoneTransportViewController.m */,
+				27B3799318E253A800244754 /* AMiPhoneDocumentViewController.h */,
+				27B3799418E253A800244754 /* AMiPhoneDocumentViewController.m */,
 			);
 			name = "iPhone View Controllers";
 			sourceTree = "<group>";
@@ -258,6 +322,12 @@
 		27AB18F318DD46C0004673CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				27B3B2BE18E27ED200787548 /* AMDecorationView.h */,
+				27B3B2BF18E27ED200787548 /* AMDecorationView.m */,
+				27B3B2C118E2805300787548 /* AMiPadFlowLayout.h */,
+				27B3B2C218E2805300787548 /* AMiPadFlowLayout.m */,
+				27B2500518E2899800A5AFD7 /* AMDocumentCellView.h */,
+				27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -287,6 +357,8 @@
 				27CB389718DD2D3C00F43680 /* OBImpression.m */,
 				27A97DA618DD5C94006AAA38 /* Performance.h */,
 				27A97DA718DD5C94006AAA38 /* Performance.m */,
+				27B2500818E296E000A5AFD7 /* Folder.h */,
+				27B2500918E296E000A5AFD7 /* Folder.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -300,6 +372,8 @@
 				27A8EC2418B08D420056EA2A /* AMiPadSliderMenuViewController.m */,
 				27AB58DB18B445CB0047D0A7 /* AMiPadSplashScreenViewController.h */,
 				27AB58DC18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m */,
+				27B3799018E246C900244754 /* AMiPadDocumentViewController.h */,
+				27B3799118E246C900244754 /* AMiPadDocumentViewController.m */,
 				27AB58DE18B445E20047D0A7 /* AMiPadSignupViewController.h */,
 				27AB58DF18B445E20047D0A7 /* AMiPadSignupViewController.m */,
 				27AB58E118B445F20047D0A7 /* AMiPadLoginViewController.h */,
@@ -328,7 +402,6 @@
 				7787CF2118806ECE004F495E /* AeroMedTests */,
 				7787CF0118806ECE004F495E /* Frameworks */,
 				7787CF0018806ECE004F495E /* Products */,
-				E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -344,10 +417,9 @@
 		7787CF0118806ECE004F495E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27AC453718DD43EA003A4070 /* libPods-JBChartView.a */,
-				2706A5CD18CFA611007B3248 /* libPods.a */,
-				2786509B18B59A9100EA6E2F /* Pixate.framework */,
-				2704736D18B0625B003AAB09 /* FacebookSDK.framework */,
+				271043F918E30D58003D1740 /* FacebookSDK.framework */,
+				27009B6D18E2B6C700CD95D6 /* PixateFreestyle.framework */,
+				27009B6318E2B54800CD95D6 /* Parse.framework */,
 				2704736718B05E20003AAB09 /* SystemConfiguration.framework */,
 				2704736518B05E11003AAB09 /* StoreKit.framework */,
 				2704736318B05E09003AAB09 /* Security.framework */,
@@ -356,14 +428,12 @@
 				2704735D18B05DE4003AAB09 /* CoreLocation.framework */,
 				2704735B18B05DD8003AAB09 /* CFNetwork.framework */,
 				2704735918B05DCE003AAB09 /* AudioToolbox.framework */,
-				2704735718B05D7F003AAB09 /* Parse.framework */,
 				270B4AB118A4360E008578B9 /* QuartzCore.framework */,
 				270B4AAF18A43606008578B9 /* CoreText.framework */,
 				7787CF0218806ECE004F495E /* Foundation.framework */,
 				7787CF0418806ECE004F495E /* CoreGraphics.framework */,
 				7787CF0618806ECE004F495E /* UIKit.framework */,
 				7787CF1B18806ECE004F495E /* XCTest.framework */,
-				9DBE07FD16E044AE9885993B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -371,6 +441,7 @@
 		7787CF0818806ECE004F495E /* AeroMed */ = {
 			isa = PBXGroup;
 			children = (
+				271043E018E30C44003D1740 /* Libraries */,
 				27CDBCBB18809633000960F3 /* User Interface */,
 				2720373218A306AF000BC38A /* iPhone View Controllers */,
 				27CDBCBA188095FC000960F3 /* iPad View Controllers */,
@@ -387,6 +458,7 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27B3799618E2604400244754 /* helicopter.jpg */,
 				27AC965318DD329000CDFA93 /* NavigationControllerData.plist */,
 				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
 				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
@@ -463,11 +535,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7787CF2B18806ECE004F495E /* Build configuration list for PBXNativeTarget "AeroMed" */;
 			buildPhases = (
-				4D49CF6DEE7D429B9095C53D /* Check Pods Manifest.lock */,
 				7787CEFB18806ECE004F495E /* Sources */,
 				7787CEFC18806ECE004F495E /* Frameworks */,
 				7787CEFD18806ECE004F495E /* Resources */,
-				DFCDE84F55FB4DC6BDDA130F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -548,6 +618,8 @@
 				27AC965418DD329000CDFA93 /* NavigationControllerData.plist in Resources */,
 				1625073518D72D3400BC3A72 /* checklist.png in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
+				27B3799718E2604400244754 /* helicopter.jpg in Resources */,
+				271043EB18E30C6B003D1740 /* JBChartView.podspec in Resources */,
 				278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */,
 				1625074618D7358900BC3A72 /* check-yes@2x.png in Resources */,
 				1625074518D7358900BC3A72 /* check-yes.png in Resources */,
@@ -555,7 +627,6 @@
 				1625074318D7358900BC3A72 /* check-no.png in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,
-				779181AE18C82F7C00AE1019 /* Podfile.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,72 +640,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4D49CF6DEE7D429B9095C53D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DFCDE84F55FB4DC6BDDA130F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		7787CEFB18806ECE004F495E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2783BC5918D58F56008E9790 /* AMCheckListTableViewController.m in Sources */,
+				27B2500718E2899800A5AFD7 /* AMDocumentCellView.m in Sources */,
+				271043F518E30CC0003D1740 /* NSObject+Properties.m in Sources */,
 				2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */,
 				27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */,
 				27F94E0D18B424A3001F8F4F /* AMiPhoneSignupViewController.m in Sources */,
 				779181B318C832A500AE1019 /* AMFileManagerViewController.m in Sources */,
+				271043F818E30CC0003D1740 /* PFObject+NSCoding.m in Sources */,
 				7749F73B18CD50A400B582C0 /* TransportCell.m in Sources */,
+				27B3B2C318E2805300787548 /* AMiPadFlowLayout.m in Sources */,
 				27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */,
 				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
 				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
+				271043EC18E30C6B003D1740 /* JBLineChartView.m in Sources */,
 				27AB58E318B445F20047D0A7 /* AMiPadLoginViewController.m in Sources */,
+				27B3799218E246C900244754 /* AMiPadDocumentViewController.m in Sources */,
 				7749F73A18CD50A400B582C0 /* Transport.m in Sources */,
+				271043EA18E30C6B003D1740 /* JBChartView.m in Sources */,
 				7749F74118CD7CBB00B582C0 /* AMiPadTransportViewController.m in Sources */,
 				7749F73518CD486600B582C0 /* AMiPhoneTransportViewController.m in Sources */,
 				272B452518E20CF7005F0032 /* AMiPadChartViewController.m in Sources */,
+				27B2500A18E296E000A5AFD7 /* Folder.m in Sources */,
 				27F94E0A18B41DB6001F8F4F /* AMiPhoneSplashScreenViewController.m in Sources */,
 				27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */,
+				271043F618E30CC0003D1740 /* PFACL+NSCoding.m in Sources */,
 				27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
 				27ADD93A18CCC97E0074CE1B /* AMFolderViewController.m in Sources */,
+				27B3799518E253A800244754 /* AMiPhoneDocumentViewController.m in Sources */,
 				27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */,
+				271043F718E30CC0003D1740 /* PFFile+NSCoding.m in Sources */,
 				779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */,
 				2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */,
 				27F94E1018B424C2001F8F4F /* AMiPhoneLoginViewController.m in Sources */,
 				27AC453618DD42FB003A4070 /* AMiPHoneChartViewController.m in Sources */,
 				27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */,
 				27A97DA818DD5C94006AAA38 /* Performance.m in Sources */,
+				271043E918E30C6B003D1740 /* JBBarChartView.m in Sources */,
+				27B3B2C018E27ED200787548 /* AMDecorationView.m in Sources */,
 				27CB389818DD2D3C00F43680 /* OBImpression.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,7 +805,6 @@
 		};
 		7787CF2C18806ECE004F495E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -769,6 +819,7 @@
 					/Users/kschelhaas/Copy/workspace/AeroMed,
 					/Users/mario/Winter14/CIS467/develop,
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";
@@ -787,7 +838,6 @@
 		};
 		7787CF2D18806ECE004F495E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5DC2A40086A43C5917F5D0B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -802,6 +852,7 @@
 					/Users/kschelhaas/Copy/workspace/AeroMed,
 					/Users/mario/Winter14/CIS467/develop,
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroMed/AeroMed-Prefix.pch";

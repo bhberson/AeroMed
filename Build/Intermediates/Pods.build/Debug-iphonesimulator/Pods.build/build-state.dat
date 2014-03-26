@@ -1,0 +1,103 @@
+TPods
+v6
+r1
+cCheck dependencies
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods.a normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000000000000000000000000000
+t2
+s0
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000531E88C400000000000003B4
+t1394510020
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E88CA000000000000019E
+t1394510026
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E88FE0000000000000ADC
+t1394510078
+s2780
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
+t1395815409
+s3108
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList
+c00000000533273F1000000000000008B
+t1395815409
+s139
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Facebook-iOS-SDK.a
+c00000000533273F000000000003A5440
+t1395815408
+s3822656
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a
+c00000000533273EF00000000000566A8
+t1395815407
+s353960
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a
+c00000000533273F10000000000010D10
+t1395815409
+s68880
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse-iOS-SDK.a
+c00000000533273F10000000000000EB8
+t1395815409
+s3768
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods.a
+t2
+s0
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m
+c00000000533272D10000000000000070
+t1395815121
+s112
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies0803b771abe2b841^2b35bb71abe2b841^---0#1#1#--18"Check dependencies36"2DD9AB6F-E868-4F27-A13D-EA9D9C3E0372-
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508209.732881
+e417508209.755662
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m228"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler14b2bb71abe2b841^cd72c171abe2b841^---0#0#1#-19%DVTDocumentLocation2@75"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m0000000000000000^4402"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Parse-iOS-SDK -isystem/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers -isystem/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/Facebook-iOS-SDK -isystem/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -isystem/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/JBChartView -isystem/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/Parse+NSCoding -isystem/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods/Headers/Parse-iOS-SDK -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-dummy.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o36"D8CC6A3B-FD1D-437B-90B6-489C879AE6A9-
+b80FCC00B-66FE-4A54-90E6-37338C57105D
+
+CLibtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods.a normal i386
+s417508209.763903
+e417508210.021951
+r1
+xLibtool
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods.a normal i386108"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods.a normal i3864e9dc371abe2b841^d89e0572abe2b841^---0#0#1#--1086"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods.a normal i386    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -filelist /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList -framework Foundation -lPods-Facebook-iOS-SDK -lPods-JBChartView -lPods-Parse+NSCoding -lPods-Parse-iOS-SDK -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods.a36"BB17B766-5834-4888-869A-4E3E1D200444-
+b80FCC00B-66FE-4A54-90E6-37338C57105D
+

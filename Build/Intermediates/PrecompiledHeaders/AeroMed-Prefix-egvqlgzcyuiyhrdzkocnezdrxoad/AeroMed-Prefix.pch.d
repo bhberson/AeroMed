@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/AeroMed/AeroMed-Prefix.pch \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/Parse.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFACL.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFAnalytics.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFAnonymousUtils.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFUser.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFConstants.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFObject.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSubclassing.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFCloud.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFFile.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFGeoPoint.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFQuery.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFRelation.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFRole.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFImageView.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFInstallation.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFLogInViewController.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFLogInView.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSignUpViewController.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSignUpView.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFProduct.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFProductTableViewController.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFQueryTableViewController.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFTableViewCell.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFPurchase.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFPush.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFTwitterUtils.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PF_Twitter.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFFacebookUtils.h

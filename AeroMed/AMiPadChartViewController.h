@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <JBBarChartView.h>
+#import "JBBarChartView.h"
 
 @interface AMiPadChartViewController : UIViewController <JBBarChartViewDelegate, JBBarChartViewDataSource>
 @property (weak, nonatomic) IBOutlet JBBarChartView *barChart;

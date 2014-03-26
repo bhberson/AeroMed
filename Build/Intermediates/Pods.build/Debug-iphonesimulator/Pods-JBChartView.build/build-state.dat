@@ -1,0 +1,225 @@
+TPods-JBChartView
+v6
+r1
+cCheck dependencies
+cProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000000000000000000000000000
+t2
+s0
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000531E88C400000000000003B4
+t1394510020
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E88CA000000000000019E
+t1394510026
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E88FE0000000000000ADC
+t1394510078
+s2780
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.o
+t1395815407
+s119980
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.o
+t1395815407
+s59804
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.o
+t1395815407
+s167772
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.o
+t1395815407
+s3444
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView.LinkFileList
+c00000000533273EE0000000000000272
+t1395815406
+s626
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.pch
+t1395815406
+s124376
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.pch
+t1395815406
+s124760
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a
+t2
+s0
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m
+c00000000532D00AB00000000000041B0
+t1395458219
+s16816
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m
+c00000000532D00AB0000000000000F18
+t1395458219
+s3864
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m
+c00000000532D00AB0000000000008A11
+t1395458219
+s35345
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m
+c00000000533272D10000000000000088
+t1395815121
+s136
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-prefix.pch
+c00000000533272D1000000000000004D
+t1395815121
+s77
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m
+r0
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m
+r0
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m
+r0
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese5d4e26eabe2b841^9ef0e66eabe2b841^---0#1#1#--18"Check dependencies36"E5EC9E9B-F18A-462C-B3AE-69255478178F-
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508206.966553
+e417508207.079264
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m268"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.o JBChartView/Classes/JBBarChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1284f76eabe2b841^e84a146fabe2b841^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m0000000000000000^4349"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.o JBChartView/Classes/JBBarChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -fobjc-arc -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBBarChartView.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBBarChartView.o36"CF3B28F1-E9D5-4C90-98E5-0D9BBA4B1A31-
+b77FF3734-61CC-475C-A40A-E222B16EF078
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508206.966976
+e417508207.043089
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m262"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.o JBChartView/Classes/JBChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler239ff76eabe2b841^d6190b6fabe2b841^---0#0#1#-19%DVTDocumentLocation2@96"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m0000000000000000^4331"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.o JBChartView/Classes/JBChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -fobjc-arc -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBChartView.o36"1B9613C4-D184-4992-9CC9-19ECDFAF1E7C-
+b77FF3734-61CC-475C-A40A-E222B16EF078
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508206.967373
+e417508207.130370
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBChartView.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m270"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.o JBChartView/Classes/JBLineChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler74d2f76eabe2b841^4260216fabe2b841^---0#0#1#-19%DVTDocumentLocation2@100"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m0000000000000000^4355"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.o JBChartView/Classes/JBLineChartView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -fobjc-arc -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/JBChartView/Classes/JBLineChartView.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/JBLineChartView.o36"AE1D4D76-4A4A-4CFB-9526-C5F191D55F2E-
+b77FF3734-61CC-475C-A40A-E222B16EF078
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508206.968163
+e417508207.019649
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m264"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.o Pods-JBChartView-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler03ecf76eabe2b841^925d056fabe2b841^---0#0#1#-19%DVTDocumentLocation2@87"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m0000000000000000^4346"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.o Pods-JBChartView-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-dummy.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView-dummy.o36"B7FEAFAA-E2BF-40FA-828D-5B64BB8AF448-
+b77FF3734-61CC-475C-A40A-E222B16EF078
+
+CLibtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a normal i386
+s417508207.138965
+e417508207.201612
+r1
+xLibtool
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a normal i386120"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a normal i386fca7236fabe2b841^a8ab336fabe2b841^---0#0#1#--1048"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a normal i386    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -filelist /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Objects-normal/i386/Pods-JBChartView.LinkFileList -framework Foundation -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-JBChartView.a36"E159A93C-CC2C-4ABC-9D1D-7A3EAA64A40E-
+b77FF3734-61CC-475C-A40A-E222B16EF078
+
+CProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508206.907684
+e417508206.958203
+r1
+xProcessPCH
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.pch
+xPods-JBChartView-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-prefix.pch
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Precompile Pods-JBChartView-prefix.pch272"ProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler3b72e86eabe2b841^ea5cf56eabe2b841^---0#0#1#-19%DVTDocumentLocation2@90"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-prefix.pch0000000000000000^4198"ProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.dia -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.d -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-prefix.pch -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-ahyipbopqpbbcqexyjwbrjvhtsdo/Pods-JBChartView-prefix.pch.pch36"37492AD1-F241-4B1E-8C84-F97C0DC390AE-
+b77FF3734-61CC-475C-A40A-E222B16EF078
+
+CProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508206.906065
+e417508206.957539
+r1
+xProcessPCH
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.pch
+xPods-JBChartView-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-prefix.pch
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Precompile Pods-JBChartView-prefix.pch272"ProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler1023e86eabe2b841^9b21f56eabe2b841^---0#0#1#-19%DVTDocumentLocation2@90"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-prefix.pch0000000000000000^4209"ProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/Pods-JBChartView-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JBChartView.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -fobjc-arc --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.dia -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.d -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-JBChartView-prefix.pch -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-JBChartView-prefix-glzirtqtwwftoxebantvbzjuhngb/Pods-JBChartView-prefix.pch.pch36"572C0AC3-883E-4E34-8299-9EC618317416-
+b77FF3734-61CC-475C-A40A-E222B16EF078
+
+CProcessPCH /Users/mike/Library/Developer/Xcode/DerivedData/AeroMed-dxxxjdutxcnhajbtcnbolwdlkbrz/Index/PrecompiledHeaders/Pods-JBChartView-prefix-ejhumyxqztpsquajdjvpdimrumza_ast/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/mike/Library/Developer/Xcode/DerivedData/AeroMed-dxxxjdutxcnhajbtcnbolwdlkbrz/Index/PrecompiledHeaders/Pods-JBChartView-prefix-ghawvyldeagllfglgoambcltheni_ast/Pods-JBChartView-prefix.pch.pch Pods-JBChartView-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+

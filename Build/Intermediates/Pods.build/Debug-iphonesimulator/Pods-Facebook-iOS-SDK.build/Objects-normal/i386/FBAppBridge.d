@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/DeviceAPI/FBAppBridge.m \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/DeviceAPI/FBAppBridge.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBAppCall.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBAccessTokenData.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBSession.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBAppLinkData.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBDialogsData.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/DeviceAPI/FBAppBridgeScheme.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/DeviceAPI/FBAppBridgeTypeToJSONConverter.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/DeviceAPI/FBAppCall+Internal.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/Base64/FBBase64.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/Core/FBUtility.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/Core/FBFetchedAppSettings.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/Cryptography/FBCrypto.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/DeviceAPI/FBDialogsData+Internal.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBError.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/Login/FBSession+Internal.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/Login/FBSessionAppEventsState.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/Login/FBSystemAccountStoreAdapter.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBTask.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBTaskCompletionSource.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/Core/FBSettings+Internal.h \
+  /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Facebook-iOS-SDK/src/FBSettings.h

@@ -1,0 +1,25 @@
+{
+	"results":[
+		{
+			"title":"General Patient Care Information"
+		},
+		{
+			"title":"Logistics"
+		},
+		{
+			"title":"Medical Diagnoses"
+		},
+		{
+			"title":"Medications"
+		},
+		{
+			"title":"OB Impressions"
+		},
+		{
+			"title":"Procedures"
+		},	
+		{
+			"title":"Trauma Diagnoses"
+		}
+	]
+}

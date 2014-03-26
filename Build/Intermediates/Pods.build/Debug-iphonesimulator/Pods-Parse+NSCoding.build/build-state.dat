@@ -1,0 +1,451 @@
+TPods-Parse+NSCoding
+v6
+r1
+cCheck dependencies
+cProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000000000000000000000000000
+t2
+s0
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000531E88C400000000000003B4
+t1394510020
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E88CA000000000000019E
+t1394510026
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E88FE0000000000000ADC
+t1394510078
+s2780
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.o
+t1395815409
+s32520
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.o
+t1395815409
+s6856
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.o
+t1395815409
+s11548
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.o
+t1395815409
+s13708
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.o
+t1395815409
+s3468
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding.LinkFileList
+c00000000533273F1000000000000032A
+t1395815409
+s810
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.pch
+t1395815409
+s124940
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.pch
+t1395815409
+s124552
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a
+t2
+s0
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m
+c000000005332714D000000000000236D
+t1395814733
+s9069
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m
+c000000005332714D0000000000000253
+t1395814733
+s595
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m
+c000000005332714D00000000000005E3
+t1395814733
+s1507
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m
+c000000005332714D0000000000000A82
+t1395814733
+s2690
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m
+c00000000533272D1000000000000008E
+t1395815121
+s142
+
+N/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-prefix.pch
+c00000000533272D1000000000000004D
+t1395815121
+s77
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m
+r0
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m
+r0
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m
+r0
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m
+r0
+
+CBuild AST from /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies43aa8871abe2b841^a33b9071abe2b841^---0#1#1#--18"Check dependencies36"2C3BD16E-150B-4317-AF8A-BDB71E8A32CE-
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508209.605861
+e417508209.653522
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m276"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.o Parse+NSCoding/NSObject+Properties.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler662f9b71abe2b841^7b4da771abe2b841^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m0000000000000000^4483"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.o Parse+NSCoding/NSObject+Properties.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK -fobjc-arc -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/NSObject+Properties.o36"2752188B-79D9-4ADE-B9AC-53046DBF5B92-
+b3506774C-FE73-461A-BF0E-6B3650E9A22B
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508209.605876
+e417508209.663378
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/Parse.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFACL.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFAnalytics.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFUser.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFConstants.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSubclassing.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFCloud.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFFile.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFGeoPoint.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFQuery.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFRelation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFRole.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFImageView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFInstallation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFLogInViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFLogInView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSignUpView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFProduct.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFTableViewCell.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFPurchase.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFPush.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PF_Twitter.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FacebookSDK.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAccessTokenData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSession.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppCall.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppLinkData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogsData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppEvents.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBCacheDescriptor.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphActionShareDialogParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogsParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphAction.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBShareDialogParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBShareDialogPhotoParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBError.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBErrorUtility.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBFrictionlessRecipientCache.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBRequest.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBRequestConnection.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBWebDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBFriendPickerViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphUser.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphPlace.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphLocation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBInsights.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBLoginView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBNativeDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBPlacePickerViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBProfilePictureView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSessionTokenCachingStrategy.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSettings.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBUserSettingsViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/NSError+FBError.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFFacebookUtils.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m266"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.o Parse+NSCoding/PFACL+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler882f9b71abe2b841^9aeaa971abe2b841^---0#0#1#-19%DVTDocumentLocation2@94"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m0000000000000000^4453"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.o Parse+NSCoding/PFACL+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK -fobjc-arc -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFACL+NSCoding.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFACL+NSCoding.o36"9C7CEA0E-43A9-4C75-8D5E-044370E629DE-
+b3506774C-FE73-461A-BF0E-6B3650E9A22B
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508209.606057
+e417508209.667147
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/Parse.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFACL.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFAnalytics.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFUser.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFConstants.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSubclassing.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFCloud.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFFile.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFGeoPoint.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFQuery.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFRelation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFRole.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFImageView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFInstallation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFLogInViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFLogInView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSignUpView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFProduct.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFTableViewCell.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFPurchase.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFPush.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PF_Twitter.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FacebookSDK.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAccessTokenData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSession.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppCall.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppLinkData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogsData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppEvents.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBCacheDescriptor.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphActionShareDialogParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogsParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphAction.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBShareDialogParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBShareDialogPhotoParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBError.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBErrorUtility.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBFrictionlessRecipientCache.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBRequest.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBRequestConnection.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBWebDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBFriendPickerViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphUser.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphPlace.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphLocation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBInsights.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBLoginView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBNativeDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBPlacePickerViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBProfilePictureView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSessionTokenCachingStrategy.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSettings.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBUserSettingsViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/NSError+FBError.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFFacebookUtils.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m268"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.o Parse+NSCoding/PFFile+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler3b399b71abe2b841^58caaa71abe2b841^---0#0#1#-19%DVTDocumentLocation2@95"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m0000000000000000^4459"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.o Parse+NSCoding/PFFile+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK -fobjc-arc -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFFile+NSCoding.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFFile+NSCoding.o36"E7F276D3-7DDF-4934-879D-6E470FD870DE-
+b3506774C-FE73-461A-BF0E-6B3650E9A22B
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508209.606290
+e417508209.668955
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/Parse.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFACL.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFAnalytics.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFAnonymousUtils.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFUser.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFConstants.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSubclassing.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFCloud.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFFile.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFGeoPoint.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFQuery.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFRelation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFRole.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFImageView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFInstallation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFLogInViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFLogInView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSignUpViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFSignUpView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFProduct.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFProductTableViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFQueryTableViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFTableViewCell.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFPurchase.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFPush.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFTwitterUtils.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PF_Twitter.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FacebookSDK.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAccessTokenData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSession.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppCall.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppLinkData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogsData.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBAppEvents.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBCacheDescriptor.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphActionShareDialogParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBDialogsParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphAction.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBShareDialogParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBShareDialogPhotoParams.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBError.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBErrorUtility.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBFrictionlessRecipientCache.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBRequest.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBOpenGraphObject.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBRequestConnection.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBWebDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBFriendPickerViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphUser.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphPlace.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBGraphLocation.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBInsights.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBLoginView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBNativeDialogs.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBPlacePickerViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBProfilePictureView.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSessionTokenCachingStrategy.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBSettings.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/FBUserSettingsViewController.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK/NSError+FBError.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK/Parse.framework/Headers/PFFacebookUtils.h
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/NSObject+Properties.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m272"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.o Parse+NSCoding/PFObject+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler73479b71abe2b841^b340ab71abe2b841^---0#0#1#-19%DVTDocumentLocation2@97"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m0000000000000000^4471"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.o Parse+NSCoding/PFObject+NSCoding.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK -fobjc-arc -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse+NSCoding/PFObject+NSCoding.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/PFObject+NSCoding.o36"AB8BE9E1-AE26-4D97-B460-04A5A9F70FEC-
+b3506774C-FE73-461A-BF0E-6B3650E9A22B
+
+CCompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.o /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508209.654896
+e417508209.682316
+r1
+xCompileC
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.o
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m273"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.o Pods-Parse+NSCoding-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbebda771abe2b841^a8acae71abe2b841^---0#0#1#-19%DVTDocumentLocation2@90"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m0000000000000000^4478"CompileC /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.o Pods-Parse+NSCoding-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK -include /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.d --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.dia -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-dummy.m -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding-dummy.o36"380169C0-607D-4206-B986-FE0D6D445469-
+b3506774C-FE73-461A-BF0E-6B3650E9A22B
+
+CLibtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a normal i386
+s417508209.690744
+e417508209.697332
+r1
+xLibtool
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a normal i386123"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a normal i3867ae3b071abe2b841^8c84b271abe2b841^---0#0#1#--1060"Libtool /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a normal i386    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -filelist /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Objects-normal/i386/Pods-Parse+NSCoding.LinkFileList -framework Foundation -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/libPods-Parse+NSCoding.a36"E72452F3-B321-4C81-8268-32C9FC70BD14-
+b3506774C-FE73-461A-BF0E-6B3650E9A22B
+
+CProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508209.566231
+e417508209.598173
+r1
+xProcessPCH
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.pch
+xPods-Parse+NSCoding-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-prefix.pch
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Precompile Pods-Parse+NSCoding-prefix.pch281"ProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerfb079171abe2b841^c0249971abe2b841^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-prefix.pch0000000000000000^4335"ProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK -fobjc-arc --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.dia -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.d -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-prefix.pch -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-ciwafgkmnwskyaaqxgxkrrmncsba/Pods-Parse+NSCoding-prefix.pch.pch36"952E34B0-8276-40D2-B166-DE004C904577-
+b3506774C-FE73-461A-BF0E-6B3650E9A22B
+
+CProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s417508209.567529
+e417508209.598171
+r1
+xProcessPCH
+x/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.pch
+xPods-Parse+NSCoding-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-prefix.pch
+d/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Precompile Pods-Parse+NSCoding-prefix.pch281"ProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8a5b9171abe2b841^68219971abe2b841^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-prefix.pch0000000000000000^4324"ProcessPCH /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-generated-files.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-own-target-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-all-target-headers.hmap -iquote /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/Pods-Parse+NSCoding-project-headers.hmap -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator/include -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/BuildHeaders/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/JBChartView -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse+NSCoding -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Headers/Parse-iOS-SDK -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources/i386 -I/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Parse+NSCoding.build/DerivedSources -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Products/Debug-iphonesimulator -F/Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Parse-iOS-SDK --serialize-diagnostics /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.dia -MMD -MT dependencies -MF /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.d -c /Users/mike/Documents/iOS/AeroMed/AeroMed/Pods/Pods-Parse+NSCoding-prefix.pch -o /Users/mike/Documents/iOS/AeroMed/AeroMed/Build/Intermediates/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-dwakrgfhnmanpxcrhdijsfbndzjm/Pods-Parse+NSCoding-prefix.pch.pch36"C6044431-CB9F-4E46-A060-15AC46A2A368-
+b3506774C-FE73-461A-BF0E-6B3650E9A22B
+
+CProcessPCH /Users/mike/Library/Developer/Xcode/DerivedData/AeroMed-dxxxjdutxcnhajbtcnbolwdlkbrz/Index/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-aoeadvoijyplkxcphqypwtwtynns_ast/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/mike/Library/Developer/Xcode/DerivedData/AeroMed-dxxxjdutxcnhajbtcnbolwdlkbrz/Index/PrecompiledHeaders/Pods-Parse+NSCoding-prefix-fnxsnjigchmxbidebofilqxdnscf_ast/Pods-Parse+NSCoding-prefix.pch.pch Pods-Parse+NSCoding-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
