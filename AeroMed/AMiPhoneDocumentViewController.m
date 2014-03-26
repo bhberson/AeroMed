@@ -46,14 +46,33 @@
 //    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"FolderCell"];
     _topFolders = [[NSMutableArray alloc] init];
     _showingData = [[NSMutableArray alloc] init];
-    _topFolders = [NSKeyedUnarchiver unarchiveObjectWithFile:[OperatingProcedure getPathToArchive]];
    
-    _showingData = _topFolders;
-   
-    [self.collectionView reloadData];
     
 //    AMiPadFlowLayout *layout = (AMiPadFlowLayout *)self.collectionView.collectionViewLayout;
 //    [layout registerClass:[AMDecorationView class]  forDecorationViewOfKind:@"helicopter"];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Folder"];
+    [query whereKeyExists:@"title"];
+    
+    query.cachePolicy = kPFCachePolicyCacheOnly;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+       
+        if (!error) {
+            // Save an array of PFObjects
+            NSMutableArray *folders = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+            
+            for (int i = 0; i < objects.count; i++) {
+                Folder *op = objects[i];
+                [folders addObject:op];
+            }
+            
+            _topFolders = folders;
+            _showingData = _topFolders;
+            [self.collectionView reloadData];
+        } else {
+            NSLog(@"%@", error);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,7 +94,8 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     AMDocumentCellView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FolderCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor colorWithRed:0.176 green:0.690 blue:1.000 alpha:1.000];
-    cell.headerLabel.text = [_showingData objectAtIndex:indexPath.row];
+    PFObject *data = [_showingData objectAtIndex:indexPath.row];
+    cell.headerLabel.text = [data objectForKey:@"title"];
     
     return cell;
 }

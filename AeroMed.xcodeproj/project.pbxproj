@@ -32,10 +32,6 @@
 		271043EA18E30C6B003D1740 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043E518E30C6B003D1740 /* JBChartView.m */; };
 		271043EB18E30C6B003D1740 /* JBChartView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 271043E618E30C6B003D1740 /* JBChartView.podspec */; };
 		271043EC18E30C6B003D1740 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043E818E30C6B003D1740 /* JBLineChartView.m */; };
-		271043F518E30CC0003D1740 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043EE18E30CC0003D1740 /* NSObject+Properties.m */; };
-		271043F618E30CC0003D1740 /* PFACL+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043F018E30CC0003D1740 /* PFACL+NSCoding.m */; };
-		271043F718E30CC0003D1740 /* PFFile+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043F218E30CC0003D1740 /* PFFile+NSCoding.m */; };
-		271043F818E30CC0003D1740 /* PFObject+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 271043F418E30CC0003D1740 /* PFObject+NSCoding.m */; };
 		271043FA18E30D58003D1740 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271043F918E30D58003D1740 /* FacebookSDK.framework */; };
 		2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373018A30699000BC38A /* AMiPadBaseViewController.m */; };
 		2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2720373418A306D3000BC38A /* AMiPhoneBaseViewController.m */; };
@@ -130,14 +126,6 @@
 		271043E618E30C6B003D1740 /* JBChartView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JBChartView.podspec; sourceTree = "<group>"; };
 		271043E718E30C6B003D1740 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
 		271043E818E30C6B003D1740 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
-		271043ED18E30CC0003D1740 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Properties.h"; sourceTree = "<group>"; };
-		271043EE18E30CC0003D1740 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
-		271043EF18E30CC0003D1740 /* PFACL+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFACL+NSCoding.h"; sourceTree = "<group>"; };
-		271043F018E30CC0003D1740 /* PFACL+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFACL+NSCoding.m"; sourceTree = "<group>"; };
-		271043F118E30CC0003D1740 /* PFFile+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFFile+NSCoding.h"; sourceTree = "<group>"; };
-		271043F218E30CC0003D1740 /* PFFile+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFFile+NSCoding.m"; sourceTree = "<group>"; };
-		271043F318E30CC0003D1740 /* PFObject+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+NSCoding.h"; sourceTree = "<group>"; };
-		271043F418E30CC0003D1740 /* PFObject+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFObject+NSCoding.m"; sourceTree = "<group>"; };
 		271043F918E30D58003D1740 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		2720372F18A30699000BC38A /* AMiPadBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadBaseViewController.h; sourceTree = "<group>"; };
 		2720373018A30699000BC38A /* AMiPadBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadBaseViewController.m; sourceTree = "<group>"; };
@@ -277,14 +265,6 @@
 		271043E118E30C6B003D1740 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				271043ED18E30CC0003D1740 /* NSObject+Properties.h */,
-				271043EE18E30CC0003D1740 /* NSObject+Properties.m */,
-				271043EF18E30CC0003D1740 /* PFACL+NSCoding.h */,
-				271043F018E30CC0003D1740 /* PFACL+NSCoding.m */,
-				271043F118E30CC0003D1740 /* PFFile+NSCoding.h */,
-				271043F218E30CC0003D1740 /* PFFile+NSCoding.m */,
-				271043F318E30CC0003D1740 /* PFObject+NSCoding.h */,
-				271043F418E30CC0003D1740 /* PFObject+NSCoding.m */,
 				271043E218E30C6B003D1740 /* JBBarChartView.h */,
 				271043E318E30C6B003D1740 /* JBBarChartView.m */,
 				271043E418E30C6B003D1740 /* JBChartView.h */,
@@ -647,12 +627,10 @@
 			files = (
 				2783BC5918D58F56008E9790 /* AMCheckListTableViewController.m in Sources */,
 				27B2500718E2899800A5AFD7 /* AMDocumentCellView.m in Sources */,
-				271043F518E30CC0003D1740 /* NSObject+Properties.m in Sources */,
 				2720373518A306D3000BC38A /* AMiPhoneBaseViewController.m in Sources */,
 				27A6619C18B080EC00E4AE0D /* AMiPhoneSliderMenuViewController.m in Sources */,
 				27F94E0D18B424A3001F8F4F /* AMiPhoneSignupViewController.m in Sources */,
 				779181B318C832A500AE1019 /* AMFileManagerViewController.m in Sources */,
-				271043F818E30CC0003D1740 /* PFObject+NSCoding.m in Sources */,
 				7749F73B18CD50A400B582C0 /* TransportCell.m in Sources */,
 				27B3B2C318E2805300787548 /* AMiPadFlowLayout.m in Sources */,
 				27AB58DD18B445CB0047D0A7 /* AMiPadSplashScreenViewController.m in Sources */,
@@ -671,13 +649,11 @@
 				27B2500A18E296E000A5AFD7 /* Folder.m in Sources */,
 				27F94E0A18B41DB6001F8F4F /* AMiPhoneSplashScreenViewController.m in Sources */,
 				27A8EC2518B08D420056EA2A /* AMiPadSliderMenuViewController.m in Sources */,
-				271043F618E30CC0003D1740 /* PFACL+NSCoding.m in Sources */,
 				27AB58E018B445E20047D0A7 /* AMiPadSignupViewController.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
 				27ADD93A18CCC97E0074CE1B /* AMFolderViewController.m in Sources */,
 				27B3799518E253A800244754 /* AMiPhoneDocumentViewController.m in Sources */,
 				27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */,
-				271043F718E30CC0003D1740 /* PFFile+NSCoding.m in Sources */,
 				779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */,
 				2720373118A30699000BC38A /* AMiPadBaseViewController.m in Sources */,
 				27F94E1018B424C2001F8F4F /* AMiPhoneLoginViewController.m in Sources */,

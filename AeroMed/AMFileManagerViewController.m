@@ -10,8 +10,8 @@
 #import "SWRevealViewController.h"
 #import "OperatingProcedure.h"
 #import "AMCheckListTableViewController.h"
+#import "Folder.h"
 
-#define kStructureKey @"Structure"
 
 @interface AMFileManagerViewController ()
 @property (strong, nonatomic) NSArray *documents;
@@ -51,7 +51,8 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     NSLog(@"view will appear");
-     NSUserDefaults *storedData = [NSUserDefaults standardUserDefaults];
+    [self queryForDocuments];
+    [self queryForFiles];
     
     // If we are in the main folder structure
     if (!_isSubFolder) {
@@ -59,10 +60,6 @@
         // If we do not have a structure then query the database
         if (_topFolders == nil) {
          
-            self.viewControllerData = [storedData objectForKey:@"structure"];
-            
-            _topFolders = self.viewControllerData;
-            [self reloadDataAnimated:YES];
         // We already have a structure
         } else {
             self.viewControllerData = [[NSMutableArray alloc] initWithArray:_topFolders];
@@ -278,4 +275,53 @@
     
 }
 
+
+#pragma mark - Queries
+
+// Query for the document contents
+-(void) queryForDocuments {
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
+    [query whereKeyExists:@"title"];
+    query.cachePolicy = kPFCachePolicyCacheOnly;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (!error) {
+            // Save an array of PFObjects
+            NSMutableArray *operatingProcedures = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+            
+            for (int i = 0; i < objects.count; i++) {
+                OperatingProcedure *op = objects[i];
+                [operatingProcedures addObject:op];
+            }
+            _documents = operatingProcedures;
+            _viewControllerData = operatingProcedures;
+            [self reloadDataAnimated:YES];
+        }
+        
+    }];
+}
+
+// Query for all the filenames and structure
+- (void) queryForFiles {
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Folder"];
+    [query whereKeyExists:@"title"];
+    query.cachePolicy = kPFCachePolicyCacheOnly;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        if (!error) {
+            // Save an array of PFObjects
+            NSMutableArray *folders = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+            
+            for (int i = 0; i < objects.count; i++) {
+                Folder *op = objects[i];
+                [folders addObject:op];
+            }
+//            _viewControllerData = folders;
+//            [self reloadDataAnimated:YES];
+            
+        }
+    }];
+}
 @end

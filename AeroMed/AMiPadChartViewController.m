@@ -10,6 +10,8 @@
 #import "SWRevealViewController.h"
 
 @interface AMiPadChartViewController ()
+@property (strong, nonatomic) NSMutableArray *topFolders;
+@property (strong, nonatomic) NSMutableArray *showingData;
 
 @end
 

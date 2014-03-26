@@ -11,6 +11,7 @@
 #import "Transport.h"
 #import "TransportCell.h"
 #import "OperatingProcedure.h"
+#import "Folder.h"
 
 @interface AMiPadBaseViewController ()
 
@@ -157,6 +158,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
     [query whereKeyExists:@"title"];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         if (!error) {
@@ -167,8 +169,7 @@
                 OperatingProcedure *op = objects[i];
                 [operatingProcedures addObject:op];
             }
-            // Save to file
-            [NSKeyedArchiver archiveRootObject:operatingProcedures toFile:[OperatingProcedure getPathToArchive]];
+            
         }
         
     }];
@@ -177,20 +178,22 @@
 // Query for all the filenames and structure
 - (void) queryForFiles {
     
-    NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"NavigationStructure"];
-    [query whereKey:@"organization" equalTo:@"Aero Med"];
+    PFQuery *query = [PFQuery queryWithClassName:@"Folder"];
+    [query whereKeyExists:@"title"];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            PFObject *company = [objects firstObject];
-            
-            // Get the structure property which is an array
-            NSArray *structure = company[@"structure"];
-            [storage setObject:structure forKey:@"structure"];
-            [storage synchronize];
-        }
         
+        if (!error) {
+            // Save an array of PFObjects
+            NSMutableArray *folders = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+            
+            for (int i = 0; i < objects.count; i++) {
+                Folder *op = objects[i];
+                [folders addObject:op];
+            }
+            
+            
+        }
     }];
 }
 

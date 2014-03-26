@@ -63,7 +63,6 @@
     
     [self queryForDocuments];
     [self queryForFiles];
-  
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -146,6 +145,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
     [query whereKeyExists:@"title"];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         if (!error) {
@@ -156,9 +156,6 @@
                 OperatingProcedure *op = objects[i];
                 [operatingProcedures addObject:op];
             }
-            
-            // Save to file
-            [NSKeyedArchiver archiveRootObject:operatingProcedures toFile:[OperatingProcedure getPathToArchive]];
 
         }
         
@@ -170,6 +167,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:@"Folder"];
     [query whereKeyExists:@"title"];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         if (!error) {
@@ -181,14 +179,7 @@
                 [folders addObject:op];
             }
             
-            // Save to file
-            bool res = [NSKeyedArchiver archiveRootObject:[folders objectAtIndex:0] toFile:[Folder getPathToArchive]];
-            NSLog(@"%@", [Folder getPathToArchive]);
-            if(res){
-                NSLog(@"YES");
-            }else{
-                NSLog(@"NO");
-            }
+           
         }
     }];
 }

@@ -97,7 +97,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="RwB-EC-mcz" kind="custom" identifier="documentation" customClass="SWRevealViewControllerSegue" id="sby-31-5fd"/>
+                                    <segue destination="RwB-EC-mcz" kind="custom" identifier="documentation" customClass="SWRevealViewControllerSegue" id="OnX-mF-ncd"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trends" id="mko-uY-XSp">
@@ -183,6 +183,7 @@
                             <outlet property="delegate" destination="f2x-Uo-Jji" id="ANY-gy-7Ta"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="QXa-6K-tFc"/>
                     <connections>
                         <segue destination="HKG-Gs-QQM" kind="push" identifier="toTransport" id="D8o-Wb-2nW"/>
                     </connections>
@@ -783,12 +784,31 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.89078251009999998" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dvl-WR-nWu">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="255" height="253"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FolderCell" id="Sqn-I7-Czj" customClass="AMDocumentCellView">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="253"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="255" height="253"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvL-zJ-aS9">
+                                                    <rect key="frame" x="20" y="81" width="215" height="92"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="RwB-EC-mcz" id="pzY-yr-auw"/>
                                     <outlet property="delegate" destination="RwB-EC-mcz" id="KbL-7b-lGX"/>
@@ -947,7 +967,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="T9g-Mx-br5"/>
         <segue reference="fBo-1Q-5ED"/>
-        <segue reference="D8o-Wb-2nW"/>
     </inferredMetricsTieBreakers>
 </document>

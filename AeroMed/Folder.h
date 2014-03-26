@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Parse/Parse.h>
 
-@interface Folder : PFObject <PFSubclassing, NSCoding>
+
+@interface Folder : PFObject <PFSubclassing>
 // Title
 @property (nonatomic, retain) NSString *title;
 
