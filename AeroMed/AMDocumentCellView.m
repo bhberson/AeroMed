@@ -16,6 +16,7 @@
     if (self) {
         // Initialization code
         self.backgroundColor = [UIColor colorWithRed:0.176 green:0.690 blue:1.000 alpha:1.000];
+        self.headerLabel.adjustsFontSizeToFitWidth = YES;
     }
     return self;
 }

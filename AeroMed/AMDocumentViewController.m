@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSMutableArray *topFolders;
 @property (strong, nonatomic) NSMutableArray *showingData;
 @property BOOL isTopFolder;
+@property (strong, nonatomic) NSMutableArray *allDocs;
 
 @end
 
@@ -146,33 +147,6 @@
 
 #pragma mark - Queries
 
-// Query for the document contents
-- (void)queryForOperatingProcedures {
-
-    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
-    [query whereKeyExists:@"title"];
-    query.cachePolicy = kPFCachePolicyNetworkElseCache;
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-
-        if (!error) {
-           
-            NSMutableArray *operatingProcedures = [[NSMutableArray alloc] initWithCapacity:[objects count]];
-
-            for (int i = 0; i < objects.count; i++) {
-                OperatingProcedure *op = objects[i];
-                [operatingProcedures addObject:op];
-            }
-            
-            _showingData = operatingProcedures;
-            [self.collectionView reloadData];
-
-        } else {
-            [self showMessage:self];
-        }
-
-    }];
-}
-
 - (void)queryForDocument:(NSString *)searchFor {
    
     PFQuery *query = [PFQuery queryWithClassName:searchFor];
@@ -181,6 +155,7 @@
        
         if (!error) {
             _showingData = [[NSMutableArray alloc] initWithArray:objects];
+            _isTopFolder = NO;
             [self.collectionView reloadData];
             
         } else {
@@ -196,9 +171,26 @@
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
     [searchBar setShowsCancelButton:YES animated:YES];
     
-//    if (!_documents) {
-//        _documents = [NSKeyedUnarchiver unarchiveObjectWithFile:[OperatingProcedure getPathToArchive]];
-//    }
+    // If we need to get all the documents
+    if (!_allDocs) {
+        NSMutableArray *queries = [[NSMutableArray alloc] initWithCapacity:_topFolders.count];
+        _allDocs = [[NSMutableArray alloc] init];
+        
+        for (PFObject *folder in _topFolders) {
+            PFQuery *q = [PFQuery queryWithClassName:[folder objectForKey:@"Contains"]];
+            q.cachePolicy = kPFCachePolicyCacheElseNetwork;
+            [q findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                if (!error) {
+                    [_allDocs addObjectsFromArray:objects];
+                    
+                } else {
+                    NSLog(@"%@", error);
+                    
+                }
+            }];
+        }
+    }
+
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
@@ -216,33 +208,34 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     NSLog(@"Search Clicked");
     NSLog(@"Searched text: %@", searchBar.text);
-//    [searchBar setShowsCancelButton:NO animated:YES];
-//    [searchBar resignFirstResponder];
-//
-//    NSMutableArray *filteredData = [[NSMutableArray alloc] init];
-//    
-//    for (int i = 0; i < _documents.count; i++) {
-//        PFObject *doc = [_documents objectAtIndex: i];
-//        NSString *title = [[doc objectForKey:@"title"] lowercaseString];
-//        NSString *check = [searchBar.text lowercaseString];
-//        if ([title rangeOfString:check].location != NSNotFound) {
-//            [filteredData addObject:doc];
-//        }
-//    }
-//    _showingData = [[NSMutableArray alloc] initWithArray:filteredData];
-//    
-//    // Set the side bar button to go back up
-//    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
-//    sidebarButton.target = self;
-//    sidebarButton.title = @"Back";
-//    sidebarButton.action = @selector(upButtonTapped:);
+    [searchBar setShowsCancelButton:NO animated:YES];
+    [searchBar resignFirstResponder];
+
+    NSMutableArray *filteredData = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < _allDocs.count; i++) {
+        PFObject *doc = [_allDocs objectAtIndex: i];
+        NSString *title = [[doc objectForKey:@"title"] lowercaseString];
+        NSString *check = [searchBar.text lowercaseString];
+        if ([title rangeOfString:check].location != NSNotFound) {
+            [filteredData addObject:doc];
+        }
+    }
+     _showingData = [[NSMutableArray alloc] initWithArray:filteredData];
+    [self.collectionView reloadData];
+    
+    // Set the side bar button to go back up
+    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
+    sidebarButton.target = self;
+    sidebarButton.title = @"Back";
+    sidebarButton.action = @selector(upButtonTapped:);
     
     
 }
 
 // Go back to main navigation folders
 - (void)upButtonTapped:(id)sender {
-    _isTopFolder = NO;
+    _isTopFolder = YES;
     
     UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
     sidebarButton.target = self.revealViewController;
