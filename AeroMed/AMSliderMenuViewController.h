@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMiPhoneSliderMenuViewController : UITableViewController
+@interface AMSliderMenuViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @end

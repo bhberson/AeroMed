@@ -5,7 +5,7 @@
 //  Copyright (c) 2014 GVSU. All rights reserved.
 
 #import "AMFileManagerViewController.h"
-#import "AMDocumentViewController.h"
+#import "AMDocumentViewControllerOld.h"
 #import "AMFolderViewController.h"
 #import "SWRevealViewController.h"
 #import "OperatingProcedure.h"
@@ -152,7 +152,7 @@
     
     // Determine if it is a folder or a document
     NSString *type = [navDict objectForKey:@"type"];
-    AMDocumentViewController *viewController;
+    AMDocumentViewControllerOld *viewController;
     
     // If we are the 10th card in too many documents we want to show All Documents in the folder
     if (_tooManyDocuments && index == 6) {

@@ -6,19 +6,19 @@
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "AMiPhoneBaseViewController.h"
+#import "AMBaseViewController.h"
 #import "SWRevealViewController.h"
 #import "OperatingProcedure.h"
 #import "Folder.h"
 #import "Transport.h"
 #import "TransportCell.h"
 
-@interface AMiPhoneBaseViewController ()
+@interface AMBaseViewController ()
 @property NSMutableArray *documents;
 
 @end
 
-@implementation AMiPhoneBaseViewController
+@implementation AMBaseViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -47,7 +47,6 @@
         // Set the gesture
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
         
-        [self initStandardDocuments];
     }
   
 }
@@ -56,13 +55,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-// Create the standard documents
-- (void)initStandardDocuments {
-    
-    [self queryForDocuments];
-    [self queryForFiles];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -137,50 +129,4 @@
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
-#pragma mark - Queries
-
-// Query for the document contents
--(void) queryForDocuments {
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
-    [query whereKeyExists:@"title"];
-    query.cachePolicy = kPFCachePolicyNetworkElseCache;
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        
-        if (!error) {
-            // Save an array of PFObjects
-            NSMutableArray *operatingProcedures = [[NSMutableArray alloc] initWithCapacity:[objects count]];
-            
-            for (int i = 0; i < objects.count; i++) {
-                OperatingProcedure *op = objects[i];
-                [operatingProcedures addObject:op];
-            }
-
-        }
-        
-    }];
-}
-
-// Query for all the filenames and structure
-- (void) queryForFiles {
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"Folder"];
-    [query whereKeyExists:@"title"];
-    query.cachePolicy = kPFCachePolicyNetworkElseCache;
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        
-        if (!error) {
-            // Save an array of PFObjects
-            NSMutableArray *folders = [[NSMutableArray alloc] initWithCapacity:[objects count]];
-            
-            for (int i = 0; i < objects.count; i++) {
-                Folder *op = objects[i];
-                [folders addObject:op];
-            }
-            
-           
-        }
-    }];
-}
 @end

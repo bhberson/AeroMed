@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMiPhoneSignupViewController : UIViewController <UITextFieldDelegate>
+@interface AMSignupViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *signupButton;
 @property (weak, nonatomic) IBOutlet UITextField *passwordEntry;
 @property (weak, nonatomic) IBOutlet UITextField *usernameEntry;

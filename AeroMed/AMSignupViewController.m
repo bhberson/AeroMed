@@ -5,13 +5,13 @@
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "AMiPhoneSignupViewController.h"
+#import "AMSignupViewController.h"
 
-@interface AMiPhoneSignupViewController ()
+@interface AMSignupViewController ()
 
 @end
 
-@implementation AMiPhoneSignupViewController
+@implementation AMSignupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

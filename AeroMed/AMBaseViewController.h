@@ -1,5 +1,5 @@
 //
-//  AMiPadBaseViewController.h
+//  AMiPhoneBaseViewController.h
 //  AeroMed
 //
 //  Created by Michael Torres on 2/5/14.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AMiPadTransportViewController.h"
+#import "AMiPhoneTransportViewController.h"
 
-@interface AMiPadBaseViewController : UITableViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, AMiPadTransportViewControllerDelegate>
+@interface AMBaseViewController : UITableViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, AMiPhoneTransportViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (nonatomic, strong) NSMutableArray *transports;
 

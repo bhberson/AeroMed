@@ -1,23 +1,23 @@
 //
-//  AMiPadLoginViewController.m
+//  AMiPhoneLoginViewController.m
 //  AeroMed
 //
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "AMiPadLoginViewController.h"
+#import "AMLoginViewController.h"
 
-@interface AMiPadLoginViewController ()
+@interface AMLoginViewController ()
 
 @end
 
-@implementation AMiPadLoginViewController
+@implementation AMLoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        // Custom initialization        
     }
     return self;
 }
@@ -25,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+	
     // Set the status bar content to white in navigation bar
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
@@ -100,10 +100,11 @@
 }
 
 - (void)dismissKeyboard {
-    self.userPicker.hidden = YES; // Dismiss UIPickerView
+    self.userPicker.hidden = YES; // dismiss UIPickerView
     [self.passwordEntry resignFirstResponder];
 }
 
+#pragma mark - UIPicker Delegate methods
 // returns the number of 'columns' to display.
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 1;
@@ -119,20 +120,36 @@
     return user.username;
 }
 
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
+{
+    return 30.0;
+}
+
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    
+
     PFUser *user = [self.allUsers objectAtIndex:row];
     self.usernameEntry.text = user.username;
     self.userPicker.hidden = YES;
 }
+
 
 #pragma mark - Queries
 
 // Query for all users
 - (void) queryForUsers {
     PFQuery *query = [PFUser query];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
     self.allUsers = [NSMutableArray array];
     [self.allUsers addObjectsFromArray:[query findObjects]];
 }
 
+- (IBAction)showMessage:(id)sender {
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"No Data"
+                                                      message:@"Sorry no data. Please connect to wifi."
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+    
+    [message show];
+}
 @end

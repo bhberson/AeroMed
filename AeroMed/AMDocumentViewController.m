@@ -1,265 +1,265 @@
 //
-//  AMDocumentViewController.m
+//  AMiPhoneDocumentViewController.m
 //  AeroMed
 //
+//  Created by Michael Torres on 3/25/14.
 //  Copyright (c) 2014 GVSU. All rights reserved.
+//
+
 #import "AMDocumentViewController.h"
+#import "SWRevealViewController.h"
+#import "AMDocumentCellView.h"
+#import "Folder.h"
+#import "OperatingProcedure.h"
+
 
 @interface AMDocumentViewController ()
 
+@property (strong, nonatomic) NSMutableArray *topFolders;
+@property (strong, nonatomic) NSMutableArray *showingData;
+@property BOOL isTopFolder;
 
 @end
 
-@implementation AMDocumentViewController 
+@implementation AMDocumentViewController
 
--(void) viewDidLoad {
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    //TODO: Handle ios 6 bar color
     
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.051 green:0.431 blue:0.549 alpha:1.000]];
-	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
+    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
     
-    if (self.shouldDisplayChecklist) {
-        UIImage *img = [UIImage imageNamed:@"checklist.png"];
-        UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(checkMarkTapped:)];
-        self.navigationItem.rightBarButtonItem = checklist;
-    }
+    // Set the side bar button action to show slide out menu
+    sidebarButton.target = self.revealViewController;
+    sidebarButton.action = @selector(revealToggle:);
     
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
-}
 
-// Convert the array of strings into a formatted string
-- (NSString *)getDocumentString:(NSString *)section {
-    NSMutableString *data = [[NSMutableString alloc] init];
-    NSArray *ar = _doc[section];
+    _topFolders = [[NSMutableArray alloc] init];
+    _showingData = [[NSMutableArray alloc] init];
+   
+
+    PFQuery *query = [PFQuery queryWithClassName:@"Folder"];
+    [query whereKeyExists:@"title"];
     
-    for (int i = 0; i < ar.count; i++) {
-        [data appendString:@"- "];
-        [data appendString:ar[i]];
-        
-        if (i < ar.count -1) {
-            [data appendFormat:@"\n"];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+       
+        if (!error) {
+            // Save an array of PFObjects
+            NSMutableArray *folders = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+            
+            for (int i = 0; i < objects.count; i++) {
+                Folder *op = objects[i];
+                [folders addObject:op];
+            }
+            
+            _topFolders = folders;
+            _showingData = _topFolders;
+            _isTopFolder = YES;
+            [self.collectionView reloadData];
+        } else {
+            NSLog(@"%@", error);
         }
-    }
-    
-    
-    return [[NSString alloc] initWithString:data];
+    }];
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (void)didReceiveMemoryWarning
 {
-    // Return the number of sections.
-    return 8;
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"view will appear");
+}
+
+#pragma mark - UICollectionView Datasource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return _showingData.count;
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-   
-    static NSString *CellIdentifier = @"docCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    
-    UITextView *data = (UITextView *)[cell.contentView viewWithTag:11];
-    
-    
-    // Configure cell
-    switch (indexPath.section) {
-        case 0:
-            data.text = _doc[@"originalDate"];
-            break;
-            
-        case 1:
-            data.text = _doc[@"revisedDate"];
-            break;
-            
-        case 2:
-            data.text = [self getDocumentString:@"considerations"];
-            break;
-            
-        case 3:
-            data.text = [self getDocumentString:@"interventions"];
-            break;
-            
-        case 4:
-            data.text = [self getDocumentString:@"testsAndStudies"];
-            break;
-            
-        case 5:
-            data.text = [self getDocumentString:@"medications"];
-            break;
-            
-        case 6:
-            data.text = [self getDocumentString:@"impressions"];
-            break;
-            
-        case 7:
-            data.text = [self getDocumentString:@"other"];
-            break;
-            
-            
-            
-        default:
-            break;
-    }
-    
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    AMDocumentCellView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FolderCell" forIndexPath:indexPath];
+
+    PFObject *data = [_showingData objectAtIndex:indexPath.row];
+    cell.headerLabel.text = [data objectForKey:@"title"];
     
     return cell;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    NSString *title = [[NSString alloc] init];
-    
-    switch (section) {
-        case 0:
-            title = @"Original Date";
-            break;
-            
-        case 1:
-            title = @"Revised Date";
-            break;
-            
-        case 2:
-            title = @"Considerations";
-            break;
-            
-        case 3:
-            title = @"Interventions";
-            break;
-            
-        case 4:
-            title = @"Tests and Studies";
-            break;
-            
-        case 5:
-            title = @"Medications";
-            break;
-            
-        case 6:
-            title = @"Impressions";
-            break;
-            
-        case 7:
-            title = @"Other Considerations";
-            break;
-            
-        default:
-            break;
-    }
-    
-    return title;
-}
+#pragma mark - UICollectionViewDelegate
 
-// user selected a card from the table
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CGFloat height = 20.0f;
-    CGSize max = CGSizeMake(self.view.frame.size.width, 800);
-    CGRect rect;
-    NSString *str = [[NSString alloc] init];
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Selected cell %d", indexPath.row);
+    PFObject *data = [_showingData objectAtIndex:indexPath.row];
     
-    switch (indexPath.section) {
-        case 0:
-            str = _doc[@"originalDate"];
-           rect = [str boundingRectWithSize:max
-                                   options:NSStringDrawingUsesLineFragmentOrigin
-                                attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                   context:nil];
-            height = rect.size.height;
-            
-            break;
-        case 1:
-            str = _doc[@"revisedDate"];
-            rect = [str boundingRectWithSize:max
-                                   options:NSStringDrawingUsesLineFragmentOrigin
-                                attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                   context:nil];
-            height = rect.size.height;
-            
-            break;
-        case 2:
-            str = [self getDocumentString:@"considerations"];
-            rect = [str boundingRectWithSize:max
-                                   options:NSStringDrawingUsesLineFragmentOrigin
-                                attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                   context:nil];
-            height = rect.size.height;
-            
-            break;
-            
-        case 3:
-            str = [self getDocumentString:@"interventions"];
-            rect = [str boundingRectWithSize:max
-                                    options:NSStringDrawingUsesLineFragmentOrigin
-                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                    context:nil];
-            height = rect.size.height;
-            
-            break;
-            
-        case 4:
-            str = [self getDocumentString:@"testsAndStudies"];
-            rect = [str boundingRectWithSize:max
-                                    options:NSStringDrawingUsesLineFragmentOrigin
-                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                    context:nil];
-            height = rect.size.height;
-            
-            break;
-            
-        case 5:
-            str = [self getDocumentString:@"medications"];
-            rect = [str boundingRectWithSize:max
-                                options:NSStringDrawingUsesLineFragmentOrigin
-                             attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                context:nil];
-           height = rect.size.height;
-            
-            break;
-        case 6:
-            str = [self getDocumentString:@"impressions"];
-            rect = [str boundingRectWithSize:max
-                                    options:NSStringDrawingUsesLineFragmentOrigin
-                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                    context:nil];
-            height = rect.size.height;
-            
-            break;
-        case 7:
-            str = [self getDocumentString:@"other"];
-            rect = [str boundingRectWithSize:max
-                                    options:NSStringDrawingUsesLineFragmentOrigin
-                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
-                                    context:nil];
-            height = rect.size.height;
-            
-            break;
-            
-        default:
-            break;
+    if (_isTopFolder) {
+        [self queryForDocument:[data objectForKey:@"Contains"]];
+        
+        // Set the side bar button to go back up
+        UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
+        sidebarButton.target = self;
+        sidebarButton.title = @"Back";
+        sidebarButton.action = @selector(upButtonTapped:);
+    } else {
+        
     }
+    
+}
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGSize size;
+    // Bigger for iPad
+    UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? (size = CGSizeMake(200, 200)) : (size = CGSizeMake(130, 130));
+    return size;
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    UIEdgeInsets insets;
+    // Bigger for iPad
+    UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? (insets = UIEdgeInsetsMake(50, 30, 50, 30)) : (insets = UIEdgeInsetsMake(50, 20, 50, 20));
+    return UIEdgeInsetsMake(50, 20, 50, 20);
+}
+
+#pragma mark - Queries
+
+// Query for the document contents
+- (void)queryForOperatingProcedures {
+
+    PFQuery *query = [PFQuery queryWithClassName:@"OperatingProcedure"];
+    [query whereKeyExists:@"title"];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+
+        if (!error) {
+           
+            NSMutableArray *operatingProcedures = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+
+            for (int i = 0; i < objects.count; i++) {
+                OperatingProcedure *op = objects[i];
+                [operatingProcedures addObject:op];
+            }
+            
+            _showingData = operatingProcedures;
+            [self.collectionView reloadData];
+
+        } else {
+            [self showMessage:self];
+        }
+
+    }];
+}
+
+- (void)queryForDocument:(NSString *)searchFor {
    
-    return height+45;
+    PFQuery *query = [PFQuery queryWithClassName:searchFor];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+       
+        if (!error) {
+            _showingData = [[NSMutableArray alloc] initWithArray:objects];
+            [self.collectionView reloadData];
+            
+        } else {
+            NSLog(@"%@", error);
+            
+        }
+    }];
+    
     
 }
 
-- (void)checkMarkTapped:(id)sender {
+#pragma mark -Search delegate methods
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    [searchBar setShowsCancelButton:YES animated:YES];
     
-    // Post a notification to the superclass to show checklist
-    NSDictionary *data = [NSDictionary dictionaryWithObject:_doc[@"checklist"] forKey:@"checkList"];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"checkTapped" object:nil userInfo:data];
+//    if (!_documents) {
+//        _documents = [NSKeyedUnarchiver unarchiveObjectWithFile:[OperatingProcedure getPathToArchive]];
+//    }
 }
 
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    
+    
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"Cancel clicked");
+    [searchBar setShowsCancelButton:NO animated:YES];
+    [searchBar resignFirstResponder];
+    [self upButtonTapped:self];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"Search Clicked");
+    NSLog(@"Searched text: %@", searchBar.text);
+//    [searchBar setShowsCancelButton:NO animated:YES];
+//    [searchBar resignFirstResponder];
+//
+//    NSMutableArray *filteredData = [[NSMutableArray alloc] init];
+//    
+//    for (int i = 0; i < _documents.count; i++) {
+//        PFObject *doc = [_documents objectAtIndex: i];
+//        NSString *title = [[doc objectForKey:@"title"] lowercaseString];
+//        NSString *check = [searchBar.text lowercaseString];
+//        if ([title rangeOfString:check].location != NSNotFound) {
+//            [filteredData addObject:doc];
+//        }
+//    }
+//    _showingData = [[NSMutableArray alloc] initWithArray:filteredData];
+//    
+//    // Set the side bar button to go back up
+//    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
+//    sidebarButton.target = self;
+//    sidebarButton.title = @"Back";
+//    sidebarButton.action = @selector(upButtonTapped:);
+    
+    
+}
+
+// Go back to main navigation folders
+- (void)upButtonTapped:(id)sender {
+    _isTopFolder = NO;
+    
+    UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
+    sidebarButton.target = self.revealViewController;
+    sidebarButton.action = @selector(revealToggle:);
+    sidebarButton.title = @"Menu";
+    
+    _showingData = _topFolders;
+    [self.collectionView reloadData];
+}
+
+- (IBAction)showMessage:(id)sender {
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"No Data"
+                                                      message:@"Sorry no data. Please connect to wifi."
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+    
+    [message show];
+}
 @end

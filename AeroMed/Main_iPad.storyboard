@@ -16,6 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <segue destination="x9N-Rj-WWM" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="hnS-Zn-0uj"/>
@@ -24,12 +25,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzh-PP-Ve6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1609" y="-304"/>
+            <point key="canvasLocation" x="-1613" y="-316"/>
         </scene>
-        <!--Mi Pad Slider Menu View Controller-->
+        <!--Slider Menu View Controller-->
         <scene sceneID="yib-vH-H1j">
             <objects>
-                <tableViewController id="x9N-Rj-WWM" customClass="AMiPadSliderMenuViewController" sceneMemberID="viewController">
+                <tableViewController id="x9N-Rj-WWM" customClass="AMSliderMenuViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Bbd-RD-KbX">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,18 +44,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9cK-2c-eGg" id="XR4-zz-oTM">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiH-PB-4IY">
-                                            <rect key="frame" x="20" y="11" width="149" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <accessibility key="accessibilityConfiguration">
-                                                <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
-                                            </accessibility>
-                                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
@@ -227,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="1082" y="-2486"/>
         </scene>
-        <!--Document View Controller-->
+        <!--Document View Controller Old-->
         <scene sceneID="ee6-dp-WUc">
             <objects>
-                <tableViewController storyboardIdentifier="DocumentViewController" id="1gh-mE-TSL" customClass="AMDocumentViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DocumentViewController" id="1gh-mE-TSL" customClass="AMDocumentViewControllerOld" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8W6-RJ-hWK">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,7 +310,7 @@
                 <navigationController definesPresentationContext="YES" id="hqF-Ct-B7u" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="6Iv-rX-ZXf">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.22745099660000001" green="0.79607850309999995" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="barTintColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="t0L-FF-Y3B" kind="relationship" relationship="rootViewController" id="XGu-LS-V5C"/>
@@ -331,10 +320,10 @@
             </objects>
             <point key="canvasLocation" x="-580" y="-1"/>
         </scene>
-        <!--Mi Pad Splash Screen View Controller - Aero Med-->
+        <!--Splash Screen View Controller - Aero Med-->
         <scene sceneID="pFH-1V-Bip">
             <objects>
-                <viewController id="t0L-FF-Y3B" customClass="AMiPadSplashScreenViewController" sceneMemberID="viewController">
+                <viewController id="t0L-FF-Y3B" customClass="AMSplashScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="il0-OQ-0dF"/>
                         <viewControllerLayoutGuide type="bottom" id="VTa-4N-ei5"/>
@@ -419,10 +408,10 @@
             </objects>
             <point key="canvasLocation" x="368" y="-29"/>
         </scene>
-        <!--Mi Pad Login View Controller - Login-->
+        <!--Login View Controller - Login-->
         <scene sceneID="b81-Og-wiB">
             <objects>
-                <viewController id="a0P-vU-OXO" customClass="AMiPadLoginViewController" sceneMemberID="viewController">
+                <viewController id="a0P-vU-OXO" customClass="AMLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ccF-9o-IDv"/>
                         <viewControllerLayoutGuide type="bottom" id="mET-eu-HqB"/>
@@ -526,10 +515,10 @@
             </objects>
             <point key="canvasLocation" x="1350" y="-1107"/>
         </scene>
-        <!--Mi Pad Base View Controller - Aero Med Transports-->
+        <!--Base View Controller - Aero Med Transports-->
         <scene sceneID="Pbh-MV-192">
             <objects>
-                <viewController id="HKG-Gs-QQM" customClass="AMiPadBaseViewController" sceneMemberID="viewController">
+                <viewController id="HKG-Gs-QQM" customClass="AMBaseViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="eKb-9f-1Wr">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -767,10 +756,10 @@
             </objects>
             <point key="canvasLocation" x="2904" y="-1224"/>
         </scene>
-        <!--Mi Pad Document View Controller-->
+        <!--Document View Controller-->
         <scene sceneID="psC-4G-Izm">
             <objects>
-                <viewController id="RwB-EC-mcz" customClass="AMiPadDocumentViewController" sceneMemberID="viewController">
+                <viewController id="RwB-EC-mcz" customClass="AMDocumentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7vK-ew-vPK"/>
                         <viewControllerLayoutGuide type="bottom" id="vWO-d4-gA2"/>
@@ -797,16 +786,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="255" height="253"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvL-zJ-aS9">
-                                                    <rect key="frame" x="20" y="81" width="215" height="92"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="215" translatesAutoresizingMaskIntoConstraints="NO" id="JZN-KB-ok6">
+                                                    <rect key="frame" x="20" y="20" width="215" height="213"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <color key="backgroundColor" red="0.22745099660000001" green="0.79607850309999995" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="JZN-KB-ok6" secondAttribute="centerX" id="S76-la-9J2"/>
+                                            <constraint firstAttribute="centerY" secondItem="JZN-KB-ok6" secondAttribute="centerY" id="yT6-QW-3Dl"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="headerLabel" destination="JZN-KB-ok6" id="Vo4-Nu-VSd"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -823,8 +820,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="1xg-pC-ls5" secondAttribute="width" id="dEb-yg-bM9"/>
-                            <constraint firstItem="cJV-rG-BHZ" firstAttribute="width" secondItem="1xg-pC-ls5" secondAttribute="width" id="dz8-mq-hkM"/>
+                            <constraint firstAttribute="width" secondItem="1xg-pC-ls5" secondAttribute="width" id="Nj9-hM-44a"/>
+                            <constraint firstItem="cJV-rG-BHZ" firstAttribute="width" secondItem="QRg-9u-ZiF" secondAttribute="width" id="pT7-oB-oqX"/>
                         </constraints>
                     </view>
                     <connections>

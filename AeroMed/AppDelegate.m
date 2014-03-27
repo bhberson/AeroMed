@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 #import "OperatingProcedure.h"
 #import "Transport.h"
-#import "AMiPhoneBaseViewController.h"
+#import "AMBaseViewController.h"
 
 @implementation AppDelegate{
     NSMutableArray *transports;

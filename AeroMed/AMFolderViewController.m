@@ -7,7 +7,7 @@
 //
 
 #import "AMFolderViewController.h"
-#import "AMDocumentViewController.h"
+#import "AMDocumentViewControllerOld.h"
 
 @interface AMFolderViewController ()
 @property (weak, nonatomic) NSArray *navigationStructure;

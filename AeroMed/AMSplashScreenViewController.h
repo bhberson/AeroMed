@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMiPhoneSplashScreenViewController : UIViewController
+@interface AMSplashScreenViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator; 
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *signupButton;

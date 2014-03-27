@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMiPhoneLoginViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
+@interface AMLoginViewController : UIViewController <UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UITextField *passwordEntry;
 @property (weak, nonatomic) IBOutlet UITextField *usernameEntry;

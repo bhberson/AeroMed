@@ -1,19 +1,19 @@
 //
-//  AMiPadSliderMenuViewController.m
+//  AMSideBarViewController.m
 //  AeroMed
 //
 //  Created by Michael Torres on 2/16/14.
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "AMiPadSliderMenuViewController.h"
+#import "AMSliderMenuViewController.h"
 #import "SWRevealViewController.h"
 
-@interface AMiPadSliderMenuViewController ()
+@interface AMSliderMenuViewController ()
 @property (nonatomic, strong) NSArray *menuItems;
 @end
 
-@implementation AMiPadSliderMenuViewController
+@implementation AMSliderMenuViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,12 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-   _menuItems = @[@"title",@"transports", @"documentation",@"trends", @"logout"];
+    
+    _menuItems = @[@"title",@"transports", @"documentation",@"trends", @"logout"];
 
 }
 
-// Set status bar content to white
+// Set status bar content to white 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
@@ -47,7 +47,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    
+
     // Return the number of sections.
     return 1;
 }
@@ -63,7 +63,7 @@
     NSString *CellIdentifier = [self.menuItems objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-//    // Configure the cell..
+    // Configure the cell..
     if ([CellIdentifier isEqualToString:@"title"]) {
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         NSString *email = [[PFUser currentUser] email];
@@ -71,13 +71,11 @@
         [greeting appendString:@"Hi "];
         [greeting appendString:[email substringToIndex:[email rangeOfString:@"@"].location]];
         cell.textLabel.text = greeting;
-        NSLog(@"%@",greeting);
-        
         cell.textLabel.textColor = [UIColor whiteColor];
-        cell.textLabel.enabled = YES;
         cell.textLabel.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
+        cell.textLabel.enabled = YES;
     }
-    
+   
     
     return cell;
 }
@@ -89,6 +87,7 @@
     self.tableView.separatorColor = [UIColor colorWithWhite:0.15f alpha:0.2f];
     cell.contentView.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
     
+    
 }
 
 - (void)didTapBack:(id)sender {
@@ -96,8 +95,10 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+   
     // Set the title of navigation bar by using the menu items
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
@@ -113,10 +114,10 @@
     
     // If we clicked the docuements cell
     if ([segue.identifier isEqualToString:@"documentation"]) {
-        if([PFUser currentUser]){
+
             destViewController.title = @"Documentation";
             destViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(didTapBack:)];
-        }
+        
     }
     
     // If we clicked the transports cell
@@ -135,5 +136,6 @@
         };
     }
 }
+
 
 @end

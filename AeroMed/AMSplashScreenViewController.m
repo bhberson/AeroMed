@@ -5,13 +5,13 @@
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "AMiPhoneSplashScreenViewController.h"
+#import "AMSplashScreenViewController.h"
 
-@interface AMiPhoneSplashScreenViewController ()
+@interface AMSplashScreenViewController ()
 
 @end
 
-@implementation AMiPhoneSplashScreenViewController
+@implementation AMSplashScreenViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

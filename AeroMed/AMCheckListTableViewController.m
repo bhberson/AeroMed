@@ -7,8 +7,7 @@
 //
 
 #import "AMCheckListTableViewController.h"
-#import "AMiPadBaseViewController.h"
-#import "AMiPhoneBaseViewController.h"
+#import "AMBaseViewController.h"
 
 @interface AMCheckListTableViewController ()
 @property NSMutableArray *dataArray;
@@ -160,10 +159,10 @@
         //TODO pass data and probably combine base view controllers of ipad and iphones
         
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            AMiPadBaseViewController *ipadVC = (AMiPadBaseViewController *)segue.destinationViewController;
+            AMBaseViewController *ipadVC = (AMBaseViewController *)segue.destinationViewController;
             
         } else {
-            AMiPhoneBaseViewController *iphoneVC = (AMiPhoneBaseViewController *)segue.destinationViewController;
+            AMBaseViewController *iphoneVC = (AMBaseViewController *)segue.destinationViewController;
         }
     }
 }
