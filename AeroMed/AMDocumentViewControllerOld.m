@@ -4,6 +4,7 @@
 //
 //  Copyright (c) 2014 GVSU. All rights reserved.
 #import "AMDocumentViewControllerOld.h"
+#import "AMCheckListTableViewController.h"
 
 @interface AMDocumentViewControllerOld ()
 
@@ -16,8 +17,8 @@
     [super viewDidLoad];
     //TODO: Handle ios 6 bar color
     
-    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.051 green:0.431 blue:0.549 alpha:1.000]];
-	[self.navigationItem setTitle:[self.info objectForKey:@"title"]];
+ 
+	[self.navigationItem setTitle:[self.doc objectForKey:@"title"]];
     
     if (self.shouldDisplayChecklist) {
         UIImage *img = [UIImage imageNamed:@"checklist.png"];
@@ -257,9 +258,15 @@
 
 - (void)checkMarkTapped:(id)sender {
     
-    // Post a notification to the superclass to show checklist
-    NSDictionary *data = [NSDictionary dictionaryWithObject:_doc[@"checklist"] forKey:@"checkList"];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"checkTapped" object:nil userInfo:data];
+    [self performSegueWithIdentifier:@"toCheckList" sender:self];
+    
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"toCheckList"]) {
+        AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
+   
+        [vc setCheckList:_doc[@"checklist"]];
+    }
+}
 @end

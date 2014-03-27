@@ -7,8 +7,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AMDocumentViewControllerOld : UITableViewController <UITextFieldDelegate>
-
-@property (strong, nonatomic) NSDictionary* info;
 @property (weak, atomic) PFObject *doc;
 @property BOOL shouldDisplayChecklist; 
 @end

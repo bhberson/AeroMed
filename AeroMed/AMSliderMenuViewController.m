@@ -32,6 +32,10 @@
 
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
+
 // Set status bar content to white 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
@@ -88,6 +92,10 @@
     cell.contentView.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
     
     
+}
+
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+    [self.tableView reloadData];
 }
 
 - (void)didTapBack:(id)sender {

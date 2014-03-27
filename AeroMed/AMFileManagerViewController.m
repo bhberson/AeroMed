@@ -6,7 +6,7 @@
 
 #import "AMFileManagerViewController.h"
 #import "AMDocumentViewControllerOld.h"
-#import "AMFolderViewController.h"
+
 #import "SWRevealViewController.h"
 #import "OperatingProcedure.h"
 #import "AMCheckListTableViewController.h"
@@ -155,24 +155,24 @@
     AMDocumentViewControllerOld *viewController;
     
     // If we are the 10th card in too many documents we want to show All Documents in the folder
-    if (_tooManyDocuments && index == 6) {
-        AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
-        [viewController setAllDocuments:_documents];
-        return [[UINavigationController alloc] initWithRootViewController:viewController];
-    }
-
-    if ([type isEqualToString:@"folder"]) {
-        AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
-        [viewController setInfo: navDict];
-        return [[UINavigationController alloc] initWithRootViewController:viewController];
-    } else {
-        viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
-        [viewController setInfo: navDict];
-        [viewController setDoc:cardData];
-        [viewController setShouldDisplayChecklist:self.shouldDisplayChecklist];
-        return [[UINavigationController alloc] initWithRootViewController:viewController];
-    }
-    
+//    if (_tooManyDocuments && index == 6) {
+//        AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
+//        [viewController setAllDocuments:_documents];
+//        return [[UINavigationController alloc] initWithRootViewController:viewController];
+//    }
+//
+//    if ([type isEqualToString:@"folder"]) {
+//        AMFolderViewController *viewController = [st instantiateViewControllerWithIdentifier:@"FolderViewController"];
+//        [viewController setInfo: navDict];
+//        return [[UINavigationController alloc] initWithRootViewController:viewController];
+//    } else {
+//        viewController = [st instantiateViewControllerWithIdentifier:@"DocumentViewController"];
+//  
+//        [viewController setDoc:cardData];
+//        [viewController setShouldDisplayChecklist:self.shouldDisplayChecklist];
+//        return [[UINavigationController alloc] initWithRootViewController:viewController];
+//    }
+//    
   
     //Return the custom view controller wrapped in a UINavigationController
     return [[UINavigationController alloc] initWithRootViewController:viewController];

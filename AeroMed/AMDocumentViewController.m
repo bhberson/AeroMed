@@ -9,9 +9,7 @@
 #import "AMDocumentViewController.h"
 #import "SWRevealViewController.h"
 #import "AMDocumentCellView.h"
-#import "Folder.h"
-#import "OperatingProcedure.h"
-
+#import "AMDocumentViewControllerOld.h"
 
 @interface AMDocumentViewController ()
 
@@ -19,6 +17,7 @@
 @property (strong, nonatomic) NSMutableArray *showingData;
 @property BOOL isTopFolder;
 @property (strong, nonatomic) NSMutableArray *allDocs;
+@property (strong, nonatomic) PFObject *selectedDocument;
 
 @end
 
@@ -62,7 +61,7 @@
             NSMutableArray *folders = [[NSMutableArray alloc] initWithCapacity:[objects count]];
             
             for (int i = 0; i < objects.count; i++) {
-                Folder *op = objects[i];
+                PFObject *op = objects[i];
                 [folders addObject:op];
             }
             
@@ -124,7 +123,8 @@
         sidebarButton.title = @"Back";
         sidebarButton.action = @selector(upButtonTapped:);
     } else {
-        
+        _selectedDocument = data; 
+        [self performSegueWithIdentifier:@"showDoc" sender:self];
     }
     
 }
@@ -173,7 +173,6 @@
     
     // If we need to get all the documents
     if (!_allDocs) {
-        NSMutableArray *queries = [[NSMutableArray alloc] initWithCapacity:_topFolders.count];
         _allDocs = [[NSMutableArray alloc] init];
         
         for (PFObject *folder in _topFolders) {
@@ -254,5 +253,14 @@
                                             otherButtonTitles:nil];
     
     [message show];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showDoc"]) {
+        AMDocumentViewControllerOld * document = (AMDocumentViewControllerOld *)segue.destinationViewController;
+        [document setDoc:_selectedDocument];
+        [document setShouldDisplayChecklist:YES]; 
+         
+    }
 }
 @end

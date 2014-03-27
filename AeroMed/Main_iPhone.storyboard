@@ -844,6 +844,7 @@
                     <connections>
                         <outlet property="collectionView" destination="JMR-cu-9Zw" id="KRH-sA-1dh"/>
                         <outlet property="searchBar" destination="BOv-17-6QF" id="zBU-RD-3kK"/>
+                        <segue destination="X8t-Ad-cA5" kind="push" identifier="showDoc" id="PUz-ZL-ApB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ6-OD-JV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -898,6 +899,7 @@
                             <outlet property="delegate" destination="RpM-pa-n7g" id="h46-Iy-nCp"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="ZB2-eh-EQp"/>
                     <connections>
                         <segue destination="ItR-26-vAv" kind="push" identifier="toTransport" id="unq-NJ-uxq"/>
                     </connections>
@@ -953,7 +955,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="separatorColor" red="0.050980396568775177" green="0.43137258291244507" blue="0.43921571969985962" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="docCell" id="12p-EW-1iM">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
@@ -983,54 +984,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="3Ob-OS-SlX"/>
+                    <connections>
+                        <segue destination="RpM-pa-n7g" kind="push" identifier="toCheckList" id="nav-1D-nP6"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNX-fC-mBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1280" y="-1974"/>
-        </scene>
-        <!--Folder View Controller-->
-        <scene sceneID="ZfW-LW-eke">
-            <objects>
-                <tableViewController storyboardIdentifier="FolderViewController" id="cQe-4J-mAX" customClass="AMFolderViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fHU-Nt-Osr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" textLabel="ig4-aa-509" detailTextLabel="Upx-2X-Bep" style="IBUITableViewCellStyleSubtitle" id="ooR-L2-Soc">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ooR-L2-Soc" id="Jvf-2D-dgc">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ig4-aa-509">
-                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Upx-2X-Bep">
-                                            <rect key="frame" x="15" y="25" width="32" height="15"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="cQe-4J-mAX" id="KO1-gT-oGe"/>
-                            <outlet property="delegate" destination="cQe-4J-mAX" id="RmZ-6L-z2W"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GgU-Ha-F7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1697" y="-2025"/>
         </scene>
     </scenes>
     <resources>
@@ -1046,5 +1006,6 @@
         <segue reference="AXL-zX-oVD"/>
         <segue reference="bgM-5C-nwb"/>
         <segue reference="GyM-Ub-WM2"/>
+        <segue reference="nav-1D-nP6"/>
     </inferredMetricsTieBreakers>
 </document>
