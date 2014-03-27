@@ -91,6 +91,7 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     if (textField.tag != 0) {
+        self.userPicker.hidden = YES;
         return YES;
     } else {
         [textField resignFirstResponder];
@@ -129,7 +130,6 @@
 
     PFUser *user = [self.allUsers objectAtIndex:row];
     self.usernameEntry.text = user.username;
-    self.userPicker.hidden = YES;
 }
 
 
