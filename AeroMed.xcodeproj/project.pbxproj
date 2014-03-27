@@ -48,7 +48,7 @@
 		27AC965418DD329000CDFA93 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27AC965318DD329000CDFA93 /* NavigationControllerData.plist */; };
 		27B2500718E2899800A5AFD7 /* AMDocumentCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */; };
 		27B2500A18E296E000A5AFD7 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500918E296E000A5AFD7 /* Folder.m */; };
-		27B3799518E253A800244754 /* AMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3799418E253A800244754 /* AMDocumentViewController.m */; };
+		27B3799518E253A800244754 /* AMBaseDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3799418E253A800244754 /* AMBaseDocumentViewController.m */; };
 		27B3799718E2604400244754 /* helicopter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27B3799618E2604400244754 /* helicopter.jpg */; };
 		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
 		27CB389818DD2D3C00F43680 /* OBImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CB389718DD2D3C00F43680 /* OBImpression.m */; };
@@ -72,8 +72,7 @@
 		7787CF2618806ECE004F495E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7787CF2418806ECE004F495E /* InfoPlist.strings */; };
 		7787CF2818806ECE004F495E /* AeroMedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF2718806ECE004F495E /* AeroMedTests.m */; };
 		779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181AB18C82E9000AE1019 /* KLNoteViewController.m */; };
-		779181B318C832A500AE1019 /* AMFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B018C832A500AE1019 /* AMFileManagerViewController.m */; };
-		779181B418C832A500AE1019 /* AMDocumentViewControllerOld.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* AMDocumentViewControllerOld.m */; };
+		779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* AMDocumentViewController.m */; };
 		779181BB18C833E200AE1019 /* bar-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181B918C833E200AE1019 /* bar-mid.png */; };
 		779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181BA18C833E200AE1019 /* bar-mid@2x.png */; };
 /* End PBXBuildFile section */
@@ -143,8 +142,8 @@
 		27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentCellView.m; sourceTree = "<group>"; };
 		27B2500818E296E000A5AFD7 /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
 		27B2500918E296E000A5AFD7 /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
-		27B3799318E253A800244754 /* AMDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentViewController.h; sourceTree = "<group>"; };
-		27B3799418E253A800244754 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
+		27B3799318E253A800244754 /* AMBaseDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBaseDocumentViewController.h; sourceTree = "<group>"; };
+		27B3799418E253A800244754 /* AMBaseDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBaseDocumentViewController.m; sourceTree = "<group>"; };
 		27B3799618E2604400244754 /* helicopter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = helicopter.jpg; sourceTree = "<group>"; };
 		27C8060118A443CF00243EB1 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		27CB389618DD2D3C00F43680 /* OBImpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBImpression.h; sourceTree = "<group>"; };
@@ -184,10 +183,8 @@
 		779181AA18C82E9000AE1019 /* KLNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLNoteViewController.h; sourceTree = "<group>"; };
 		779181AB18C82E9000AE1019 /* KLNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLNoteViewController.m; sourceTree = "<group>"; };
 		779181AD18C82F7C00AE1019 /* Podfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.txt; sourceTree = "<group>"; };
-		779181AF18C832A500AE1019 /* AMFileManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMFileManagerViewController.h; sourceTree = "<group>"; };
-		779181B018C832A500AE1019 /* AMFileManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMFileManagerViewController.m; sourceTree = "<group>"; };
-		779181B118C832A500AE1019 /* AMDocumentViewControllerOld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentViewControllerOld.h; sourceTree = "<group>"; };
-		779181B218C832A500AE1019 /* AMDocumentViewControllerOld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewControllerOld.m; sourceTree = "<group>"; };
+		779181B118C832A500AE1019 /* AMDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentViewController.h; sourceTree = "<group>"; };
+		779181B218C832A500AE1019 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
 		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
 		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
 		HYXIFWTDXJPPRRMDCEPMDTJH /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = "/Applications/Spark Inspector.app/Contents/Resources/Frameworks/SparkInspector.framework"; sourceTree = "<group>"; };
@@ -435,12 +432,10 @@
 				2720373418A306D3000BC38A /* AMBaseViewController.m */,
 				27A6619A18B080EC00E4AE0D /* AMSliderMenuViewController.h */,
 				27A6619B18B080EC00E4AE0D /* AMSliderMenuViewController.m */,
-				27B3799318E253A800244754 /* AMDocumentViewController.h */,
-				27B3799418E253A800244754 /* AMDocumentViewController.m */,
-				779181AF18C832A500AE1019 /* AMFileManagerViewController.h */,
-				779181B018C832A500AE1019 /* AMFileManagerViewController.m */,
-				779181B118C832A500AE1019 /* AMDocumentViewControllerOld.h */,
-				779181B218C832A500AE1019 /* AMDocumentViewControllerOld.m */,
+				27B3799318E253A800244754 /* AMBaseDocumentViewController.h */,
+				27B3799418E253A800244754 /* AMBaseDocumentViewController.m */,
+				779181B118C832A500AE1019 /* AMDocumentViewController.h */,
+				779181B218C832A500AE1019 /* AMDocumentViewController.m */,
 				2783BC5718D58F56008E9790 /* AMCheckListTableViewController.h */,
 				2783BC5818D58F56008E9790 /* AMCheckListTableViewController.m */,
 			);
@@ -587,7 +582,6 @@
 				2720373518A306D3000BC38A /* AMBaseViewController.m in Sources */,
 				27A6619C18B080EC00E4AE0D /* AMSliderMenuViewController.m in Sources */,
 				27F94E0D18B424A3001F8F4F /* AMSignupViewController.m in Sources */,
-				779181B318C832A500AE1019 /* AMFileManagerViewController.m in Sources */,
 				7749F73B18CD50A400B582C0 /* TransportCell.m in Sources */,
 				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
 				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
@@ -602,9 +596,9 @@
 				27B2500A18E296E000A5AFD7 /* Folder.m in Sources */,
 				27F94E0A18B41DB6001F8F4F /* AMSplashScreenViewController.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
-				27B3799518E253A800244754 /* AMDocumentViewController.m in Sources */,
+				27B3799518E253A800244754 /* AMBaseDocumentViewController.m in Sources */,
 				27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */,
-				779181B418C832A500AE1019 /* AMDocumentViewControllerOld.m in Sources */,
+				779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */,
 				27F94E1018B424C2001F8F4F /* AMLoginViewController.m in Sources */,
 				27AC453618DD42FB003A4070 /* AMiPHoneChartViewController.m in Sources */,
 				27A9691018B06D010010A721 /* SWRevealViewController.m in Sources */,

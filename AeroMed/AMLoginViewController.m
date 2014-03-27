@@ -6,6 +6,8 @@
 //
 
 #import "AMLoginViewController.h"
+#include<unistd.h>
+#include<netdb.h>
 
 @interface AMLoginViewController ()
 
@@ -137,10 +139,23 @@
 
 // Query for all users
 - (void) queryForUsers {
-    PFQuery *query = [PFUser query];
-    query.cachePolicy = kPFCachePolicyNetworkElseCache;
-    self.allUsers = [NSMutableArray array];
-    [self.allUsers addObjectsFromArray:[query findObjects]];
+    
+    if ([self isNetworkAvailable]) {
+        PFQuery *query = [PFUser query];
+        query.cachePolicy = kPFCachePolicyNetworkElseCache;
+        self.allUsers = [NSMutableArray array];
+        [self.allUsers addObjectsFromArray:[query findObjects]];
+    } else {
+        
+    
+    [PFAnonymousUtils logInWithBlock:^(PFUser *user, NSError *error) {
+        if (error) {
+            NSLog(@"Anonymous login failed.");
+        } else {
+            NSLog(@"Anonymous user logged in.");
+        }
+    }];
+    }
 }
 
 - (IBAction)showMessage:(id)sender {
@@ -151,5 +166,22 @@
                                             otherButtonTitles:nil];
     
     [message show];
+}
+
+
+-(BOOL)isNetworkAvailable
+{
+    char *hostname;
+    struct hostent *hostinfo;
+    hostname = "google.com";
+    hostinfo = gethostbyname (hostname);
+    if (hostinfo == NULL){
+        NSLog(@"-> no connection!\n");
+        return NO;
+    }
+    else{
+        NSLog(@"-> connection established!\n");
+        return YES;
+    }
 }
 @end
