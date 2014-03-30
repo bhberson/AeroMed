@@ -38,7 +38,7 @@
 
 
 - (void)checkStatus {
-    [_activityIndicator startAnimating];
+    [self.activityIndicator startAnimating];
     [self.loginButton setHidden:YES];
     [self.signupButton setHidden:YES];
     

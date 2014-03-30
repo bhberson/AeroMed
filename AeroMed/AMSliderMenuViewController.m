@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    _menuItems = @[@"title",@"transports", @"documentation",@"trends", @"logout"];
+    self.menuItems = @[@"title",@"transports", @"documentation",@"trends", @"logout"];
 
 }
 
@@ -110,7 +110,7 @@
     // Set the title of navigation bar by using the menu items
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
-    destViewController.title = [[_menuItems objectAtIndex:indexPath.row] capitalizedString];
+    destViewController.title = [[self.menuItems objectAtIndex:indexPath.row] capitalizedString];
     
     // If we clicked the logout button then logout
     if ([segue.identifier isEqualToString:@"logout"]) {

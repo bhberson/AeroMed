@@ -46,8 +46,8 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
 
-    _topFolders = [[NSMutableArray alloc] init];
-    _showingData = [[NSMutableArray alloc] init];
+    self.topFolders = [[NSMutableArray alloc] init];
+    self.showingData = [[NSMutableArray alloc] init];
    
 
     PFQuery *query = [PFQuery queryWithClassName:@"Folder"];
@@ -65,9 +65,9 @@
                 [folders addObject:op];
             }
             
-            _topFolders = folders;
-            _showingData = _topFolders;
-            _isTopFolder = YES;
+            self.topFolders = folders;
+            self.showingData = self.topFolders;
+            self.isTopFolder = YES;
             [self.collectionView reloadData];
         } else {
             NSLog(@"%@", error);
@@ -88,7 +88,7 @@
 #pragma mark - UICollectionView Datasource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _showingData.count;
+    return self.showingData.count;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -98,7 +98,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     AMDocumentCellView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FolderCell" forIndexPath:indexPath];
 
-    PFObject *data = [_showingData objectAtIndex:indexPath.row];
+    PFObject *data = [self.showingData objectAtIndex:indexPath.row];
     cell.headerLabel.text = [data objectForKey:@"title"];
     
     return cell;
@@ -112,9 +112,9 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Selected cell %d", indexPath.row);
-    PFObject *data = [_showingData objectAtIndex:indexPath.row];
+    PFObject *data = [self.showingData objectAtIndex:indexPath.row];
     
-    if (_isTopFolder) {
+    if (self.isTopFolder) {
         [self queryForDocument:[data objectForKey:@"Contains"]];
         
         // Set the side bar button to go back up
@@ -123,7 +123,7 @@
         sidebarButton.title = @"Back";
         sidebarButton.action = @selector(upButtonTapped:);
     } else {
-        _selectedDocument = data; 
+        self.selectedDocument = data; 
         [self performSegueWithIdentifier:@"showDoc" sender:self];
     }
     
@@ -154,8 +154,8 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
        
         if (!error) {
-            _showingData = [[NSMutableArray alloc] initWithArray:objects];
-            _isTopFolder = NO;
+            self.showingData = [[NSMutableArray alloc] initWithArray:objects];
+            self.isTopFolder = NO;
             [self.collectionView reloadData];
             
         } else {
@@ -172,15 +172,15 @@
     [searchBar setShowsCancelButton:YES animated:YES];
     
     // If we need to get all the documents
-    if (!_allDocs) {
-        _allDocs = [[NSMutableArray alloc] init];
+    if (!self.allDocs) {
+        self.allDocs = [[NSMutableArray alloc] init];
         
-        for (PFObject *folder in _topFolders) {
+        for (PFObject *folder in self.topFolders) {
             PFQuery *q = [PFQuery queryWithClassName:[folder objectForKey:@"Contains"]];
             q.cachePolicy = kPFCachePolicyCacheElseNetwork;
             [q findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
                 if (!error) {
-                    [_allDocs addObjectsFromArray:objects];
+                    [self.allDocs addObjectsFromArray:objects];
                     
                 } else {
                     NSLog(@"%@", error);
@@ -213,15 +213,15 @@
 
     NSMutableArray *filteredData = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < _allDocs.count; i++) {
-        PFObject *doc = [_allDocs objectAtIndex: i];
+    for (int i = 0; i < self.allDocs.count; i++) {
+        PFObject *doc = [self.allDocs objectAtIndex: i];
         NSString *title = [[doc objectForKey:@"title"] lowercaseString];
         NSString *check = [searchBar.text lowercaseString];
         if ([title rangeOfString:check].location != NSNotFound) {
             [filteredData addObject:doc];
         }
     }
-     _showingData = [[NSMutableArray alloc] initWithArray:filteredData];
+     self.showingData = [[NSMutableArray alloc] initWithArray:filteredData];
     self.isTopFolder = NO; 
     [self.collectionView reloadData];
     
@@ -236,14 +236,14 @@
 
 // Go back to main navigation folders
 - (void)upButtonTapped:(id)sender {
-    _isTopFolder = YES;
+    self.isTopFolder = YES;
     
     UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
     sidebarButton.target = self.revealViewController;
     sidebarButton.action = @selector(revealToggle:);
     sidebarButton.title = @"Menu";
     
-    _showingData = _topFolders;
+    self.showingData = self.topFolders;
     [self.collectionView reloadData];
 }
 
@@ -260,7 +260,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showDoc"]) {
         AMDocumentViewController * document = (AMDocumentViewController *)segue.destinationViewController;
-        [document setDoc:_selectedDocument];
+        [document setDoc:self.selectedDocument];
         [document setShouldDisplayChecklist:YES]; 
          
     }

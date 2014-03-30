@@ -41,9 +41,10 @@
 
         
         // Set the side bar button action to show slide out menu
-        _sidebarButton.target = self.revealViewController;
-        _sidebarButton.action = @selector(revealToggle:);
+        self.sidebarButton.target = self.revealViewController;
+        self.sidebarButton.action = @selector(revealToggle:);
         
+        UIBarButtonItem *notification = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"bell.png"] style:UIBarButtonItemStylePlain target:self action:nil];
         // Set the gesture
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
         

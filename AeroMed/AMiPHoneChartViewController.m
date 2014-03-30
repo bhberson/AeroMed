@@ -61,7 +61,6 @@
     [title appendString:[email substringToIndex:[email rangeOfString:@"@"].location]];
     [title appendString:@"'s Performance"];
     self.titleText.text = title;
-    
 
 }
 

@@ -139,22 +139,17 @@
 
 // Query for all users
 - (void) queryForUsers {
+    PFQuery *query = [PFUser query];
+    
+    self.allUsers = [NSMutableArray array];
     
     if ([self isNetworkAvailable]) {
-        PFQuery *query = [PFUser query];
         query.cachePolicy = kPFCachePolicyNetworkElseCache;
-        self.allUsers = [NSMutableArray array];
         [self.allUsers addObjectsFromArray:[query findObjects]];
     } else {
-        
-    
-    [PFAnonymousUtils logInWithBlock:^(PFUser *user, NSError *error) {
-        if (error) {
-            NSLog(@"Anonymous login failed.");
-        } else {
-            NSLog(@"Anonymous user logged in.");
-        }
-    }];
+        NSLog(@"No connection for login");
+       query.cachePolicy = kPFCachePolicyCacheOnly;
+       [self.allUsers addObjectsFromArray:[query findObjects]];
     }
 }
 

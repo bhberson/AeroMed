@@ -48,6 +48,7 @@
 		27AC965418DD329000CDFA93 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27AC965318DD329000CDFA93 /* NavigationControllerData.plist */; };
 		27B2500718E2899800A5AFD7 /* AMDocumentCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */; };
 		27B2500A18E296E000A5AFD7 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500918E296E000A5AFD7 /* Folder.m */; };
+		27B2672B18E4C48400367F0E /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2672A18E4C48400367F0E /* bell.png */; };
 		27B3799518E253A800244754 /* AMBaseDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3799418E253A800244754 /* AMBaseDocumentViewController.m */; };
 		27B3799718E2604400244754 /* helicopter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27B3799618E2604400244754 /* helicopter.jpg */; };
 		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
@@ -142,6 +143,7 @@
 		27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentCellView.m; sourceTree = "<group>"; };
 		27B2500818E296E000A5AFD7 /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
 		27B2500918E296E000A5AFD7 /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
+		27B2672A18E4C48400367F0E /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		27B3799318E253A800244754 /* AMBaseDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBaseDocumentViewController.h; sourceTree = "<group>"; };
 		27B3799418E253A800244754 /* AMBaseDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBaseDocumentViewController.m; sourceTree = "<group>"; };
 		27B3799618E2604400244754 /* helicopter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = helicopter.jpg; sourceTree = "<group>"; };
@@ -187,7 +189,6 @@
 		779181B218C832A500AE1019 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
 		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
 		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
-		HYXIFWTDXJPPRRMDCEPMDTJH /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = "/Applications/Spark Inspector.app/Contents/Resources/Frameworks/SparkInspector.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,7 +358,6 @@
 				7787CF0418806ECE004F495E /* CoreGraphics.framework */,
 				7787CF0618806ECE004F495E /* UIKit.framework */,
 				7787CF1B18806ECE004F495E /* XCTest.framework */,
-				HYXIFWTDXJPPRRMDCEPMDTJH /* SparkInspector.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -382,6 +382,7 @@
 		7787CF0918806ECE004F495E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27B2672A18E4C48400367F0E /* bell.png */,
 				27B3799618E2604400244754 /* helicopter.jpg */,
 				27AC965318DD329000CDFA93 /* NavigationControllerData.plist */,
 				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
@@ -553,6 +554,7 @@
 				27B3799718E2604400244754 /* helicopter.jpg in Resources */,
 				271043EB18E30C6B003D1740 /* JBChartView.podspec in Resources */,
 				278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */,
+				27B2672B18E4C48400367F0E /* bell.png in Resources */,
 				1625074618D7358900BC3A72 /* check-yes@2x.png in Resources */,
 				1625074518D7358900BC3A72 /* check-yes.png in Resources */,
 				27A6AED918CD720E0055CCED /* arrow-up.png in Resources */,
@@ -753,11 +755,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					SparkInspector,
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

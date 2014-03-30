@@ -34,15 +34,15 @@
     self.navigationItem.rightBarButtonItem = done;
 
     
-    NSLog(@"%@",_checkList);
+    NSLog(@"%@",self.checkList);
  
-    _dataArray = [[NSMutableArray alloc] initWithCapacity:self.checkList.count];
+    self.dataArray = [[NSMutableArray alloc] initWithCapacity:self.checkList.count];
     
     // Initialize our data array to hold a dictionary to hold cell data and checkmark data
     for (NSString *item in self.checkList) {
         NSMutableDictionary *dataDic = [[NSMutableDictionary alloc] initWithCapacity:2];
         [dataDic setObject:[NSNumber numberWithBool:NO] forKey:@"checked"];
-        [_dataArray addObject:dataDic];
+        [self.dataArray addObject:dataDic];
     }
     
 }
@@ -78,7 +78,7 @@
     
     cell.textLabel.text =[self.checkList objectAtIndex:indexPath.row];
   
-    NSMutableDictionary *item = [_dataArray objectAtIndex:indexPath.row];
+    NSMutableDictionary *item = [self.dataArray objectAtIndex:indexPath.row];
     
     BOOL checked = [[item objectForKey:@"checked"] boolValue];
     
@@ -103,7 +103,7 @@
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
     
-    NSMutableDictionary *item = [_dataArray objectAtIndex:indexPath.row];
+    NSMutableDictionary *item = [self.dataArray objectAtIndex:indexPath.row];
     
     BOOL checked = [[item objectForKey:@"checked"] boolValue];
     

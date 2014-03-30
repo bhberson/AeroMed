@@ -32,7 +32,7 @@
 // Convert the array of strings into a formatted string
 - (NSString *)getDocumentString:(NSString *)section {
     NSMutableString *data = [[NSMutableString alloc] init];
-    NSArray *ar = _doc[section];
+    NSArray *ar = self.doc[section];
     
     for (int i = 0; i < ar.count; i++) {
         [data appendString:@"- "];
@@ -75,11 +75,11 @@
     // Configure cell
     switch (indexPath.section) {
         case 0:
-            data.text = _doc[@"originalDate"];
+            data.text = self.doc[@"originalDate"];
             break;
             
         case 1:
-            data.text = _doc[@"revisedDate"];
+            data.text = self.doc[@"revisedDate"];
             break;
             
         case 2:
@@ -173,7 +173,7 @@
     
     switch (indexPath.section) {
         case 0:
-            str = _doc[@"originalDate"];
+            str = self.doc[@"originalDate"];
            rect = [str boundingRectWithSize:max
                                    options:NSStringDrawingUsesLineFragmentOrigin
                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
@@ -182,7 +182,7 @@
             
             break;
         case 1:
-            str = _doc[@"revisedDate"];
+            str = self.doc[@"revisedDate"];
             rect = [str boundingRectWithSize:max
                                    options:NSStringDrawingUsesLineFragmentOrigin
                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15.0f]}
@@ -266,7 +266,7 @@
     if ([segue.identifier isEqualToString:@"toCheckList"]) {
         AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
    
-        [vc setCheckList:_doc[@"checklist"]];
+        [vc setCheckList:self.doc[@"checklist"]];
     }
 }
 @end
