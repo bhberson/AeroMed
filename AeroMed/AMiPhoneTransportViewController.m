@@ -31,6 +31,23 @@
 {
     Transport *transport = [[Transport alloc] init];
 	transport.transportNumber = self.numTextField.text;
+    transport.crewMembers = [[NSMutableArray alloc] init];
+    if (self.crewMember1TextField.text != nil) {
+        [transport.crewMembers addObject:self.crewMember1TextField.text];
+    }
+    if (self.crewMember2TextField.text != nil) {
+        [transport.crewMembers addObject:self.crewMember2TextField.text];
+    }
+    if (self.crewMember3TextField.text != nil) {
+        [transport.crewMembers addObject:self.crewMember3TextField.text];
+    }
+    if (self.crewMember4TextField.text != nil) {
+        [transport.crewMembers addObject:self.crewMember4TextField.text];
+    }
+    transport.ageGroup = self.ageGroupTextField.text;
+    transport.transportType = self.transportTypeTextField.text;
+    transport.specialTransport = self.specialTransportTextField.text;
+    transport.otherNotes = self.notesTextField.text;
 	[self.delegate amiPhoneTransportViewController:self
                                    didAddTransport:transport];
 }

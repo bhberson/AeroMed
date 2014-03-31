@@ -495,6 +495,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="sidebarButton" destination="yO0-tf-gD9" id="k0Q-jQ-SHd"/>
+                        <outlet property="tableView" destination="s5f-5s-qTO" id="9K8-A0-B4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Xa-iu-JnD" userLabel="First Responder" sceneMemberID="firstResponder"/>

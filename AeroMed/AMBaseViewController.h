@@ -12,5 +12,6 @@
 @interface AMBaseViewController : UITableViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, AMiPhoneTransportViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (nonatomic, strong) NSMutableArray *transports;
+@property(weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

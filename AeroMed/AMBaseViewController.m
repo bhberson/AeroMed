@@ -43,6 +43,8 @@
         // Set the side bar button action to show slide out menu
         self.sidebarButton.target = self.revealViewController;
         self.sidebarButton.action = @selector(revealToggle:);
+        [self.tableView setDelegate:self];
+        [self.tableView setDataSource:self];
         
         UIBarButtonItem *notification = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"bell.png"] style:UIBarButtonItemStylePlain target:self action:nil];
         // Set the gesture
@@ -50,6 +52,14 @@
         
     }
   
+}
+
+-(NSMutableArray*)transports
+{
+    if (_transports == nil) {
+        _transports = [[NSMutableArray alloc]init];
+    }
+    return _transports;
 }
 
 - (void)didReceiveMemoryWarning
@@ -123,6 +133,7 @@
 	NSIndexPath *indexPath =
     [NSIndexPath indexPathForRow:[self.transports count] - 1
                        inSection:0];
+    [self.tableView reloadData];
 #warning This was causing the nil pointer when done pressed
 //	[self.tableView insertRowsAtIndexPaths:
 //     [NSArray arrayWithObject:indexPath]
