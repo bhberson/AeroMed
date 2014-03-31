@@ -49,9 +49,41 @@
     [super viewDidLoad];
     
     [self retrieveUsers];
+    self.crewMemberPicker = [[UIPickerView alloc] init];
+    self.crewMemberPicker.delegate = self;
+    self.crewMemberPicker.dataSource = self;
+    self.crewMemberPicker.showsSelectionIndicator = YES;
+    self.crewMember1TextField.inputView = self.crewMemberPicker;
+    self.crewMember2TextField.inputView = self.crewMemberPicker;
+    self.crewMember3TextField.inputView = self.crewMemberPicker;
+    self.crewMember4TextField.inputView = self.crewMemberPicker;
+    self.ageGroupPicker = [[UIPickerView alloc] init];
+    self.ageGroupPicker.delegate = self;
+    self.ageGroupPicker.dataSource = self;
+    self.ageGroupPicker.showsSelectionIndicator = YES;
+    self.ageGroupTextField.inputView = self.ageGroupPicker;
     self.ageGroupArray = [[NSArray alloc] initWithObjects:@"Adult",@"Pediatric",@"Neonatal",nil];
+    [self pickerView:self.ageGroupPicker
+        didSelectRow:0
+         inComponent:0];
+    self.transportTypePicker = [[UIPickerView alloc] init];
+    self.transportTypePicker.delegate = self;
+    self.transportTypePicker.dataSource = self;
+    self.transportTypePicker.showsSelectionIndicator = YES;
+    self.transportTypeTextField.inputView = self.transportTypePicker;
     self.transportTypeArray = [[NSArray alloc] initWithObjects:@"Rotor Wing",@"Fixed Wing",@"Ground",nil];
+    [self pickerView:self.transportTypePicker
+        didSelectRow:0
+         inComponent:0];
+    self.specialTransportPicker = [[UIPickerView alloc] init];
+    self.specialTransportPicker.delegate = self;
+    self.specialTransportPicker.dataSource = self;
+    self.specialTransportPicker.showsSelectionIndicator = YES;
+    self.specialTransportTextField.inputView = self.specialTransportPicker;
     self.specialTransportArray = [[NSArray alloc] initWithObjects:@"Isolette",@"LVAD",@"IABP",@"NICU", @"Other in Notes",nil];
+    [self pickerView:self.specialTransportPicker
+        didSelectRow:0
+         inComponent:0];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
@@ -96,6 +128,14 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)dismissKeyboard {
     [self.numTextField resignFirstResponder];
     [self.notesTextField resignFirstResponder];
+    [self.crewMember1TextField resignFirstResponder];
+    [self.crewMember2TextField resignFirstResponder];
+    [self.crewMember3TextField resignFirstResponder];
+    [self.crewMember4TextField resignFirstResponder];
+    [self.ageGroupTextField resignFirstResponder];
+    [self.transportTypeTextField resignFirstResponder];
+    [self.specialTransportTextField resignFirstResponder];
+
 }
 
 - (void)dealloc
@@ -147,7 +187,18 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
 
+    if(pickerView == self.crewMemberPicker) {
+        self.crewMember1TextField.text = [self.crewMemberArray objectAtIndex:row];
+    } else if(pickerView == self.ageGroupPicker) {
+        self.ageGroupTextField.text = [self.ageGroupArray objectAtIndex:row];
+    } else if(pickerView == self.transportTypePicker) {
+        self.transportTypeTextField.text = [self.transportTypeArray objectAtIndex:row];
+    }else if(pickerView == self.specialTransportPicker) {
+        self.specialTransportTextField.text = [self.specialTransportArray objectAtIndex:row];
+    }else {
+        assert(NO);
+    }
     
-} //this method displays whenever selection indicator stops the row title is set as button title.
+}
 
 @end
