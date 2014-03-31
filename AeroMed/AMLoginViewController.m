@@ -82,6 +82,10 @@
     }
 }
 
+- (IBAction)didTapForgotPassword:(id)sender {
+    [self performSegueWithIdentifier:@"loginToForgot" sender:self];
+}
+
 - (void)didTapBack:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }

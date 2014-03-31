@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSMutableArray *allUsers;
 
 - (IBAction)didTapLogin:(id)sender;
+- (IBAction)didTapForgotPassword:(id)sender;
 - (void)dismissKeyboard;
 
 @end
