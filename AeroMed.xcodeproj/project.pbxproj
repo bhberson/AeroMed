@@ -76,6 +76,7 @@
 		779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* AMDocumentViewController.m */; };
 		779181BB18C833E200AE1019 /* bar-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181B918C833E200AE1019 /* bar-mid.png */; };
 		779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181BA18C833E200AE1019 /* bar-mid@2x.png */; };
+		ACAE35BD18E8C0C30080B944 /* AMForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAE35BC18E8C0C30080B944 /* AMForgotPasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +190,8 @@
 		779181B218C832A500AE1019 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
 		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
 		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
+		ACAE35BB18E8C0C30080B944 /* AMForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMForgotPasswordViewController.h; sourceTree = "<group>"; };
+		ACAE35BC18E8C0C30080B944 /* AMForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMForgotPasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +426,8 @@
 		779181B518C832BD00AE1019 /* Mutual View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ACAE35BB18E8C0C30080B944 /* AMForgotPasswordViewController.h */,
+				ACAE35BC18E8C0C30080B944 /* AMForgotPasswordViewController.m */,
 				27F94E0E18B424C2001F8F4F /* AMLoginViewController.h */,
 				27F94E0F18B424C2001F8F4F /* AMLoginViewController.m */,
 				27F94E0B18B424A3001F8F4F /* AMSignupViewController.h */,
@@ -598,6 +603,7 @@
 				27B2500A18E296E000A5AFD7 /* Folder.m in Sources */,
 				27F94E0A18B41DB6001F8F4F /* AMSplashScreenViewController.m in Sources */,
 				7787CF0F18806ECE004F495E /* main.m in Sources */,
+				ACAE35BD18E8C0C30080B944 /* AMForgotPasswordViewController.m in Sources */,
 				27B3799518E253A800244754 /* AMBaseDocumentViewController.m in Sources */,
 				27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */,
 				779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */,
