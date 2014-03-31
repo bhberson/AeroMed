@@ -12,7 +12,7 @@
 
 
 
-- (id)init {
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.dateStarted = [[NSDate alloc] init];
