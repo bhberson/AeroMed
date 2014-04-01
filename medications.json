@@ -745,6 +745,648 @@
 		]
 	},
 	{
+		"title": "Neosynephrine (phenylephrine)",
+		"originalDate": "",
+		"revisedDate": "21 October 2012",
+		"indications": [
+		"Hypotension and vascular failure in shock patients refractory to volume resuscitation.",
+		"Phenylephrine is a useful alternative in patients who develop unacceptable tachycardia or tachydysrhythmias with dopamine or norepinephrine.."
+		],
+		"adultDosage": [
+			"Infusion: For treatment of severe hypotension or shock start infusion at 25 – 50 mcg/min and titrate to patient response (usually in 25 – 50 mcg/min increments, every 10 minutes).",
+			"Hypotension/Shock",
+			"• I.V. bolus: 5-20 mcg/kg/dose every 10-15 minutes as needed",
+			"• I.V. infusion: 0.1-0.5 mcg/kg/minute",
+			"• While there is no maximum infusion rate, most patients should respond with doses less than 175 mcg/min.",
+			"• Weaning: Do not stop infusion abruptly. Wean by 25 – 50 mcg/min every 10-15 minutes, to patient response.",
+			"Mild-Moderate Hypotennsion",
+			"• IV Push: Give 0.1 to 0.5mg IV over one minute and repeat every 10-15 minutes."
+		],
+		"pediatricDosage": [
+			"See Adult Dose",
+			"Hypotension/Shock",
+			"• I.V. bolus: 5-20 mcg/kg/dose every 10-15 minutes as needed",
+			"• I.V. infusion: 0.1-0.5 mcg/kg/minute, titrate every 10 minutes to desired effect; MAX dose: 0.5 mcg/kg/min"
+		],
+		"considerations": [
+			"Phenylephrine increases systemic vascular resistance (SVR), mean arterial pressure, and stroke volume in patients with hyperdynamic septic shock",
+			"Bradycardia, headache, hypertension, tingling extremities, tremors, ventricular tachycardia, PVCs",
+			"May decrease cardiac output",
+			"Causes tissue necrosis if IV infiltration",
+			"Inset of action is immediate / elimination half-life is 19 minutes."
+		]
+	},
+	{
+		"title": "Nimbex (cisatracurium)",
+		"originalDate": "",
+		"revisedDate": "21 October 2012",
+		"indications": [
+			"Non-depolarizing neuromuscular blocker."
+		],
+		"adultDosage": [
+			"IV Bolus dose: 0.5 - 0.2 mcg/kg/min",
+			"• Neuromuscular Blockade (Intubating dose): 0.15-0.2 mg/kg as components of propofol/nitrous oxide/oxygen induction-intubation technique.",
+			"• Neuromuscular Blockade (Initial dose after succinylcholine for intubation): 0.1 mg/kg; maintenance dose: 0.03 mg/kg 40-60minutes after initial dose, then at ~20-minute intervals based on clinical criteria.",
+			"• Neuromuscular Blockade (Continuous infusion): initial infusion rate of 3 mcg/kg/minute may be required to rapidly counteract the spontaneous recovery of neuromuscular function",
+			"• Thereafter, a rate of 1-2 mcg/kg/minute should be adequate to maintain continuous neuromuscular block in the 89% to 99% range in most pediatric and adult patients."
+		],
+		"pediatricDosage": [
+			"Intubating dose Infants 1-23 months: 0.15 mg/kg over 5-10 seconds",
+			"Intubating dose Children 2-12 years: 0.1-0.15 mg/kg over 5-15 seconds",
+			"• (NOTE: When given during stable opioid/nitrous oxide/oxygen anesthesia, 0.1 mg/kg produces maximum neuromuscular block in an average of 2.8 minutes and clinically effective block for 28 minutes.)",
+			"Continuous infusion dose Children ≥2 years: Refer to adult dosing"
+		],
+		"considerations": [
+			"IMPORTANT NOTE: Neuromuscular blockers require the concurrent use of sedatives and analgesics.",
+			"NMB’s only cause paralysis and do not provide any sedative or analgesic effects. MUST administer sedative & analgesic medications first",
+			"Intermediate onset of action and duration.",
+			"Onset is 2-3 minutes",
+			"Halflife of 30 – 70 minutes",
+			"• Recovery begins in 20-35 minutes when anesthesia is balanced",
+			"No significant effects noted on pulse or blood pressure",
+			"Resistance may occur in burn patients (>30% of body) for period of 5-70 days postinjury",
+			"Incompatible with LR, sodium bicarbonate, Toradol, and Propofol"
+		]
+	},
+	{
+		"title": "Nipride (nitroprusside)",
+		"originalDate": "",
+		"revisedDate": "21 October 2012",
+		"indications": [
+			"Hypertensive disorders",
+			"After load reduction as with refractory heart failure and cardiogenic shock",
+			"Acute hypertension",
+			"Acute decompensated heart failure"
+		],
+		"adultDosage": [
+			"0.3 -10 mcg/kg/ minute; titrated every 2-10 minutes to achieve desired effect",
+			"Acute hypertension",
+			"• Initial: 0.25-0.3 mcg/kg/minute; may be titrated by 0.5 mcg/kg/ minute every few minutes to achieve desired hemodynamic effect (Max = 10mcg/kg/min)",
+			"Acute decompensated heart failure",
+			"• Initial: 5-10 mcg/minute; may be titrated rapidly (eg, up to every 5 minutes) to achieve desired hemodynamic effect",
+			"• Doses >400 mcg/minute are not recommended due to minimal added benefit and increased risk for thiocyanate toxicity",
+			"• Standard adult concentration is 50mg in 250ml of D5W"
+		],
+		"pediatricDosage": [
+			"Acute hypertension",
+			"• Initial: 0.3-0.5 mcg/kg/minute; may be titrated every few minutes to achieve desired hemodynamic effect (Max=10 mcg/kg/minute)",
+			"• Standard Pediatric concentration is (200mcg/ml) 50mg in 250ml of D5W"
+		],
+		"considerations": [
+			"Onset of action: <2 minutes",
+			"Do not stop infusion abruptly. Wean to patient response every 15-30 minutes",
+			"Causes peripheral vasodilation by direct action on venous and arteriolar smooth muscle, thus reducing peripheral resistance; will increase cardiac output by decreasing afterload; reduces aortal and left ventricular impedance",
+			"Incompatible with 0.9% sodium chloride",
+			"May cause cyanide toxicity in high doses, extended infusions, or reduced renal clearance; consider alternative agent in smoke inhalation and known cyanide toxicity patients"
+		]
+	},
+	{
+		"title": "Norcuron (vecuronium)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Anesthesia, facilitation of mechanical ventilation or tracheal intubation"
+		],
+		"adultDosage": [
+			"Bolus IV dose: 0.05-0.1mg per kg; may be followed by 0.1-0.2 mg per kg every 1 hour",
+			"Continuous infusion dose: 0.8-1.7 mcg per kg per minute; adjust dose for hepatic impairment; dose may also need adjustment for renal impairment",
+			"Weaning: May stop abruptly",
+			"Anesthesia adjunct (initial): I.V.: 0.1 mg/kg/dose; repeat every hour as needed",
+			"Anesthesia adjunt (Continuous I.V. infusion): 0.8-1.7 mcg/kg/minute (0.05-0.1 mg/kg/hour)"
+		],
+		"pediatricDosage": [
+			"See adult dosing"
+		],
+		"considerations": [
+			"IMPORTANT NOTE: Neuromuscular blockers require the concurrent use of sedatives and analgesics.",
+			"NMB’s only cause paralysis and do not provide any sedative or analgesic effects. Administer sedative and analgesic medications BEFORE administration of vecuronium.",
+			"NMB’s do not require weaning",
+			"Time of onset 2 - 3mins minutes",
+			"Time of duration 20 - 60 minutes"
+		]
+	},
+	{
+		"title": "Normodyne or Trandate (labetalol)",
+		"originalDate": "",
+		"revisedDate": "21 October 2012",
+		"indications": [
+			"HTN and hypertensive emergencies"
+		],
+		"adultDosage": [
+			"IV push = 10 – 80 mg. Do not give faster than 10 mg per minute. Should see drop in blood pressure in 5 – 10 minutes.",
+			"Continuous infusion and a loading dose has been given: initiate at 0.2 – 0.5 mg/min",
+			"Continuous infusion and NO loading dose has been given: initiate at 2 mg/min"
+		],
+		"pediatricDosage": [
+			"Not routinely used in neonates (<30 days of age)",
+			"HTN Emergency: labetalol 0.2 or 0.5 mg/kg IV x 1; MAX: 1mg/kg/dose or 20 mg/dose",
+			"HTN: labetalol 0.2 or 0.5 mg/kg IV Q4HPRN; Max 1mg/kg/dose or 20 mg/dose"
+		],
+		"considerations": [
+			"Do not stop abruptly; wean every 15 – 30 minutes to patient’s blood pressure response",
+			"Onset of action is in 2 – 5 minutes, and peaks at 5 – 15 minutes",
+			"Patients should be instructed to slowly rise from seated or supine position as this medication can cause orthoostatic hypotension"
+		]
+	},
+	{
+		"title": "Osmitrol (mannitol)",
+		"originalDate": "",
+		"revisedDate": "21 October 2012",
+		"indications": [
+			"Reduction of increased intracranial pressure associated with cerebral edema"
+		],
+		"adultDosage": [
+			"Intracranial Pressure/ Cerebral Edema",
+			"• I.V.: 1 g/kg/dose over 15 - 30 minutes x1 dose; may repeat 0.25 – 0.5 g/kg/dose over 15 – 30 minutes every 4 - 6 hours as needed; Maintain serum osmolality <300-320 mOsm/kg",
+			"Severe traumatic brain injury (unlabeled use)",
+			"• I.V.: ~1.4 g/kg as initial management prior to neurosurgery with concurrent fluid replacement"
+		],
+		"pediatricDosage": [
+			"Increased intracranial pressure (unlabeled dosing):",
+			"• I.V.: 0.5-1 g/kg/dose x1 over 30 – 60 minutes; may repeat as needed 0.25 – 0.5 g/kg/dose over 30 – 60 minutes every 4 – 6 hours; Maintain serum osmolality <300-320 mOsm/kg"
+		],
+		"considerations": [
+			"Can cause tissue necrosis if infiltrated",
+			"Must run with 0.22 micron filter",
+			"Keep mannitol at room temperature or warmed, as crystals can form if solution cools; DO NOT infuse if solution contains crystals"
+		]
+	},
+	{
+		"title": "Pavulon (pancuronium)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Facilitation of mechanical ventilation"
+		],
+		"adultDosage": [
+			"Bolus IV dose: 0.05-0.1mg per kg; may be followed by 0.1-0.2 mg per kg every 1 to 3 hours",
+			"Continuous infusion dose: 0.8-1.7 mcg per kg per minute; administer 50% of dose in renal or hepatic impairment",
+			"May stop abruptly"
+		],
+		"pediatricDosage": [
+			"See adult dosing"
+		],
+		"considerations": [
+			"IMPORTANT NOTE: Neuromuscular blockers require the concurrent use of sedatives and analgesics.",
+			"NMB’s only cause paralysis and do not provide any sedative or analgesic effects. Administer sedative and analgesic medications BEFORE giving pancuronium.",
+			"Can cause histamine release causing flushing and hypotension, prolonged muscle weakness",
+			"NMB’s do not require weaning",
+			"Onset 3-5 minutes",
+			"Duration 120-180 minutes"
+		]
+	},
+	{
+		"title": "Phenergan (promethazine)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Antiemetic",
+			"H1 antagonist"
+		],
+		"adultDosage": [
+			"Antiemetic: Oral, IM, IV, rectal, 12.5-25mg q 4-6 hrs as needed.",
+			"Allergic reactions: oral, rectal: 25mg at bedtime, or 12.5mg AC and HS."
+		],
+		"pediatricDosage": [
+			"Antiemetic: oral, IM, IV, rectal, 0.25-1mg/kg 4-6 times a day",
+			"Allergic reaction: oral, rectal, 0.1mg/kg (maximum 12.5mg) during the day, and 0.5mg/kg (maximum 25mg) at bedtime.",
+			"Age > 2 years"
+		],
+		"considerations": [
+			"Use contraindicated in children 2 years and under.",
+			"Can cause severe tissue injury r.t. extravasation.",
+			"May cause sedation, or rarely NMS and dystonic reactions."
+		]
+	},
+	{
+		"title": "Pitocin (oxytocin)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Induction or supplementation of labor",
+			"Increasing contractions during third stage of labor",
+			"Control of postpartum bleeding"
+		],
+		"adultDosage": [
+			"Induction of labor: 0.5-1 milliunits/minute. Gradually increase dose by 1-2 milliunits/minute until desired contraction pattern is established. Titrate upward in 30-60 minute intervals.",
+			"Postpartum bleeding: IM, 10 units after delivery of placenta, IV 10-40 units in 1LNS at a rate sufficient to control uterine atony."
+		],
+		"pediatricDosage": [
+			"See adult dosing"
+		],
+		"considerations": [
+			"IV administration requires an infusion pump",
+			"May have antidiuretic effect (water intoxication)"
+		]
+	},
+	{
+		"title": "Pitressin (vasopressin)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Cardiopulmonary resuscitation",
+			"Septic shock refractory to high-dose catecholamines"
+		],
+		"adultDosage": [
+			"Cardiopulmonary resuscitation",
+			"• IV push: 40units once; may give one dose to replace first or second dose of epinephrine",
+			"Septic shock refractory to high-dose catecholamine therapy",
+			"• Concentration",
+			"• Infusion: 100units / 100ml 0.9% sodium chloride (1unit/ml)",
+			"Continuous intravenous infusion of 0.02-0.04units/minute.",
+			"Vasopressin is not titrated for this indication"
+		],
+		"pediatricDosage": [
+			"Septic shock refractory to high-dose catecholamine therapy",
+			"Syringe (Peds/Neo): 25units / 23.75 ml 0.9% sodium chloride (1unit/ml)",
+			"Continuous intravenous infusion of 0.02-0.04units/minute.",
+			"Vasopressin is not titrated for this indication"
+		],
+		"considerations": [
+			"Risk of tissue necrosis with extravasation",
+			"In septic shock, maintain vasopressin infusion at a low dose and titrate other vasopressor agents to goal blood pressure"
+		]
+	},
+	{
+		"title": "Pitressin (vasopressin)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Management of diabetes insipidus",
+			"Donor management of brain dead patients",
+			"Pulseless arrest",
+			"Vasodilatory shock/septic shock"
+		],
+		"adultDosage": [
+			"DI: IM, SQ 5-10 units 2-4 x day PRN",
+			"DI: IV 2.5 units/hr. Titrate to adequately reduce urine output",
+			"Donor management: IV 1 unit bolus followed by 0.5-4 units/hr.",
+			"Pulseless arrest: IV, IO 40 units x 1 to replace first or second dose of epinephrine.",
+			"Vasodilatory shock/septic shock: IV 0.01-0.03 units/minute."
+		],
+		"pediatricDosage": [
+			"DI: IM, SQ 2.5-10 units 2-4 x day PRN",
+			"DI: IV 0.0005 units/kg/hr. Titrate by same (0.0005units/kg/hr) every 30 mins to reduce urine output."
+		],
+		"considerations": [
+			"Dosage in DI is highly variable. Titrate based on serum and urine sodium and osmolality in addition to fluid balance and urine output.",
+			"In septic shock, recommended as a second line vasopressor in addition to norepinephrine.",
+			"May cause tissue necrosis with IV infiltration. Check IV site frequently."
+		]
+	},
+	{
+		"title": "Clopidogrel (Plavix)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Anti-platelet used in ACS, AMI, and stroke"
+		],
+		"adultDosage": [
+			"For pt’s receiving percutaneous coronary intervention (PCI), a dose of 600mg is used. This is for STEMI, non-STEMI, and unstable angina pts"
+		],
+		"pediatricDosage": [
+			"Safety and efficacy have not been established in peds pt’s."
+		],
+		"considerations": [
+			"Contraindicated in pt’s with active pathological bleeding such as peptic ulcer, or intracranial hemorrhage.",
+			"Preferred agent: ticagrelor (Brillinta) 180 mg ONCE should be given if possible"
+		]
+	},
+	{
+		"title": "Primacor (milrinone)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"An inotrope, that causes increased cardiac output and decreased SVR",
+			"Used in heart failure"
+		],
+		"adultDosage": [
+			"May give a loading dose of 50 mcg/kg over 10 - 15 minutes",
+			"Maintenance infusion based on creatinine clearance typical startging dose of 0.2 – 0.375 mcg/kg/min",
+			"Common dose range 0.2 – 0.75 mcg/kg/min"
+		],
+		"pediatricDosage": [
+			"See adult dosing"
+		],
+		"considerations": [
+			"Should see hemodynamic improvement within 5 – 15 minutes",
+			"May cause hypotension & arrhythmia"
+		]
+	},
+	{
+		"title": "Pronestyl (procainamide)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Symptomatic ventricular dysrhythmias",
+			"Atrial fibrillation and flutter",
+			"Paroxysmal atrial tachycardia and Supra Ventricular Tachycardia (SVT)"
+		],
+		"adultDosage": [
+			"Standard bolus concentration: 10 mg/mL (1gram / 100 mL sodium chloride 0.9%)",
+			"• Loading dose IV Push/IVPB: 50-100 mg by slow IV Push, no faster than 25 to 50 mg per minute.",
+			"• Total dose may be up to 17 mg per kg, not to exceed 1000 mg (1gram).",
+			"Standard infusion concentration: 4 mg/mL (1gram / 250 mL sodium chloride 0.9%)",
+			"• Maintenance Infusion: 1-4 mg/min per physician order - Titrate to control ventricular dysrhythmias",
+			"• 1 mg/min = 15 mL/hr 3 mg/min = 45 mL/hr",
+			"• 2 mg/min = 30 mL/hr 4 mg/min = 60 mL/hr"
+		],
+		"pediatricDosage": [
+			"Standard bolus concentration: 10 mg/mL",
+			"Loading dose option #1: 3-6 mg/kg/dose over 5 minutes. (Maximum 100 mg/dose)",
+			"• Do not exceed 50 mg/min.",
+			"• May repeat every 5-10 minutes",
+			"• Maximum total loading dose: 15 mg/kg Do Not exceed 500mg in 30 minutes",
+			"Loading dose option #2: 15mg/kg/dose slow IV push over 45-60 minutes",
+			"• (Maximum 1000 mg/dose)",
+			"• Do not exceed 50 mg/min.",
+			"Standard infusion concentration: 4 mg/mL (100 mg / 25 mL sodium chloride 0.9% syringe)",
+			"• Maintenance Infusion: 20-80 mcg/kg/min (Maximum dose 2 grams/day)"
+		],
+		"considerations": [
+			"MONITOR ECG: Toxicity produces widening of QRS, prolonged P-R and Q-T intervals, ventricular tachycardia. Stop administration if hypotension occurs or QRS interval"
+		]
+	},
+	{
+		"title": "Prostin (dinoprostone)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Promotes cervical ripening before induction of labor",
+			"Terminates pregnancy from week 12-20. Evacuate uterus in cases of missed abortion or intrauterine fetal death."
+		],
+		"adultDosage": [
+			"Endocervical gel: 0.5mg inserted into the cervical canal. May repeat q 6 hrs PRN. Max dose 1.5mg/24 hours.",
+			"Vaginal insert: insert 10mg transversely into the posterior fornix of the vagina."
+		],
+		"pediatricDosage": [
+			"See adult dosing"
+		],
+		"considerations": [
+			"Remove vaginal insert at the onset of active labor, or after 12 hrs.",
+			"Have pt stay flat for 15 mins-2 hours after administration",
+			"Slightly increased risk for DIC"
+		]
+	},
+	{
+		"title": "Racemic Epinephrine",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"A sympathomimetic bronchodilator used in the treatment of croup, or when stridor is present."
+		],
+		"adultDosage": [
+			"0.5-0.75 ml of a 2.25% solution in 2 ml of NS. Aero Med carries a single dose of 0.5 ml."
+		],
+		"pediatricDosage": [
+			"0.25-0.75 ml of a 2.25 % solution in 2 ml of NS. Aero Med carries a single dose of 0.5 ml."
+		],
+		"considerations": [
+			"Should not be used in cases of epiglottitis or hypersensitivity to the drug."
+		]
+	},
+	{
+		"title": "Phentolamine (Regitine)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"To prevent or treat tissue necrosis following drug extravasation of vasoactive agents. May also be used for hypertensive crisis."
+		],
+		"adultDosage": [
+			"Subcutaneous does: 5-10 mg diluted in 0.9%NS to a total volume of 10ml. Make multiple small SQ injections. Use 27G needle. Change needle between each skin entry.",
+			"IV dose for hypertensive crisis: 5-20 mg IVP over several minutes."
+		],
+		"pediatricDosage": [
+			"Subcutaneous dose: 0.1-0.2 mg/kg, not to exceed 5 mg total. Make multiple small SQ injections. Use 27G needle. Change needle between each skin entry."
+		],
+		"considerations": [
+			"SQ injections: Monitor for return of normal skin color to affected areas within 1 hr of administration. Additional injections may be necessary.",
+			"IVP: Monitor blood pressure and heart rate"
+		]
+	},
+	{
+		"title": "Sodium Bicarbonate",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Treatment of metabolic acidosis"
+		],
+		"adultDosage": [
+			"1mEq/kg IV or IO max dose 100meq",
+			"8.4% solution supplied as 50 mEq prefilled syringe (1 mEq/mL)"
+		],
+		"pediatricDosage": [
+			"1mEq/kg IV or IO max 2 doses",
+			"Children & Infants <2 years use 4.2% solution (0.5 mEq/mL)"
+		],
+		"considerations": [
+			"Extravasation risk, tissue necrosis at injection site"
+		]
+	},
+	{
+		"title": "Solfoton (phenobarbital)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Control of seizures"
+		],
+		"adultDosage": [
+			"10 – 20 mg/kg IV or IO every 20 minutes up to 30 mgkg.",
+			"Max rate of 60 mg/min",
+			"Maintenance dose: 1 -3 mg/kg/day in 2-3 divided doses"
+		],
+		"pediatricDosage": [
+			"15-20 mg/kg loading dose up to 1000 mg. may consider 2nd dose after 30 minutes (total max dose 40 mg/kg)",
+			"Max rate of 30 mg/min"
+		],
+		"considerations": [
+			"May cause respiratory depression"
+		]
+	},
+	{
+		"title": "Solu-Medrol (methylprednisolone)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Corticosteroid used in treatment of allergic reactions, asthma, and other conditions responding to anti-inflammatory medications."
+		],
+		"adultDosage": [
+			"IV: 125mg slow IVP.",
+			"May give higher doses up to 15mg/kg, but should be given as an infusion over 15-30 minutes."
+		],
+		"pediatricDosage": [
+			"1-2 mg/kg IVP",
+			"Children less than 12 years"
+		],
+		"considerations": [
+			"Only sodium succinate mix of solumedrol can be given IV.",
+			"Watch for arrhythmias with high dosages (500mg)"
+		]
+	},
+	{
+		"title": "Sublimaze (fentanyl)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Sedation and analgesia"
+		],
+		"adultDosage": [
+			"Range is 0.5 – 3 mcg/kg for analgesia. Usual dose is 1 mcg/kg",
+			"Range is 1 - 4 mcg/kg for sedation",
+			"Fentanyl drips have a wide dosage range. May be 2 – 20 mcg/kg/hr."
+		],
+		"pediatricDosage": [
+			"Same as adult"
+		],
+		"considerations": [
+			"Works almost immediately. Duration of action is approximately 20-30 minutes in adults. May last as long as several hours in neonates",
+			"Less likely to cause hypotension",
+			"Give slow IV push to avoid chest wall rigidity",
+			"Reverse with Narcan"
+		]
+	},
+	{
+		"title": "t-PA",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Venous thrombosis",
+			"Arterial thrombosis or embolus",
+			"Pulmonary embolus",
+			"Coronary artery thrombosis",
+			"Stroke, Ischemic"
+		],
+		"adultDosage": [
+			"Alteplase (rTPA):",
+			"Coronary Artery Thrombosis / Myocardial Infarction:",
+			"• 15mg bolus, then 0.75mg/kg (maximum 50mg) IV over 30 minutes, then 0.5mg/kg (35mg maximum) over 60 minutes",
+			"Pulmonary Embolism",
+			"• 100mg IV over 120 minutes",
+			"Venous Thromboembolism",
+			"• 100mg IV over 120 minutes",
+			"Peripheral artery occlusion",
+			"• 1-2 mg/hour infusion",
+			"Ishemic Stroke IV Infusion:",
+			"• 0.9 mg per kg for a maximum dose of 90mg. 10% of the total dose is to be given as the bolus, the remainder of the total dose is to be infused over 60 minutes."
+		],
+		"pediatricDosage": [
+			"Contact HDVCH for Pediatric Guidelines"
+		],
+		"considerations": [
+			"Do not administer with other medications.",
+			"Avoid unnecessary arterial or venous punctures or IM injections.",
+			"Spontaneous bleeding including CNS bleeding, or oozing from mucous membranes"
+		]
+	},
+	{
+		"title": "Valium (diazepam)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Status Epilepticus",
+			"Anxiety",
+			"Alcohol withdrawal symptoms",
+			"Muscle spasms"
+		],
+		"adultDosage": [
+			"Status epilepticus = 5 – 10 mg IVP every 10 to 15 minutes, up to 30 mg in 8 hrs.",
+			"2 – 10 mg IVP every 2 hrs as needed."
+		],
+		"pediatricDosage": [
+			"Status epilepticus = 0.1 – 0.5 mg/kg. May repeat every 2 minutes as needed, up to 5 mg for kids under 5. Max dose for kids 5 and over is 10 mg.",
+			"0.04 – 0.3 mg/kg for other uses. Same max dosages."
+		],
+		"considerations": [
+			"May cause drowsiness and respiratory depression",
+			"May cause burning at IV site. Tissue necrosis may occur with infiltration.",
+			"Give close to IV site to prevent precipitation in IV tubing.",
+			"Reverse with Romazicon"
+		]
+	},
+	{
+		"title": "Ventolin (albuterol)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Beta-2 agonist, used in the treatment of asthma and bronchospasm."
+		],
+		"adultDosage": [
+			"2.5-5mg q 20 mins x 3 doses via nebulizer.",
+			"If not effective, may try up to 10mg at a time via nebulizer, or run a continuous neb."
+		],
+		"pediatricDosage": [
+			"0.15 mg/kg q 20 mins x 3 doses via nebulizer",
+			"If not effective, may try up to 0.3mg/kg at a time via nebulizer, or run a continuous neb.",
+			"Children under 12 years"
+		],
+		"considerations": [
+			"Can cause tachycardia, palpitations, and dizziness.",
+			"Preferred method of delivery in children is a mask."
+		]
+	},
+	{
+		"title": "Versed (midazolam)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Sedation/ amnesia"
+		],
+		"adultDosage": [
+			"0.02 – 0.04 mg/kg, IVP over 2 minutes; usually 2.5 - 5mg. May repeat every 5 minutes up to 0.1 – 0.2 mg/kg given."
+		],
+		"pediatricDosage": [
+			"6 months to 5 years: 0.05 – 0.1 mg/kg up to 6 mg/kg",
+			"6 -12 years: 0.025 – 0.05 mg/kg up to 10 mg/kg"
+		],
+		"considerations": [
+			"Onset in 1 – 5 minutes.",
+			"Watch for respiratory depression especially in children and the elderly",
+			"May cause hypotension"
+		]
+	},
+	{
+		"title": "Zemuron (rocuronium)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Rapid Sequence Intubation",
+			"Facilitation of mechanical ventilation"
+		],
+		"adultDosage": [
+			"RSI: 0.6-1.2mg per kg",
+			"Bolus IV dose: 0.6-1.2mg per kg"
+		],
+		"pediatricDosage": [
+			"See Adult Dose"
+		],
+		"considerations": [
+		"IMPORTANT NOTE: Neuromuscular blockers require the concurrent use of sedatives and analgesics.",
+		"NMB’s only cause paralysis and do not provide any sedative or analgesic effects. Administer sedative and analgesic medications BEFORE giving rocuronium.",
+		"Can cause histamine release causing flushing and hypotension, prolonged muscle weakness",
+		"NMB’s do not require weaning",
+		"Onset 1-1.5 minutes",
+		"Duration 30-67 minutes"
+		]
+	},
+	{
+		"title": "Zofran (ondansetron)",
+		"originalDate": "",
+		"revisedDate": "",
+		"indications": [
+			"Used to prevent/treat nausea and vomiting"
+		],
+		"adultDosage": [
+			"4 mg IV over 2-5 min may also be given IM"
+		],
+		"pediatricDosage": [
+			"40 kg or less: Administer 0.1 mg/kg IV, up to 4mg, over 2-5 min. May be given IM",
+			"≥40 kg: see adult dosing"
+		],
+		"considerations": [
+			"May cause anxiety, dizziness and headache."
+		]
+	},
+	{
 		"title": "",
 		"originalDate": "",
 		"revisedDate": "",
