@@ -85,6 +85,7 @@
                                       dequeueReusableCellWithIdentifier:@"TransportCell"];
 	Transport *transport = [self.transports objectAtIndex:indexPath.row];
 	cell.numLabel.text = transport.transportNumber;
+    cell.typeLabel.text = transport.transportType;
 
     return cell;
 }
