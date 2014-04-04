@@ -48,6 +48,22 @@
     transport.transportType = self.transportTypeTextField.text;
     transport.specialTransport = self.specialTransportTextField.text;
     transport.otherNotes = self.notesTextField.text;
+    
+    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+    [f setNumberStyle:NSNumberFormatterDecimalStyle];
+    NSNumber * myTransportNumber = [f numberFromString:transport.transportNumber];
+    
+    // Create the object.
+    PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
+    [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
+    [pfTransport setObject:transport.crewMembers forKey:@"CrewMembers"];
+    [pfTransport setObject:transport.ageGroup forKey:@"ageGroup"];
+    [pfTransport setObject:transport.transportType forKey:@"transportType"];
+    [pfTransport setObject:transport.specialTransport forKey:@"specialTransport"];
+    [pfTransport setObject:transport.otherNotes forKey:@"otherNotes"];
+    
+    // Save it as soon as is convenient.
+    [pfTransport saveEventually];
 	[self.delegate amiPhoneTransportViewController:self
                                    didAddTransport:transport];
 }
@@ -97,7 +113,7 @@
     self.specialTransportPicker.dataSource = self;
     self.specialTransportPicker.showsSelectionIndicator = YES;
     self.specialTransportTextField.inputView = self.specialTransportPicker;
-    self.specialTransportArray = [[NSArray alloc] initWithObjects:@"Isolette",@"LVAD",@"IABP",@"NICU", @"Other in Notes",nil];
+    self.specialTransportArray = [[NSArray alloc] initWithObjects:@"",@"Isolette",@"LVAD",@"IABP",@"NICU", @"Other in Notes",nil];
     [self pickerView:self.specialTransportPicker
         didSelectRow:0
          inComponent:0];
