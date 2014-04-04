@@ -19,8 +19,7 @@
 @property BOOL isTopFolder;
 @property (strong, nonatomic) NSMutableArray *allDocs;
 @property (strong, nonatomic) PFObject *selectedDocument;
-@property BOOL shouldDeleteFolder;
-
+@property (strong, nonatomic) NSString *subFolderType;
 @end
 
 @implementation AMBaseDocumentViewController
@@ -37,6 +36,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // If we are in a subfolder then this will be the document class type
+    self.subFolderType = [[NSString alloc] init];
     
     UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
     
@@ -99,6 +101,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     NSLog(@"view will appear");
+    [self.collectionView reloadData]; 
 }
 
 #pragma mark - UICollectionView Datasource
@@ -139,6 +142,7 @@
         sidebarButton.target = self;
         sidebarButton.title = @"Back";
         sidebarButton.action = @selector(upButtonTapped:);
+        self.subFolderType = [data objectForKey:@"Contains"];
         
     // Show the selected document 
     } else {
@@ -182,8 +186,6 @@
             
         }
     }];
-    
-    
 }
 
 #pragma mark -Search delegate methods
@@ -209,7 +211,6 @@
         }
         NSLog(@"All docs downloaded");
     }
-
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
@@ -263,6 +264,8 @@
     sidebarButton.title = @"Menu";
     
     self.showingData = self.topFolders;
+    self.subFolderType = @"";
+    
     [self.collectionView reloadData];
 }
 
@@ -288,42 +291,66 @@
 // Admins can add documents
 - (void)addDocument:(NSString *)name {
     
-    PFObject *newFolder = [PFObject objectWithClassName:@"Folder"];
-    newFolder[@"title"] = name;
-    
-    // remove all whitespace for class name
-    NSArray* words = [name componentsSeparatedByCharactersInSet :[NSCharacterSet whitespaceCharacterSet]];
-    NSString* nospacestring = [words componentsJoinedByString:@""];
-    
-    newFolder[@"Contains"] = nospacestring;
-    [self.showingData insertObject:newFolder atIndex:0];
-    self.topFolders = self.showingData;
-    
-    // Haha block syntax....
-    // Tries to save the model eventually, aka if we don't have a data connection. But if we do, then show a nice insert animation
-    [newFolder saveEventually:^(BOOL succeeded, NSError *error) {
-        if (succeeded) {
-            [self.collectionView performBatchUpdates:^{
-                [self.collectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:0 inSection:0]]];
-            } completion:nil];
+    // Create a folder
+    if (self.isTopFolder) {
+        PFObject *newFolder = [PFObject objectWithClassName:@"Folder"];
+        newFolder[@"title"] = name;
+        
+        // remove all whitespace for class name
+        NSArray* words = [name componentsSeparatedByCharactersInSet :[NSCharacterSet whitespaceCharacterSet]];
+        NSString* nospacestring = [words componentsJoinedByString:@""];
+        
+        newFolder[@"Contains"] = nospacestring;
+        [self.showingData insertObject:newFolder atIndex:0];
+        self.topFolders = self.showingData;
+        
+        // Haha block syntax....
+        // Tries to save the model eventually, aka if we don't have a data connection. But if we do, then show a nice insert animation
+        [newFolder saveEventually:^(BOOL succeeded, NSError *error) {
+            if (succeeded) {
+                [self.collectionView performBatchUpdates:^{
+                    [self.collectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:0 inSection:0]]];
+                } completion:nil];
+            }
+        }];
+        
+    // Create a document
+    } else {
+        if (self.subFolderType.length > 0) {
+            PFObject *newDoc = [PFObject objectWithClassName:self.subFolderType];
+            newDoc[@"title"] = name;
+            [self.showingData insertObject:newDoc atIndex:0];
+            
+            // Haha block syntax....
+            // Tries to save the model eventually, aka if we don't have a data connection. But if we do, then show a nice insert animation
+            [newDoc saveEventually:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    [self.collectionView performBatchUpdates:^{
+                        [self.collectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:0 inSection:0]]];
+                    } completion:nil];
+                }
+            }];
         }
-    }];
-
+    }
     
 }
-
-
-
-
 
 #pragma mark - AlertView delegate
 
 
 - (void)showAlertForAdding {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Folder" message:@"Folder Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
-    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
-    [alert addButtonWithTitle:@"Add"];
-    [alert show];
+    
+    if (self.isTopFolder) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Folder" message:@"Folder Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+        alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+        [alert addButtonWithTitle:@"Add"];
+        [alert show];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Document" message:@"Document Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+        alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+        [alert addButtonWithTitle:@"Add"];
+        [alert show];
+    }
 }
 
 - (void)showAlertForDeleting:(UILongPressGestureRecognizer *)gr {
@@ -345,6 +372,7 @@
             }
         }
         
+        // Block magic
         [alertView showWithCompletion:^(UIAlertView *alertView, NSInteger buttonIndex) {
             if (buttonIndex == 1) {
                 

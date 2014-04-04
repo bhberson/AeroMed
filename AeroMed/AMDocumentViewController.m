@@ -28,8 +28,6 @@
         UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(checkMarkTapped:)];
         self.navigationItem.rightBarButtonItem = checklist;
     }
-    
-    
 }
 
 // Convert the array of strings into a formatted string
@@ -97,6 +95,12 @@
 
     // Get the data type we want to show and set that as the text for the row index
     cell.textView.text = [self getDocumentString:[self.sectionHeaderTypes objectAtIndex:indexPath.section]];
+    [cell.textView setTag:indexPath.section];
+    
+    // Admins can edit documents
+    if ([[PFUser currentUser] objectForKey:@"isAdmin"]) {
+        cell.textView.editable = YES; 
+    }
     
     return cell;
 }
@@ -130,5 +134,14 @@
    
         [vc setCheckList:self.doc[@"checklist"]];
     }
+}
+
+#pragma mark - UITextView Delegate
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView {
+    
+    self.doc[[self.sectionHeaderTypes objectAtIndex:textView.tag]] = textView.text;
+    [self.doc saveEventually]; 
+    
+    return YES;
 }
 @end

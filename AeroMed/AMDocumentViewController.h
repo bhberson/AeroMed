@@ -6,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AMDocumentViewController : UITableViewController <UITextFieldDelegate>
+@interface AMDocumentViewController : UITableViewController <UITextViewDelegate>
 @property (weak, atomic) PFObject *doc;
 @property BOOL shouldDisplayChecklist; 
 @end
