@@ -114,6 +114,7 @@
     NSLog(@"Selected cell %d", indexPath.row);
     PFObject *data = [self.showingData objectAtIndex:indexPath.row];
     
+    // if we are a top level folder then query the type it contains
     if (self.isTopFolder) {
         [self queryForDocument:[data objectForKey:@"Contains"]];
         
@@ -122,6 +123,8 @@
         sidebarButton.target = self;
         sidebarButton.title = @"Back";
         sidebarButton.action = @selector(upButtonTapped:);
+        
+    // Show the selected document 
     } else {
         self.selectedDocument = data; 
         [self performSegueWithIdentifier:@"showDoc" sender:self];

@@ -46,6 +46,7 @@
 		27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB0EFD18C5253900A99048 /* OperatingProcedure.m */; };
 		27AC453618DD42FB003A4070 /* AMiPHoneChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */; };
 		27AC965418DD329000CDFA93 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27AC965318DD329000CDFA93 /* NavigationControllerData.plist */; };
+		27B11FC218EE21E50095B9A2 /* AMDocumentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B11FC118EE21E50095B9A2 /* AMDocumentTableViewCell.m */; };
 		27B2500718E2899800A5AFD7 /* AMDocumentCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */; };
 		27B2500A18E296E000A5AFD7 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500918E296E000A5AFD7 /* Folder.m */; };
 		27B2672B18E4C48400367F0E /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2672A18E4C48400367F0E /* bell.png */; };
@@ -140,6 +141,8 @@
 		27AC453418DD42FB003A4070 /* AMiPHoneChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPHoneChartViewController.h; sourceTree = "<group>"; };
 		27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPHoneChartViewController.m; sourceTree = "<group>"; };
 		27AC965318DD329000CDFA93 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
+		27B11FC018EE21E50095B9A2 /* AMDocumentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentTableViewCell.h; sourceTree = "<group>"; };
+		27B11FC118EE21E50095B9A2 /* AMDocumentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentTableViewCell.m; sourceTree = "<group>"; };
 		27B2500518E2899800A5AFD7 /* AMDocumentCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentCellView.h; sourceTree = "<group>"; };
 		27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentCellView.m; sourceTree = "<group>"; };
 		27B2500818E296E000A5AFD7 /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 			children = (
 				27B2500518E2899800A5AFD7 /* AMDocumentCellView.h */,
 				27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */,
+				27B11FC018EE21E50095B9A2 /* AMDocumentTableViewCell.h */,
+				27B11FC118EE21E50095B9A2 /* AMDocumentTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -592,6 +597,7 @@
 				7749F73B18CD50A400B582C0 /* TransportCell.m in Sources */,
 				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
 				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
+				27B11FC218EE21E50095B9A2 /* AMDocumentTableViewCell.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,
 				271043EC18E30C6B003D1740 /* JBLineChartView.m in Sources */,
@@ -796,7 +802,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "03E43C7D-F8E5-4A29-8B26-00438979977C";
+				PROVISIONING_PROFILE = "E86DC364-8361-45D2-BDE4-808C567EB492";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
