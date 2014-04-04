@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "AMDocumentCellView.h"
 #import "AMDocumentViewController.h"
+#import "UIAlertView+AMBlocks.h"
 
 @interface AMBaseDocumentViewController ()
 
@@ -18,6 +19,7 @@
 @property BOOL isTopFolder;
 @property (strong, nonatomic) NSMutableArray *allDocs;
 @property (strong, nonatomic) PFObject *selectedDocument;
+@property BOOL shouldDeleteFolder;
 
 @end
 
@@ -42,8 +44,22 @@
     sidebarButton.target = self.revealViewController;
     sidebarButton.action = @selector(revealToggle:);
     
+    // Set the add button if the user is an admin
+    if ([[PFUser currentUser] objectForKey:@"isAdmin"]) {
+        
+        UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                  target:self
+                                                                                   action:@selector(showAlertForAdding)];
+        self.navigationItem.rightBarButtonItem = addButton; 
+    }
+    
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    // Long press for deleting cells
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(showAlertForDeleting:)];
+    longPress.delegate = self;
+    [self.collectionView addGestureRecognizer:longPress];
     
 
     self.topFolders = [[NSMutableArray alloc] init];
@@ -266,6 +282,97 @@
         [document setDoc:self.selectedDocument];
         [document setShouldDisplayChecklist:YES]; 
          
+    }
+}
+
+// Admins can add documents
+- (void)addDocument:(NSString *)name {
+    
+    PFObject *newFolder = [PFObject objectWithClassName:@"Folder"];
+    newFolder[@"title"] = name;
+    
+    // remove all whitespace for class name
+    NSArray* words = [name componentsSeparatedByCharactersInSet :[NSCharacterSet whitespaceCharacterSet]];
+    NSString* nospacestring = [words componentsJoinedByString:@""];
+    
+    newFolder[@"Contains"] = nospacestring;
+    [self.showingData insertObject:newFolder atIndex:0];
+    self.topFolders = self.showingData;
+    
+    // Haha block syntax....
+    // Tries to save the model eventually, aka if we don't have a data connection. But if we do, then show a nice insert animation
+    [newFolder saveEventually:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            [self.collectionView performBatchUpdates:^{
+                [self.collectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:0 inSection:0]]];
+            } completion:nil];
+        }
+    }];
+
+    
+}
+
+
+
+
+
+#pragma mark - AlertView delegate
+
+
+- (void)showAlertForAdding {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Folder" message:@"Folder Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert addButtonWithTitle:@"Add"];
+    [alert show];
+}
+
+- (void)showAlertForDeleting:(UILongPressGestureRecognizer *)gr {
+    
+    if (gr.state == UIGestureRecognizerStateBegan) {
+        
+        NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:[gr locationInView:self.collectionView]];
+        AMDocumentCellView *cell = (AMDocumentCellView *)[self.collectionView cellForItemAtIndexPath:indexPath];
+        
+        // Show the dialog
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Confirm" message:@"DO you want to delete?" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+        [alertView addButtonWithTitle:@"Delete"];
+        
+        // Calculate which one would be the one to remove
+        PFObject *removed;
+        for (PFObject *p in self.showingData) {
+            if ([p[@"title"] isEqualToString:cell.headerLabel.text]) {
+                removed = p;
+            }
+        }
+        
+        [alertView showWithCompletion:^(UIAlertView *alertView, NSInteger buttonIndex) {
+            if (buttonIndex == 1) {
+                
+                // Remove from parse
+                [self.showingData removeObject:removed];
+                [removed deleteEventually];
+                
+                // If it is a folder then update the folders array
+                if (self.isTopFolder) {
+                    self.topFolders = self.showingData;
+                }
+                
+                // Update collection view
+                [self.collectionView performBatchUpdates:^{
+                    [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+                } completion:nil];
+            }
+        }];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 1) {
+        UITextField *name = [alertView textFieldAtIndex:0];
+        if (name.text.length > 0) {
+            [self addDocument:name.text];
+        }
     }
 }
 @end

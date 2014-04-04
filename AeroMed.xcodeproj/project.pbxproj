@@ -46,12 +46,12 @@
 		27AB0EFE18C5253900A99048 /* OperatingProcedure.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AB0EFD18C5253900A99048 /* OperatingProcedure.m */; };
 		27AC453618DD42FB003A4070 /* AMiPHoneChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */; };
 		27AC965418DD329000CDFA93 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27AC965318DD329000CDFA93 /* NavigationControllerData.plist */; };
+		27AEB7A718EE57AF002B573B /* UIAlertView+AMBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEB7A618EE57AF002B573B /* UIAlertView+AMBlocks.m */; };
 		27B11FC218EE21E50095B9A2 /* AMDocumentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B11FC118EE21E50095B9A2 /* AMDocumentTableViewCell.m */; };
 		27B2500718E2899800A5AFD7 /* AMDocumentCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500618E2899800A5AFD7 /* AMDocumentCellView.m */; };
 		27B2500A18E296E000A5AFD7 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500918E296E000A5AFD7 /* Folder.m */; };
 		27B2672B18E4C48400367F0E /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2672A18E4C48400367F0E /* bell.png */; };
 		27B3799518E253A800244754 /* AMBaseDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3799418E253A800244754 /* AMBaseDocumentViewController.m */; };
-		27B3799718E2604400244754 /* helicopter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27B3799618E2604400244754 /* helicopter.jpg */; };
 		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
 		27CB389818DD2D3C00F43680 /* OBImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CB389718DD2D3C00F43680 /* OBImpression.m */; };
 		27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Main_iPad.storyboard */; };
@@ -141,6 +141,8 @@
 		27AC453418DD42FB003A4070 /* AMiPHoneChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPHoneChartViewController.h; sourceTree = "<group>"; };
 		27AC453518DD42FB003A4070 /* AMiPHoneChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPHoneChartViewController.m; sourceTree = "<group>"; };
 		27AC965318DD329000CDFA93 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
+		27AEB7A518EE57AF002B573B /* UIAlertView+AMBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AMBlocks.h"; sourceTree = "<group>"; };
+		27AEB7A618EE57AF002B573B /* UIAlertView+AMBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AMBlocks.m"; sourceTree = "<group>"; };
 		27B11FC018EE21E50095B9A2 /* AMDocumentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentTableViewCell.h; sourceTree = "<group>"; };
 		27B11FC118EE21E50095B9A2 /* AMDocumentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentTableViewCell.m; sourceTree = "<group>"; };
 		27B2500518E2899800A5AFD7 /* AMDocumentCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentCellView.h; sourceTree = "<group>"; };
@@ -150,7 +152,6 @@
 		27B2672A18E4C48400367F0E /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		27B3799318E253A800244754 /* AMBaseDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBaseDocumentViewController.h; sourceTree = "<group>"; };
 		27B3799418E253A800244754 /* AMBaseDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBaseDocumentViewController.m; sourceTree = "<group>"; };
-		27B3799618E2604400244754 /* helicopter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = helicopter.jpg; sourceTree = "<group>"; };
 		27C8060118A443CF00243EB1 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		27CB389618DD2D3C00F43680 /* OBImpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBImpression.h; sourceTree = "<group>"; };
 		27CB389718DD2D3C00F43680 /* OBImpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBImpression.m; sourceTree = "<group>"; };
@@ -391,7 +392,6 @@
 			isa = PBXGroup;
 			children = (
 				27B2672A18E4C48400367F0E /* bell.png */,
-				27B3799618E2604400244754 /* helicopter.jpg */,
 				27AC965318DD329000CDFA93 /* NavigationControllerData.plist */,
 				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
 				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
@@ -406,6 +406,8 @@
 				7787CF1018806ECE004F495E /* AeroMed-Prefix.pch */,
 				270DB5341887201600573F3F /* Common.m */,
 				779181AD18C82F7C00AE1019 /* Podfile.txt */,
+				27AEB7A518EE57AF002B573B /* UIAlertView+AMBlocks.h */,
+				27AEB7A618EE57AF002B573B /* UIAlertView+AMBlocks.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -561,7 +563,6 @@
 				27AC965418DD329000CDFA93 /* NavigationControllerData.plist in Resources */,
 				1625073518D72D3400BC3A72 /* checklist.png in Resources */,
 				7787CF1518806ECE004F495E /* Images.xcassets in Resources */,
-				27B3799718E2604400244754 /* helicopter.jpg in Resources */,
 				271043EB18E30C6B003D1740 /* JBChartView.podspec in Resources */,
 				278650A018B59B6C00EA6E2F /* cloud@2x.png in Resources */,
 				27B2672B18E4C48400367F0E /* bell.png in Resources */,
@@ -590,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2783BC5918D58F56008E9790 /* AMCheckListTableViewController.m in Sources */,
+				27AEB7A718EE57AF002B573B /* UIAlertView+AMBlocks.m in Sources */,
 				27B2500718E2899800A5AFD7 /* AMDocumentCellView.m in Sources */,
 				2720373518A306D3000BC38A /* AMBaseViewController.m in Sources */,
 				27A6619C18B080EC00E4AE0D /* AMSliderMenuViewController.m in Sources */,
