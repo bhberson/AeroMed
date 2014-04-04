@@ -70,7 +70,7 @@
 
     PFQuery *query = [PFQuery queryWithClassName:@"Folder"];
     [query whereKeyExists:@"title"];
-    
+    [query orderByAscending:@"title"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
        
@@ -173,6 +173,7 @@
 - (void)queryForDocument:(NSString *)searchFor {
    
     PFQuery *query = [PFQuery queryWithClassName:searchFor];
+    [query orderByAscending:@"title"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
        

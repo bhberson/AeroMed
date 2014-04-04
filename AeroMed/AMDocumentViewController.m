@@ -139,6 +139,7 @@
 #pragma mark - UITextView Delegate
 - (BOOL)textViewShouldEndEditing:(UITextView *)textView {
     
+    // Save changes to database 
     self.doc[[self.sectionHeaderTypes objectAtIndex:textView.tag]] = textView.text;
     [self.doc saveEventually]; 
     
