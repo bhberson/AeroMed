@@ -9,17 +9,22 @@
 #import "AMBaseDocumentViewController.h"
 #import "SWRevealViewController.h"
 #import "AMDocumentCellView.h"
-#import "AMDocumentViewController.h"
+
 #import "UIAlertView+AMBlocks.h"
+#import "AMCheckListTableViewController.h"
 
 @interface AMBaseDocumentViewController ()
 
 @property (strong, nonatomic) NSMutableArray *topFolders;
 @property (strong, nonatomic) NSMutableArray *showingData;
 @property BOOL isTopFolder;
+@property BOOL shouldShowChecklist;
 @property (strong, nonatomic) NSMutableArray *allDocs;
 @property (strong, nonatomic) PFObject *selectedDocument;
 @property (strong, nonatomic) NSString *subFolderType;
+
+@property (strong, nonatomic) NSMutableArray *totalCheckListItems;
+@property (strong, nonatomic) NSMutableArray *selectedTransportCells;
 @end
 
 @implementation AMBaseDocumentViewController
@@ -37,6 +42,21 @@
 {
     [super viewDidLoad];
     
+    self.totalCheckListItems = [[NSMutableArray alloc] init];
+    self.selectedTransportCells = [[NSMutableArray alloc] init];
+    
+    
+    self.shouldShowChecklist = YES;
+    NSMutableArray *barButtons = [[NSMutableArray alloc] init];
+    if (self.shouldShowChecklist) {
+        UIBarButtonItem *checkButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"checklist.png"]
+                                                                        style:UIBarButtonItemStylePlain
+                                                                       target:self
+                                                                       action:@selector(showChecklist)];
+                                        
+        [barButtons addObject:checkButton];
+    }
+    
     // If we are in a subfolder then this will be the document class type
     self.subFolderType = [[NSString alloc] init];
     
@@ -52,7 +72,11 @@
         UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                   target:self
                                                                                    action:@selector(showAlertForAdding)];
-        self.navigationItem.rightBarButtonItem = addButton; 
+        [barButtons addObject:addButton];
+    }
+    
+    if (barButtons.count > 0) {
+        [self.navigationItem setRightBarButtonItems:barButtons animated:YES];
     }
     
     // Set the gesture
@@ -120,7 +144,18 @@
     PFObject *data = [self.showingData objectAtIndex:indexPath.row];
     cell.headerLabel.text = [data objectForKey:@"title"];
     
+    if ([self.selectedTransportCells containsObject:data[@"title"]]) {
+        cell.backgroundColor = [UIColor orangeColor]; 
+    } else {
+        cell.backgroundColor = [UIColor colorWithRed:0.212 green:0.725 blue:1.000 alpha:1.000];
+    }
+    
     return cell;
+}
+
+                                        
+- (void)showChecklist {
+    
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -284,8 +319,13 @@
     if ([segue.identifier isEqualToString:@"showDoc"]) {
         AMDocumentViewController * document = (AMDocumentViewController *)segue.destinationViewController;
         [document setDoc:self.selectedDocument];
-        [document setShouldDisplayChecklist:YES]; 
+        [document setShouldDisplayChecklist:YES];
+        [document setDelegate:self]; 
          
+    } else if ([segue.identifier isEqualToString:@"toCheckList"]) {
+        AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
+        
+        //[vc setCheckList:self.doc[@"checklist"]];
     }
 }
 
@@ -402,6 +442,8 @@
         }];
     }
 }
+                                        
+
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     
@@ -412,4 +454,18 @@
         }
     }
 }
+
+#pragma mark - Our document delegate
+- (void)addChecklist:(NSArray *)items forObject:(NSString *)obj {
+    NSLog(@"%@", items);
+    [self.totalCheckListItems addObject:items];
+    
+    if ([self.selectedTransportCells containsObject:obj]) {
+        [self.selectedTransportCells removeObject:obj];
+    } else {
+        [self.selectedTransportCells addObject:obj];
+    }
+    NSLog(@"%@",self.selectedTransportCells);
+}
+
 @end

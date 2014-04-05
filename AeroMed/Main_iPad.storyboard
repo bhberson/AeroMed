@@ -180,7 +180,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afR-sw-IyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3324" y="-2499"/>
+            <point key="canvasLocation" x="3264" y="-2863"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="og4-bb-vZp">
@@ -290,13 +290,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Rsr-kf-cyP"/>
-                    <connections>
-                        <segue destination="f2x-Uo-Jji" kind="push" identifier="toCheckList" id="5RQ-ZI-6LU"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9J4-hS-DZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046" y="-2485"/>
+            <point key="canvasLocation" x="4418" y="-2813"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1GP-tp-dsf">
@@ -832,6 +829,7 @@
                         <outlet property="collectionView" destination="cJV-rG-BHZ" id="YZp-1h-h1y"/>
                         <outlet property="searchBar" destination="1xg-pC-ls5" id="HuK-0l-jlB"/>
                         <segue destination="1gh-mE-TSL" kind="push" identifier="showDoc" id="iVS-Mx-RcE"/>
+                        <segue destination="f2x-Uo-Jji" kind="push" identifier="toCheckList" id="hZa-L9-KN9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBj-s4-gb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -970,6 +968,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="fBo-1Q-5ED"/>
-        <segue reference="TuH-TB-JVE"/>
+        <segue reference="D8o-Wb-2nW"/>
     </inferredMetricsTieBreakers>
 </document>

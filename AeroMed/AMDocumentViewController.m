@@ -4,15 +4,19 @@
 //
 //  Copyright (c) 2014 GVSU. All rights reserved.
 #import "AMDocumentViewController.h"
-#import "AMCheckListTableViewController.h"
 #import "AMDocumentTableViewCell.h"
 #import "UIAlertView+AMBlocks.h"
 
+
+
 @interface AMDocumentViewController ()
 
+@property id <ChecklistProtocol> myDelegate;
 @property (strong, nonatomic) NSMutableArray *sectionNames;
 @property (strong, nonatomic) NSMutableDictionary *data;
+@property (strong, nonatomic) NSMutableArray *checkListItems;
 @property BOOL isAdmin;
+
 @end
 
 @implementation AMDocumentViewController 
@@ -35,11 +39,47 @@
     }
     
 	[self.navigationItem setTitle:[self.doc objectForKey:@"title"]];
+    NSMutableArray *barButtons = [[NSMutableArray alloc] init];
     
+    // If we need to show a checklist then prepare for one
     if (self.shouldDisplayChecklist) {
-        UIImage *img = [UIImage imageNamed:@"checklist.png"];
-        UIBarButtonItem *checklist = [[UIBarButtonItem alloc] initWithImage:img style:UIBarButtonItemStylePlain target:self action:@selector(checkMarkTapped:)];
-        self.navigationItem.rightBarButtonItem = checklist;
+        
+        UIBarButtonItem *checkButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"checklist.png"]
+                                                                        style:UIBarButtonItemStylePlain
+                                                                       target:self
+                                                                       action:@selector(checkMarkTapped:)];
+        
+        [barButtons addObject:checkButton];
+        self.checkListItems = [[NSMutableArray alloc] init];
+        for (NSString *s in self.sectionNames) {
+            
+           // NSString *check = [[[self.data allKeysForObject:s] objectAtIndex:0] lowercaseString];
+            NSString *check = [s lowercaseString];
+            
+            // Check for checklist section
+            if (![check isEqualToString:@"checklist"]) {
+                // 2 possible key combinations
+                
+                if ([self.doc objectForKey:@"documentationchecklist"]) {
+                    [self.checkListItems addObjectsFromArray:self.doc[@"documentationchecklist"]];
+                } else if ([self.doc objectForKey:@"checklist"]) {
+                    [self.checkListItems addObjectsFromArray:self.doc[@"checklist"]];
+                }
+            }
+            
+            // Check for minimum items required for documentation
+            if ([check isEqualToString:@"minimum items required for documentation"]) {
+                
+                // 3 possible key combinations
+                if ([self.doc objectForKey:@"minimumitemsrequiredfordocumenation"]) {
+                    [self.checkListItems addObjectsFromArray:self.doc[@"minimumitemsrequiredfordocumentation"]];
+                } else if ([self.doc objectForKey:@"documentationItems"]) {
+                    [self.checkListItems addObjectsFromArray:self.doc[@"documentationItems"]];
+                } else if ([self.doc objectForKey:@"documentationItems"]) {
+                    [self.checkListItems addObjectsFromArray:self.doc[@"documentationItems"]]; 
+                }
+            }
+        }
     }
     
     // Set the add button if the user is an admin
@@ -48,7 +88,11 @@
         UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                    target:self
                                                                                    action:@selector(showAddDialog)];
-        self.navigationItem.rightBarButtonItem = addButton;
+        [barButtons addObject:addButton];
+    }
+    
+    if (barButtons.count > 0) {
+        [self.navigationItem setRightBarButtonItems:barButtons animated:YES];
     }
 }
 
@@ -173,7 +217,8 @@
 #pragma mark - Buttons
 - (void)checkMarkTapped:(id)sender {
     
-    [self performSegueWithIdentifier:@"toCheckList" sender:self];
+    [self.delegate addChecklist:self.checkListItems forObject:self.doc[@"title"]];
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 
@@ -187,14 +232,6 @@
     // Show the dialog
     [alertView show];
     
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"toCheckList"]) {
-        AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
-   
-        [vc setCheckList:self.doc[@"checklist"]];
-    }
 }
 
 #pragma mark - UITextView Delegate
@@ -238,12 +275,12 @@
             
                 [self.sectionNames addObject:name.text];
     
-                [self.data setObject:name.text forKey:nospacestring];
+                [self.data setObject:name.text forKey:[nospacestring lowercaseString]];
                 
                 // Add to the section type of the object. db column key : section name
                 self.doc[@"sections"] = self.data;
                 // Save to parse
-                self.doc[nospacestring] = @"";
+                self.doc[[nospacestring lowercaseString]] = @"";
                 [self.doc saveEventually];
                 
                 [self.tableView reloadData];

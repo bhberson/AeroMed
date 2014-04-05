@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AMDocumentViewController.h"
 
 @interface AMBaseDocumentViewController : UIViewController <UITextFieldDelegate,
-UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextViewDelegate, UIAlertViewDelegate, UIGestureRecognizerDelegate>
+UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextViewDelegate , UIAlertViewDelegate, UIGestureRecognizerDelegate, ChecklistProtocol>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
