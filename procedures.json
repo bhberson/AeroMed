@@ -11,7 +11,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -46,7 +46,7 @@
   	  "Prevent Hypothermia",
   	  "Observe for transfusion reaction"
   	],
-  	"documentationItems":[
+  	"checklist":[
   	  "Blood Slip Documentation",
   	  "• Patient name (if available)",
   	  "• Receiving hospital medical record number (if available)",
@@ -89,7 +89,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -111,7 +111,7 @@
   	  "7. Deflate balloon; decrease output until capture is lost then increase output to double that amount and lock",
   	  "8. Extend sterile over wire and secure"
   	],
-  	"documentationItems":[
+  	"checklist":[
   	  "Procedure performed and complicatons, if any",
   	  "Depth of Cordis/pacer wire",
   	  "Pacer settings",
@@ -134,7 +134,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -170,7 +170,7 @@
       "For hypoxia ↑ PEEP by 2. Continue prn. (max 15) Keep (Pressure Support+PEEP) < 25",
       "If not providing adequate ventilation or O2 → Intubate"
     ],
-  	"documentationItems":[
+  	"checklist":[
       "Ventilator Settings",
       "Blood Pressure q 5 minutes until stable then q 10-15 minutes",
       "Oxygen Saturation Trends",
@@ -199,7 +199,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -227,7 +227,7 @@
       "10. Ventilate w/ Ped BVM (will feel resistance due to diameter of angiocath)",
       "11. Secure catheter to neck"
     ],
-  	"documentationItems":[
+  	"checklist":[
       "Procedure in detail",
       "Reasons for alternative ways"
     ],
@@ -253,7 +253,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -281,7 +281,7 @@
       "8. Insert 6.0 cuffed ETT, inflate cuff and secure in place",
       "9. *May place Bougie 1st to guide ETT"
     ],
-  	"documentationItems":[
+  	"checklist":[
       "Reason for alternative airway",
       "Procedure steps",
       "Patient response",
@@ -308,7 +308,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -355,7 +355,7 @@
       "Altered Mental Status Likely from Shock\n",
       "If available transfuse PRBC:FFP:Plts 1:1:1"
     ],
-  	"documentationItems":[
+  	"checklist":[
       "Site of Hemorrhage",
       "EBL",
       "Interventions taken and times completed"
@@ -377,7 +377,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -408,7 +408,7 @@
       "8. Secure",
       "9. Utilize Port for up to 18 Fr NGT in King Airway sizes 3, 4 & 5"
     ],
-  	"documentationItems":[
+  	"checklist":[
       "Reason for alternative airway",
       "Size used",
       "Patient response"
@@ -429,7 +429,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -457,7 +457,7 @@
       "10. Removing 5 ml can significantly increase cardiac output",
       "11. If >20 ml of blood is aspirated rapidly needle is usually in ventricle"
     ],
-  	"documentationItems":[
+  	"checklist":[
       "Indication",
       "Type and amount of fluid aspirated",
       "Complications"
@@ -478,7 +478,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -541,7 +541,7 @@
       "18. Secure ETT",
       "19. Consider chest x-ray if appropriate"
     ],
-  	"documentationItems":[
+  	"checklist":[
       "Indication",
       "Number of attempts",
       "Size of ETT",
@@ -566,7 +566,7 @@
 				"indications" : "Indications & Contraindications",
 				"equipment" : "Equipment Needed", 
 				"procedure" : "Procedure", 
-				"documentationItems" : "Minimum Items Required For Documentation",
+				"checklist" : "Minimum Items Required For Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -607,7 +607,7 @@
       "• Connect to chest drain",
       "• Dress with vaseline gauze, 4x4s and tape in Dressing Kit"
     ],
-  	"documentationItems":[
+  	"checklist":[
       "Indication",
       "Site",
       "Size chest tube",

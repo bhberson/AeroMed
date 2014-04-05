@@ -12,7 +12,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -36,7 +36,7 @@
 				"Analgesia",
 				"Anti-emetics"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Paralytic times",
 				"Medication doses",
 				"Interventions"
@@ -62,7 +62,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -85,7 +85,7 @@
 				"Narcotics",
 				"Antibiotics"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Animal types",
 				"Describe wound",
 				"Time of bite"
@@ -110,7 +110,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -132,7 +132,7 @@
 				"O2",
 				"Sedation"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Interventions",
 				"Chest exam"
 			],
@@ -158,7 +158,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -183,7 +183,7 @@
 			"medications":[
 				"Lactated Ringers"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Percent of burns based on rule of 9's (or patient's palm = 1%)",
 				"Depth of burns",
 				"Entrance/Exit wounds (electrical)",
@@ -212,7 +212,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -236,7 +236,7 @@
 				"TXA",
 				"Levophed (neurogenic shock)"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Serial BP readings",
 				"Blood product administration",
 				"IV access",
@@ -264,7 +264,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -285,7 +285,7 @@
 				"Mannitol for s/s herniation",
 				"Aggressive sedation"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Thorough neuro exam"
 			],
 			"impressions":[
@@ -308,7 +308,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -331,7 +331,7 @@
 			"medications":[
 				"Narcotics as needed"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Core and serial temperatures",
 				"Type and length of exposure"
 			],
@@ -356,7 +356,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -379,7 +379,7 @@
 			"medications":[
 				"Pain management as needed"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Depth of Dive",
 				"Amount of time at depth",
 				"Time for ascent",
@@ -405,7 +405,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -428,7 +428,7 @@
 			"medications":[
 				"As Needed"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Temperature of water",
 				"Time of Submersion"
 			],
@@ -454,7 +454,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -474,7 +474,7 @@
 			"medications":[
 				"As Needed"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Initial and serial temperatures",
 				"Circumstances of exposure"
 			],
@@ -497,7 +497,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -518,7 +518,7 @@
 			"medications":[
 				"TXA"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Estimated blood loss",
 				"Time and location of tourniquet",
 				"Amount of PRBCs infused and perfusion data",
@@ -545,7 +545,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -562,7 +562,7 @@
 			"medications":[
 				"As Needed"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Fundal height (20 cm at umbilicus)",
 				"Weeks gestation",
 				"Fetal heart tones with Doppler or ultrasound"
@@ -587,7 +587,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -612,7 +612,7 @@
 				"Narcotics",
 				"Sedation"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Neurovascular exam prior to and after immobilization distal to injured limb or all extremities with suspected spinal cord injury"
 			],
 			"impressions":[
@@ -635,7 +635,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -658,7 +658,7 @@
 			"medications":[
 				"As Needed"
 			],
-			"documentationItems":[
+			"checklist":[
 				"How dressed wound",
 				"Color of abdominal contents protruding from wound",
 				"Weapon",
@@ -686,7 +686,7 @@
 				"interventions" : "Critical Interventions",
 				"testAndStudies" : "Labs, Tests & Studes for Review",
 				"medications" : "Medications",
-				"documentationItems" : "Minimum Items Required for Documentation",
+				"checklist" : "Minimum Items Required for Documentation",
 				"impressions": "Suggested Impressions",
 				"otherConsiderations" : "Other Considerations"
 		},
@@ -715,7 +715,7 @@
 				"Anti-emetics",
 				"TXA"
 			],
-			"documentationItems":[
+			"checklist":[
 				"Mechanism of injury",
 				"Time of incident",
 				"Estimated blood loss",

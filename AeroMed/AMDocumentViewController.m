@@ -41,47 +41,18 @@
 	[self.navigationItem setTitle:[self.doc objectForKey:@"title"]];
     NSMutableArray *barButtons = [[NSMutableArray alloc] init];
     
-    // If we need to show a checklist then prepare for one
-    if (self.shouldDisplayChecklist) {
+    // If our document has a checklist key then we need to add a checklist option
+    if ([self.doc objectForKey:@"checklist"]) {
+        self.checkListItems = [[NSMutableArray alloc] init];
         
         UIBarButtonItem *checkButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"check-true.png"]
                                                                         style:UIBarButtonItemStylePlain
                                                                        target:self
                                                                        action:@selector(checkMarkTapped:)];
-        
+        [self.checkListItems addObjectsFromArray:self.doc[@"checklist"]];
         [barButtons addObject:checkButton];
-        self.checkListItems = [[NSMutableArray alloc] init];
-        for (NSString *s in self.sectionNames) {
-            
-           // NSString *check = [[[self.data allKeysForObject:s] objectAtIndex:0] lowercaseString];
-            NSString *check = [s lowercaseString];
-            
-            // Check for checklist section
-            if ([check isEqualToString:@"checklist"] || [check isEqualToString:@"documentation checklist"]) {
-                // 2 possible key combinations
-                
-                if ([self.doc objectForKey:@"documentationchecklist"]) {
-                    [self.checkListItems addObjectsFromArray:self.doc[@"documentationchecklist"]];
-                } else if ([self.doc objectForKey:@"checklist"]) {
-                    [self.checkListItems addObjectsFromArray:self.doc[@"checklist"]];
-                }
-                break; 
-            }
-            
-            // Check for minimum items required for documentation
-            if ([check isEqualToString:@"minimum items required for documentation"]) {
-                
-                // 3 possible key combinations
-                if ([self.doc objectForKey:@"minimumitemsrequiredfordocumenation"]) {
-                    [self.checkListItems addObjectsFromArray:self.doc[@"minimumitemsrequiredfordocumentation"]];
-                } else if ([self.doc objectForKey:@"documentationItems"]) {
-                    [self.checkListItems addObjectsFromArray:self.doc[@"documentationItems"]];
-                } else if ([self.doc objectForKey:@"documentationItems"]) {
-                    [self.checkListItems addObjectsFromArray:self.doc[@"documentationItems"]]; 
-                }
-            }
-        }
     }
+
     
     // Set the add button if the user is an admin
     if ([[PFUser currentUser] objectForKey:@"isAdmin"]) {
@@ -273,15 +244,26 @@
                 [alertView show];
                 
             } else {
+                
+                // if the section name is something they use for checklist items, then we set the key to "checklist"
+                NSString *keyText = [nospacestring lowercaseString];
+                
+                if ([name.text caseInsensitiveCompare:@"checklist"] ||
+                    [name.text caseInsensitiveCompare:@"documentation checklist"] ||
+                    [name.text caseInsensitiveCompare:@"minimum items required for documentation"] ||
+                    [name.text caseInsensitiveCompare:@"documentation items"]) {
+                    keyText = @"checklist"; 
+                }
             
                 [self.sectionNames addObject:name.text];
     
-                [self.data setObject:name.text forKey:[nospacestring lowercaseString]];
+                [self.data setObject:name.text forKey:keyText];
                 
                 // Add to the section type of the object. db column key : section name
                 self.doc[@"sections"] = self.data;
+                
                 // Save to parse
-                self.doc[[nospacestring lowercaseString]] = @"";
+                self.doc[keyText] = @"";
                 [self.doc saveEventually];
                 
                 [self.tableView reloadData];
