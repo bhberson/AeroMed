@@ -24,6 +24,16 @@
     self.data = [[NSMutableDictionary alloc] initWithDictionary:self.doc[@"sections"]];
     self.sectionNames = [[NSMutableArray alloc] initWithArray:[self.data allValues]];
     
+    // Move dates to top if they are there
+    if ([self.sectionNames containsObject:@"Date Created"]) {
+        [self.sectionNames removeObject:@"Date Created"];
+        [self.sectionNames insertObject:@"Date Created" atIndex:0];
+    }
+    if ([self.sectionNames containsObject:@"Date Revised"]) {
+        [self.sectionNames removeObject:@"Date Revised"];
+        [self.sectionNames insertObject:@"Date Revised" atIndex:1];
+    }
+    
 	[self.navigationItem setTitle:[self.doc objectForKey:@"title"]];
     
     if (self.shouldDisplayChecklist) {

@@ -320,6 +320,19 @@
         if (self.subFolderType.length > 0) {
             PFObject *newDoc = [PFObject objectWithClassName:self.subFolderType];
             newDoc[@"title"] = name;
+            
+            // Set the date
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            [dateFormatter setDateFormat:@"dd MMMM yyyy"];
+            
+            NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:162000];
+            
+            NSString *formattedDateString = [dateFormatter stringFromDate:date];
+            newDoc[@"originalDate"] = formattedDateString;
+            
+            // Create the section to show date
+            newDoc[@"sections"] = @{@"originalDate":@"Date Created"}; 
+    
             [self.showingData insertObject:newDoc atIndex:0];
             
             // Haha block syntax....
