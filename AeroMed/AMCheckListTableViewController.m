@@ -39,10 +39,14 @@
     self.dataArray = [[NSMutableArray alloc] initWithCapacity:self.checkList.count];
     
     // Initialize our data array to hold a dictionary to hold cell data and checkmark data
-    for (NSString *item in self.checkList) {
-        NSMutableDictionary *dataDic = [[NSMutableDictionary alloc] initWithCapacity:2];
-        [dataDic setObject:[NSNumber numberWithBool:NO] forKey:@"checked"];
-        [self.dataArray addObject:dataDic];
+    for (NSArray *items in self.checkList) {
+      //  for (NSString *item in items) {
+            
+            // Create a dictionary that determines if it is checked or not
+            NSMutableDictionary *dataDic = [[NSMutableDictionary alloc] initWithCapacity:2];
+            [dataDic setObject:[NSNumber numberWithBool:NO] forKey:@"checked"];
+            [self.dataArray addObject:dataDic];
+      //  }
     }
     
 }

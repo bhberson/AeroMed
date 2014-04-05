@@ -52,6 +52,7 @@
 		27B2500A18E296E000A5AFD7 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2500918E296E000A5AFD7 /* Folder.m */; };
 		27B2672B18E4C48400367F0E /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B2672A18E4C48400367F0E /* bell.png */; };
 		27B3799518E253A800244754 /* AMBaseDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B3799418E253A800244754 /* AMBaseDocumentViewController.m */; };
+		27B6F08F18F057B100B061CF /* check-true.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B6F08E18F057B100B061CF /* check-true.png */; };
 		27C8060218A443CF00243EB1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 27C8060118A443CF00243EB1 /* default.css */; };
 		27CB389818DD2D3C00F43680 /* OBImpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CB389718DD2D3C00F43680 /* OBImpression.m */; };
 		27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CDBCB61880948A000960F3 /* Main_iPad.storyboard */; };
@@ -152,6 +153,7 @@
 		27B2672A18E4C48400367F0E /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		27B3799318E253A800244754 /* AMBaseDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBaseDocumentViewController.h; sourceTree = "<group>"; };
 		27B3799418E253A800244754 /* AMBaseDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBaseDocumentViewController.m; sourceTree = "<group>"; };
+		27B6F08E18F057B100B061CF /* check-true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-true.png"; sourceTree = "<group>"; };
 		27C8060118A443CF00243EB1 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		27CB389618DD2D3C00F43680 /* OBImpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBImpression.h; sourceTree = "<group>"; };
 		27CB389718DD2D3C00F43680 /* OBImpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBImpression.m; sourceTree = "<group>"; };
@@ -458,6 +460,7 @@
 		779181B818C833D200AE1019 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				27B6F08E18F057B100B061CF /* check-true.png */,
 				1625073F18D7358900BC3A72 /* check-no.png */,
 				1625074018D7358900BC3A72 /* check-no@2x.png */,
 				1625074118D7358900BC3A72 /* check-yes.png */,
@@ -556,6 +559,7 @@
 				779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */,
 				1625074418D7358900BC3A72 /* check-no@2x.png in Resources */,
 				7720280318B12933002302A4 /* style.css in Resources */,
+				27B6F08F18F057B100B061CF /* check-true.png in Resources */,
 				2783BC5618D58B8C008E9790 /* Main_iPhone.storyboard in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
 				1625073618D72D3400BC3A72 /* checklist@2x.png in Resources */,

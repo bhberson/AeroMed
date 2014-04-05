@@ -155,7 +155,7 @@
 
                                         
 - (void)showChecklist {
-    
+    [self performSegueWithIdentifier:@"toCheckList" sender:self]; 
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -325,7 +325,13 @@
     } else if ([segue.identifier isEqualToString:@"toCheckList"]) {
         AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
         
-        //[vc setCheckList:self.doc[@"checklist"]];
+        // Combine our array of arrays into one long array to send to checklist
+        NSMutableArray *checklistFinal = [[NSMutableArray alloc] init];
+        for (NSArray *subArray in self.totalCheckListItems) {
+            [checklistFinal addObjectsFromArray:subArray]; 
+        }
+        
+        [vc setCheckList:checklistFinal];
     }
 }
 
@@ -458,14 +464,17 @@
 #pragma mark - Our document delegate
 - (void)addChecklist:(NSArray *)items forObject:(NSString *)obj {
     NSLog(@"%@", items);
-    [self.totalCheckListItems addObject:items];
     
+    
+    // If it already is checked and checked again, then remove it
     if ([self.selectedTransportCells containsObject:obj]) {
         [self.selectedTransportCells removeObject:obj];
+        [self.totalCheckListItems removeObject:items];
     } else {
         [self.selectedTransportCells addObject:obj];
+        [self.totalCheckListItems addObject:items];
     }
-    NSLog(@"%@",self.selectedTransportCells);
+    
 }
 
 @end

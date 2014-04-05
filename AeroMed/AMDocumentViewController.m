@@ -44,7 +44,7 @@
     // If we need to show a checklist then prepare for one
     if (self.shouldDisplayChecklist) {
         
-        UIBarButtonItem *checkButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"checklist.png"]
+        UIBarButtonItem *checkButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"check-true.png"]
                                                                         style:UIBarButtonItemStylePlain
                                                                        target:self
                                                                        action:@selector(checkMarkTapped:)];
@@ -57,7 +57,7 @@
             NSString *check = [s lowercaseString];
             
             // Check for checklist section
-            if (![check isEqualToString:@"checklist"]) {
+            if ([check isEqualToString:@"checklist"] || [check isEqualToString:@"documentation checklist"]) {
                 // 2 possible key combinations
                 
                 if ([self.doc objectForKey:@"documentationchecklist"]) {
@@ -65,6 +65,7 @@
                 } else if ([self.doc objectForKey:@"checklist"]) {
                     [self.checkListItems addObjectsFromArray:self.doc[@"checklist"]];
                 }
+                break; 
             }
             
             // Check for minimum items required for documentation
