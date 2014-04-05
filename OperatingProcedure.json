@@ -4,6 +4,18 @@
     "title": "Acute Alcohol Withdrawal",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Patient and Crew Safety due to patient anxiety, etc"
     ],
@@ -44,6 +56,18 @@
     "title": "ACS, STEMI, NSTEMI",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "TIME IS HEART",
       "Consider helistop rendezvous",
@@ -96,6 +120,18 @@
     "title": "Anaphylaxis",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Consider early airway intervention"
     ],
@@ -128,6 +164,18 @@
     "title": "Aortic Aneurysm and Dissection",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "This is potentially a surgical emergency.",
       "Being coordination with accepting facility/surgeon ASAP",
@@ -175,6 +223,18 @@
     "title": "Unstable Arrhythmias",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Stabilize prior to transport",
       "Notify PIC prior to defibrillation/cardioversion"
@@ -209,6 +269,18 @@
     "title": "Arterial Occlusion",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Transport with affected extremity in position of comfort",
       "This is a surgically urgent/emergent diagnosis",
@@ -243,6 +315,18 @@
     "title": "Asthma and COPD",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Ensure adequate amount of nebulizer medications for transport",
       "If on Heliox must be transported by ground with RT"
@@ -290,6 +374,18 @@
     "title": "Carbon Monoxide Poisoning",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Appropriate Receiving Facility (consider HBO)",
       "Anticipate multiple patients",
@@ -325,6 +421,18 @@
     "title": "Cardiac Arrest / Arrest After Flight Team Arrival",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Do NOT life if patient is an adult in Cardiac Arrest",
       "May consider lift if pediatric",
@@ -366,6 +474,18 @@
     "title": "Congestive Heart Failure and Pulmonary Edema",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Transport in a position of comfort (HOB elevated)"
     ],
@@ -402,6 +522,18 @@
     "title": "Disseminated Instravascular Coagulation",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Determine need for blood products (e.g. FFP) and consider obtaining from SHBWH prior to arrival at sending hospital",
       "Consultation with Obstetrician prior to launch and/or during appropriate phases of transport (if applicable)"
@@ -440,6 +572,18 @@
     "title": "Electrolyte Imbalance and Renal Failure",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
     	"Appropriate receiving facility able to administer dialysis"
     ],
@@ -481,6 +625,18 @@
     "title": "Epiglottitis",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Direct sending physician to request Operating Room and Anesthesia for intubation prior to transport",
       "Request Ceftriaxone"
@@ -512,6 +668,18 @@
     "title": "GI Bleed",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Blakemore tube:  one kg of cephlad traction",
       "DO NOT DEFLATE BALLOON",
@@ -551,6 +719,18 @@
     "title": "Hyperglycemia and Diabetic Ketoacidosis and Hyperosmolar Nonketotic Coma",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       
     ],
@@ -594,6 +774,18 @@
     "title": "Hypertensive Crisis",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Monitor BP q 5 minutes and as needed",
       "Prepare for a-line monitoring"
@@ -632,6 +824,18 @@
     "title": "LVAD (HeartMate II LVAS) Transport Considerations",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Request spare batteries from sending/patient",
       "Ask patient/Family for specific information regarding device",
@@ -670,6 +874,18 @@
     "title": "Meningitis",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Implement Isolation precautions for entire flight/transport crew"
     ],
@@ -701,6 +917,18 @@
     "title": "Necrotizing Fasciitis",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Surgical intervention is required ASAP so consider transfer of care in OR at receiving hospital"
     ],
@@ -734,6 +962,18 @@
     "title": "Pulmonary Embolus",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Handle with care avoiding extreme or jarring movement",
       "HOB elevated"
@@ -774,6 +1014,18 @@
     "title": "Respiratory Failure",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Ensure adequate oxygen supply for transport",
       "HOB elevated",
@@ -818,6 +1070,18 @@
     "title": "Sepsis",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Obtain antibiotics prior to departure from sending and begin transfusion ASAP"
     ],
@@ -859,6 +1123,18 @@
     "title": "Sickle Cell Crisis",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Transport at the lowest safe altitude"
     ],
@@ -896,6 +1172,18 @@
     "title": "Status Epilepticus and Seizures",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Safety of patient if actively seizing"
     ],
@@ -947,6 +1235,18 @@
     "title": "Stroke, Hemorrhagic",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Appropriate receiving facility with Neurosurgeon (if applicable)",
       "Consider arranging for FFP if anticipated"
@@ -987,6 +1287,18 @@
     "title": "Stroke, Ishemic",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Appropriate Receiving facility (Neurologist)",
       "Clarify BP control perimeters with receiving physician"
@@ -1026,6 +1338,18 @@
     "title": "Thrombocytopenia and Heparin Induced Thrombocytopenia",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "If life threatening bleeding present, consider obtaining blood products from BWH (platelets) prior to arriving at sending hospital"
     ],
@@ -1057,6 +1381,18 @@
     "title": "Toxic Ingestion and Exposure",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Poison Control Number:  800-222-1222",
       "Spectrum Health BWH Toxicology Service: ",
@@ -1098,6 +1434,18 @@
     "title": "Violent or Combative Patient",
     "originalDate": "18 October 2012",
     "revisedDate": "18 October 2012",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Pertinent Labs, Tests & Studies",
+				"medications" : "Medications",
+				"checklist" : "Documentation Checklist",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
     "considerations": [
       "Safety of patient and crew is the primary concern",
       "Consider ground transport as alternative",

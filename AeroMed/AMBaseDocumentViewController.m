@@ -341,11 +341,14 @@
 
 - (void)showAlertForAdding {
     
+    // Alert for new folder
     if (self.isTopFolder) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Folder" message:@"Folder Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
         alert.alertViewStyle = UIAlertViewStylePlainTextInput;
         [alert addButtonWithTitle:@"Add"];
         [alert show];
+        
+    // Alert for new document
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Document" message:@"Document Name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
         alert.alertViewStyle = UIAlertViewStylePlainTextInput;
@@ -359,26 +362,18 @@
     if (gr.state == UIGestureRecognizerStateBegan) {
         
         NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:[gr locationInView:self.collectionView]];
-        AMDocumentCellView *cell = (AMDocumentCellView *)[self.collectionView cellForItemAtIndexPath:indexPath];
         
-        // Show the dialog
+        // Setup the dialog
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Confirm" message:@"DO you want to delete?" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
         [alertView addButtonWithTitle:@"Delete"];
-        
-        // Calculate which one would be the one to remove
-        PFObject *removed;
-        for (PFObject *p in self.showingData) {
-            if ([p[@"title"] isEqualToString:cell.headerLabel.text]) {
-                removed = p;
-            }
-        }
         
         // Block magic
         [alertView showWithCompletion:^(UIAlertView *alertView, NSInteger buttonIndex) {
             if (buttonIndex == 1) {
                 
+                PFObject *removed = [self.showingData objectAtIndex:indexPath.row];
                 // Remove from parse
-                [self.showingData removeObject:removed];
+                [self.showingData removeObjectAtIndex:indexPath.row];
                 [removed deleteEventually];
                 
                 // If it is a folder then update the folders array

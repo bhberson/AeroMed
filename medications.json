@@ -4,6 +4,15 @@
 		"title":  "Adenocard (adenosine)",
 		"originalDate": "18 October 2012",
 		"revisedDate": "18 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"SVT"
 		],
@@ -26,6 +35,15 @@
 		"title": "Adrenaline (epinephrine)",
 		"originalDate": "18 October 2012",
 		"revisedDate": "18 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Severe hypotension unresponsive to other vasopressors and fluid resuscitation",
 			"Cardiopulmonary resuscitation",
@@ -51,6 +69,15 @@
 		"title": "Amidate (etomidate)",
 		"originalDate": "18 October 2012",
 		"revisedDate": "18 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Facilitation of endotracheal intubation"
 		],
@@ -69,6 +96,15 @@
 		"title": "Anectine (succinlycholine)",
 		"originalDate": "18 October 2012",
 		"revisedDate": "18 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Rapid Sequence Intubation",
 			"Facilitation of mechanical ventilation"
@@ -92,6 +128,15 @@
 		"title": "Apresoline (hydralazine)",
 		"originalDate": "18 October 2012",
 		"revisedDate": "18 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Management of moderate to severe HTN",
 			"Treatment of HTN secondary to pre-eclampsia or eclampsia",
@@ -109,6 +154,15 @@
 		"title": "Ativan (lorazepam)",
 		"originalDate": "18 October 2012",
 		"revisedDate": "18 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Sedative, anti-convulsant"
 		],
@@ -130,6 +184,15 @@
 		"title": "Atropine",
 		"originalDate": "18 October 2012",
 		"revisedDate": "18 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Symptomatic bradycardia",
 			"organophosphate or carbamate poisoning",
@@ -154,6 +217,15 @@
 		"title": "Atrovent (ipratropium)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Anti-cholindergic bronchodilator used in the treatment of asthma, and bronchospasm associated with COPD, bronchitis, and emphysema"
 		],
@@ -172,6 +244,15 @@
 		"title": "Benadryl (diphenhydramine)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Allergic reaction"
 		],
@@ -190,6 +271,15 @@
 		"title": "Brethine (terbutaline sulfate)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Bronchospasm",
 			"Tocolysis Fetal distress"
@@ -219,6 +309,15 @@
 		"title": "Brilinta (Tricagrelor)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Anti-platelet agent, used in the treatment of ACS."
 		],
@@ -237,6 +336,15 @@
 		"title": "Calcium Chloride",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Calcium channel blocker toxicity"
 		],
@@ -256,6 +364,15 @@
 		"title": "Calcium Gluconate",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Hypocalcemia",
 			"Mag. Sulfate toxicity",
@@ -278,6 +395,15 @@
 		"title": "Cardene (nicardipine)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Hypertensive emergencies-if nitroprusside contraindicated (liver, renal failure)",
 			"Hypertension-when oral agents not feasible",
@@ -303,6 +429,15 @@
 		"title": "Cardizem (diltiazem)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"SVT",
 			"Rapid atrial fibrillation or atrial flutter"
@@ -321,6 +456,15 @@
 		"title": "Cordarone (amiodarone)",
 		"originalDate": "",
 		"revisedDate": "",
+	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Refractory V-Tach and V-Fib",
 			"Stable V-Tach",
@@ -348,6 +492,15 @@
 		"title": "Dextrose 25, 50%",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Hypoglycemia"
 		],
@@ -367,6 +520,15 @@
 		"title": "Dilantin (phenytoin)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Management of generalized seizures",
 			"Prevention of seizures following traumatic brain injury"
@@ -390,6 +552,15 @@
 		"title": "Dobutrex (dobutamine)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"General inotropic support. Causes increased cardiac contractility and heart rate.",
 			"Heart failure"
@@ -410,6 +581,15 @@
 		"title": "GlucaGen (glucagon)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Used to treat hypoglycemia",
 			"Used in beta-blocker, or calcium channel blocker overdose"
@@ -431,6 +611,15 @@
 		"title": "Haldol (haloperidol)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Psychotic disorders",
 			"Alcoholic delirium",
@@ -454,6 +643,15 @@
 		"title": "Heparin",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Treatment of DVT, PE, and peripheral arterial embolism",
 			"Treatment in acute MI",
@@ -475,6 +673,15 @@
 		"title": "Humulin R (regular insulin)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Hyperglycemia",
 			"Hyperkalemia"
@@ -504,6 +711,15 @@
 		"title": "Inapsine (droperidol)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Antiemetic (used to prevent post-op N/V)",
 			"Antipsychotic"
@@ -526,6 +742,15 @@
 		"title": "Intropin (dopamine)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"All types of shock, (except hypovolemic)",
 			"Severe, refractory heart failure"
@@ -544,6 +769,15 @@
 		"title": "Ketalar (Ketamine)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"General anesthetic",
 			"Sedation/analgesia"
@@ -567,6 +801,15 @@
 		"title": "Lasix (furosemide)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Loop diuretic for treatment of CHF and edema"
 		],
@@ -586,6 +829,15 @@
 		"title": "Levophed (norepinephrine)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Severe hypotension/shock, especially septic shock with adequate fluid resuscitation",
 			"Massive vasodilation",
@@ -611,6 +863,15 @@
 		"title": "Lidocaine",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Treatment of ventricular ectopy",
 			"Treatment of V-Tach and V-Fib",
@@ -633,6 +894,15 @@
 		"title": "Lopressor",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Antianginal agent",
 			"Beta-blocker",
@@ -655,6 +925,15 @@
 		"title": "Magnesium Sulfate",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Eclamptic seizures",
 			"Torsades de Pointes",
@@ -677,6 +956,15 @@
 		"title": "Methergine",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Prevention of postpartum and postabortion hemorrhage.",
 			"Potent vasoconstrictor."
@@ -697,6 +985,15 @@
 		"title": "Morphine",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Generalized pain of injury/trauma",
 			"Cardiac chest pain",
@@ -719,6 +1016,15 @@
 		"title": "Narcan (naloxone)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Known opiate overdose",
 			"Unconscious patient of unknown origin",
@@ -748,6 +1054,15 @@
 		"title": "Neosynephrine (phenylephrine)",
 		"originalDate": "",
 		"revisedDate": "21 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 		"Hypotension and vascular failure in shock patients refractory to volume resuscitation.",
 		"Phenylephrine is a useful alternative in patients who develop unacceptable tachycardia or tachydysrhythmias with dopamine or norepinephrine.."
@@ -780,6 +1095,15 @@
 		"title": "Nimbex (cisatracurium)",
 		"originalDate": "",
 		"revisedDate": "21 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Non-depolarizing neuromuscular blocker."
 		],
@@ -812,6 +1136,15 @@
 		"title": "Nipride (nitroprusside)",
 		"originalDate": "",
 		"revisedDate": "21 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Hypertensive disorders",
 			"After load reduction as with refractory heart failure and cardiogenic shock",
@@ -844,6 +1177,15 @@
 		"title": "Norcuron (vecuronium)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Anesthesia, facilitation of mechanical ventilation or tracheal intubation"
 		],
@@ -869,6 +1211,15 @@
 		"title": "Normodyne or Trandate (labetalol)",
 		"originalDate": "",
 		"revisedDate": "21 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"HTN and hypertensive emergencies"
 		],
@@ -892,6 +1243,15 @@
 		"title": "Osmitrol (mannitol)",
 		"originalDate": "",
 		"revisedDate": "21 October 2012",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Reduction of increased intracranial pressure associated with cerebral edema"
 		],
@@ -915,6 +1275,15 @@
 		"title": "Pavulon (pancuronium)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Facilitation of mechanical ventilation"
 		],
@@ -939,6 +1308,15 @@
 		"title": "Phenergan (promethazine)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Antiemetic",
 			"H1 antagonist"
@@ -962,6 +1340,15 @@
 		"title": "Pitocin (oxytocin)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Induction or supplementation of labor",
 			"Increasing contractions during third stage of labor",
@@ -983,6 +1370,15 @@
 		"title": "Pitressin (vasopressin)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Cardiopulmonary resuscitation",
 			"Septic shock refractory to high-dose catecholamines"
@@ -1011,6 +1407,15 @@
 		"title": "Pitressin (vasopressin)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Management of diabetes insipidus",
 			"Donor management of brain dead patients",
@@ -1038,6 +1443,15 @@
 		"title": "Clopidogrel (Plavix)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Anti-platelet used in ACS, AMI, and stroke"
 		],
@@ -1056,6 +1470,15 @@
 		"title": "Primacor (milrinone)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"An inotrope, that causes increased cardiac output and decreased SVR",
 			"Used in heart failure"
@@ -1077,6 +1500,15 @@
 		"title": "Pronestyl (procainamide)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Symptomatic ventricular dysrhythmias",
 			"Atrial fibrillation and flutter",
@@ -1111,6 +1543,15 @@
 		"title": "Prostin (dinoprostone)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Promotes cervical ripening before induction of labor",
 			"Terminates pregnancy from week 12-20. Evacuate uterus in cases of missed abortion or intrauterine fetal death."
@@ -1132,6 +1573,15 @@
 		"title": "Racemic Epinephrine",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"A sympathomimetic bronchodilator used in the treatment of croup, or when stridor is present."
 		],
@@ -1149,6 +1599,15 @@
 		"title": "Phentolamine (Regitine)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"To prevent or treat tissue necrosis following drug extravasation of vasoactive agents. May also be used for hypertensive crisis."
 		],
@@ -1168,6 +1627,15 @@
 		"title": "Sodium Bicarbonate",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Treatment of metabolic acidosis"
 		],
@@ -1187,6 +1655,15 @@
 		"title": "Solfoton (phenobarbital)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Control of seizures"
 		],
@@ -1207,6 +1684,15 @@
 		"title": "Solu-Medrol (methylprednisolone)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Corticosteroid used in treatment of allergic reactions, asthma, and other conditions responding to anti-inflammatory medications."
 		],
@@ -1227,6 +1713,15 @@
 		"title": "Sublimaze (fentanyl)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Sedation and analgesia"
 		],
@@ -1249,6 +1744,15 @@
 		"title": "t-PA",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Venous thrombosis",
 			"Arterial thrombosis or embolus",
@@ -1282,6 +1786,15 @@
 		"title": "Valium (diazepam)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Status Epilepticus",
 			"Anxiety",
@@ -1307,6 +1820,15 @@
 		"title": "Ventolin (albuterol)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Beta-2 agonist, used in the treatment of asthma and bronchospasm."
 		],
@@ -1328,6 +1850,15 @@
 		"title": "Versed (midazolam)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Sedation/ amnesia"
 		],
@@ -1348,6 +1879,15 @@
 		"title": "Zemuron (rocuronium)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Rapid Sequence Intubation",
 			"Facilitation of mechanical ventilation"
@@ -1372,6 +1912,15 @@
 		"title": "Zofran (ondansetron)",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 			"Used to prevent/treat nausea and vomiting"
 		],
@@ -1390,6 +1939,15 @@
 		"title": "",
 		"originalDate": "",
 		"revisedDate": "",
+		"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications",
+				"adultDosage" : "Adult Dosage",
+				"pediatricDosage" : "Pediatric Dosage",
+				"considerations" : "Considerations"
+		},
 		"indications": [
 		],
 		"adultDosage": [

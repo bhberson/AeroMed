@@ -4,6 +4,17 @@
   	"title":"Blood Product Administration",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
   	  "Per SOP (shock) and/or in conjunction with medical direction",
   	  "Aero Med administers blood products on emergent basis"
@@ -71,6 +82,17 @@
   	"title":"Cardiac Pacing - Transvenous",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
   	  "Symptomatic bradycardia & unable to capture with transcutaneous pacing"
   	],
@@ -105,6 +127,17 @@
   	"title":"Continuous Positive Airway Pressure CPAP-BIPAP",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
       "INDICATIONS",
   	  "• Severe Dyspnea, Hypercapnia, Hypoxia",
@@ -159,6 +192,17 @@
   	"title":"Cricothyrotomy - Needles",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
       "INDICATIONS",
       "• Cannot intubate AND cannot ventilate AND open cricothyrotomy is contraindicated or impossible"
@@ -202,6 +246,17 @@
   	"title":"Cricothyrotomy - Open",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
       "INDICATION",
       "• Cannot Intubate and cannot ventilate",
@@ -246,6 +301,17 @@
   	"title":"Hemorrhage - Severe",
   	"originalDate":"20 March 2013",
     "revisedDate":"20 March 2013",
+    "sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
       "INDICATION",
       "• Presence of potentially life-threatening hemorrhage"
@@ -304,6 +370,17 @@
   	"title":"King Airway Insertion",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
       "INDICATIONS",
       "• Failure to oxygenate or ventilate and intubation attempts have failed or are likely to fail",
@@ -345,6 +422,17 @@
   	"title":"Pericardiocentesis",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
       "Cardiac Tamponade as defined by shock plus pericardial effusion on ultrasound without a more likely cause of hypotension",
       "Traumatic PEA not improved by pleural decompression, IVF bolus or PRBC transfusion"
@@ -383,6 +471,17 @@
   	"title":"Rapid Sequence Intubation",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
       "INDICATIONS",
       "• Respiratory failure",
@@ -460,6 +559,17 @@
   	"title":"Thoracostomy",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"indications" : "Indications & Contraindications",
+				"equipment" : "Equipment Needed", 
+				"procedure" : "Procedure", 
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"indications":[
       "INDICATIONS",
       "Continued signs of tension pneumothorax post needle decompression",

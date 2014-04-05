@@ -4,6 +4,18 @@
   	"title":"Abrupt Placenta and Placenta Previa",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "If unable to deliver prior to departing sending facility, coordinate with receiving facility for emergent delivery upon arrival"
   	],
@@ -43,6 +55,18 @@
   	"title":"Cardiac Arrest in Term Pregnancy",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "Do not transport if in full arrest"
   	],
@@ -76,6 +100,18 @@
   	"title":"Delivery, Eminent",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "Do not transport if delivery eminent",
   	  "Request assistance on helistop",
@@ -124,6 +160,18 @@
   	"title":"General High Risk OB Guidelines",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "Left Lateral Recombinant position (RLR also acceptable)",
   	  "Do not transport if delivery eminent"
@@ -166,6 +214,18 @@
   	"title":"Newborn Resuscitation",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "Deliver prior to departure if possible",
   	  "Request team to helistop for assistance if applicable"
@@ -202,6 +262,18 @@
   	"title":"Postpartum Hemorrhage",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "Evaluate need for blood products from BWH prior to departing for sending facility",
   	  "Consider consulting SICU and OB attending prior to departure"
@@ -244,6 +316,18 @@
   	"title":"Pre-Term Labor",
   	"originalDate":"",
   	"revisedDate":"",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "Have baby delivery supplies/equipment available"
   	],
@@ -276,6 +360,18 @@
   	"title":"Preeclampsia adn Eclampsia",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "Consider requesting medications from sending facility prior to departure"
   	],
@@ -322,6 +418,18 @@
   	"title":"Prolapsed Cord",
   	"originalDate":"20 March 2013",
   	"revisedDate":"20 March 2013",
+  	"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testsAndStudies" : "Labs, Tests, & Studies For Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items For Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
   	"considerations":[
   	  "Deliver prior to transport if at all possible",
   	  "Notify receiving ASAP to coordinate appropriate receiving team and location for transfer of care"

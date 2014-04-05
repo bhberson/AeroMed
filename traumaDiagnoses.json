@@ -4,6 +4,18 @@
 			"title":"Airway Management",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Even if GCS ≤ 8 consider delaying intubation if transport time is minimal and able to oxygenate via less invasive means"
 			],
@@ -42,6 +54,18 @@
 			"title":"Bites",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Determine from receiving if anti-venom is needed prior to transport. May need to collect and transport prior to patient intervention"
 			],
@@ -78,6 +102,18 @@
 			"title":"Breathing Management",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Ensure aircraft suction functioning PTA"
 			],
@@ -114,6 +150,18 @@
 			"title":"Burns: Thermal, Chemical, Electrical",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Decontaminate (if appropriate)",
 				"Transport to nearest burn center"
@@ -156,6 +204,18 @@
 			"title":"Circulation Management",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"IV/IO access can be obtained en route"
 			],
@@ -196,6 +256,18 @@
 			"title":"Closed Head Injury",
 			"originalDate":"",
 			"revisedDate":"",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Receiving neurosurgery availability"
 			],
@@ -228,6 +300,18 @@
 			"title":"Cold Injury",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Warm aircraft cabin",
 				"Handle with extreme care to prevent dysrhythmias"
@@ -264,6 +348,18 @@
 			"title":"Decompression Syndrome (Bends)",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"REQUEST DIVE COMPUTER and transport with patient",
 				"Notify Hyperbaric unit/physician at receiving hospital",
@@ -301,6 +397,18 @@
 			"title":"Drowning",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Handle patient with extreme care to prevent dysrhythmias"
 			],
@@ -338,6 +446,18 @@
 			"title":"Heat Injury",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Air Conditioned aircraft cab"
 			],
@@ -369,6 +489,18 @@
 			"title":"Hemorrhage Control",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Catastrophic hemorrhage control may lead to death within minutes. Immediate intervention is critical"
 			],
@@ -405,6 +537,18 @@
 			"title":"OB Trauma",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Dispalce uterus by tipping backboard or patient to left"
 			],
@@ -435,6 +579,18 @@
 			"title":"Major Orthopaedic Trauma",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Traction Splints may need to be removed due to aircraft space limitations"
 			],
@@ -471,6 +627,18 @@
 			"title":"Penetrating Trauma",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"ENSURE SCENE SAFETY prior to landing or approaching patient"
 			],
@@ -510,6 +678,18 @@
 			"title":"Trauma, General",
 			"originalDate":"18 October 2012",
 			"revisedDate":"18 October 2012",
+			"sections": {
+				"title" : "Title",
+				"originalDate" : "Date Created",
+				"revisedDate" : "Date Revised",
+				"considerations" : "Transport Considerations",
+				"interventions" : "Critical Interventions",
+				"testAndStudies" : "Labs, Tests & Studes for Review",
+				"medications" : "Medications",
+				"documentationItems" : "Minimum Required Items for Documentation",
+				"impressions": "Suggested Impressions",
+				"otherConsiderations" : "Other Considerations"
+		},
 			"considerations":[
 				"Nearest level 1 trauma center",
 				"Avoid unnecessary delays; whenever possible interventions will be done en route"
