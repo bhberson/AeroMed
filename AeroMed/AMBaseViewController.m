@@ -35,6 +35,10 @@
     
     if (self) {
         self.documents = [NSMutableArray array];
+       //self.transports = [[NSMutableArray alloc] init];
+        self.transports = [[NSMutableArray alloc] initWithObjects: nil];
+
+        [self retrieveTransports];
         
         // Set the status bar content to white in navigation bar
         self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -45,21 +49,47 @@
         self.sidebarButton.action = @selector(revealToggle:);
         [self.tableView setDelegate:self];
         [self.tableView setDataSource:self];
-        
+
         UIBarButtonItem *notification = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"bell.png"] style:UIBarButtonItemStylePlain target:self action:nil];
         // Set the gesture
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        [self.tableView reloadData];
         
     }
   
 }
 
--(NSMutableArray*)transports
+- (void)retrieveTransports
 {
-    if (_transports == nil) {
-        _transports = [[NSMutableArray alloc]init];
-    }
-    return _transports;
+    NSMutableArray *allTransports = [[NSMutableArray alloc] init];
+    PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
+    [query setLimit: 1000];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded. Add the returned objects to allObjects
+            [allTransports addObjectsFromArray:objects];
+            for(PFObject *aTransport in allTransports) {
+                if (aTransport)
+                {
+                    Transport *transport = [[Transport alloc] init];
+                    transport.transportNumber = aTransport[@"TransportNumber"];
+                    transport.crewMembers = aTransport[@"CrewMembers"];
+                    transport.ageGroup = aTransport[@"ageGroup"];
+                    transport.transportType = aTransport[@"transportType"];
+                    transport.specialTransport = aTransport[@"specialTransport"];
+                    transport.otherNotes = aTransport[@"otherNotes"];
+                    
+                    [self.transports addObject:transport];
+                }
+            }
+
+                 
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,8 +111,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	TransportCell *cell = (TransportCell *)[tableView
-                                      dequeueReusableCellWithIdentifier:@"TransportCell"];
+    static NSString *cellIdentifier = @"TransportCell";
+    TransportCell *cell = (TransportCell *)[tableView
+                                            dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        cell = [[TransportCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
 	Transport *transport = [self.transports objectAtIndex:indexPath.row];
 	cell.numLabel.text = transport.transportNumber;
     cell.typeLabel.text = transport.transportType;
@@ -131,14 +166,9 @@
                        didAddTransport:(Transport *)transport
 {
 	[self.transports addObject:transport];
-	NSIndexPath *indexPath =
-    [NSIndexPath indexPathForRow:[self.transports count] - 1
-                       inSection:0];
+
     [self.tableView reloadData];
-#warning This was causing the nil pointer when done pressed
-//	[self.tableView insertRowsAtIndexPaths:
-//     [NSArray arrayWithObject:indexPath]
-//                          withRowAnimation:UITableViewRowAnimationAutomatic];
+
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
