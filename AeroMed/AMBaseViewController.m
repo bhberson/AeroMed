@@ -35,7 +35,9 @@
     
     if (self) {
         self.documents = [NSMutableArray array];
-        self.transports = [[NSMutableArray alloc] init];
+       //self.transports = [[NSMutableArray alloc] init];
+        self.transports = [[NSMutableArray alloc] initWithObjects: nil];
+
         [self retrieveTransports];
         
         // Set the status bar content to white in navigation bar
@@ -109,8 +111,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	TransportCell *cell = (TransportCell *)[tableView
-                                      dequeueReusableCellWithIdentifier:@"TransportCell"];
+    static NSString *cellIdentifier = @"TransportCell";
+    TransportCell *cell = (TransportCell *)[tableView
+                                            dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        cell = [[TransportCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
 	Transport *transport = [self.transports objectAtIndex:indexPath.row];
 	cell.numLabel.text = transport.transportNumber;
     cell.typeLabel.text = transport.transportType;
@@ -159,14 +166,9 @@
                        didAddTransport:(Transport *)transport
 {
 	[self.transports addObject:transport];
-//	NSIndexPath *indexPath =
-//    [NSIndexPath indexPathForRow:[self.transports count] - 1
-//                       inSection:0];
+
     [self.tableView reloadData];
-#warning This was causing the nil pointer when done pressed
-//	[self.tableView insertRowsAtIndexPaths:
-//     [NSArray arrayWithObject:indexPath]
-//                          withRowAnimation:UITableViewRowAnimationAutomatic];
+
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
