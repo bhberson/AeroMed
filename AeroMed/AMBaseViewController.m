@@ -35,8 +35,7 @@
     
     if (self) {
         self.documents = [NSMutableArray array];
-       //self.transports = [[NSMutableArray alloc] init];
-        self.transports = [[NSMutableArray alloc] initWithObjects: nil];
+        self.transports = [[NSMutableArray alloc] init];
 
         [self retrieveTransports];
         
@@ -72,7 +71,8 @@
                 if (aTransport)
                 {
                     Transport *transport = [[Transport alloc] init];
-                    transport.transportNumber = aTransport[@"TransportNumber"];
+                    NSString *transNum = [aTransport[@"TransportNumber"] stringValue];
+                    transport.transportNumber = transNum;
                     transport.crewMembers = aTransport[@"CrewMembers"];
                     transport.ageGroup = aTransport[@"ageGroup"];
                     transport.transportType = aTransport[@"transportType"];
