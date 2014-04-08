@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    self.menuItems = @[@"title",@"transports", @"documentation",@"trends", @"logout"];
+    self.menuItems = @[@"title",@"transports", @"documentation",@"trends",@"email", @"logout"];
 
 }
 
@@ -79,6 +79,7 @@
         cell.textLabel.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
         cell.textLabel.enabled = YES;
     }
+    
    
     
     return cell;
@@ -143,6 +144,7 @@
             [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
         };
     }
+    
 }
 
 

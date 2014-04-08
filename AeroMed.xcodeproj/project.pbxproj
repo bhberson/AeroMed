@@ -78,6 +78,8 @@
 		779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* AMDocumentViewController.m */; };
 		779181BB18C833E200AE1019 /* bar-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181B918C833E200AE1019 /* bar-mid.png */; };
 		779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181BA18C833E200AE1019 /* bar-mid@2x.png */; };
+		AC27EE0E18F39A0B002E3F12 /* AMEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27EE0D18F39A0B002E3F12 /* AMEmailViewController.m */; };
+		AC29896118F42DD60030242F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC29896018F42DD60030242F /* MessageUI.framework */; };
 		ACAE35BD18E8C0C30080B944 /* AMForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAE35BC18E8C0C30080B944 /* AMForgotPasswordViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +198,9 @@
 		779181B218C832A500AE1019 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
 		779181B918C833E200AE1019 /* bar-mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid.png"; sourceTree = "<group>"; };
 		779181BA18C833E200AE1019 /* bar-mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-mid@2x.png"; sourceTree = "<group>"; };
+		AC27EE0C18F39A0B002E3F12 /* AMEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMEmailViewController.h; sourceTree = "<group>"; };
+		AC27EE0D18F39A0B002E3F12 /* AMEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMEmailViewController.m; sourceTree = "<group>"; };
+		AC29896018F42DD60030242F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		ACAE35BB18E8C0C30080B944 /* AMForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMForgotPasswordViewController.h; sourceTree = "<group>"; };
 		ACAE35BC18E8C0C30080B944 /* AMForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMForgotPasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,6 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC29896118F42DD60030242F /* MessageUI.framework in Frameworks */,
 				2704736818B05E20003AAB09 /* SystemConfiguration.framework in Frameworks */,
 				27009B6E18E2B6C700CD95D6 /* PixateFreestyle.framework in Frameworks */,
 				27009B6C18E2B59C00CD95D6 /* StoreKit.framework in Frameworks */,
@@ -352,6 +358,7 @@
 		7787CF0118806ECE004F495E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC29896018F42DD60030242F /* MessageUI.framework */,
 				271043F918E30D58003D1740 /* FacebookSDK.framework */,
 				27009B6D18E2B6C700CD95D6 /* PixateFreestyle.framework */,
 				27009B6318E2B54800CD95D6 /* Parse.framework */,
@@ -435,6 +442,8 @@
 		779181B518C832BD00AE1019 /* Mutual View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC27EE0C18F39A0B002E3F12 /* AMEmailViewController.h */,
+				AC27EE0D18F39A0B002E3F12 /* AMEmailViewController.m */,
 				ACAE35BB18E8C0C30080B944 /* AMForgotPasswordViewController.h */,
 				ACAE35BC18E8C0C30080B944 /* AMForgotPasswordViewController.m */,
 				27F94E0E18B424C2001F8F4F /* AMLoginViewController.h */,
@@ -601,6 +610,7 @@
 				27A6619C18B080EC00E4AE0D /* AMSliderMenuViewController.m in Sources */,
 				27F94E0D18B424A3001F8F4F /* AMSignupViewController.m in Sources */,
 				7749F73B18CD50A400B582C0 /* TransportCell.m in Sources */,
+				AC27EE0E18F39A0B002E3F12 /* AMEmailViewController.m in Sources */,
 				16EF700C18C8259C00F41E9D /* Medication.m in Sources */,
 				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
 				27B11FC218EE21E50095B9A2 /* AMDocumentTableViewCell.m in Sources */,
