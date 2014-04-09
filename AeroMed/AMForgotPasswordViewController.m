@@ -7,6 +7,7 @@
 //
 
 #import "AMForgotPasswordViewController.h"
+#import "UIAlertView+AMBlocks.h"
 
 @interface AMForgotPasswordViewController ()
 
@@ -66,17 +67,32 @@
 */
 
 - (IBAction)didTapResetPassword:(id)sender {
-    [PFUser requestPasswordResetForEmail:[self.emailEntry text]];
+    PFQuery *query = [PFUser query];
+    [query whereKey:@"email" equalTo:[self.emailEntry text]];
+    NSArray *users = [query findObjects];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Email Sent" message:@"Check your email for further instructions" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    if ([users count] > 0) {
+        [PFUser requestPasswordResetForEmail:[self.emailEntry text]];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Email Sent" message:@"Check your email for further instructions" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
-    [alert show];
-}
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
-    
-    if (buttonIndex == 0) {
-        [self.navigationController popViewControllerAnimated:YES];
+        
+        [alert showWithCompletion:^(UIAlertView *alertView, NSInteger buttonIndex) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }];
+        
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Email Error" message:@"The email you entered is not associated with a user" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alert show];
+        
     }
 }
+
+//- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+//    
+//    if (buttonIndex == 0) {
+//        [self.navigationController popViewControllerAnimated:YES];
+//    }
+//}
 @end
