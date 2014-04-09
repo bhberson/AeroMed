@@ -2,13 +2,11 @@
 //  AMEmailViewController.m
 //  AeroMed
 //
-//  Created by Mario Galeno on 4/7/14.
+//  Created by Mario Galeno on 4/8/14.
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
 #import "AMEmailViewController.h"
-#import "SWRevealViewController.h"
-
 
 @interface AMEmailViewController ()
 
@@ -30,49 +28,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-
-    // Menu button
-    UIBarButtonItem *sidebarButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(revealToggle:)];
-    self.navigationItem.leftBarButtonItem = sidebarButton;
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
-                                   initWithTarget:self
-                                   action:@selector(dismissKeyboard)];
-    
-    [self.view addGestureRecognizer:tap];
-    
-    [self.recipientText.layer setBorderColor:[[[UIColor grayColor] colorWithAlphaComponent:0.5]CGColor]];
-    [self.recipientText.layer setBorderWidth:2.0];
-    self.recipientText.layer.cornerRadius = 5;
-    self.recipientText.clipsToBounds = YES;
-    
-    [self.subjectText.layer setBorderColor:[[[UIColor grayColor] colorWithAlphaComponent:0.5]CGColor]];
-    [self.subjectText.layer setBorderWidth:2.0];
-    self.subjectText.layer.cornerRadius = 5;
-    self.subjectText.clipsToBounds = YES;
-    
-    [self.bodyText.layer setBorderColor:[[[UIColor grayColor] colorWithAlphaComponent:0.5] CGColor]];
-    [self.bodyText.layer setBorderWidth:2.0];
-    self.bodyText.layer.cornerRadius = 5;
-    self.bodyText.clipsToBounds = YES;
-    
-}
-
-- (IBAction)openMail:(id)sender {
-    if ([MFMailComposeViewController canSendMail]) {
+    if ([MFMailComposeViewController canSendMail]){
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
-        
         mailer.mailComposeDelegate = self;
-        
-        [mailer setToRecipients: [NSArray arrayWithObject: self.recipientText.text]];
-        [mailer setSubject: self.subjectText.text];
-        [mailer setMessageBody: self.bodyText.text isHTML:NO];
-        
         [self presentViewController:mailer animated:YES completion:nil];
-        
     } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
-                                                        message:@"Your device doesn't support emails"
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry"
+                                                        message:@"Your device doesn't support emailing"
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles: nil];
@@ -80,8 +42,7 @@
     }
 }
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
-{
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
     switch (result)
     {
         case MFMailComposeResultCancelled:
@@ -103,13 +64,7 @@
     
     // Remove the mail view
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void) dismissKeyboard{
-    [self.recipientText resignFirstResponder];
-    [self.subjectText resignFirstResponder];
-    [self.bodyText resignFirstResponder];
-    
+    [self performSegueWithIdentifier:@"emailToBase"sender:self];
 }
 
 - (void)didReceiveMemoryWarning
