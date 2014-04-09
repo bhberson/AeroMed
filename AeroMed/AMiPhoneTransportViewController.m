@@ -221,7 +221,15 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
     if(pickerView == self.crewMemberPicker) {
-        self.crewMember1TextField.text = [self.crewMemberArray objectAtIndex:row];
+        if ([self.crewMember1TextField isFirstResponder]) {
+            self.crewMember1TextField.text = [self.crewMemberArray objectAtIndex:row];
+        } else if ([self.crewMember2TextField isFirstResponder]) {
+            self.crewMember2TextField.text = [self.crewMemberArray objectAtIndex:row];
+        } else if ([self.crewMember3TextField isFirstResponder]) {
+            self.crewMember3TextField.text = [self.crewMemberArray objectAtIndex:row];
+        } else {
+            self.crewMember4TextField.text = [self.crewMemberArray objectAtIndex:row];
+        }
     } else if(pickerView == self.ageGroupPicker) {
         self.ageGroupTextField.text = [self.ageGroupArray objectAtIndex:row];
     } else if(pickerView == self.transportTypePicker) {
