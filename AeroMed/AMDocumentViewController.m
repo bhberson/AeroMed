@@ -71,6 +71,11 @@
     if (barButtons.count > 0) {
         [self.navigationItem setRightBarButtonItems:barButtons animated:YES];
     }
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    [self.tableView addGestureRecognizer:tap];
 }
 
 // Convert the array of strings into a formatted string
@@ -100,6 +105,9 @@
     return [[NSString alloc] initWithString:data];
 }
 
+- (void)dismissKeyboard {
+    [self.view endEditing:NO];
+}
 // Calculate the height for the row based on the contents
 - (CGFloat)getRowHeight:(NSString *)key {
     CGFloat height = 20.0f;

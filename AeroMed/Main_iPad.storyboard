@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7bh-6T-hlN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -360,7 +360,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-l5-CNa">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-l5-CNa">
                                 <rect key="frame" x="283" y="371" width="202" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -376,7 +376,7 @@
                                     <action selector="didTapLogin:" destination="t0L-FF-Y3B" eventType="touchUpInside" id="cNH-vJ-A9T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aex-SL-Jf6">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aex-SL-Jf6">
                                 <rect key="frame" x="283" y="426" width="202" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -392,7 +392,7 @@
                                     <action selector="didTapSignup:" destination="t0L-FF-Y3B" eventType="touchUpInside" id="6cT-Wf-ALL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-yW-bg7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-yW-bg7">
                                 <rect key="frame" x="297" y="158" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -401,6 +401,11 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fx5-yW-bg7" secondAttribute="centerX" constant="-0.5" id="4z2-8b-vqf"/>
+                            <constraint firstAttribute="centerX" secondItem="MGd-l5-CNa" secondAttribute="centerX" id="GMK-Cs-CDp"/>
+                            <constraint firstAttribute="centerX" secondItem="aex-SL-Jf6" secondAttribute="centerX" id="ozc-J7-TXl"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
                         </userDefinedRuntimeAttributes>
@@ -430,7 +435,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jv-gp-9oO">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jv-gp-9oO">
                                 <rect key="frame" x="262" y="492" width="239" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -446,7 +451,7 @@
                                     <action selector="didTapLogin:" destination="a0P-vU-OXO" eventType="touchUpInside" id="btJ-PB-gwx"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AoI-0i-Piv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AoI-0i-Piv">
                                 <rect key="frame" x="210" y="318" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -455,7 +460,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQr-Cs-fhw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQr-Cs-fhw">
                                 <rect key="frame" x="210" y="362" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -465,14 +470,14 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="gyB-aE-fkv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="gyB-aE-fkv">
                                 <rect key="frame" x="297" y="114" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="pngImage"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCV-qb-wSk">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCV-qb-wSk">
                                 <rect key="frame" x="371" y="540" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password">
@@ -482,7 +487,7 @@
                                     <action selector="didTapForgotPassword:" destination="a0P-vU-OXO" eventType="touchUpInside" id="1I7-Cy-o5L"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-TC-6We">
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-TC-6We">
                                 <rect key="frame" x="-3" y="788" width="768" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -492,6 +497,18 @@
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ymK-eq-dxx" firstAttribute="top" secondItem="qjo-TC-6We" secondAttribute="bottom" constant="20" id="1hc-lQ-Bjf"/>
+                            <constraint firstAttribute="centerX" secondItem="3Jv-gp-9oO" secondAttribute="centerX" constant="2.5" id="3mj-vm-fpj"/>
+                            <constraint firstAttribute="width" secondItem="qjo-TC-6We" secondAttribute="width" id="8PG-AF-drR"/>
+                            <constraint firstAttribute="centerX" secondItem="gyB-aE-fkv" secondAttribute="centerX" constant="-0.5" id="EVX-tl-ipV"/>
+                            <constraint firstAttribute="centerX" secondItem="AoI-0i-Piv" secondAttribute="centerX" constant="2.5" id="Flx-do-Fj9"/>
+                            <constraint firstAttribute="centerX" secondItem="yQr-Cs-fhw" secondAttribute="centerX" constant="2.5" id="LqA-Uj-GKH"/>
+                            <constraint firstItem="gyB-aE-fkv" firstAttribute="top" secondItem="fAe-lX-nrH" secondAttribute="bottom" constant="94" id="NKy-N2-kwo"/>
+                            <constraint firstItem="DCV-qb-wSk" firstAttribute="top" secondItem="3Jv-gp-9oO" secondAttribute="bottom" constant="8" id="k1K-bd-VRG"/>
+                            <constraint firstItem="3Jv-gp-9oO" firstAttribute="top" secondItem="yQr-Cs-fhw" secondAttribute="bottom" constant="100" id="s5J-zf-siX"/>
+                            <constraint firstAttribute="centerX" secondItem="DCV-qb-wSk" secondAttribute="centerX" constant="-52" id="w5n-Fi-35O"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
                         </userDefinedRuntimeAttributes>
@@ -904,10 +921,10 @@
             </objects>
             <point key="canvasLocation" x="3194" y="-29"/>
         </scene>
-        <!--Mi Pad Signup View Controller - Sign Up -->
+        <!--Signup View Controller - Sign Up -->
         <scene sceneID="1Lv-xO-AqM">
             <objects>
-                <viewController id="R86-6j-Cro" customClass="AMiPadSignupViewController" sceneMemberID="viewController">
+                <viewController id="R86-6j-Cro" customClass="AMSignupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g26-XP-CIy"/>
                         <viewControllerLayoutGuide type="bottom" id="Ea0-dU-cyN"/>
@@ -916,7 +933,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-7D-chT">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-7D-chT">
                                 <rect key="frame" x="114" y="311" width="540" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -925,7 +942,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdo-mB-fKQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdo-mB-fKQ">
                                 <rect key="frame" x="114" y="349" width="540" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -934,7 +951,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBb-Tj-Xgt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBb-Tj-Xgt">
                                 <rect key="frame" x="114" y="387" width="540" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -943,7 +960,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fa-df-XsE">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fa-df-XsE">
                                 <rect key="frame" x="265" y="449" width="239" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26125118600000002" green="0.82077899229999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -959,7 +976,7 @@
                                     <action selector="didTapSignup:" destination="R86-6j-Cro" eventType="touchUpInside" id="khg-ZU-llE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-Ke-XBm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-Ke-XBm">
                                 <rect key="frame" x="305" y="104" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -968,6 +985,13 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="kgg-7D-chT" secondAttribute="centerX" id="1TZ-a7-tEj"/>
+                            <constraint firstAttribute="centerX" secondItem="8fa-df-XsE" secondAttribute="centerX" constant="-0.5" id="PpU-Jb-7Sf"/>
+                            <constraint firstAttribute="centerX" secondItem="CBb-Tj-Xgt" secondAttribute="centerX" id="fb4-xi-MGr"/>
+                            <constraint firstAttribute="centerX" secondItem="nsV-Ke-XBm" secondAttribute="centerX" constant="-8.5" id="z3m-kS-pux"/>
+                            <constraint firstAttribute="centerX" secondItem="bdo-mB-fKQ" secondAttribute="centerX" id="zOu-Gf-tDE"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
                         </userDefinedRuntimeAttributes>
@@ -996,6 +1020,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="fBo-1Q-5ED"/>
-        <segue reference="mO4-EO-BAc"/>
+        <segue reference="TuH-TB-JVE"/>
     </inferredMetricsTieBreakers>
 </document>

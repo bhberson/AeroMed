@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SCC-d1-1AC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SCC-d1-1AC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -256,12 +256,9 @@
                                     <action selector="didTapForgotPassword:" destination="BnA-j1-PUF" eventType="touchUpInside" id="D28-Ck-Eqa"/>
                                 </connections>
                             </button>
-                            <pickerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLU-5s-YEo">
-                                <rect key="frame" x="0.0" y="221" width="320" height="216"/>
+                            <pickerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLU-5s-YEo">
+                                <rect key="frame" x="0.0" y="386" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="Lcc-yX-4zG"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="BnA-j1-PUF" id="k0N-30-8Dl"/>
                                     <outlet property="delegate" destination="BnA-j1-PUF" id="4Yi-s6-rCv"/>
@@ -270,9 +267,12 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="width" secondItem="gLU-5s-YEo" secondAttribute="width" id="8wZ-sf-o6i"/>
                             <constraint firstItem="iog-kn-elW" firstAttribute="top" secondItem="eda-Ih-jq2" secondAttribute="bottom" constant="22" id="Gmj-gj-6OT"/>
                             <constraint firstItem="ynC-i9-X7P" firstAttribute="top" secondItem="eda-Ih-jq2" secondAttribute="bottom" constant="232" id="Jy9-qJ-ZQ4"/>
                             <constraint firstItem="6PT-9g-Cdy" firstAttribute="top" secondItem="eda-Ih-jq2" secondAttribute="bottom" constant="194" id="SU2-mw-TbK"/>
+                            <constraint firstItem="gLU-5s-YEo" firstAttribute="top" secondItem="ynC-i9-X7P" secondAttribute="bottom" constant="60" id="VC7-mN-0cb"/>
+                            <constraint firstItem="05J-as-imu" firstAttribute="top" secondItem="gLU-5s-YEo" secondAttribute="bottom" constant="20" id="eUc-ba-oaX"/>
                             <constraint firstItem="cta-wQ-pHk" firstAttribute="top" secondItem="eda-Ih-jq2" secondAttribute="bottom" constant="295" id="jRJ-oR-CGw"/>
                             <constraint firstAttribute="centerX" secondItem="iog-kn-elW" secondAttribute="centerX" id="n2b-fP-dIf"/>
                         </constraints>
@@ -1078,7 +1078,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNX-fC-mBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="-2836"/>
+            <point key="canvasLocation" x="1784" y="-2844"/>
         </scene>
     </scenes>
     <resources>
