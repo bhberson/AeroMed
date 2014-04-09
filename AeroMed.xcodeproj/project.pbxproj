@@ -13,6 +13,11 @@
 		1625074418D7358900BC3A72 /* check-no@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625074018D7358900BC3A72 /* check-no@2x.png */; };
 		1625074518D7358900BC3A72 /* check-yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625074118D7358900BC3A72 /* check-yes.png */; };
 		1625074618D7358900BC3A72 /* check-yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1625074218D7358900BC3A72 /* check-yes@2x.png */; };
+		16E947E818F5A97900695C1E /* transport.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E947E718F5A97900695C1E /* transport.png */; };
+		16E947EA18F5AB6500695C1E /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E947E918F5AB6500695C1E /* email.png */; };
+		16E947EC18F5ACA400695C1E /* document.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E947EB18F5ACA400695C1E /* document.png */; };
+		16E947EE18F5ADD400695C1E /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E947ED18F5ADD400695C1E /* logout.png */; };
+		16E947F018F5AF8C00695C1E /* trends.png in Resources */ = {isa = PBXBuildFile; fileRef = 16E947EF18F5AF8C00695C1E /* trends.png */; };
 		16EF700C18C8259C00F41E9D /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EF700B18C8259C00F41E9D /* Medication.m */; };
 		27009B6418E2B54800CD95D6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27009B6318E2B54800CD95D6 /* Parse.framework */; };
 		27009B6518E2B56200CD95D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2704735918B05DCE003AAB09 /* AudioToolbox.framework */; };
@@ -100,6 +105,11 @@
 		1625074018D7358900BC3A72 /* check-no@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-no@2x.png"; sourceTree = "<group>"; };
 		1625074118D7358900BC3A72 /* check-yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-yes.png"; sourceTree = "<group>"; };
 		1625074218D7358900BC3A72 /* check-yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-yes@2x.png"; sourceTree = "<group>"; };
+		16E947E718F5A97900695C1E /* transport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transport.png; sourceTree = "<group>"; };
+		16E947E918F5AB6500695C1E /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		16E947EB18F5ACA400695C1E /* document.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = document.png; sourceTree = "<group>"; };
+		16E947ED18F5ADD400695C1E /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		16E947EF18F5AF8C00695C1E /* trends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trends.png; sourceTree = "<group>"; };
 		16EF700A18C8259C00F41E9D /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
 		16EF700B18C8259C00F41E9D /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
 		27009B6318E2B54800CD95D6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -469,6 +479,11 @@
 		779181B818C833D200AE1019 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				16E947EF18F5AF8C00695C1E /* trends.png */,
+				16E947ED18F5ADD400695C1E /* logout.png */,
+				16E947EB18F5ACA400695C1E /* document.png */,
+				16E947E918F5AB6500695C1E /* email.png */,
+				16E947E718F5A97900695C1E /* transport.png */,
 				27B6F08E18F057B100B061CF /* check-true.png */,
 				1625073F18D7358900BC3A72 /* check-no.png */,
 				1625074018D7358900BC3A72 /* check-no@2x.png */,
@@ -566,8 +581,12 @@
 			files = (
 				779181BB18C833E200AE1019 /* bar-mid.png in Resources */,
 				779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */,
+				16E947EA18F5AB6500695C1E /* email.png in Resources */,
 				1625074418D7358900BC3A72 /* check-no@2x.png in Resources */,
+				16E947E818F5A97900695C1E /* transport.png in Resources */,
 				7720280318B12933002302A4 /* style.css in Resources */,
+				16E947EC18F5ACA400695C1E /* document.png in Resources */,
+				16E947EE18F5ADD400695C1E /* logout.png in Resources */,
 				27B6F08F18F057B100B061CF /* check-true.png in Resources */,
 				2783BC5618D58B8C008E9790 /* Main_iPhone.storyboard in Resources */,
 				7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */,
@@ -585,6 +604,7 @@
 				1625074318D7358900BC3A72 /* check-no.png in Resources */,
 				27CDBCB71880948A000960F3 /* Main_iPad.storyboard in Resources */,
 				27C8060218A443CF00243EB1 /* default.css in Resources */,
+				16E947F018F5AF8C00695C1E /* trends.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 
 @interface AMSliderMenuViewController ()
 @property (nonatomic, strong) NSArray *menuItems;
+@property (nonatomic, strong) NSArray *menuIcons;
 @end
 
 @implementation AMSliderMenuViewController
@@ -28,7 +29,8 @@
 {
     [super viewDidLoad];
     
-    self.menuItems = @[@"title",@"transports", @"documentation",@"trends",@"email", @"logout"];
+    self.menuItems = @[@"Title", @"Transports", @"Documentation", @"Trends", @"Email", @"Logout"];
+    self.menuIcons = @[@"", @"transport.png", @"document.png", @"trends.png", @"email.png", @"logout.png"];
 
 }
 
@@ -68,20 +70,24 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell..
-    if ([CellIdentifier isEqualToString:@"title"]) {
+    if ([CellIdentifier isEqualToString:@"Title"]) {
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         NSString *email = [[PFUser currentUser] email];
         NSMutableString *greeting = [[NSMutableString alloc] init];
         [greeting appendString:@"Hi "];
         [greeting appendString:[email substringToIndex:[email rangeOfString:@"@"].location]];
         cell.textLabel.text = greeting;
-        cell.textLabel.textColor = [UIColor whiteColor];
         cell.textLabel.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
+        cell.textLabel.textColor = [UIColor colorWithRed:0.285f green:0.781f blue:0.98f alpha:1.0f];
         cell.textLabel.enabled = YES;
     }
-    
-   
-    
+    else {
+        cell.textLabel.text = [self.menuItems objectAtIndex:indexPath.row];
+        cell.textLabel.textColor = [UIColor whiteColor];
+        cell.textLabel.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
+        cell.imageView.image = [UIImage imageNamed:[self.menuIcons objectAtIndex:indexPath.row]];
+    }
+
     return cell;
 }
 
