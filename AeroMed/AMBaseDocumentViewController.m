@@ -371,7 +371,7 @@
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
             [dateFormatter setDateFormat:@"dd MMMM yyyy"];
             
-            NSDate *date = [NSDate dateWithTimeIntervalSinceReferenceDate:162000];
+            NSDate *date = [[NSDate alloc] init];
             
             NSString *formattedDateString = [dateFormatter stringFromDate:date];
             newDoc[@"originalDate"] = formattedDateString;
