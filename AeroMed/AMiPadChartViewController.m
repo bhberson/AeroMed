@@ -12,6 +12,9 @@
 @interface AMiPadChartViewController ()
 @property (strong, nonatomic) NSMutableArray *topFolders;
 @property (strong, nonatomic) NSMutableArray *showingData;
+@property (strong, nonatomic) NSMutableArray *checklistNames;
+@property (strong, nonatomic) NSDate *checklistDate;
+@property (strong, nonatomic) NSMutableArray *checklistData;
 
 @end
 
@@ -43,6 +46,28 @@
     // Menu button
     UIBarButtonItem *sidebarButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = sidebarButton;
+
+    // Mock transport
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setLocale:[NSLocale currentLocale]];
+    [dateFormat setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+    [dateFormat setDateFormat:@"yyyy/MM/dd"];
+    self.checklistDate = [dateFormat dateFromString:@"2014/4/7"];
+
+    // Mock checklist data
+    [self.checklistData addObject:@{@"checked": [NSNumber numberWithBool:YES]}];
+    [self.checklistData addObject:@{@"checked": [NSNumber numberWithBool:YES]}];
+    [self.checklistData addObject:@{@"checked": [NSNumber numberWithBool:YES]}];
+    [self.checklistData addObject:@{@"checked": [NSNumber numberWithBool:NO]}];
+    [self.checklistData addObject:@{@"checked": [NSNumber numberWithBool:YES]}];
+    
+    [self.checklistNames addObject:@"Item1"];
+    [self.checklistNames addObject:@"Item2"];
+    [self.checklistNames addObject:@"Item3"];
+    [self.checklistNames addObject:@"Item4"];
+    [self.checklistNames addObject:@"Item5"];
+
+    [self isDateWithinMonth:self.checklistDate];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -71,10 +96,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (bool)isDateWithinMonth:(NSDate *)date {
+    NSDate *now = [[NSDate alloc] init];
+
+    // Get the system calendar
+    NSCalendar *sysCalendar = [NSCalendar currentCalendar];
+
+    NSDateComponents *breakdownInfo = [sysCalendar components:NSDayCalendarUnit
+                                                     fromDate:date
+                                                       toDate:now
+                                                      options:0];
+
+    return ([breakdownInfo day] < 31) ? YES : NO;
+}
+
 #pragma mark - chart methods
 
 - (NSInteger)numberOfBarsInBarChartView:(JBBarChartView *)barChartView{
-    return 10; // number of bars in chart
+    return 30; // number of bars in chart
 }
 
 - (CGFloat)barChartView:(JBBarChartView *)barChartView heightForBarViewAtAtIndex:(NSInteger)index {
