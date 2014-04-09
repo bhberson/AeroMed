@@ -79,11 +79,12 @@
                     transport.specialTransport = aTransport[@"specialTransport"];
                     transport.otherNotes = aTransport[@"otherNotes"];
                     
-                    [self.transports addObject:transport];
+                    [self.transports insertObject:transport atIndex:0];
                 }
             }
+            [self.tableView reloadData];
 
-                 
+            
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -146,6 +147,18 @@
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)amiPadTransportViewControllerDidCancel:
+(AMiPadTransportViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)amiPadTransportViewControllerDidSave:
+(AMiPadTransportViewController *)controller
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 	if ([segue.identifier isEqualToString:@"AddTransport"])
@@ -158,17 +171,33 @@
         [[navigationController viewControllers]
          objectAtIndex:0];
 		amiPhoneTransportViewController.delegate = self;
+        AMiPadTransportViewController
+        *amiPadTransportViewController =
+        [[navigationController viewControllers]
+         objectAtIndex:0];
+		amiPadTransportViewController.delegate = self;
 	}
 }
 
 - (void)amiPhoneTransportViewController:
 (AMiPhoneTransportViewController *)controller
-                       didAddTransport:(Transport *)transport
+                        didAddTransport:(Transport *)transport
 {
-	[self.transports addObject:transport];
-
+	[self.transports insertObject:transport atIndex:0];
+    
     [self.tableView reloadData];
+    
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
 
+- (void)amiPadTransportViewController:
+(AMiPadTransportViewController *)controller
+                        didAddTransport:(Transport *)transport
+{
+	[self.transports insertObject:transport atIndex:0];
+    
+    [self.tableView reloadData];
+    
 	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
