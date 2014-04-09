@@ -231,6 +231,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="zpw-vz-hIO"/>
                     <connections>
@@ -1183,7 +1186,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="T9g-Mx-br5"/>
         <segue reference="fBo-1Q-5ED"/>
+        <segue reference="mO4-EO-BAc"/>
     </inferredMetricsTieBreakers>
 </document>

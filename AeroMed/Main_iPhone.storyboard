@@ -824,6 +824,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="defaultView"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="xf2-Pb-ySt"/>
                     <connections>
@@ -1030,8 +1033,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ugu-eh-SXK"/>
+        <segue reference="QhJ-B3-LpV"/>
         <segue reference="AXL-zX-oVD"/>
-        <segue reference="fx0-6o-idJ"/>
+        <segue reference="ugu-eh-SXK"/>
     </inferredMetricsTieBreakers>
 </document>
