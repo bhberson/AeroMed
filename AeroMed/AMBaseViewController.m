@@ -7,6 +7,7 @@
 //
 
 #import "AMBaseViewController.h"
+#import "AMTransportDetailViewController.h"
 #import "SWRevealViewController.h"
 #import "OperatingProcedure.h"
 #import "Folder.h"
@@ -177,6 +178,12 @@
          objectAtIndex:0];
 		amiPadTransportViewController.delegate = self;
 	}
+    if ([segue.identifier isEqualToString:@"ViewTransport"])
+	{
+        AMTransportDetailViewController *detailController = (AMTransportDetailViewController *)segue.destinationViewController;
+        Transport *trans = [self.transports objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+        detailController.detailItem = trans;
+    }
 }
 
 - (void)amiPhoneTransportViewController:

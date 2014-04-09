@@ -69,6 +69,7 @@
 		7749F73A18CD50A400B582C0 /* Transport.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749F73718CD50A400B582C0 /* Transport.m */; };
 		7749F73B18CD50A400B582C0 /* TransportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749F73918CD50A400B582C0 /* TransportCell.m */; };
 		7749F74118CD7CBB00B582C0 /* AMiPadTransportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7749F74018CD7CBB00B582C0 /* AMiPadTransportViewController.m */; };
+		7757E2B418F5C7EB007A0C46 /* AMTransportDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7757E2B318F5C7EB007A0C46 /* AMTransportDetailViewController.m */; };
 		7787CF0318806ECE004F495E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0218806ECE004F495E /* Foundation.framework */; };
 		7787CF0D18806ECE004F495E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7787CF0B18806ECE004F495E /* InfoPlist.strings */; };
 		7787CF0F18806ECE004F495E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF0E18806ECE004F495E /* main.m */; };
@@ -185,6 +186,8 @@
 		7749F73918CD50A400B582C0 /* TransportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportCell.m; sourceTree = "<group>"; };
 		7749F73F18CD7CBB00B582C0 /* AMiPadTransportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMiPadTransportViewController.h; sourceTree = "<group>"; };
 		7749F74018CD7CBB00B582C0 /* AMiPadTransportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMiPadTransportViewController.m; sourceTree = "<group>"; };
+		7757E2B218F5C7EB007A0C46 /* AMTransportDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTransportDetailViewController.h; sourceTree = "<group>"; };
+		7757E2B318F5C7EB007A0C46 /* AMTransportDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTransportDetailViewController.m; sourceTree = "<group>"; };
 		7787CEFF18806ECE004F495E /* AeroMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7787CF0218806ECE004F495E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7787CF0418806ECE004F495E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -472,6 +475,8 @@
 				779181B218C832A500AE1019 /* AMDocumentViewController.m */,
 				2783BC5718D58F56008E9790 /* AMCheckListTableViewController.h */,
 				2783BC5818D58F56008E9790 /* AMCheckListTableViewController.m */,
+				7757E2B218F5C7EB007A0C46 /* AMTransportDetailViewController.h */,
+				7757E2B318F5C7EB007A0C46 /* AMTransportDetailViewController.m */,
 			);
 			name = "Mutual View Controllers";
 			sourceTree = "<group>";
@@ -655,6 +660,7 @@
 				27A97DA818DD5C94006AAA38 /* Performance.m in Sources */,
 				271043E918E30C6B003D1740 /* JBBarChartView.m in Sources */,
 				27CB389818DD2D3C00F43680 /* OBImpression.m in Sources */,
+				7757E2B418F5C7EB007A0C46 /* AMTransportDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
