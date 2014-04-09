@@ -49,8 +49,13 @@
                                                                         style:UIBarButtonItemStylePlain
                                                                        target:self
                                                                        action:@selector(checkMarkTapped:)];
-        [self.checkListItems addObjectsFromArray:self.doc[@"checklist"]];
-        [barButtons addObject:checkButton];
+        
+        id list = self.doc[@"checklist"];
+        if ([list isKindOfClass:[NSArray class]]) {
+            [self.checkListItems addObjectsFromArray:self.doc[@"checklist"]];
+            [barButtons addObject:checkButton];
+        }
+        
     }
 
     
@@ -76,7 +81,11 @@
     if ([object isKindOfClass:[NSArray class]]) {
         NSArray *ar = (NSArray *)object;
         for (int i = 0; i < ar.count; i++) {
-            [data appendString:@"- "];
+            
+            // If we do not already have this in the front of the string append it
+            if (![[ar objectAtIndex:i] hasPrefix:@"-"]) {
+                [data appendString:@"- "];
+            }
             [data appendString:ar[i]];
             
             if (i < ar.count -1) {
@@ -211,8 +220,17 @@
     
     // Save changes to database
     NSArray *key = [self.data allKeysForObject:[self.sectionNames objectAtIndex:textView.tag]];
-    self.doc[[key objectAtIndex:0]] = textView.text;
-    [self.doc saveEventually]; 
+    
+    NSString *parseString = [key objectAtIndex:0];
+    
+    // If it is a checlist type item then save it as an array
+    if ([parseString isEqualToString:@"checklist"]) {
+         NSArray* words = [textView.text componentsSeparatedByCharactersInSet :[NSCharacterSet newlineCharacterSet]];
+        self.doc[parseString] = words;
+    } else {
+        self.doc[parseString] = textView.text;
+    }
+    [self.doc saveEventually];
     
     return YES;
 }
@@ -252,7 +270,10 @@
                     [name.text caseInsensitiveCompare:@"documentation checklist"] ||
                     [name.text caseInsensitiveCompare:@"minimum items required for documentation"] ||
                     [name.text caseInsensitiveCompare:@"documentation items"]) {
-                    keyText = @"checklist"; 
+                    keyText = @"checklist";
+                    self.doc[keyText] = [[NSArray alloc] init]; 
+                } else {
+                    self.doc[keyText] = @"";
                 }
             
                 [self.sectionNames addObject:name.text];
@@ -263,7 +284,7 @@
                 self.doc[@"sections"] = self.data;
                 
                 // Save to parse
-                self.doc[keyText] = @"";
+                
                 [self.doc saveEventually];
                 
                 [self.tableView reloadData];
