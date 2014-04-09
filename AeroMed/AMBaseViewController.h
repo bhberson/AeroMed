@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AMiPhoneTransportViewController.h"
+#import "AMiPadTransportViewController.h"
 
-@interface AMBaseViewController : UITableViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, AMiPhoneTransportViewControllerDelegate>
+@interface AMBaseViewController : UITableViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, AMiPhoneTransportViewControllerDelegate, AMiPadTransportViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (nonatomic, strong) NSMutableArray *transports;
 @property(weak, nonatomic) IBOutlet UITableView *tableView;
