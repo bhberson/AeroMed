@@ -64,7 +64,7 @@
     NSMutableArray *allTransports = [[NSMutableArray alloc] init];
     PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
-    [query orderByAscending:@"createdAt"];
+    [query orderByDescending:@"createdAt"];
     [query setLimit: 1000];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -175,7 +175,7 @@
 
 - (void)amiPhoneTransportViewController:
 (AMiPhoneTransportViewController *)controller
-                        didAddTransport:(Transport *)transport
+                        didAddTransport:(PFObject *)transport
 {
 	[self.transports insertObject:transport atIndex:0];
     
@@ -186,7 +186,7 @@
 
 - (void)amiPadTransportViewController:
 (AMiPadTransportViewController *)controller
-                        didAddTransport:(Transport *)transport
+                        didAddTransport:(PFObject *)transport
 {
 	[self.transports insertObject:transport atIndex:0];
     

@@ -32,17 +32,19 @@
     Transport *transport = [[Transport alloc] init];
 	transport.transportNumber = self.numTextField.text;
     transport.crewMembers = [[NSMutableArray alloc] init];
+    NSMutableArray *crew = [NSMutableArray array];
     if (self.crewMember1TextField.text != nil) {
         [transport.crewMembers addObject:self.crewMember1TextField.text];
+        [crew addObject:self.crewMember1TextField.text];
     }
     if (self.crewMember2TextField.text != nil) {
-        [transport.crewMembers addObject:self.crewMember2TextField.text];
+        [crew addObject:self.crewMember2TextField.text];
     }
     if (self.crewMember3TextField.text != nil) {
-        [transport.crewMembers addObject:self.crewMember3TextField.text];
+        [crew addObject:self.crewMember3TextField.text];
     }
     if (self.crewMember4TextField.text != nil) {
-        [transport.crewMembers addObject:self.crewMember4TextField.text];
+        [crew addObject:self.crewMember4TextField.text];
     }
     transport.ageGroup = self.ageGroupTextField.text;
     transport.transportType = self.transportTypeTextField.text;
@@ -54,18 +56,27 @@
     NSNumber * myTransportNumber = [f numberFromString:transport.transportNumber];
     
     // Create the object.
+//    PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
+//    [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
+//    [pfTransport setObject:transport.crewMembers forKey:@"CrewMembers"];
+//    [pfTransport setObject:transport.ageGroup forKey:@"ageGroup"];
+//    [pfTransport setObject:transport.transportType forKey:@"transportType"];
+//    [pfTransport setObject:transport.specialTransport forKey:@"specialTransport"];
+//    [pfTransport setObject:transport.otherNotes forKey:@"otherNotes"];
+    
+    // Create the object.
     PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
     [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
-    [pfTransport setObject:transport.crewMembers forKey:@"CrewMembers"];
-    [pfTransport setObject:transport.ageGroup forKey:@"ageGroup"];
-    [pfTransport setObject:transport.transportType forKey:@"transportType"];
-    [pfTransport setObject:transport.specialTransport forKey:@"specialTransport"];
-    [pfTransport setObject:transport.otherNotes forKey:@"otherNotes"];
+    [pfTransport setObject:crew forKey:@"CrewMembers"];
+    [pfTransport setObject:self.ageGroupTextField.text forKey:@"ageGroup"];
+    [pfTransport setObject:self.transportTypeTextField.text forKey:@"transportType"];
+    [pfTransport setObject:self.specialTransportTextField.text forKey:@"specialTransport"];
+    [pfTransport setObject:self.notesTextField.text forKey:@"otherNotes"];
     
     // Save it as soon as is convenient.
     [pfTransport saveEventually];
 	[self.delegate amiPadTransportViewController:self
-                                   didAddTransport:transport];
+                                   didAddTransport:pfTransport];
     
 }
 

@@ -13,7 +13,7 @@
 
 @protocol AMiPhoneTransportViewControllerDelegate <NSObject>
 - (void)amiPhoneTransportViewControllerDidCancel:(AMiPhoneTransportViewController *)controller;
-- (void)amiPhoneTransportViewController:(AMiPhoneTransportViewController *)controller didAddTransport:(Transport *)transport;
+- (void)amiPhoneTransportViewController:(AMiPhoneTransportViewController *)controller didAddTransport:(PFObject *)transport;
 @end
 
 @interface AMiPhoneTransportViewController : UITableViewController <UIPickerViewDataSource,UIPickerViewDelegate>
