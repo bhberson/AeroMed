@@ -11,7 +11,7 @@
 
 @interface AMTransportDetailViewController : UITableViewController <UINavigationControllerDelegate>
 
-@property (strong, nonatomic) Transport *detailItem;
+@property (strong, nonatomic) PFObject *detailItem;
 @property (strong, nonatomic) IBOutlet UITextField *crewMember4TextField;
 @property (strong, nonatomic) IBOutlet UITextField *crewMember3TextField;
 @property (strong, nonatomic) IBOutlet UITextField *crewMember2TextField;

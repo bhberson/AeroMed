@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSString *ageGroup;
 @property (nonatomic, strong) NSString *otherNotes;
 @property (nonatomic, strong) NSString *specialTransport;
-@property (nonatomic, strong) NSDictionary *checkListResults;
+@property (nonatomic, strong) NSMutableDictionary *checkListResults;
 @property (nonatomic, strong) NSDate *dateStarted; 
 + (NSString *)getPathToArchive;
 @end

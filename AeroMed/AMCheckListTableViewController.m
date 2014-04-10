@@ -153,6 +153,16 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 0) {
+        NSMutableDictionary *items = [[NSMutableDictionary alloc] init];
+        int index = 0;
+        for (NSMutableDictionary *dic in self.dataArray) {
+            NSNumber *value = [dic objectForKey:@"checked"];
+            NSString *key = [self.checkList objectAtIndex:index];
+            index++;
+            [items setObject:value forKey:key];
+        }
+        self.transportData[@"checklist"] = items;
+        [self.transportData saveEventually];
         [self performSegueWithIdentifier:@"toTransport" sender:self];
     }
 }

@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *numLabel;
 @property (nonatomic, strong) IBOutlet UILabel *typeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *hasChecklist;
 
 @end
