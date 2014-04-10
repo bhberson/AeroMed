@@ -12,7 +12,7 @@
 static int const daysBack = 30; // must be 1 or greater
 
 @interface AMiPadChartViewController ()
-@property (strong, nonatomic) NSMutableArray *topFolders;
+@property (strong, nonatomic) NSMutableArray *allTransports;
 @property (strong, nonatomic) NSMutableArray *showingData;
 @property (strong, nonatomic) NSMutableArray *checklistData;
 @property (strong, nonatomic) NSMutableArray *graphData;
@@ -74,7 +74,7 @@ static int const daysBack = 30; // must be 1 or greater
     
     NSDate *checklistDate = [[NSDate alloc] init];
     //NSMutableArray *checklistNames = [[NSMutableArray alloc] init];
-    self.checklistData = [[NSMutableArray alloc] init];
+    
     
     checklistDate = [dateFormat dateFromString:@"2014/4/7"];
 
@@ -95,7 +95,7 @@ static int const daysBack = 30; // must be 1 or greater
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.barChart setState:JBChartViewStateExpanded animated:YES callback:nil];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -108,6 +108,8 @@ static int const daysBack = 30; // must be 1 or greater
     // [title appendString:[email substringToIndex:[email rangeOfString:@"@"].location]];
     [title appendString:@"Recent Transport Performance"];
     self.titleText.text = title;
+    
+    [self retrieveTransports];
 }
 
 - (void)didReceiveMemoryWarning
@@ -216,5 +218,31 @@ static int const daysBack = 30; // must be 1 or greater
     UIView *barView = [[UIView alloc] init];
     barView.backgroundColor = (index % 2 == 0) ? [UIColor colorWithRed:0.285f green:0.781f blue:0.98f alpha:1.0f]: [UIColor colorWithRed:0.0f green:0.625f blue:0.722f alpha:1.0f];
     return barView;
+}
+
+- (void)retrieveTransports
+{
+    self.checklistData = [[NSMutableArray alloc] init];
+    PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    [query setLimit: 100];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded. Add the returned objects to allObjects
+            self.allTransports = [[NSMutableArray alloc] initWithArray:objects];
+            for (PFObject *obj in self.allTransports) {
+                NSDictionary *checklist = obj[@"checklist"];
+                if (checklist) {
+                    [self.checklistData addObject:obj[@"checklist"]];
+                }
+            }
+            [self.barChart reloadData];
+            [self.barChart setState:JBChartViewStateExpanded animated:YES callback:nil];
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
 }
 @end

@@ -63,7 +63,7 @@
 {
     NSMutableArray *allTransports = [[NSMutableArray alloc] init];
     PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
-    query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query setLimit: 1000];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
