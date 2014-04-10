@@ -64,6 +64,7 @@
     NSMutableArray *allTransports = [[NSMutableArray alloc] init];
     PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    [query orderByAscending:@"createdAt"];
     [query setLimit: 1000];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -112,6 +113,13 @@
     PFObject *transport = [self.transports objectAtIndex:indexPath.row];
     cell.numLabel.text = [transport[@"TransportNumber"] stringValue];
     cell.typeLabel.text = transport[@"transportType"];
+    
+    // If we need to set the transport a checklist
+    if (!transport[@"checklist"]) {
+        cell.hasChecklist.hidden = NO;
+    } else {
+        cell.hasChecklist.hidden = YES;
+    }
 
     return cell;
 }
