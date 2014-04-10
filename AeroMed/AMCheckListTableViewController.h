@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Transport.h"
 
 @interface AMCheckListTableViewController : UITableViewController
 @property (strong, nonatomic) NSArray *checkList;
+@property (strong, nonatomic) PFObject *transportData;
 @end

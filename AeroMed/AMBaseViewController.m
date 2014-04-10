@@ -63,26 +63,14 @@
 {
     NSMutableArray *allTransports = [[NSMutableArray alloc] init];
     PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
+    query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     [query setLimit: 1000];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded. Add the returned objects to allObjects
             [allTransports addObjectsFromArray:objects];
-            for(PFObject *aTransport in allTransports) {
-                if (aTransport)
-                {
-                    Transport *transport = [[Transport alloc] init];
-                    NSString *transNum = [aTransport[@"TransportNumber"] stringValue];
-                    transport.transportNumber = transNum;
-                    transport.crewMembers = aTransport[@"CrewMembers"];
-                    transport.ageGroup = aTransport[@"ageGroup"];
-                    transport.transportType = aTransport[@"transportType"];
-                    transport.specialTransport = aTransport[@"specialTransport"];
-                    transport.otherNotes = aTransport[@"otherNotes"];
-                    
-                    [self.transports insertObject:transport atIndex:0];
-                }
-            }
+
+            self.transports = [NSMutableArray arrayWithArray:objects];
             [self.tableView reloadData];
 
             
@@ -120,20 +108,12 @@
     if (cell == nil) {
         cell = [[TransportCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-	Transport *transport = [self.transports objectAtIndex:indexPath.row];
-	cell.numLabel.text = transport.transportNumber;
-    cell.typeLabel.text = transport.transportType;
+    
+    PFObject *transport = [self.transports objectAtIndex:indexPath.row];
+    cell.numLabel.text = [transport[@"TransportNumber"] stringValue];
+    cell.typeLabel.text = transport[@"transportType"];
 
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	if (editingStyle == UITableViewCellEditingStyleDelete)
-	{
-		[self.transports removeObjectAtIndex:indexPath.row];
-		[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-	}
 }
 
 - (void)amiPhoneTransportViewControllerDidCancel:
@@ -181,8 +161,7 @@
     if ([segue.identifier isEqualToString:@"ViewTransport"])
 	{
         AMTransportDetailViewController *detailController = (AMTransportDetailViewController *)segue.destinationViewController;
-        Transport *trans = [self.transports objectAtIndex:self.tableView.indexPathForSelectedRow.row];
-        detailController.detailItem = trans;
+        detailController.detailItem = [self.transports objectAtIndex:self.tableView.indexPathForSelectedRow.row]; 
     }
 }
 

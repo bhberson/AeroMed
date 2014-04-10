@@ -62,6 +62,11 @@
     
     UIBarButtonItem *sidebarButton = [self.navigationItem leftBarButtonItem];
     
+    if (sidebarButton == nil) {
+        sidebarButton = [[UIBarButtonItem alloc] init];
+        sidebarButton.title = @"Menu";
+        [self.navigationItem setLeftBarButtonItem:sidebarButton];
+    }
     // Set the side bar button action to show slide out menu
     sidebarButton.target = self.revealViewController;
     sidebarButton.action = @selector(revealToggle:);
@@ -328,10 +333,12 @@
         // Combine our array of arrays into one long array to send to checklist
         NSMutableArray *checklistFinal = [[NSMutableArray alloc] init];
         for (NSArray *subArray in self.totalCheckListItems) {
-            [checklistFinal addObjectsFromArray:subArray]; 
+            [checklistFinal addObjectsFromArray:subArray];
+            
         }
         
         [vc setCheckList:checklistFinal];
+        [vc setTransportData:self.transportData];
     }
 }
 
