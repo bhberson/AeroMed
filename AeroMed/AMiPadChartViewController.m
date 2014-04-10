@@ -17,6 +17,7 @@ static int const daysBack = 30; // must be 1 or greater
 @property (strong, nonatomic) NSMutableArray *checklistData;
 @property (strong, nonatomic) NSMutableArray *graphData;
 @property (strong, nonatomic) NSMutableArray *graphData2;
+@property BOOL shouldSetData;
 @end
 
 @implementation AMiPadChartViewController
@@ -90,29 +91,20 @@ static int const daysBack = 30; // must be 1 or greater
      [self.checklistNames addObject:@"Item5"];
      */
     self.graphData2 = [[NSMutableArray alloc] initWithCapacity:daysBack]; 
-    for (int i = 0; i < self.graphData2.count; i++) {
+    for (int i = 0; i < daysBack; i++) {
         [self.graphData2 addObject:[NSNull null]];
     }
     
-    // Iterate through the transports and get the days away
-    for (PFObject *transport in self.allTransports) {
-        int daysAway = [self daysSinceDate:transport[@"createdAt"]];
-        
-        // If it is in our graph range then add the checklist results to that day index
-        if (daysAway < 30) {
-            if (transport[@"checklist"]) {
-                [self.graphData2 insertObject:transport[@"checklist"] atIndex:daysAway];
-            }
-        }
-    }
+   
     
-    [self.barChart reloadData];
+  //  [self.barChart reloadData];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.barChart setState:JBChartViewStateExpanded animated:YES callback:nil];
+    //[self.barChart setState:JBChartViewStateExpanded animated:YES callback:nil];
     
 }
 
@@ -154,6 +146,37 @@ static int const daysBack = 30; // must be 1 or greater
 #pragma mark - chart methods
 
 - (NSUInteger)numberOfBarsInBarChartView:(JBBarChartView *)barChartView {
+    
+    // If this is set we have the data and we need to instantiate it in the array
+    if (self.shouldSetData) {
+        
+        // Iterate through the transports and get the days away
+        for (PFObject *transport in self.allTransports) {
+            int daysAway = [self daysSinceDate:[transport createdAt]];
+            
+            // If it is in our graph range then add the checklist results to that day index
+            if (daysAway < 30) {
+                
+                // If a checklist is set for that transport. It should be, but users be users.
+                if (transport[@"checklist"]) {
+                    
+                    // If we have more than one transport in a day then we need to add to the list
+                    if (![self.graphData2 objectAtIndex:daysAway]) {
+                        NSArray *oldData = [self.graphData2 objectAtIndex:daysAway];
+                        NSMutableArray *newData = transport[@"checklist"];
+                        [newData addObjectsFromArray:oldData];
+                        [self.graphData2 replaceObjectAtIndex:daysAway withObject:newData]; 
+                    } else {
+                        [self.graphData2 replaceObjectAtIndex:daysAway withObject:transport[@"checklist"]];
+                    }
+                }
+            }
+        }
+        
+        self.shouldSetData = NO; 
+        
+    }
+    
     return daysBack; // number of bars in chart
 }
 
@@ -240,7 +263,6 @@ static int const daysBack = 30; // must be 1 or greater
 
 - (void)retrieveTransports
 {
-   // [self.barChart reloadData];
     self.checklistData = [[NSMutableArray alloc] init];
     PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
@@ -249,12 +271,11 @@ static int const daysBack = 30; // must be 1 or greater
         if (!error) {
             // The find succeeded. Add the returned objects to allObjects
             self.allTransports = [[NSMutableArray alloc] initWithArray:objects];
-            for (PFObject *obj in self.allTransports) {
-                NSDictionary *checklist = obj[@"checklist"];
-                if (checklist) {
-                    [self.checklistData addObject:obj[@"checklist"]];
-                }
-            }
+            self.shouldSetData= YES;
+            
+            [self.barChart reloadData];
+            [self.barChart setState:JBChartViewStateCollapsed];
+            [self.barChart setState:JBChartViewStateExpanded animated:YES callback:nil];
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
