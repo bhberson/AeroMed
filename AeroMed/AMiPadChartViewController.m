@@ -37,11 +37,9 @@ static int const daysBack = 30; // must be 1 or greater
     // Do any additional setup after loading the view.
     
     self.bottomText.hidden = YES;
-    //self.barChart.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);/*CGRectMake(kJBBarChartViewControllerChartPadding, kJBBarChartViewControllerChartPadding, self.view.bounds.size.width - (kJBBarChartViewControllerChartPadding * 2), kJBBarChartViewControllerChartHeight); */
     self.barChart.delegate = self;
     self.barChart.dataSource = self;
     self.barChart.backgroundColor = [UIColor darkGrayColor];
-    //[self.barChart reloadData];
     
     // Set the status bar content to white in navigation bar
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -75,36 +73,19 @@ static int const daysBack = 30; // must be 1 or greater
     [dateFormat setDateFormat:@"yyyy/MM/dd"];
     
     NSDate *checklistDate = [[NSDate alloc] init];
-    //NSMutableArray *checklistNames = [[NSMutableArray alloc] init];
-    
     
     checklistDate = [dateFormat dateFromString:@"2014/4/7"];
 
-    // will be another loop to add to graph data
-    //[self.graphData insertObject:self.checklistData atIndex:[self daysSinceDate:checklistDate]];
-    
-    /*
-     [self.checklistNames addObject:@"Item1"];
-     [self.checklistNames addObject:@"Item2"];
-     [self.checklistNames addObject:@"Item3"];
-     [self.checklistNames addObject:@"Item4"];
-     [self.checklistNames addObject:@"Item5"];
-     */
     self.graphData2 = [[NSMutableArray alloc] initWithCapacity:daysBack]; 
     for (int i = 0; i < daysBack; i++) {
         [self.graphData2 addObject:[NSNull null]];
     }
-    
-   
-    
-  //  [self.barChart reloadData];
     
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    //[self.barChart setState:JBChartViewStateExpanded animated:YES callback:nil];
     
 }
 
@@ -113,9 +94,7 @@ static int const daysBack = 30; // must be 1 or greater
     [super viewWillAppear:animated];
     [self.barChart setState:JBChartViewStateCollapsed];
     
-    //NSString *email = [[PFUser currentUser] email];
     NSMutableString *title = [[NSMutableString alloc] init];
-    // [title appendString:[email substringToIndex:[email rangeOfString:@"@"].location]];
     [title appendString:@"Recent Transport Performance"];
     self.titleText.text = title;
     
@@ -244,8 +223,7 @@ static int const daysBack = 30; // must be 1 or greater
 
 - (void)didUnselectBarChartView:(JBBarChartView *)barChartView
 {
-    // Update view
-    // self.bottomText.hidden = YES;
+
 }
 
 - (UIColor *)barSelectionColorForBarChartView:(JBBarChartView *)barChartView

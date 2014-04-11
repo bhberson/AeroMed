@@ -55,16 +55,7 @@
 - (void)dismissKeyboard {
     [self.emailEntry resignFirstResponder];
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)didTapResetPassword:(id)sender {
     PFQuery *query = [PFUser query];
@@ -89,10 +80,4 @@
     }
 }
 
-//- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
-//    
-//    if (buttonIndex == 0) {
-//        [self.navigationController popViewControllerAnimated:YES];
-//    }
-//}
 @end

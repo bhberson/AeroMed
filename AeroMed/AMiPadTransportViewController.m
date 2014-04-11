@@ -56,15 +56,6 @@
     NSNumber * myTransportNumber = [f numberFromString:transport.transportNumber];
     
     // Create the object.
-//    PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
-//    [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
-//    [pfTransport setObject:transport.crewMembers forKey:@"CrewMembers"];
-//    [pfTransport setObject:transport.ageGroup forKey:@"ageGroup"];
-//    [pfTransport setObject:transport.transportType forKey:@"transportType"];
-//    [pfTransport setObject:transport.specialTransport forKey:@"specialTransport"];
-//    [pfTransport setObject:transport.otherNotes forKey:@"otherNotes"];
-    
-    // Create the object.
     PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
     [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
     [pfTransport setObject:crew forKey:@"CrewMembers"];
@@ -218,7 +209,6 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row   forComponent:(NSInteger)component
 {
-    //return [self.crewMemberArray objectAtIndex:row];
     if(pickerView == self.crewMemberPicker) {
         return [self.crewMemberArray objectAtIndex:row];
     } else if(pickerView == self.ageGroupPicker) {

@@ -56,15 +56,6 @@
     NSNumber * myTransportNumber = [f numberFromString:transport.transportNumber];
     
     // Create the object.
-    //    PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
-    //    [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
-    //    [pfTransport setObject:transport.crewMembers forKey:@"CrewMembers"];
-    //    [pfTransport setObject:transport.ageGroup forKey:@"ageGroup"];
-    //    [pfTransport setObject:transport.transportType forKey:@"transportType"];
-    //    [pfTransport setObject:transport.specialTransport forKey:@"specialTransport"];
-    //    [pfTransport setObject:transport.otherNotes forKey:@"otherNotes"];
-    
-    // Create the object.
     PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
     [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
     [pfTransport setObject:crew forKey:@"CrewMembers"];
