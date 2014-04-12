@@ -73,7 +73,6 @@
 		7787CF1E18806ECE004F495E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787CF0618806ECE004F495E /* UIKit.framework */; };
 		7787CF2618806ECE004F495E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7787CF2418806ECE004F495E /* InfoPlist.strings */; };
 		7787CF2818806ECE004F495E /* AeroMedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787CF2718806ECE004F495E /* AeroMedTests.m */; };
-		779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181AB18C82E9000AE1019 /* KLNoteViewController.m */; };
 		779181B418C832A500AE1019 /* AMDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779181B218C832A500AE1019 /* AMDocumentViewController.m */; };
 		779181BB18C833E200AE1019 /* bar-mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181B918C833E200AE1019 /* bar-mid.png */; };
 		779181BC18C833E200AE1019 /* bar-mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 779181BA18C833E200AE1019 /* bar-mid@2x.png */; };
@@ -183,8 +182,6 @@
 		7787CF2318806ECE004F495E /* AeroMedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AeroMedTests-Info.plist"; sourceTree = "<group>"; };
 		7787CF2518806ECE004F495E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7787CF2718806ECE004F495E /* AeroMedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroMedTests.m; sourceTree = "<group>"; };
-		779181AA18C82E9000AE1019 /* KLNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLNoteViewController.h; sourceTree = "<group>"; };
-		779181AB18C82E9000AE1019 /* KLNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLNoteViewController.m; sourceTree = "<group>"; };
 		779181AD18C82F7C00AE1019 /* Podfile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.txt; sourceTree = "<group>"; };
 		779181B118C832A500AE1019 /* AMDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMDocumentViewController.h; sourceTree = "<group>"; };
 		779181B218C832A500AE1019 /* AMDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMDocumentViewController.m; sourceTree = "<group>"; };
@@ -378,8 +375,6 @@
 			children = (
 				27B2672A18E4C48400367F0E /* bell.png */,
 				27AC965318DD329000CDFA93 /* NavigationControllerData.plist */,
-				779181AA18C82E9000AE1019 /* KLNoteViewController.h */,
-				779181AB18C82E9000AE1019 /* KLNoteViewController.m */,
 				27A9690E18B06D010010A721 /* SWRevealViewController.h */,
 				27A9690F18B06D010010A721 /* SWRevealViewController.m */,
 				779181B818C833D200AE1019 /* Images */,
@@ -601,7 +596,6 @@
 				27F94E0D18B424A3001F8F4F /* AMSignupViewController.m in Sources */,
 				7749F73B18CD50A400B582C0 /* TransportCell.m in Sources */,
 				ACEA6AB918F4C42200C29816 /* AMEmailViewController.m in Sources */,
-				779181AC18C82E9000AE1019 /* KLNoteViewController.m in Sources */,
 				27B11FC218EE21E50095B9A2 /* AMDocumentTableViewCell.m in Sources */,
 				270DB5351887201600573F3F /* Common.m in Sources */,
 				7787CF1318806ECE004F495E /* AppDelegate.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "AMChartViewController.h"
 #import "SWRevealViewController.h"
+#import "AMCheckListTableViewController.h"
 
 
 #define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
@@ -18,6 +19,9 @@
 @property (strong, nonatomic) NSMutableArray *checklistData;
 @property int daysBack;
 @property (strong, nonatomic) NSMutableArray *allUsers;
+
+@property (strong, nonatomic) NSDictionary *selectedChecklist;
+@property (strong, nonatomic) PFObject *selectedObject;
 
 @end
 
@@ -38,7 +42,7 @@
     
     [self hideShowPickerView];
   
-    self.bottomText.hidden = YES;
+    self.textButton.hidden = YES;
     self.barChart.delegate = self;
     self.barChart.dataSource = self;
     self.barChart.backgroundColor = [UIColor darkGrayColor];
@@ -124,15 +128,24 @@
     else if (index == 1) {
         [label appendString:@"Yesterday - "];
     }
-    else {
+    else if (index < self.allTransports.count) {
         [label appendFormat:@"%d", index];
         [label appendString:@" days ago - "];
+    } else {
+        [label appendString:@"No transports "];
+        [label appendFormat:@"%d", index];
+        [label appendString:@" days ago"];
     }
 
-    [label appendFormat:@"%0.2f%%", [self barValueAtIndex:index] * 100];
+    if (index < self.allTransports.count) {
+        [label appendFormat:@"%0.2f%%", [self barValueAtIndex:index] * 100];
 
-    self.bottomText.text = label;
-    self.bottomText.hidden = NO;
+        [self.textButton setTitle:label forState:UIControlStateNormal];
+        self.textButton.hidden = NO;
+    
+        self.selectedChecklist = [self.checklistData objectAtIndex:index];
+        self.selectedObject = [self.allTransports objectAtIndex:index];
+    }
     
 }
 
@@ -260,6 +273,10 @@
     }
 }
 
+- (IBAction)showDetails:(id)sender {
+    [self performSegueWithIdentifier:@"detailTransport" sender:self]; 
+}
+
 - (IBAction)doneTapped:(id)sender {
     [self hideShowPickerView];
     
@@ -285,12 +302,12 @@
         self.userPicker.hidden = NO;
         self.toolBar.hidden = NO;
         self.segmentedControl.hidden = YES;
-        self.bottomText.hidden = YES;
+        self.textButton.hidden = YES;
     } else {
         self.userPicker.hidden = YES;
         self.toolBar.hidden = YES;
         self.segmentedControl.hidden = NO;
-        self.bottomText.hidden = NO;
+        self.textButton.hidden = NO;
     }
 }
 
@@ -337,6 +354,15 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     self.selectedUser = [self.allUsers objectAtIndex:row];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"detailTransport"]) {
+        AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
+        [vc setCompletedChecklist:self.selectedChecklist];
+        [vc setIsDisplayingCompletedList:YES];
+        [vc setTransportData:self.selectedObject]; 
+    }
 }
 
 @end

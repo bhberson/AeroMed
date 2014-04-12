@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
 
-@interface AMCheckListTableViewController : UITableViewController
+@interface AMCheckListTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 @property (strong, nonatomic) NSArray *checkList;
 @property (strong, nonatomic) PFObject *transportData;
+
+@property (strong, nonatomic) NSDictionary *completedChecklist;
+@property BOOL isDisplayingCompletedList; 
 @end

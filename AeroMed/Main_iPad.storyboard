@@ -120,7 +120,7 @@
         <scene sceneID="CLj-XA-6LD">
             <objects>
                 <tableViewController id="f2x-Uo-Jji" customClass="AMCheckListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IXj-hc-H77">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IXj-hc-H77">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -354,7 +354,7 @@
                                     <action selector="didTapSignup:" destination="t0L-FF-Y3B" eventType="touchUpInside" id="6cT-Wf-ALL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-yW-bg7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-yW-bg7">
                                 <rect key="frame" x="297" y="158" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -432,7 +432,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="amTextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="gyB-aE-fkv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="gyB-aE-fkv">
                                 <rect key="frame" x="297" y="114" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -449,7 +449,7 @@
                                     <action selector="didTapForgotPassword:" destination="a0P-vU-OXO" eventType="touchUpInside" id="1I7-Cy-o5L"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-TC-6We">
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-TC-6We">
                                 <rect key="frame" x="-3" y="788" width="768" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -783,13 +783,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVo-8B-W6V">
-                                <rect key="frame" x="20" y="646" width="728" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NA5-eq-HVI">
                                 <rect key="frame" x="281" y="597" width="206" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -823,6 +816,17 @@
                                     <outlet property="delegate" destination="Sgz-sg-y4D" id="5gE-cZ-XJS"/>
                                 </connections>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOL-VZ-fsK">
+                                <rect key="frame" x="265" y="663" width="238" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDetails:" destination="Sgz-sg-y4D" eventType="touchUpInside" id="JMb-l4-UpB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -831,20 +835,21 @@
                             <constraint firstItem="qnE-r8-hpB" firstAttribute="width" secondItem="Q7O-xo-DO2" secondAttribute="width" id="HrW-bL-AXA"/>
                             <constraint firstItem="NA5-eq-HVI" firstAttribute="top" secondItem="isN-QC-WVM" secondAttribute="bottom" constant="39" id="Lej-nx-ESp"/>
                             <constraint firstAttribute="centerX" secondItem="NA5-eq-HVI" secondAttribute="centerX" id="PVw-tb-vlq"/>
-                            <constraint firstItem="hVo-8B-W6V" firstAttribute="top" secondItem="NA5-eq-HVI" secondAttribute="bottom" constant="21" id="ZQa-9O-DbA"/>
+                            <constraint firstItem="VOL-VZ-fsK" firstAttribute="top" secondItem="NA5-eq-HVI" secondAttribute="bottom" constant="38" id="ao6-oX-LKg"/>
                             <constraint firstAttribute="centerX" secondItem="DDh-P9-TgM" secondAttribute="centerX" id="gNd-j8-AB0"/>
                             <constraint firstAttribute="centerX" secondItem="isN-QC-WVM" secondAttribute="centerX" id="jfw-eZ-Rl9"/>
                             <constraint firstItem="bMl-7r-4ZC" firstAttribute="width" secondItem="Q7O-xo-DO2" secondAttribute="width" id="ptI-oe-JoY"/>
-                            <constraint firstAttribute="centerX" secondItem="hVo-8B-W6V" secondAttribute="centerX" id="ta9-Wv-D7r"/>
+                            <constraint firstAttribute="centerX" secondItem="VOL-VZ-fsK" secondAttribute="centerX" id="ye3-Fa-8Ao"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="barChart" destination="isN-QC-WVM" id="hxc-Ph-6yo"/>
-                        <outlet property="bottomText" destination="hVo-8B-W6V" id="IKr-Cc-jOQ"/>
                         <outlet property="segmentedControl" destination="NA5-eq-HVI" id="iwE-ty-sCL"/>
+                        <outlet property="textButton" destination="VOL-VZ-fsK" id="dJI-Dh-I0j"/>
                         <outlet property="titleText" destination="DDh-P9-TgM" id="rVi-kX-JLZ"/>
                         <outlet property="toolBar" destination="bMl-7r-4ZC" id="kth-UI-BfW"/>
                         <outlet property="userPicker" destination="qnE-r8-hpB" id="pRs-oC-iXz"/>
+                        <segue destination="f2x-Uo-Jji" kind="push" identifier="detailTransport" id="e1z-B7-3xV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6K-8X-Nn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1252,8 +1257,9 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4hX-6w-jWv"/>
-        <segue reference="TuH-TB-JVE"/>
         <segue reference="fBo-1Q-5ED"/>
+        <segue reference="e1z-B7-3xV"/>
+        <segue reference="D8o-Wb-2nW"/>
+        <segue reference="4hX-6w-jWv"/>
     </inferredMetricsTieBreakers>
 </document>

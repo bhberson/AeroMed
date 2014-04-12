@@ -11,7 +11,7 @@
 
 @interface AMCheckListTableViewController ()
 @property NSMutableArray *dataArray;
-
+@property NSMutableArray *allUsers;
 @end
 
 @implementation AMCheckListTableViewController
@@ -30,8 +30,16 @@
     [super viewDidLoad];
     
 
-    UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneTapped:)];
-    self.navigationItem.rightBarButtonItem = done;
+    // If we are just displaying a list then modify a little
+    if (self.isDisplayingCompletedList) {
+        UIBarButtonItem *mail = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(showMail)];
+        self.navigationItem.rightBarButtonItem = mail;
+        [self queryForUsers];
+    } else {
+    
+        UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneTapped:)];
+        self.navigationItem.rightBarButtonItem = done;
+    }
 
     
     NSLog(@"%@",self.checkList);
@@ -69,7 +77,12 @@
 {
 
     // Return the number of rows in the section.
-    return [self.checkList count];
+    
+    if (self.isDisplayingCompletedList) {
+        return [self.completedChecklist count];
+    } else {
+        return [self.checkList count];
+    }
 }
 
 
@@ -78,30 +91,46 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"checkCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
-    cell.textLabel.text =[self.checkList objectAtIndex:indexPath.row];
-  
-    NSMutableDictionary *item = [self.dataArray objectAtIndex:indexPath.row];
-    
-    BOOL checked = [[item objectForKey:@"checked"] boolValue];
-    
-    UIImage *img = (checked) ? [UIImage imageNamed:@"check-yes"] : [UIImage imageNamed:@"check-no"];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    CGRect frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
-    button.frame = frame;
-    [button setBackgroundImage:img forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(checkMarkTapped:withEvent:) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor = [UIColor clearColor];
-    cell.accessoryView = button;
-     
-    [item setObject:cell forKey:@"cell"];
+    if (self.isDisplayingCompletedList) {
+        NSString *item = [[self.completedChecklist allKeys] objectAtIndex:indexPath.row];
+        cell.textLabel.text = item;
+        BOOL checked = [[self.completedChecklist objectForKey:item] boolValue];
+        
+        UIImage *img = (checked) ? [UIImage imageNamed:@"check-yes"] : [UIImage imageNamed:@"check-no"];
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        CGRect frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
+        button.frame = frame;
+        [button setBackgroundImage:img forState:UIControlStateNormal];
+        cell.accessoryView = button;
+    } else {
+        cell.textLabel.text =[self.checkList objectAtIndex:indexPath.row];
+      
+        NSMutableDictionary *item = [self.dataArray objectAtIndex:indexPath.row];
+        
+        BOOL checked = [[item objectForKey:@"checked"] boolValue];
+        
+        UIImage *img = (checked) ? [UIImage imageNamed:@"check-yes"] : [UIImage imageNamed:@"check-no"];
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        CGRect frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
+        button.frame = frame;
+        [button setBackgroundImage:img forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(checkMarkTapped:withEvent:) forControlEvents:UIControlEventTouchUpInside];
+        button.backgroundColor = [UIColor clearColor];
+        cell.accessoryView = button;
+         
+        [item setObject:cell forKey:@"cell"];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self tableView:self.tableView accessoryButtonTappedForRowWithIndexPath:indexPath];
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (!self.isDisplayingCompletedList) {
+        [self tableView:self.tableView accessoryButtonTappedForRowWithIndexPath:indexPath];
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
@@ -166,18 +195,93 @@
     }
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    
+//    if ([segue.identifier isEqualToString:@"toTransport"]) {
+//        //TODO pass data and probably combine base view controllers of ipad and iphones
+//        
+//        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//            AMBaseViewController *ipadVC = (AMBaseViewController *)segue.destinationViewController;
+//            
+//        } else {
+//            AMBaseViewController *iphoneVC = (AMBaseViewController *)segue.destinationViewController;
+//        }
+//    }
+//}
+
+// Query for all users
+- (void) queryForUsers {
+    PFQuery *query = [PFUser query];
     
-    if ([segue.identifier isEqualToString:@"toTransport"]) {
-        //TODO pass data and probably combine base view controllers of ipad and iphones
-        
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            AMBaseViewController *ipadVC = (AMBaseViewController *)segue.destinationViewController;
-            
-        } else {
-            AMBaseViewController *iphoneVC = (AMBaseViewController *)segue.destinationViewController;
-        }
-    }
+    self.allUsers = [NSMutableArray array];
+    
+    query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    [self.allUsers addObjectsFromArray:[query findObjects]];
 }
+
+- (void)showMail {
+    
+    if ([MFMailComposeViewController canSendMail]){
+        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+        mailer.mailComposeDelegate = self;
+    
+        NSString *transportTitle = [[NSString alloc] initWithFormat:@"%@%@ Review", @"Transport #", [self.transportData[@"TransportNumber"] stringValue]];
+        [mailer setSubject:transportTitle];
+        
+        NSMutableArray *toRecipients = [[NSMutableArray alloc] init];
+        
+        for (NSString *user in self.transportData[@"CrewMembers"]) {
+            for (int i = 0; i < self.allUsers.count; i++) {
+                PFUser *userData = [self.allUsers objectAtIndex:i];
+                if ([user isEqualToString:userData[@"username"]]) {
+                    [toRecipients addObject:userData[@"email"]];
+                }
+            }
+        }
+        
+        [mailer setToRecipients:toRecipients];
+        
+       
+        
+    
+        [self presentModalViewController:mailer animated:YES];
+        [self presentViewController:mailer animated:YES completion:nil];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sorry"
+                                                        message:@"Your device doesn't support emailing"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+    }
+
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued.");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved: you saved the email message in the drafts folder.");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail send: the email message is queued in the outbox. It is ready to send.");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail failed: the email message was not saved or queued, possibly due to an error.");
+            break;
+        default:
+            NSLog(@"Mail not sent.");
+            break;
+    }
+    
+    // Remove the mail view
+    [self dismissModalViewControllerAnimated:YES];
+}
+                                                   
+                                    
 
 @end
