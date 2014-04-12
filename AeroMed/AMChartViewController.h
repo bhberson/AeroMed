@@ -18,7 +18,8 @@ UIPickerViewDataSource, UIPickerViewDelegate, UIToolbarDelegate>
 @property (weak, nonatomic) IBOutlet UIPickerView *userPicker;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 
-- (IBAction)controlChanged:(id)sender;
+- (IBAction)segmentChanged:(id)sender;
+
 - (IBAction)doneTapped:(id)sender;
 - (void)setUpTransports:(NSArray *)objects; 
 @end

@@ -14,7 +14,7 @@
 
 @interface AMChartViewController ()
 @property (strong, nonatomic) NSMutableArray *allTransports;
-@property (strong, nonatomic) NSMutableArray *userTransports;
+@property (strong, nonatomic) NSString *selectedUser;
 @property (strong, nonatomic) NSMutableArray *checklistData;
 @property int daysBack;
 @property (strong, nonatomic) NSMutableArray *allUsers;
@@ -184,12 +184,7 @@
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query setLimit: 100];
     
-    // Initialize the checklist data
-    self.checklistData = [[NSMutableArray alloc] initWithCapacity:self.daysBack];
-    for (int i = 0; i < self.daysBack; i++) {
-        [self.checklistData addObject:[NSNumber numberWithInt:0]];
-    }
-    
+
     __weak AMChartViewController *weakClass = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
@@ -203,36 +198,27 @@
     
 }
 
-// Segmented control changed 
-- (IBAction)controlChanged:(id)sender {
-    
-    
-    if (self.segmentedControl.selectedSegmentIndex == 0) {
-        
-    // Select a crew member
-    } else {
-        if (self.userPicker.hidden) {
-            
-            if (self.allUsers == nil) {
-                [self getUsers];
-            }
-            [self hideShowPickerView];
-        }
-    }
-    
-}
 
 
 - (void)setUpTransports:(NSArray *)objects {
-    int daysAway = 0;
-   
     
-    // The find succeeded. Add the returned objects to allObjects
+    // First create all transports. Then setup the checklist data for all transports 
     self.allTransports = [[NSMutableArray alloc] initWithArray:objects];
-  
+    [self setupCheckList:self.allTransports];
+    
+}
+
+- (void)setupCheckList:(NSArray *)transports {
+    int daysAway = 0;
+    
+    // Initialize the checklist data
+    self.checklistData = [[NSMutableArray alloc] initWithCapacity:self.daysBack];
+    for (int i = 0; i < self.daysBack; i++) {
+        [self.checklistData addObject:[NSNumber numberWithInt:0]];
+    }
     
     // Iterate through the transports and get the days away
-    for (PFObject *transport in self.allTransports) {
+    for (PFObject *transport in transports) {
         daysAway = [self daysSinceDate:[transport createdAt]];
         
         // If it is in our graph range then add the checklist results to that day index
@@ -259,9 +245,35 @@
     [self.barChart setState:JBChartViewStateExpanded animated:YES];
 }
 
+- (IBAction)segmentChanged:(id)sender {
+    
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        
+        // Select a crew member
+    } else {
+        
+        if (self.allUsers == nil) {
+            [self getUsers];
+        }
+        [self hideShowPickerView];
+        
+    }
+}
+
 - (IBAction)doneTapped:(id)sender {
     [self hideShowPickerView];
     
+    // Filtered transports
+    NSMutableArray *userTransports = [[NSMutableArray alloc] init];
+    for (PFObject *obj in self.allTransports) {
+        NSArray *crew = obj[@"CrewMembers"];
+        
+        if ([crew containsObject:self.selectedUser]) {
+            [userTransports addObject:obj];
+        }
+        
+    }
+    [self setupCheckList:userTransports];
     
 }
 
@@ -273,15 +285,13 @@
         self.userPicker.hidden = NO;
         self.toolBar.hidden = NO;
         self.segmentedControl.hidden = YES;
+        self.bottomText.hidden = YES;
     } else {
         self.userPicker.hidden = YES;
         self.toolBar.hidden = YES;
         self.segmentedControl.hidden = NO;
+        self.bottomText.hidden = NO;
     }
-}
-
-- (void)dismissPicker {
-    self.userPicker.hidden = YES; 
 }
 
 // Query for all users
@@ -298,6 +308,7 @@
             }
         }
     }
+    self.selectedUser = [self.allUsers objectAtIndex:0]; 
     [self.userPicker reloadAllComponents]; 
 
     
@@ -325,7 +336,7 @@
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    
+    self.selectedUser = [self.allUsers objectAtIndex:row];
 }
 
 @end

@@ -354,7 +354,7 @@
                                     <action selector="didTapSignup:" destination="t0L-FF-Y3B" eventType="touchUpInside" id="6cT-Wf-ALL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-yW-bg7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-yW-bg7">
                                 <rect key="frame" x="297" y="158" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -449,7 +449,7 @@
                                     <action selector="didTapForgotPassword:" destination="a0P-vU-OXO" eventType="touchUpInside" id="1I7-Cy-o5L"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-TC-6We">
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-TC-6We">
                                 <rect key="frame" x="-3" y="788" width="768" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -771,7 +771,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isN-QC-WVM" customClass="JBBarChartView">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isN-QC-WVM" customClass="JBBarChartView">
                                 <rect key="frame" x="20" y="198" width="728" height="468"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -783,32 +783,63 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVo-8B-W6V">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVo-8B-W6V">
                                 <rect key="frame" x="20" y="828" width="728" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NA5-eq-HVI">
-                                <rect key="frame" x="281" y="758" width="206" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NA5-eq-HVI">
+                                <rect key="frame" x="281" y="720" width="206" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="All Members"/>
                                     <segment title="Select Member"/>
                                 </segments>
                                 <connections>
-                                    <action selector="controlChanged:" destination="Sgz-sg-y4D" eventType="valueChanged" id="jpu-Gd-gqA"/>
+                                    <action selector="segmentChanged:" destination="Sgz-sg-y4D" eventType="valueChanged" id="s6d-jD-evB"/>
                                 </connections>
                             </segmentedControl>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnE-r8-hpB">
+                                <rect key="frame" x="0.0" y="808" width="768" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Sgz-sg-y4D" id="dnc-ac-eh3"/>
+                                    <outlet property="delegate" destination="Sgz-sg-y4D" id="UlZ-1Q-ih2"/>
+                                </connections>
+                            </pickerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-7r-4ZC">
+                                <rect key="frame" x="0.0" y="764" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Done" id="f4t-Ok-n1A">
+                                        <connections>
+                                            <action selector="doneTapped:" destination="Sgz-sg-y4D" id="bhk-AE-l64"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="Sgz-sg-y4D" id="5gE-cZ-XJS"/>
+                                </connections>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qnE-r8-hpB" firstAttribute="top" secondItem="bMl-7r-4ZC" secondAttribute="bottom" id="DR5-uu-v0n"/>
+                            <constraint firstAttribute="trailing" secondItem="qnE-r8-hpB" secondAttribute="trailing" id="P2c-pn-1O6"/>
+                            <constraint firstAttribute="width" secondItem="qnE-r8-hpB" secondAttribute="width" id="PCr-Hs-LNg"/>
+                            <constraint firstItem="NA5-eq-HVI" firstAttribute="top" secondItem="isN-QC-WVM" secondAttribute="bottom" constant="54" id="Uf7-wi-8yS"/>
+                            <constraint firstItem="bMl-7r-4ZC" firstAttribute="width" secondItem="qnE-r8-hpB" secondAttribute="width" id="xbJ-VN-6Mx"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="barChart" destination="isN-QC-WVM" id="hxc-Ph-6yo"/>
                         <outlet property="bottomText" destination="hVo-8B-W6V" id="IKr-Cc-jOQ"/>
                         <outlet property="segmentedControl" destination="NA5-eq-HVI" id="iwE-ty-sCL"/>
                         <outlet property="titleText" destination="DDh-P9-TgM" id="rVi-kX-JLZ"/>
+                        <outlet property="toolBar" destination="bMl-7r-4ZC" id="kth-UI-BfW"/>
+                        <outlet property="userPicker" destination="qnE-r8-hpB" id="pRs-oC-iXz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6K-8X-Nn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -972,7 +1003,7 @@
                                     <action selector="didTapSignup:" destination="R86-6j-Cro" eventType="touchUpInside" id="khg-ZU-llE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-Ke-XBm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-Ke-XBm">
                                 <rect key="frame" x="305" y="104" width="175" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
