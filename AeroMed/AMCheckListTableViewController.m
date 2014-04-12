@@ -34,15 +34,13 @@
     if (self.isDisplayingCompletedList) {
         UIBarButtonItem *mail = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(showMail)];
         self.navigationItem.rightBarButtonItem = mail;
+        self.navigationItem.title = [NSString stringWithFormat:@"Transport #%@",[self.transportData[@"TransportNumber"] stringValue]];
         [self queryForUsers];
     } else {
     
         UIBarButtonItem *done = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneTapped:)];
         self.navigationItem.rightBarButtonItem = done;
     }
-
-    
-    NSLog(@"%@",self.checkList);
  
     self.dataArray = [[NSMutableArray alloc] initWithCapacity:self.checkList.count];
     

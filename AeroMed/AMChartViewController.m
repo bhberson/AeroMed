@@ -41,6 +41,7 @@
     [super viewDidLoad];
     
     [self hideShowPickerView];
+    
   
     self.textButton.hidden = YES;
     self.barChart.delegate = self;
@@ -60,6 +61,8 @@
         self.daysBack = 15;
     }
     
+    
+    
 }
 
 
@@ -67,10 +70,12 @@
 {
     [super viewWillAppear:animated];
     [self.barChart setState:JBChartViewStateCollapsed];
-    
-    NSMutableString *title = [[NSMutableString alloc] init];
-    [title appendString:@"Recent Transport Performance"];
-    self.titleText.text = title;
+    [self.titleText adjustsFontSizeToFitWidth]; 
+    if (![[PFUser currentUser] objectForKey:@"isAdmin"]) {
+        self.titleText.text = [NSString stringWithFormat:@"%@'s Transport Performance", [[PFUser currentUser] objectForKey:@"username"]]; 
+    } else {
+        self.titleText.text = @"Recent Transport Performance";
+    }
     
     [self retrieveTransports];
 }
@@ -217,7 +222,27 @@
     
     // First create all transports. Then setup the checklist data for all transports 
     self.allTransports = [[NSMutableArray alloc] initWithArray:objects];
-    [self setupCheckList:self.allTransports];
+    
+    // If we are not an admin then only show user's transports 
+    if (![[PFUser currentUser] objectForKey:@"isAdmin"]) {
+        self.selectedUser = [[PFUser currentUser] objectForKey:@"username"];
+        // Filtered transports
+        NSMutableArray *userTransports = [[NSMutableArray alloc] init];
+        for (PFObject *obj in self.allTransports) {
+            NSArray *crew = obj[@"CrewMembers"];
+            
+            if ([crew containsObject:self.selectedUser]) {
+                [userTransports addObject:obj];
+            }
+            
+        }
+        [self setupCheckList:userTransports];
+        
+    // Show all recent transports
+    } else {
+        [self setupCheckList:self.allTransports];
+        [self getUsers];
+    }
     
 }
 
@@ -261,15 +286,12 @@
 - (IBAction)segmentChanged:(id)sender {
     
     if (self.segmentedControl.selectedSegmentIndex == 0) {
-        
+        [self setupCheckList:self.allTransports];
+        self.titleText.text = @"Recent Transport Performance";
         // Select a crew member
     } else {
-        
-        if (self.allUsers == nil) {
-            [self getUsers];
-        }
+        self.titleText.text = [NSString stringWithFormat:@"%@'s Transport Performance", self.selectedUser];
         [self hideShowPickerView];
-        
     }
 }
 
@@ -292,13 +314,19 @@
     }
     [self setupCheckList:userTransports];
     
+    
 }
 
 - (void)hideShowPickerView {
     BOOL isHidden = self.userPicker.hidden;
     
-    // We want to show the items
-    if (isHidden) {
+    // Only admins can select users
+    if (![[PFUser currentUser] objectForKey:@"isAdmin"]) {
+        self.segmentedControl.hidden = YES;
+        self.userPicker.hidden = YES;
+        self.toolBar.hidden = YES;
+        
+    } else if (isHidden) {
         self.userPicker.hidden = NO;
         self.toolBar.hidden = NO;
         self.segmentedControl.hidden = YES;
@@ -314,19 +342,22 @@
 // Query for all users
 - (void) getUsers {
 
-    self.allUsers = [[NSMutableArray alloc] init];
-    for (PFObject *obj in self.allTransports) {
-        NSMutableArray *crewMembers = [obj objectForKey:@"CrewMembers"];
-        
-        for (NSString *member in crewMembers) {
+    if (self.allTransports != nil) {
+        self.allUsers = [[NSMutableArray alloc] init];
+        for (PFObject *obj in self.allTransports) {
+            NSMutableArray *crewMembers = [obj objectForKey:@"CrewMembers"];
             
-            if (![self.allUsers containsObject:member] && ![member isEqualToString:@""]) {
-                [self.allUsers addObject:member];
+            for (NSString *member in crewMembers) {
+                
+                if (![self.allUsers containsObject:member] && ![member isEqualToString:@""]) {
+                    [self.allUsers addObject:member];
+                }
             }
         }
+        
+        self.selectedUser = [self.allUsers objectAtIndex:0]; 
+        [self.userPicker reloadAllComponents];
     }
-    self.selectedUser = [self.allUsers objectAtIndex:0]; 
-    [self.userPicker reloadAllComponents]; 
 
     
 }
@@ -354,6 +385,7 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     self.selectedUser = [self.allUsers objectAtIndex:row];
+    self.titleText.text = [NSString stringWithFormat:@"%@'s Transport Performance", self.selectedUser];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
