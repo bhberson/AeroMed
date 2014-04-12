@@ -707,10 +707,10 @@
             </objects>
             <point key="canvasLocation" x="2317" y="-515"/>
         </scene>
-        <!--MiP Hone Chart View Controller-->
+        <!--Chart View Controller-->
         <scene sceneID="ICg-va-MKk">
             <objects>
-                <viewController id="jU7-IZ-QSG" customClass="AMiPHoneChartViewController" sceneMemberID="viewController">
+                <viewController id="jU7-IZ-QSG" customClass="AMChartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iAL-l5-ivr"/>
                         <viewControllerLayoutGuide type="bottom" id="zEq-FU-31G"/>
@@ -738,14 +738,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="f4V-Km-sY0">
-                                <rect key="frame" x="88" y="425" width="145" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="ALL"/>
-                                    <segment title="Pick User"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -757,7 +749,6 @@
                     <connections>
                         <outlet property="barChart" destination="c6C-pQ-k5y" id="J67-X6-4JV"/>
                         <outlet property="bottomText" destination="e1j-gz-6qO" id="ekY-qB-6Xa"/>
-                        <outlet property="segmentControl" destination="f4V-Km-sY0" id="YkM-0V-APK"/>
                         <outlet property="titleText" destination="gAs-OS-sQu" id="M82-lV-cpQ"/>
                     </connections>
                 </viewController>

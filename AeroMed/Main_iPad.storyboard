@@ -759,10 +759,10 @@
             </objects>
             <point key="canvasLocation" x="4174" y="-29"/>
         </scene>
-        <!--Mi Pad Chart View Controller-->
+        <!--Chart View Controller-->
         <scene sceneID="bpc-0j-v53">
             <objects>
-                <viewController id="Sgz-sg-y4D" customClass="AMiPadChartViewController" sceneMemberID="viewController">
+                <viewController id="Sgz-sg-y4D" customClass="AMChartViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TDi-Fa-h7X"/>
                         <viewControllerLayoutGuide type="bottom" id="ZCJ-NQ-fqn"/>

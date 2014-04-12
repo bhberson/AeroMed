@@ -29,12 +29,9 @@
 }
 - (IBAction)done:(id)sender
 {
-    Transport *transport = [[Transport alloc] init];
-	transport.transportNumber = self.numTextField.text;
-    transport.crewMembers = [[NSMutableArray alloc] init];
+    
     NSMutableArray *crew = [NSMutableArray array];
     if (self.crewMember1TextField.text != nil) {
-        [transport.crewMembers addObject:self.crewMember1TextField.text];
         [crew addObject:self.crewMember1TextField.text];
     }
     if (self.crewMember2TextField.text != nil) {
@@ -46,14 +43,10 @@
     if (self.crewMember4TextField.text != nil) {
         [crew addObject:self.crewMember4TextField.text];
     }
-    transport.ageGroup = self.ageGroupTextField.text;
-    transport.transportType = self.transportTypeTextField.text;
-    transport.specialTransport = self.specialTransportTextField.text;
-    transport.otherNotes = self.notesTextField.text;
     
     NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
     [f setNumberStyle:NSNumberFormatterDecimalStyle];
-    NSNumber * myTransportNumber = [f numberFromString:transport.transportNumber];
+    NSNumber * myTransportNumber = [f numberFromString:self.numTextField.text];
     
     // Create the object.
     PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];

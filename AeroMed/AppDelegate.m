@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
-#import "OperatingProcedure.h"
-#import "Transport.h"
 #import "AMBaseViewController.h"
 
 @implementation AppDelegate{
@@ -18,8 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Register subclass of documents
-    [OperatingProcedure registerSubclass];
+    
     
     // Setup Parse Integration
     [Parse setApplicationId:@"uzcJ9e2B7vMZcpAa1eBuub7fijMZGK8RcIFkemio" clientKey:@"VKmoX4aBbPTpqF4cV60HllI7shGH6nXEYmnwjELO"];
@@ -31,16 +28,15 @@
     }]; 
     
     // Track statistics
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions]; 
-    NSLog(@"Testing modified log format");
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
-    transports = [NSMutableArray arrayWithCapacity:20];
-	Transport *transport = [[Transport alloc] init];
-	transport.transportNumber = @"019";
-	[transports addObject:transport];
-	transport = [[Transport alloc] init];
-	transport.transportNumber = @"1234";
-	[transports addObject:transport];
+//    transports = [NSMutableArray arrayWithCapacity:20];
+//	Transport *transport = [[Transport alloc] init];
+//	transport.transportNumber = @"019";
+//	[transports addObject:transport];
+//	transport = [[Transport alloc] init];
+//	transport.transportNumber = @"1234";
+//	[transports addObject:transport];
 
     return YES;
 

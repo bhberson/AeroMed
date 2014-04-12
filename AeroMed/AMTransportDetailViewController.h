@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Transport.h"
+
 
 @interface AMTransportDetailViewController : UITableViewController <UINavigationControllerDelegate>
 

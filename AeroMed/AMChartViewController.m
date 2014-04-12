@@ -1,24 +1,23 @@
 //
-//  AMChartViewController.m
+//  AMiPadChartViewController.m
 //  AeroMed
 //
-//  Created by Michael Torres on 3/22/14.
+//  Created by Michael Torres on 3/25/14.
 //  Copyright (c) 2014 GVSU. All rights reserved.
 //
 
-#import "AMiPHoneChartViewController.h"
+#import "AMChartViewController.h"
 #import "SWRevealViewController.h"
 
-static int const daysBack = 15; // must be 1 or greater
+#define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
 
-@interface AMiPHoneChartViewController ()
+@interface AMChartViewController ()
 @property (strong, nonatomic) NSMutableArray *allTransports;
-@property (strong, nonatomic) NSMutableArray *showingData;
 @property (strong, nonatomic) NSMutableArray *checklistData;
-@property (strong, nonatomic) NSMutableArray *graphData;
+@property int daysBack;
 @end
 
-@implementation AMiPHoneChartViewController
+@implementation AMChartViewController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,8 +31,7 @@ static int const daysBack = 15; // must be 1 or greater
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
+  
     self.bottomText.hidden = YES;
     self.barChart.delegate = self;
     self.barChart.dataSource = self;
@@ -45,43 +43,15 @@ static int const daysBack = 15; // must be 1 or greater
     // Menu button
     UIBarButtonItem *sidebarButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = sidebarButton;
+
     
-    // Initialize graph data array
-    self.graphData = [[NSMutableArray alloc] initWithCapacity:daysBack];
-    
-    // Add empty cells for index insertion
-    for (int i = 0; i < daysBack; i++) {
-        int items = arc4random() % 6 + 1;
-        NSMutableArray *randList = [[NSMutableArray alloc] init];
-        
-        for(int i = 0; i < items; i++) {
-            BOOL b;
-            int r = arc4random() % 10;
-            b = (r < 7) ? YES : NO;
-            [randList addObject:@{@"checked": [NSNumber numberWithBool:b]}];
-        }
-        
-        [self.graphData addObject:randList];
+    if (IPAD) {
+        self.daysBack = 30;
+    } else {
+        self.daysBack = 15;
     }
-    
-    // Mock transport
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setLocale:[NSLocale currentLocale]];
-    [dateFormat setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
-    [dateFormat setDateFormat:@"yyyy/MM/dd"];
-    
-    NSDate *checklistDate = [[NSDate alloc] init];
-    
-    checklistDate = [dateFormat dateFromString:@"2014/4/7"];
-    
-    [self.barChart reloadData];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -92,7 +62,7 @@ static int const daysBack = 15; // must be 1 or greater
     [title appendString:@"Recent Transport Performance"];
     self.titleText.text = title;
     
-    [self retrieveTransports]; 
+    [self retrieveTransports];
 }
 
 - (void)didReceiveMemoryWarning
@@ -119,13 +89,14 @@ static int const daysBack = 15; // must be 1 or greater
 #pragma mark - chart methods
 
 - (NSUInteger)numberOfBarsInBarChartView:(JBBarChartView *)barChartView {
-    return daysBack; // number of bars in chart
+    
+    return self.daysBack; // number of bars in chart
 }
 
 - (CGFloat)barChartView:(JBBarChartView *)barChartView heightForBarViewAtAtIndex:(NSUInteger)index {
     // flip the index around
-    index = abs(index - (daysBack - 1));
-    
+    index = abs(index - (self.daysBack - 1));
+
     return [self barValueAtIndex:index];
 }
 
@@ -137,7 +108,7 @@ static int const daysBack = 15; // must be 1 or greater
 - (void)barChartView:(JBBarChartView *)barChartView didSelectBarAtIndex:(NSUInteger)index touchPoint:(CGPoint)touchPoint
 {
     // flip the index around
-    index = abs(index - (daysBack - 1));
+    index = abs(index - (self.daysBack - 1));
     
     // Update view
     NSMutableString *label = [[NSMutableString alloc] init];
@@ -151,30 +122,31 @@ static int const daysBack = 15; // must be 1 or greater
         [label appendFormat:@"%d", index];
         [label appendString:@" days ago - "];
     }
-    
+
     [label appendFormat:@"%0.2f%%", [self barValueAtIndex:index] * 100];
-    
+
     self.bottomText.text = label;
     self.bottomText.hidden = NO;
     
 }
 
 - (float)barValueAtIndex:(NSUInteger)index {
-    // get checklist statistic array at index
-    NSMutableArray *listArray = [self.graphData objectAtIndex:index];
     
-    int total = 0;
-    int yes = 0;
-    
-    for (NSDictionary *d in listArray) {
-        total++; // increase total number of checklist items
+    // If the index contains a dictionary
+    if ([[self.checklistData objectAtIndex:index] isKindOfClass:[NSMutableDictionary class]]) {
+        NSDictionary *data = [self.checklistData objectAtIndex:index];
+        float total = [data count];
+        float yes = 0;
+      
+        for (NSNumber *value in [data allValues]) {
+            
+            if([value boolValue])
+                yes++; // increase total number of checked checklist items
+        }
         
-        if([[d objectForKey:@"checked"] boolValue])
-            yes++; // increase total number of checked checklist items
-    }
-    
-    if(total > 0) {
-        return (float)yes / (float)total; // height of bar at index
+        if(total > 0) {
+            return yes / total; // height of bar at index
+        }
     }
     
     return 0;
@@ -182,7 +154,7 @@ static int const daysBack = 15; // must be 1 or greater
 
 - (void)didUnselectBarChartView:(JBBarChartView *)barChartView
 {
-    
+
 }
 
 - (UIColor *)barSelectionColorForBarChartView:(JBBarChartView *)barChartView
@@ -194,7 +166,8 @@ static int const daysBack = 15; // must be 1 or greater
 - (UIView *)barChartView:(JBBarChartView *)barChartView barViewAtIndex:(NSUInteger)index
 {
     UIView *barView = [[UIView alloc] init];
-    barView.backgroundColor = (index % 2 == 0) ? [UIColor colorWithRed:0.285f green:0.781f blue:0.98f alpha:1.0f]: [UIColor colorWithRed:0.0f green:0.625f blue:0.722f alpha:1.0f];
+    barView.backgroundColor = (index % 2 == 0) ? [UIColor colorWithRed:0.285f green:0.781f blue:0.98f alpha:1.0f]:
+                                                    [UIColor colorWithRed:0.0f green:0.625f blue:0.722f alpha:1.0f];
     return barView;
 }
 
@@ -204,18 +177,51 @@ static int const daysBack = 15; // must be 1 or greater
     PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query setLimit: 100];
+    
+    // Initialize the checklist data
+    self.checklistData = [[NSMutableArray alloc] initWithCapacity:self.daysBack];
+    for (int i = 0; i < self.daysBack; i++) {
+        [self.checklistData addObject:[NSNumber numberWithInt:0]];
+    }
+    
+    __block int daysAway;
+    __block NSArray *oldData;
+    __block NSMutableArray *newData;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
+            
             // The find succeeded. Add the returned objects to allObjects
             self.allTransports = [[NSMutableArray alloc] initWithArray:objects];
-            for (PFObject *obj in self.allTransports) {
-                NSDictionary *checklist = obj[@"checklist"];
-                if (checklist) {
-                    [self.checklistData addObject:obj[@"checklist"]];
+            //self.shouldSetData= YES;
+            
+            // Iterate through the transports and get the days away
+            for (PFObject *transport in self.allTransports) {
+                 daysAway = [self daysSinceDate:[transport createdAt]];
+    
+                // If it is in our graph range then add the checklist results to that day index
+                if (daysAway < 30) {
+    
+                    // If a checklist is set for that transport. It should be, but users be users.
+                    if (transport[@"checklist"]) {
+    
+                        // If we have more than one transport in a day then we need to add to the list
+                        if (![self.checklistData objectAtIndex:daysAway]) {
+                            oldData = [self.checklistData objectAtIndex:daysAway];
+                            newData = transport[@"checklist"];
+                            [newData addObjectsFromArray:oldData];
+                            [self.checklistData replaceObjectAtIndex:daysAway withObject:newData];
+                        } else {
+                            [self.checklistData replaceObjectAtIndex:daysAway withObject:transport[@"checklist"]];
+                        }
+                    }
                 }
-            }
+                    }
+            
             [self.barChart reloadData];
-            [self.barChart setState:JBChartViewStateExpanded animated:YES callback:nil];
+            [self.barChart setState:JBChartViewStateCollapsed];
+            [self.barChart setState:JBChartViewStateExpanded animated:YES]; 
+            
+            
         } else {
             // Log details of the failure
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -223,5 +229,4 @@ static int const daysBack = 15; // must be 1 or greater
     }];
     
 }
-
 @end
