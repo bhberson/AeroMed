@@ -14,4 +14,7 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextViewDelega
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) PFObject *transportData;
+
+- (void)setUpFolders:(NSArray *)objects;
+- (void)setupDocuments:(NSArray *)objects;
 @end

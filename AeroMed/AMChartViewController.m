@@ -9,12 +9,16 @@
 #import "AMChartViewController.h"
 #import "SWRevealViewController.h"
 
+
 #define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
 
 @interface AMChartViewController ()
 @property (strong, nonatomic) NSMutableArray *allTransports;
+@property (strong, nonatomic) NSMutableArray *userTransports;
 @property (strong, nonatomic) NSMutableArray *checklistData;
 @property int daysBack;
+@property (strong, nonatomic) NSMutableArray *allUsers;
+
 @end
 
 @implementation AMChartViewController
@@ -31,6 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self hideShowPickerView];
   
     self.bottomText.hidden = YES;
     self.barChart.delegate = self;
@@ -43,13 +49,13 @@
     // Menu button
     UIBarButtonItem *sidebarButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.revealViewController action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = sidebarButton;
-
     
     if (IPAD) {
         self.daysBack = 30;
     } else {
         self.daysBack = 15;
     }
+    
 }
 
 
@@ -184,43 +190,10 @@
         [self.checklistData addObject:[NSNumber numberWithInt:0]];
     }
     
-    __block int daysAway;
-    __block NSArray *oldData;
-    __block NSMutableArray *newData;
+    __weak AMChartViewController *weakClass = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            
-            // The find succeeded. Add the returned objects to allObjects
-            self.allTransports = [[NSMutableArray alloc] initWithArray:objects];
-            //self.shouldSetData= YES;
-            
-            // Iterate through the transports and get the days away
-            for (PFObject *transport in self.allTransports) {
-                 daysAway = [self daysSinceDate:[transport createdAt]];
-    
-                // If it is in our graph range then add the checklist results to that day index
-                if (daysAway < 30) {
-    
-                    // If a checklist is set for that transport. It should be, but users be users.
-                    if (transport[@"checklist"]) {
-    
-                        // If we have more than one transport in a day then we need to add to the list
-                        if (![self.checklistData objectAtIndex:daysAway]) {
-                            oldData = [self.checklistData objectAtIndex:daysAway];
-                            newData = transport[@"checklist"];
-                            [newData addObjectsFromArray:oldData];
-                            [self.checklistData replaceObjectAtIndex:daysAway withObject:newData];
-                        } else {
-                            [self.checklistData replaceObjectAtIndex:daysAway withObject:transport[@"checklist"]];
-                        }
-                    }
-                }
-                    }
-            
-            [self.barChart reloadData];
-            [self.barChart setState:JBChartViewStateCollapsed];
-            [self.barChart setState:JBChartViewStateExpanded animated:YES]; 
-            
+            [weakClass setUpTransports:objects];
             
         } else {
             // Log details of the failure
@@ -229,4 +202,130 @@
     }];
     
 }
+
+// Segmented control changed 
+- (IBAction)controlChanged:(id)sender {
+    
+    
+    if (self.segmentedControl.selectedSegmentIndex == 0) {
+        
+    // Select a crew member
+    } else {
+        if (self.userPicker.hidden) {
+            
+            if (self.allUsers == nil) {
+                [self getUsers];
+            }
+            [self hideShowPickerView];
+        }
+    }
+    
+}
+
+
+- (void)setUpTransports:(NSArray *)objects {
+    int daysAway = 0;
+   
+    
+    // The find succeeded. Add the returned objects to allObjects
+    self.allTransports = [[NSMutableArray alloc] initWithArray:objects];
+  
+    
+    // Iterate through the transports and get the days away
+    for (PFObject *transport in self.allTransports) {
+        daysAway = [self daysSinceDate:[transport createdAt]];
+        
+        // If it is in our graph range then add the checklist results to that day index
+        if (daysAway < 30) {
+            
+            // If a checklist is set for that transport. It should be, but users be users.
+            if (transport[@"checklist"]) {
+                
+                // If we have more than one transport in a day then we need to add to the list
+                if (![self.checklistData objectAtIndex:daysAway]) {
+                    NSMutableArray *oldData = [self.checklistData objectAtIndex:daysAway];
+                    NSMutableArray *newData = transport[@"checklist"];
+                    [newData addObjectsFromArray:oldData];
+                    [self.checklistData replaceObjectAtIndex:daysAway withObject:newData];
+                } else {
+                    [self.checklistData replaceObjectAtIndex:daysAway withObject:transport[@"checklist"]];
+                }
+            }
+        }
+    }
+    
+    [self.barChart reloadData];
+    [self.barChart setState:JBChartViewStateCollapsed];
+    [self.barChart setState:JBChartViewStateExpanded animated:YES];
+}
+
+- (IBAction)doneTapped:(id)sender {
+    [self hideShowPickerView];
+    
+    
+}
+
+- (void)hideShowPickerView {
+    BOOL isHidden = self.userPicker.hidden;
+    
+    // We want to show the items
+    if (isHidden) {
+        self.userPicker.hidden = NO;
+        self.toolBar.hidden = NO;
+        self.segmentedControl.hidden = YES;
+    } else {
+        self.userPicker.hidden = YES;
+        self.toolBar.hidden = YES;
+        self.segmentedControl.hidden = NO;
+    }
+}
+
+- (void)dismissPicker {
+    self.userPicker.hidden = YES; 
+}
+
+// Query for all users
+- (void) getUsers {
+
+    self.allUsers = [[NSMutableArray alloc] init];
+    for (PFObject *obj in self.allTransports) {
+        NSMutableArray *crewMembers = [obj objectForKey:@"CrewMembers"];
+        
+        for (NSString *member in crewMembers) {
+            
+            if (![self.allUsers containsObject:member] && ![member isEqualToString:@""]) {
+                [self.allUsers addObject:member];
+            }
+        }
+    }
+    [self.userPicker reloadAllComponents]; 
+
+    
+}
+
+#pragma mark - UIPicker Delegate methods
+// returns the number of 'columns' to display.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [self.allUsers count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+   
+    return [self.allUsers objectAtIndex:row];
+}
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
+{
+    return 30.0;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+}
+
 @end

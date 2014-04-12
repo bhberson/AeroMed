@@ -101,27 +101,32 @@
     [query whereKeyExists:@"title"];
     [query orderByAscending:@"title"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    
+    __weak AMBaseDocumentViewController *weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
        
         if (!error) {
-            // Save an array of PFObjects
-            NSMutableArray *folders = [[NSMutableArray alloc] initWithCapacity:[objects count]];
-            
-            for (int i = 0; i < objects.count; i++) {
-                PFObject *op = objects[i];
-                [folders addObject:op];
-            }
-            
-            self.topFolders = folders;
-            self.showingData = self.topFolders;
-            self.isTopFolder = YES;
-            [self.collectionView reloadData];
+            [weakSelf setUpFolders:objects];
         } else {
             NSLog(@"%@", error);
         }
     }];
 }
 
+- (void)setUpFolders:(NSArray *)objects {
+    // Save an array of PFObjects
+    NSMutableArray *folders = [[NSMutableArray alloc] initWithCapacity:[objects count]];
+    
+    for (int i = 0; i < objects.count; i++) {
+        PFObject *op = objects[i];
+        [folders addObject:op];
+    }
+    
+    self.topFolders = folders;
+    self.showingData = self.topFolders;
+    self.isTopFolder = YES;
+    [self.collectionView reloadData];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -215,18 +220,24 @@
     PFQuery *query = [PFQuery queryWithClassName:searchFor];
     [query orderByAscending:@"title"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    
+    __weak AMBaseDocumentViewController *weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
        
         if (!error) {
-            self.showingData = [[NSMutableArray alloc] initWithArray:objects];
-            self.isTopFolder = NO;
-            [self.collectionView reloadData];
+            [weakSelf setupDocuments:objects];
             
         } else {
             NSLog(@"%@", error);
             
         }
     }];
+}
+
+- (void)setupDocuments:(NSArray *)objects {
+    self.showingData = [[NSMutableArray alloc] initWithArray:objects];
+    self.isTopFolder = NO;
+    [self.collectionView reloadData];
 }
 
 #pragma mark -Search delegate methods
