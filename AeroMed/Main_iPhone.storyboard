@@ -724,13 +724,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1j-gz-6qO">
-                                <rect key="frame" x="20" y="428" width="280" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAs-OS-sQu">
                                 <rect key="frame" x="20" y="20" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -739,7 +732,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3BR-tl-iZA">
-                                <rect key="frame" x="56" y="364" width="209" height="75"/>
+                                <rect key="frame" x="56" y="364" width="209" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="All Members"/>
@@ -771,13 +764,21 @@
                                     <outlet property="delegate" destination="jU7-IZ-QSG" id="Jw3-MY-3Qn"/>
                                 </connections>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7V-2g-3HM">
+                                <rect key="frame" x="86" y="403" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDetails:" destination="jU7-IZ-QSG" eventType="touchUpInside" id="Thw-BX-bBZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="c6C-pQ-k5y" firstAttribute="top" secondItem="gAs-OS-sQu" secondAttribute="bottom" constant="14" id="5ML-3e-tcq"/>
                             <constraint firstItem="zEq-FU-31G" firstAttribute="top" secondItem="nNb-XB-dX3" secondAttribute="bottom" id="65o-zQ-snv"/>
-                            <constraint firstItem="e1j-gz-6qO" firstAttribute="top" secondItem="3BR-tl-iZA" secondAttribute="bottom" constant="36" id="CBi-dA-u69"/>
-                            <constraint firstAttribute="centerY" secondItem="e1j-gz-6qO" secondAttribute="centerY" constant="-181.5" id="UOQ-4a-Vi9"/>
                             <constraint firstItem="nNb-XB-dX3" firstAttribute="top" secondItem="x6w-0D-285" secondAttribute="bottom" id="d7i-LG-2gM"/>
                             <constraint firstAttribute="centerY" secondItem="3BR-tl-iZA" secondAttribute="centerY" constant="-94" id="eok-zq-inC"/>
                             <constraint firstItem="gAs-OS-sQu" firstAttribute="top" secondItem="iAL-l5-ivr" secondAttribute="bottom" constant="10" id="qPQ-gM-WUZ"/>
@@ -787,11 +788,12 @@
                     </view>
                     <connections>
                         <outlet property="barChart" destination="c6C-pQ-k5y" id="J67-X6-4JV"/>
-                        <outlet property="bottomText" destination="e1j-gz-6qO" id="ekY-qB-6Xa"/>
                         <outlet property="segmentedControl" destination="3BR-tl-iZA" id="NSf-Zk-vsS"/>
+                        <outlet property="textButton" destination="B7V-2g-3HM" id="BH7-zX-f6R"/>
                         <outlet property="titleText" destination="gAs-OS-sQu" id="M82-lV-cpQ"/>
                         <outlet property="toolBar" destination="x6w-0D-285" id="wWt-Gl-Tg7"/>
                         <outlet property="userPicker" destination="nNb-XB-dX3" id="LGE-1c-JuL"/>
+                        <segue destination="RpM-pa-n7g" kind="push" identifier="detailTransport" id="dM2-HO-OIT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLM-gc-GH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1265,9 +1267,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="AXL-zX-oVD"/>
-        <segue reference="ugu-eh-SXK"/>
         <segue reference="mFY-0S-Dm8"/>
         <segue reference="unq-NJ-uxq"/>
+        <segue reference="dM2-HO-OIT"/>
+        <segue reference="ugu-eh-SXK"/>
+        <segue reference="AXL-zX-oVD"/>
     </inferredMetricsTieBreakers>
 </document>
