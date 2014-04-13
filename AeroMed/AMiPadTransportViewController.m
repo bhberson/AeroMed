@@ -283,11 +283,11 @@
     
     // verify the text field you wanna validate
     if (textField == self.numTextField) {
-        if (([textField.text length] > 0) || ([textField.text length] < 12)) {
+        if ([textField.text length] == 11) {
             doneButton.enabled = YES;
             doneButton.tintColor = [UIColor whiteColor];
         }
-        if (([textField.text length] == 0) || ([textField.text length] > 12)) {
+        if ([textField.text length] != 11) {
             doneButton.enabled = NO;
             doneButton.tintColor = [UIColor lightGrayColor];
         }
@@ -300,11 +300,11 @@
     // verify the text field you wanna validate
     if (textField == _numTextField) {
         
-        if (([textField.text length] > 0) || ([textField.text length] < 12)) {
+        if ([textField.text length] == 11) {
             doneButton.enabled = YES;
             doneButton.tintColor = [UIColor whiteColor];
         }
-        if (([textField.text length] < 1) || ([textField.text length] > 12)) {
+        if ([textField.text length] != 11) {
             doneButton.enabled = NO;
             doneButton.tintColor = [UIColor lightGrayColor];
         }
