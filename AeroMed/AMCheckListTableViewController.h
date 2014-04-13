@@ -15,5 +15,6 @@
 @property (strong, nonatomic) PFObject *transportData;
 
 @property (strong, nonatomic) NSDictionary *completedChecklist;
+@property (strong, nonatomic) NSArray *associatedTransports;
 @property BOOL isDisplayingCompletedList; 
 @end

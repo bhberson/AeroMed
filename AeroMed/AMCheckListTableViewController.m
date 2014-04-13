@@ -34,7 +34,13 @@
     if (self.isDisplayingCompletedList) {
         UIBarButtonItem *mail = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(showMail)];
         self.navigationItem.rightBarButtonItem = mail;
-        self.navigationItem.title = [NSString stringWithFormat:@"Transport #%@",[self.transportData[@"TransportNumber"] stringValue]];
+        
+        NSMutableString *transportTitle = [[NSMutableString alloc] init];
+        for (PFObject *transport in self.associatedTransports) {
+            [transportTitle appendString:[transport[@"TransportNumber"] stringValue]];
+            [transportTitle appendString:@" "];
+        }
+        self.navigationItem.title = [NSString stringWithFormat:@"Transport #%@",transportTitle];
         [self queryForUsers];
     } else {
     
@@ -77,7 +83,11 @@
     // Return the number of rows in the section.
     
     if (self.isDisplayingCompletedList) {
-        return [self.completedChecklist count];
+        if ([self.completedChecklist isKindOfClass:[NSDictionary class]]) {
+            return [self.completedChecklist count];
+        } else {
+            return 0; 
+        }
     } else {
         return [self.checkList count];
     }
@@ -193,20 +203,6 @@
     }
 }
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    
-//    if ([segue.identifier isEqualToString:@"toTransport"]) {
-//        //TODO pass data and probably combine base view controllers of ipad and iphones
-//        
-//        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-//            AMBaseViewController *ipadVC = (AMBaseViewController *)segue.destinationViewController;
-//            
-//        } else {
-//            AMBaseViewController *iphoneVC = (AMBaseViewController *)segue.destinationViewController;
-//        }
-//    }
-//}
-
 // Query for all users
 - (void) queryForUsers {
     PFQuery *query = [PFUser query];
@@ -223,17 +219,24 @@
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
         mailer.mailComposeDelegate = self;
     
-        NSString *transportTitle = [[NSString alloc] initWithFormat:@"%@%@ Review", @"Transport #", [self.transportData[@"TransportNumber"] stringValue]];
-        [mailer setSubject:transportTitle];
+        NSMutableString *transportTitle = [[NSMutableString alloc] init];
+        for (PFObject *transport in self.associatedTransports) {
+            [transportTitle appendString:[transport[@"TransportNumber"] stringValue]];
+            [transportTitle appendString:@" "];
+        }
+        NSString *mailTitle = [[NSString alloc] initWithFormat:@"Transport: %@ Review", transportTitle];
+        [mailer setSubject:mailTitle];
         
         NSMutableArray *toRecipients = [[NSMutableArray alloc] init];
         
-        for (NSString *user in self.transportData[@"CrewMembers"]) {
+        for (PFObject *transport in self.associatedTransports) {
             for (int i = 0; i < self.allUsers.count; i++) {
                 PFUser *userData = [self.allUsers objectAtIndex:i];
-                if ([user isEqualToString:userData[@"username"]]) {
+                NSArray *crewMembers = transport[@"CrewMembers"];
+                if ([crewMembers containsObject:userData[@"username"]]) {
                     [toRecipients addObject:userData[@"email"]];
                 }
+                
             }
         }
         

@@ -21,7 +21,8 @@
 @property (strong, nonatomic) NSMutableArray *allUsers;
 
 @property (strong, nonatomic) NSDictionary *selectedChecklist;
-@property (strong, nonatomic) PFObject *selectedObject;
+@property (strong, nonatomic) NSMutableDictionary *validTransports;
+@property int selectedDay;
 
 @end
 
@@ -75,6 +76,7 @@
         self.titleText.text = [NSString stringWithFormat:@"%@'s Transport Performance", [[PFUser currentUser] objectForKey:@"username"]]; 
     } else {
         self.titleText.text = @"Recent Transport Performance";
+        self.segmentedControl.selectedSegmentIndex = 0;
     }
     
     [self retrieveTransports];
@@ -123,34 +125,46 @@
 - (void)barChartView:(JBBarChartView *)barChartView didSelectBarAtIndex:(NSUInteger)index touchPoint:(CGPoint)touchPoint
 {
     // flip the index around
-    index = abs(index - (self.daysBack - 1));
-    
+    int rindex = abs(index - (self.daysBack - 1));
+    self.selectedDay = rindex;
     // Update view
     NSMutableString *label = [[NSMutableString alloc] init];
-    if (index == 0) {
+    if (rindex == 0) {
         [label appendString:@"Today - "];
     }
-    else if (index == 1) {
+    else if (rindex == 1) {
         [label appendString:@"Yesterday - "];
     }
-    else if (index < self.allTransports.count) {
-        [label appendFormat:@"%d", index];
+    else if (rindex < self.validTransports.count) {
+        [label appendFormat:@"%d", rindex];
         [label appendString:@" days ago - "];
     } else {
-        [label appendString:@"No transports "];
-        [label appendFormat:@"%d", index];
+        [label appendString:@"None "];
+        [label appendFormat:@"%d", rindex];
         [label appendString:@" days ago"];
+        self.textButton.enabled = NO;
     }
 
-    if (index < self.allTransports.count) {
-        [label appendFormat:@"%0.2f%%", [self barValueAtIndex:index] * 100];
-
-        [self.textButton setTitle:label forState:UIControlStateNormal];
-        self.textButton.hidden = NO;
+   
+        
+        // Check if checklist data has been set
+        if ([self.validTransports objectForKey:[NSNumber numberWithInt:rindex]]) {
+            self.selectedChecklist = [self.checklistData objectAtIndex:rindex];
+            self.textButton.enabled = YES;
+            [label appendFormat:@"%0.2f%%", [self barValueAtIndex:rindex] * 100];
+        } else {
+            self.textButton.enabled = NO;
+        }
+        
     
-        self.selectedChecklist = [self.checklistData objectAtIndex:index];
-        self.selectedObject = [self.allTransports objectAtIndex:index];
-    }
+
+        
+        
+    
+    
+    [self.textButton setTitle:label forState:UIControlStateNormal];
+    [self.textButton setTitle:label forState:UIControlStateDisabled];
+    self.textButton.hidden = NO;
     
 }
 
@@ -198,8 +212,10 @@
 - (void)retrieveTransports
 {
     self.checklistData = [[NSMutableArray alloc] init];
+    self.validTransports = [[NSMutableDictionary alloc] init];
     PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
+    [query orderByDescending:@"createdAt"];
     [query setLimit: 100];
     
 
@@ -266,13 +282,22 @@
             if (transport[@"checklist"]) {
                 
                 // If we have more than one transport in a day then we need to add to the list
-                if (![self.checklistData objectAtIndex:daysAway]) {
-                    NSMutableArray *oldData = [self.checklistData objectAtIndex:daysAway];
-                    NSMutableArray *newData = transport[@"checklist"];
-                    [newData addObjectsFromArray:oldData];
+                if ([[self.checklistData objectAtIndex:daysAway] isKindOfClass:[NSMutableDictionary class]]) {
+                    NSMutableDictionary *oldData = [self.checklistData objectAtIndex:daysAway];
+                    NSMutableDictionary *newData = transport[@"checklist"];
+                    [newData addEntriesFromDictionary:oldData];
                     [self.checklistData replaceObjectAtIndex:daysAway withObject:newData];
+                    
+                    // We have multiple valid transports for that day, so add them to the array
+                    NSMutableArray *oldtransports = [self.validTransports objectForKey:[NSNumber numberWithInt:daysAway]];
+                    [oldtransports addObject:transport];
+                    [self.validTransports setObject:oldtransports forKey:[NSNumber numberWithInt:daysAway]];
                 } else {
                     [self.checklistData replaceObjectAtIndex:daysAway withObject:transport[@"checklist"]];
+                    
+                    // Add this to the valid transports dictionary with the day as the key
+                    NSMutableArray *transp = [[NSMutableArray alloc] initWithObjects:transport, nil];
+                    [self.validTransports setObject:transp forKey:[NSNumber numberWithInt:daysAway]];
                 }
             }
         }
@@ -395,7 +420,7 @@
         AMCheckListTableViewController *vc = (AMCheckListTableViewController *)segue.destinationViewController;
         [vc setCompletedChecklist:self.selectedChecklist];
         [vc setIsDisplayingCompletedList:YES];
-        [vc setTransportData:self.selectedObject]; 
+        [vc setAssociatedTransports:[self.validTransports objectForKey:[NSNumber numberWithInt:self.selectedDay]]];
     }
 }
 
