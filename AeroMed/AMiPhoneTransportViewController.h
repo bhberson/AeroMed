@@ -15,7 +15,7 @@
 - (void)amiPhoneTransportViewController:(AMiPhoneTransportViewController *)controller didAddTransport:(PFObject *)transport;
 @end
 
-@interface AMiPhoneTransportViewController : UITableViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+@interface AMiPhoneTransportViewController : UITableViewController <UITextFieldDelegate, UIPickerViewDataSource,UIPickerViewDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *crewMember4TextField;
 @property (strong, nonatomic) IBOutlet UITextField *crewMember3TextField;
 @property (strong, nonatomic) IBOutlet UITextField *crewMember2TextField;

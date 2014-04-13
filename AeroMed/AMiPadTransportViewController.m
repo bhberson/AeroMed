@@ -73,23 +73,38 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.numTextField becomeFirstResponder];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor lightGrayColor];
+
+    
     [self retrieveUsers];
+    self.numTextField.delegate = self;
     self.crewMemberPicker = [[UIPickerView alloc] init];
     self.crewMemberPicker.delegate = self;
     self.crewMemberPicker.dataSource = self;
     self.crewMemberPicker.showsSelectionIndicator = YES;
+    self.crewMember1TextField.delegate = self;
     self.crewMember1TextField.inputView = self.crewMemberPicker;
+    self.crewMember2TextField.delegate = self;
     self.crewMember2TextField.inputView = self.crewMemberPicker;
+    self.crewMember3TextField.delegate = self;
     self.crewMember3TextField.inputView = self.crewMemberPicker;
+    self.crewMember4TextField.delegate = self;
     self.crewMember4TextField.inputView = self.crewMemberPicker;
     self.ageGroupPicker = [[UIPickerView alloc] init];
     self.ageGroupPicker.delegate = self;
     self.ageGroupPicker.dataSource = self;
     self.ageGroupPicker.showsSelectionIndicator = YES;
+    self.ageGroupTextField.delegate = self;
     self.ageGroupTextField.inputView = self.ageGroupPicker;
     self.ageGroupArray = [[NSArray alloc] initWithObjects:@"Adult",@"Pediatric",@"Neonatal",nil];
     [self pickerView:self.ageGroupPicker
@@ -99,6 +114,7 @@
     self.transportTypePicker.delegate = self;
     self.transportTypePicker.dataSource = self;
     self.transportTypePicker.showsSelectionIndicator = YES;
+    self.transportTypeTextField.delegate = self;
     self.transportTypeTextField.inputView = self.transportTypePicker;
     self.transportTypeArray = [[NSArray alloc] initWithObjects:@"Rotor Wing",@"Fixed Wing",@"Ground",nil];
     [self pickerView:self.transportTypePicker
@@ -108,17 +124,30 @@
     self.specialTransportPicker.delegate = self;
     self.specialTransportPicker.dataSource = self;
     self.specialTransportPicker.showsSelectionIndicator = YES;
+    self.specialTransportTextField.delegate = self;
     self.specialTransportTextField.inputView = self.specialTransportPicker;
-    self.specialTransportArray = [[NSArray alloc] initWithObjects:@"",@"Isolette",@"LVAD",@"IABP",@"NICU", @"Other in Notes",nil];
-    [self pickerView:self.specialTransportPicker
-        didSelectRow:0
-         inComponent:0];
+    self.specialTransportArray = [[NSArray alloc] initWithObjects:@"Isolette",@"LVAD",@"IABP",@"NICU", @"Other in Notes",nil];
+    self.specialTransportTextField.placeholder = @"Leave Blank for None";
+    self.notesTextField.delegate = self;
+    self.notesTextField.placeholder = @"Leave Blank for None";
+    
+    NSDate *now = [NSDate date];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy"];
+    
+    NSString *stringFromDate = [formatter stringFromDate:now];
+    
+    self.numTextField.text = [NSString stringWithFormat:@"%@%@", @"25", stringFromDate];
+    self.numTextField.placeholder = [NSString stringWithFormat:@"%@%@%@", @"25", stringFromDate, @"XXXXX"];
+
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
+    
 }
 
 
@@ -148,12 +177,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	if (indexPath.section == 0)
-		[self.numTextField becomeFirstResponder];
-}
 
 - (void)dismissKeyboard {
     [self.numTextField resignFirstResponder];
@@ -239,6 +262,74 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
         assert(NO);
     }
     
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.numTextField) {
+        [self.notesTextField becomeFirstResponder];
+        
+        // scroll to row!
+        
+    } else if (textField == self.notesTextField) {
+        [textField resignFirstResponder];
+    }
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    UIBarButtonItem *doneButton = self.navigationItem.rightBarButtonItem;
+    
+    // verify the text field you wanna validate
+    if (textField == self.numTextField) {
+        if (([textField.text length] > 0) || ([textField.text length] < 12)) {
+            doneButton.enabled = YES;
+            doneButton.tintColor = [UIColor whiteColor];
+        }
+        if (([textField.text length] == 0) || ([textField.text length] > 12)) {
+            doneButton.enabled = NO;
+            doneButton.tintColor = [UIColor lightGrayColor];
+        }
+    }
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    UIBarButtonItem *doneButton = self.navigationItem.rightBarButtonItem;
+
+    // verify the text field you wanna validate
+    if (textField == _numTextField) {
+        
+        if (([textField.text length] > 0) || ([textField.text length] < 12)) {
+            doneButton.enabled = YES;
+            doneButton.tintColor = [UIColor whiteColor];
+        }
+        if (([textField.text length] < 1) || ([textField.text length] > 12)) {
+            doneButton.enabled = NO;
+            doneButton.tintColor = [UIColor lightGrayColor];
+        }
+        
+        // allow backspace
+        if ([textField.text stringByReplacingCharactersInRange:range withString:string].length < textField.text.length) {
+            return YES;
+        }
+        
+        // in case you need to limit the max number of characters
+        if ([textField.text stringByReplacingCharactersInRange:range withString:string].length > 11) {
+            return NO;
+        }
+        
+        // limit the input to only the stuff in this character set, so no emoji or cirylic or any other insane characters
+        NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"1234567890"];
+        
+        if ([string rangeOfCharacterFromSet:set].location != NSNotFound) {
+            return YES;
+        }
+        
+        return NO;
+    }
+    
+    return YES;
 }
 
 @end
