@@ -29,37 +29,61 @@
 }
 - (IBAction)done:(id)sender
 {
-    
-    NSMutableArray *crew = [NSMutableArray array];
-    if (self.crewMember1TextField.text != nil) {
-        [crew addObject:self.crewMember1TextField.text];
-    }
-    if (self.crewMember2TextField.text != nil) {
-        [crew addObject:self.crewMember2TextField.text];
-    }
-    if (self.crewMember3TextField.text != nil) {
-        [crew addObject:self.crewMember3TextField.text];
-    }
-    if (self.crewMember4TextField.text != nil) {
-        [crew addObject:self.crewMember4TextField.text];
-    }
-    
     NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
     [f setNumberStyle:NSNumberFormatterDecimalStyle];
     NSNumber * myTransportNumber = [f numberFromString:self.numTextField.text];
     
-    // Create the object.
-    PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
-    [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
-    [pfTransport setObject:crew forKey:@"CrewMembers"];
-    [pfTransport setObject:self.ageGroupTextField.text forKey:@"ageGroup"];
-    [pfTransport setObject:self.transportTypeTextField.text forKey:@"transportType"];
-    [pfTransport setObject:self.specialTransportTextField.text forKey:@"specialTransport"];
-    [pfTransport setObject:self.notesTextField.text forKey:@"otherNotes"];
-    // Save it as soon as is convenient.
-    [pfTransport saveEventually];
-	[self.delegate amiPhoneTransportViewController:self
-                                 didAddTransport:pfTransport];
+    PFQuery *query = [PFQuery queryWithClassName:@"Transport"];
+    
+    [query whereKey:@"TransportNumber" equalTo:myTransportNumber];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            if (objects.count != 0){
+                
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Transport Cancelled" message:@"Transport number already exists." delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+                
+                [alert show];
+                
+                [self.delegate amiPhoneTransportViewControllerDidCancel:self];
+            }
+            else{
+                
+                NSMutableArray *crew = [NSMutableArray array];
+                if (self.crewMember1TextField.text != nil) {
+                    [crew addObject:self.crewMember1TextField.text];
+                }
+                if (self.crewMember2TextField.text != nil) {
+                    [crew addObject:self.crewMember2TextField.text];
+                }
+                if (self.crewMember3TextField.text != nil) {
+                    [crew addObject:self.crewMember3TextField.text];
+                }
+                if (self.crewMember4TextField.text != nil) {
+                    [crew addObject:self.crewMember4TextField.text];
+                }
+                
+                // Create the object.
+                PFObject *pfTransport = [PFObject objectWithClassName:@"Transport"];
+                [pfTransport setObject:myTransportNumber forKey:@"TransportNumber"];
+                [pfTransport setObject:crew forKey:@"CrewMembers"];
+                [pfTransport setObject:self.ageGroupTextField.text forKey:@"ageGroup"];
+                [pfTransport setObject:self.transportTypeTextField.text forKey:@"transportType"];
+                [pfTransport setObject:self.specialTransportTextField.text forKey:@"specialTransport"];
+                [pfTransport setObject:self.notesTextField.text forKey:@"otherNotes"];
+                // Save it as soon as is convenient.
+                [pfTransport saveEventually];
+                [self.delegate amiPhoneTransportViewController:self
+                                               didAddTransport:pfTransport];
+                
+            }
+            
+            
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
 }
 
 - (instancetype)initWithStyle:(UITableViewStyle)style
