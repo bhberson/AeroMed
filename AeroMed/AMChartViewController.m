@@ -355,7 +355,9 @@
             }
         }
         
-        self.selectedUser = [self.allUsers objectAtIndex:0]; 
+        if (self.allUsers.count > 0) {
+            self.selectedUser = [self.allUsers objectAtIndex:0];
+        }
         [self.userPicker reloadAllComponents];
     }
 
