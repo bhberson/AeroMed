@@ -49,7 +49,11 @@
 
         UIBarButtonItem *notification = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"bell.png"] style:UIBarButtonItemStylePlain target:self action:nil];
         // Set the gesture
-        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        
+        // Admins can swipe left to delete so they do not get this gesture
+        if (![[PFUser currentUser] objectForKey:@"isAdmin"]) {
+            [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        }
         [self.tableView reloadData];
         
     }
@@ -63,13 +67,15 @@
     query.cachePolicy = kPFCachePolicyNetworkElseCache;
     [query orderByDescending:@"createdAt"];
     [query setLimit: 1000];
+    
+    __weak AMBaseViewController *weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded. Add the returned objects to allObjects
             [allTransports addObjectsFromArray:objects];
 
-            self.transports = [NSMutableArray arrayWithArray:objects];
-            [self.tableView reloadData];
+            weakSelf.transports = [NSMutableArray arrayWithArray:objects];
+            [weakSelf.tableView reloadData];
 
             
         } else {
@@ -95,6 +101,24 @@
  numberOfRowsInSection:(NSInteger)section
 {
 	return [self.transports count];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // Admins can only edit.
+    if ([[PFUser currentUser] objectForKey:@"isAdmin"]) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+// Delete the transport
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    PFObject *transport = [self.transports objectAtIndex:indexPath.row];
+    [self.transports removeObject:transport];
+    [transport deleteInBackground];
+    [self.tableView reloadData];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
