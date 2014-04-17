@@ -134,32 +134,20 @@
     }
     else if (rindex == 1) {
         [label appendString:@"Yesterday - "];
-    }
-    else if (rindex < self.validTransports.count) {
+    } else {
         [label appendFormat:@"%d", rindex];
         [label appendString:@" days ago - "];
+    }
+    
+    // Basically, if we are on a bar with a value from transports
+    if ([self.validTransports objectForKey:[NSNumber numberWithInt:rindex]]) {
+        self.selectedChecklist = [self.checklistData objectAtIndex:rindex];
+        self.textButton.enabled = YES;
+        [label appendFormat:@"%0.2f%%", [self barValueAtIndex:rindex] * 100];
     } else {
         [label appendString:@"None "];
-        [label appendFormat:@"%d", rindex];
-        [label appendString:@" days ago"];
         self.textButton.enabled = NO;
     }
-
-   
-        
-        // Check if checklist data has been set
-        if ([self.validTransports objectForKey:[NSNumber numberWithInt:rindex]]) {
-            self.selectedChecklist = [self.checklistData objectAtIndex:rindex];
-            self.textButton.enabled = YES;
-            [label appendFormat:@"%0.2f%%", [self barValueAtIndex:rindex] * 100];
-        } else {
-            self.textButton.enabled = NO;
-        }
-        
-    
-
-        
-        
     
     
     [self.textButton setTitle:label forState:UIControlStateNormal];
@@ -187,7 +175,7 @@
         }
     }
     
-    return 0;
+    return 0.05;
 }
 
 - (void)didUnselectBarChartView:(JBBarChartView *)barChartView
