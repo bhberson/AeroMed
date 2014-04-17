@@ -27,6 +27,12 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self retrieveTransports];
+    [self.tableView reloadData];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,7 +41,6 @@
         self.documents = [NSMutableArray array];
         self.transports = [[NSMutableArray alloc] init];
 
-        [self retrieveTransports];
         
         // Set the status bar content to white in navigation bar
         self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -47,14 +52,12 @@
         [self.tableView setDelegate:self];
         [self.tableView setDataSource:self];
 
-        UIBarButtonItem *notification = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"bell.png"] style:UIBarButtonItemStylePlain target:self action:nil];
         // Set the gesture
         
         // Admins can swipe left to delete so they do not get this gesture
         if (![[PFUser currentUser] objectForKey:@"isAdmin"]) {
             [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
         }
-        [self.tableView reloadData];
         
     }
   
